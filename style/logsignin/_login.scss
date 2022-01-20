@@ -9,21 +9,21 @@
     height: 100vh;
     //background-color: $color1;
     background-image: url("../../img/blurbackground.jpg");
-    background-size: cover;
+    background-size: 127vh;
+    background-position: bottom;
 }
 
 .title__login{
     font-family: $title;
     font-weight:700;
     color: $color6;
-    font-size: 33px;
+    font-size: 30px;
 }
 
 .text-center{
     font-family: $font;
     color: $color6;
     font-size: 15px;
-    font-weight: 300;
 }
 
 .login__cont{
