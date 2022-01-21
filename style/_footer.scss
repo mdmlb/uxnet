@@ -1,0 +1,30 @@
+.footer{
+    background-color: $color1;
+}
+
+.footer__line{
+    border-width: 6px;
+    border-color: $color3;
+}
+
+.footercont__title{
+    color: $color6;
+    font-size: 28px;
+    font-family: $title;
+    font-weight: bold;
+}
+
+.footercont__text{
+    color: $color6;
+    font-size: 15px;
+    font-family: $font;
+    font-weight: lighter;
+}
+
+.footercont__text:hover {
+    color: $color4;
+}
+
+.footercont__img{
+    padding: 0px 1vh 0px 0vh;
+}

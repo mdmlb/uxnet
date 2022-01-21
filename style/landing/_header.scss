@@ -1,0 +1,43 @@
+//Navegation
+
+.mainHeader{
+    background-image: url("../../img/0HOME/headerbackground.png");
+    height: 105vh;
+    width: 100%;
+    background-position: bottom;
+    background-size: 132%;
+}
+
+    .header__menu{
+        width: 100%;
+    }
+
+    .header__logo{
+        width: 14%;
+    }
+
+//Banner
+.banner__blank{
+    height: 23vh;
+}
+.banner{
+    width: 73%;
+}
+
+    .banner__title{
+        font-family: $title;
+        font-weight: bold;
+        font-style: italic;
+        color: $color6;
+        font-size: 64px;
+    }
+
+    .text-center{
+        width: 44%;
+    }
+
+    .text__description{
+        font-family: $font;
+        text-align: left;
+        font-size: 14px;
+    }

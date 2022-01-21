@@ -1,0 +1,43 @@
+.contevent{
+    //padding: 0 0 0 10vh;
+}
+
+.contevent__title{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.contevent__link{
+    color: #FF971D; 
+    font-weight: 500; 
+    font-size: 15px; 
+    font-family: $font;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.event__cont{
+    border-style: solid;
+    border-radius: 20px;
+    width: 45vh;
+}
+
+.eventcont{
+    width: 80%;
+}
+
+.event__person{
+    width: 18vh;
+}
+
+.event__title{
+    font-family: $font;
+    font-size: 25px;
+    text-align: center;
+}
+
+.event__name{
+    font-family: $font;
+    font-size: 15px;
+    font-weight: 100;
+}

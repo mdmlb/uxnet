@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
-    <title>Document</title>
+    <title>UXnet</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -21,7 +21,174 @@
 
 <body>
 
+    <header class="mainHeader">
+
+        <!--Nav-->
+        <nav class="header d-flex justify-content-center align-items-center flex-row p-4">
+
+            <!--Nav: menu-->
+            <a href="#" class="header__menulink">
+                <img class="header__menu" src="./img/burguermenu.svg" atl="menu">
+            </a>
+
+            <!--Nav: Logo-->
+            <a href="./index.html" class="header__logolink d-flex justify-content-center align-items-center">
+                <img class="header__logo" src="./img/whitelogo.svg" atl="UXnet's logo">
+            </a>
+
+            <!--Nav: Profile-->
+            <a href="#" class="header__profileLink">
+                <img class="header__profile" src="./img/profile.svg" atl="Profile">
+            </a>
+        </nav>
+
+        <!--Banner: Links-->
+        <section class="">
+
+            <div class="banner__blank">
+
+            </div>
+
+            <div class="banner p-5">
+                <h1 class="banner__title p-3">Iniciar mi perfil UX</h1>
+
+                <div class="d-flex justify-content-left align-items-left flex-row">
+
+                    <!--Banner: test who know-->
+                    <div class="text-center p-3 d-flex justify-content-left align-items-left flex-column">
+                        <p class="text__description"><strong>Si desconoces que tipo de diseñador UX eres</strong>,
+                            puedes completar el
+                            test para conocer que tipo de
+                            diseñador UX eres y que habilidades son las que mejor te desempeñas o en las que debes de
+                            mejorar.
+                        </p>
+                        <a href="./testwhodoesntknow.html" type="submit" class="btn btn-primary"
+                            style="width: 50%;">Test</a>
+                    </div>
+
+                    <!--Banner: test who doesn't know-->
+                    <div class="text-center p-3 d-flex justify-content-left align-items-left flex-column">
+                        <p class="text__description"><strong>Si ya conoces que tipo de diseñador UX eres</strong> y que
+                            habilidades son
+                            en las que mejor te desempeñas
+                            y en
+                            las que debes de mejorar, puedes completar tu perfil de manera manual</p>
+                        <a href="./testwhoknow.html" type="submit" class="btn btn-primary" style="width: 50%;">Mapeo</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </header>
+
+    <main class="main">
+
+
+        <!--Next events-->
+        <section class="main__events" style="padding: 14vh;">
+
+            <!--Title-->
+            <div class="d-flex flex-column contevent">
+                <h1 class="contevent__title" style="margin: 0;">Próximos eventos ...</h1>
+                <a href="./growth.html" class="contevent__link">Ver todos los evento</a>
+            </div>
+
+            <!--Events-->
+            <div class=" d-flex justify-content-center align-items-center flex-row">
+
+                <!--First event-->
+                <div class="event__cont d-flex justify-content-center align-items-center p-3">
+                    <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
+                        <a href="#" class="event__person ">
+                            <img class="event__person" src="./img/profile.svg" atl="">
+                        </a>
+                        <h2 class="event__title">Nombre del taller</h2>
+                        <h5 class="event__name">ANA SOLER</h5>
+                        <a href="#" type="submit" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+
+
+                <!--First event-->
+                <div class="event__cont d-flex justify-content-center align-items-center p-3 m-5">
+                    <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
+                        <a href="#" class="event__person ">
+                            <img class="event__person" src="./img/profile.svg" atl="">
+                        </a>
+                        <h2 class="event__title">Nombre del taller</h2>
+                        <h5 class="event__name">ANA SOLER</h5>
+                        <a href="#" type="submit" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+
+
+                <!--First event-->
+                <div class="event__cont d-flex justify-content-center align-items-center p-3">
+                    <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
+                        <a href="#" class="event__person ">
+                            <img class="event__person" src="./img/profile.svg" atl="">
+                        </a>
+                        <h2 class="event__title">Nombre del taller</h2>
+                        <h5 class="event__name">ANA SOLER</h5>
+                        <a href="#" type="submit" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="informationcont d-flex justify-content-center align-items-center">
+            <div class="main__information d-flex flex-row justify-content-center align-items-center">
+                <h1 class="p-5" style="font-style: italic;">¿Quieres saber más del diseño UX?</h1>
+                <a href="#" type="submit" class="btn btn-primary m-4" style="width: 20%; height: 80%;">Ver más</a>
+            </div>
+        </section>
+
+        <section class="emptycont">
+
+        </section>
+
+        <footer class="footer">
+
+            <hr class="footer__line">
     
+            <div class="d-flex justify-content-center align-items-top flex-row">
+                <section class="footercont m-5">
+                    <h4 class="footercont__title">Información legal</h4>
+                    <div class="footercont__cont d-flex justify-content-left align-items-left flex-column">
+                        <a href="#" class="footercont__text">Pivacidad y seguridad</a>
+                        <a href="#" class="footercont__text">Terminos de uso</a>
+                    </div>
+                </section>
+    
+                <section class="footercont m-5">
+                    <h4 class="footercont__title">Ayuda</h4>
+                    <div class="footercont__cont d-flex justify-content-left align-items-left flex-column">
+                        <a href="#" class="footercont__text">Contáctanos</a>
+                        <a href="#" class="footercont__text">FAQs</a>
+                    </div>
+                </section>
+    
+                <section class="footercont m-5">
+                    <h4 class="footercont__title">Siguenos</h4>
+                    <div class="footercont__cont d-flex justify-content-left align-items-left flex-row">
+                        <a href="#" class="footercont__img">
+                            <img class="footercont__img" src="./img/footer/facebook.svg" atl="">
+                        </a>
+                        <a href="#" class="footercont__img">
+                            <img class="footercont__img" src="./img/footer/instagram.svg" atl="">
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </footer>
+
+    </main>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
