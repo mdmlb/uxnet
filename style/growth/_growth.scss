@@ -1,0 +1,30 @@
+.mainHeadergrowth {
+    background-color: #04041B;
+    height: 58vh;
+    width: 100%;
+    background-position: bottom;
+    background-size: 132%;
+}
+
+.bannergrowthcont{
+    padding-top: 10vh;
+}
+
+.bannergrowth__title{
+    font-family: $title;
+    font-weight: bold;
+    color: $color6;
+    font-size: 64px;
+    padding: 5vh 10vh 5vh 0vh;
+}
+
+//tag type of event
+.tagtypeevent{
+    background-color: $color3;
+    color: $color6;
+    border-radius: 0px 40px 40px 0px;
+    width: 96px;
+    top: 20%;
+    left: 0;
+    position: absolute;
+}

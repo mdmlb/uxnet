@@ -16,6 +16,10 @@ $font: "Open Sans";
 
 @import './footer';
 
+@import './filters';
+
+@import './menu';
+
 @import './logsignin/login';
 @import './logsignin/signin';
 
@@ -23,6 +27,15 @@ $font: "Open Sans";
 @import './landing/nextevent';
 @import './landing/information';
 
+@import './information/top';
+@import './information/company';
+@import './information/roles';
+
+@import './growth/growth';
+@import './growth/event';
+
+@import './modal/dark';
+@import './modal/mevent';
 
 
 .imagetoreplace{

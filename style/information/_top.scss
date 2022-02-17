@@ -1,0 +1,57 @@
+.bannercont{
+    padding-top: 15vh;
+}
+
+.mainHeaderinfo{
+    background-color: $color1;
+    height: 55vh;
+    width: 100%;
+    background-position: bottom;
+    background-size: 132%;
+}
+
+//Company
+.mainHeaderinfo2{
+    background-color: $color4;
+    height: 55vh;
+    width: 100%;
+    background-position: bottom;
+    background-size: 132%;
+}
+
+.banner__cont{
+    background-color: $color3;
+    border-radius: 0px 20px 0px 0px;
+    width: 168vh;
+}
+
+.banner2__cont{
+    background-color: $color4;
+    border-radius: 0px 20px 0px 0px;
+    width: 168vh;
+}
+
+.main__info{
+    padding-left: 25vh;
+}
+
+//General Information
+
+.info{
+    border: 5px solid #7764E3;
+    box-sizing: border-box;
+    border-radius: 0px 0px 0px 20px;
+}
+
+.infocont{
+    width: 86%;
+}
+
+.infocont__img{
+    width: 182vh;
+    height: 51vh;
+}
+
+.info__img{
+    width: 100%;
+}

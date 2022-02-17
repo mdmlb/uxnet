@@ -17,6 +17,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Prompt:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+    <!-- Logo -->
+    <link rel="shortcut icon" href="./img/shortlogo.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -35,10 +38,10 @@
 
             <div class="d-flex justify-content-center align-items-center flex-column p-2 ">
                 <!-- Title -->
-                <h5 class="card-title main title__login">Regístrarse</h5>
+                <h5 class="card-title title__login">Regístrarse</h5>
 
                 <!-- Already has an account -->
-                <div class="text-center">
+                <div class="text-center" style="width: 100%;">
                     <span>¿Ya tienes cuenta?
                         <a class="text-center" href="login.html" style="font-weight: 500;">Inicia sesión aquí</a>
                     </span>
@@ -48,9 +51,10 @@
 
             <div class="d-flex justify-content-center align-items-center flex-column">
 
-                <!-- links to signin in -->
+                <!-- links to signin in 
                 <div class="d-flex justify-content-center align-items-center flex-column p-2">
-                    <span class="text-center" style="font-weight: 200;">Puedes registrarte por cuentas de:</span>
+                    <span class="text-center" style="font-weight: 200; width: 100%;">Puedes registrarte por cuentas
+                        de:</span>
                     <div>
 
                     </div>
@@ -58,12 +62,10 @@
 
                 <div>
                     <img src="./img/o.svg" atl="">
-                </div>
+                </div>-->
 
                 <!-- form for sign in -->
                 <div class="p-3">
-                    <span class="text-center" style="font-weight: 200;">De manera manual, completando los siguientes
-                        campos:</span>
                     <form class="form p-2">
 
 
@@ -150,7 +152,8 @@
 
     </section>
 
-    <!-- Optional JavaScript -->
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -162,6 +165,21 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+    <!-- Optional JavaScript -->
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+        import { getFirestore } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js";
+
+
+        const app = initializeApp(firebaseConfig);
+    </script>
+
+<!-- Optional JavaScript 
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>-->
+    <script src="./script/signin.js"></script>
 
 </body>
 

@@ -1,0 +1,121 @@
+.mainHeadermenu{
+    width: 100%;
+    background-position: bottom;
+    background-size: 132%;
+    position: absolute;
+}
+
+.menucont{
+    width: 100%;
+    height: 100vh;
+    background-color: $color1;
+}
+
+.menubackground{
+    background-image: url('../img/MENU/1.svg');
+    width: 100%;
+    height: 100%;
+}
+
+.menubackground2{
+    background-image: url('../img/MENU/2.svg');
+    width: 100%;
+    height: 100%;
+}
+
+.menubackground3{
+    background-image: url('../img/MENU/3.svg');
+    width: 100%;
+    height: 100%;
+}
+
+.menubackground4{
+    background-image: url('../img/MENU/4.svg');
+    width: 100%;
+    height: 100%;
+}
+
+.menun{
+    width: 64%;
+    height: 100%;
+    color: $color6;
+    
+}
+
+.icon1menu{
+    width: 68px;
+}
+
+.menutitle{
+    font-family: $title;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+//ACTIVE
+.icon1menuactive{
+    &--move{
+        width: 40px;
+    }
+}
+
+.menutitleactive{
+    &--move{
+        font-family: $title;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 36px;    
+    }
+    
+}
+
+.textactive{
+    &--move{
+        font-size: 14px;
+        font-weight: 300;
+        font-family: $font;    
+    }
+    
+}
+
+.menubackgroundactive{
+    &--move{
+        background-image: url('../img/MENU/Background.svg');
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.menubackgroundactive2{
+    &--move{
+        background-image: url('../img/MENU/Background.svg');
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.menubackgroundactive3{
+    &--move{
+        background-image: url('../img/MENU/Background.svg');
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.menubackgroundactive4{
+    &--move{
+        background-image: url('../img/MENU/Background.svg');
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.menunactive{
+    &--move{
+        width: 64%;
+        height: 100%;
+        color: $color6;
+        padding-top: 45vh;  
+    }
+    
+}

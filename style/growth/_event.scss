@@ -1,0 +1,88 @@
+.typeevent{
+    background-color: $color3;
+    color: $color6;
+    border-radius: 0px 40px 40px 0px;
+    width: 96px;
+    top: 20%;
+    left: 0;
+    position: absolute;
+}
+
+.typeofevent{
+    margin: 0;
+    font-style: $font;
+}
+
+.eventimg{
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.event{
+    background-color: $color3;
+}
+
+.event2{
+    width: 83%;
+}
+
+.event__nameinside{
+    color: white;
+    font-family: $font;
+    font-size: 37px;
+    font-weight: bold;
+    margin: 0;
+}
+
+//2nd block
+
+.aboute{
+    width: 50%;
+}
+
+.aboutep{
+    width: 80%;
+}
+
+.projectclientevent{
+    width: 89%;
+    text-align: center;
+}
+
+//Benefit
+.aboutben{
+    width: 80%;
+}
+
+.benefitimg{
+    width: 25vh;
+}
+
+.benefitevent{
+    width: 89%;
+    text-align: center;
+}
+
+//Profile Person of the event
+
+.profilepersoncont{
+    //background-color: rgba(4, 4, 27, 0.5);
+    background-color: $color3;
+}
+
+.aboutperson{
+    width: 50%;
+}
+
+.name__pereven{
+    font-family: $title;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.design__pereven{
+    margin: 0;
+}

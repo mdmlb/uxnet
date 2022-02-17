@@ -7,6 +7,14 @@
   font-size: 15px;
 }
 
+.btncancel {
+  background-color: #694FFD;
+  width: 100%;
+  border: none;
+  font-family: "Open Sans";
+  font-size: 15px;
+}
+
 .footer {
   background-color: #04041B;
 }
@@ -36,6 +44,112 @@
 
 .footercont__img {
   padding: 0px 1vh 0px 0vh;
+}
+
+.selectfilters {
+  background-color: #04041B;
+  color: white;
+}
+
+.mainHeadermenu {
+  width: 100%;
+  background-position: bottom;
+  background-size: 132%;
+  position: absolute;
+}
+
+.menucont {
+  width: 100%;
+  height: 100vh;
+  background-color: #04041B;
+}
+
+.menubackground {
+  background-image: url("../img/MENU/1.svg");
+  width: 100%;
+  height: 100%;
+}
+
+.menubackground2 {
+  background-image: url("../img/MENU/2.svg");
+  width: 100%;
+  height: 100%;
+}
+
+.menubackground3 {
+  background-image: url("../img/MENU/3.svg");
+  width: 100%;
+  height: 100%;
+}
+
+.menubackground4 {
+  background-image: url("../img/MENU/4.svg");
+  width: 100%;
+  height: 100%;
+}
+
+.menun {
+  width: 64%;
+  height: 100%;
+  color: white;
+}
+
+.icon1menu {
+  width: 68px;
+}
+
+.menutitle {
+  font-family: "Prompt";
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.icon1menuactive--move {
+  width: 40px;
+}
+
+.menutitleactive--move {
+  font-family: "Prompt";
+  font-weight: 700;
+  font-style: italic;
+  font-size: 36px;
+}
+
+.textactive--move {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Open Sans";
+}
+
+.menubackgroundactive--move {
+  background-image: url("../img/MENU/Background.svg");
+  width: 100%;
+  height: 100%;
+}
+
+.menubackgroundactive2--move {
+  background-image: url("../img/MENU/Background.svg");
+  width: 100%;
+  height: 100%;
+}
+
+.menubackgroundactive3--move {
+  background-image: url("../img/MENU/Background.svg");
+  width: 100%;
+  height: 100%;
+}
+
+.menubackgroundactive4--move {
+  background-image: url("../img/MENU/Background.svg");
+  width: 100%;
+  height: 100%;
+}
+
+.menunactive--move {
+  width: 64%;
+  height: 100%;
+  color: white;
+  padding-top: 45vh;
 }
 
 .login {
@@ -160,6 +274,8 @@
   font-family: "Open Sans";
   font-size: 25px;
   text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
 }
 
 .event__name {
@@ -180,6 +296,345 @@
 
 .emptycont {
   height: 20vh;
+}
+
+.bannercont {
+  padding-top: 15vh;
+}
+
+.mainHeaderinfo {
+  background-color: #04041B;
+  height: 55vh;
+  width: 100%;
+  background-position: bottom;
+  background-size: 132%;
+}
+
+.mainHeaderinfo2 {
+  background-color: #FF971D;
+  height: 55vh;
+  width: 100%;
+  background-position: bottom;
+  background-size: 132%;
+}
+
+.banner__cont {
+  background-color: #694FFD;
+  border-radius: 0px 20px 0px 0px;
+  width: 168vh;
+}
+
+.banner2__cont {
+  background-color: #FF971D;
+  border-radius: 0px 20px 0px 0px;
+  width: 168vh;
+}
+
+.main__info {
+  padding-left: 25vh;
+}
+
+.info {
+  border: 5px solid #7764E3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0px 0px 0px 20px;
+}
+
+.infocont {
+  width: 86%;
+}
+
+.infocont__img {
+  width: 182vh;
+  height: 51vh;
+}
+
+.info__img {
+  width: 100%;
+}
+
+.bannercont2 {
+  background-color: #FF971D;
+  height: 43vh;
+}
+
+.excompcont {
+  color: #F7F8FA;
+}
+
+.excomp {
+  width: 84%;
+}
+
+.spaceC {
+  padding: 10vh;
+}
+
+.aboutc {
+  width: 80%;
+}
+
+.company__name {
+  font-size: 75px;
+  font-family: "Prompt";
+}
+
+.projectclient {
+  width: 89%;
+  text-align: center;
+}
+
+.inforoles {
+  border: 5px solid #7764E3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px 0px 0px 20px;
+  width: 43%;
+}
+
+.inforoles2 {
+  border: 5px solid #7764E3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0px 20px 20px 0px;
+  width: 43%;
+}
+
+.inforolescont {
+  width: 86%;
+}
+
+.titlerole {
+  font-family: "Prompt";
+}
+
+.inforolescont__img {
+  width: 47vh;
+}
+
+.inforoles__img {
+  width: 100%;
+}
+
+.breadcrumbs {
+  padding-left: 150px;
+  color: white;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.rol__cont {
+  background-color: #694FFD;
+  border-radius: 0px 20px 0px 0px;
+  width: 168vh;
+  padding: 5vh 0 5vh 22vh;
+}
+
+.rol__title {
+  font-family: "Prompt";
+  font-size: 57px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.rolcontpad {
+  padding-left: 22vh;
+}
+
+.titlerol {
+  font-family: "Prompt";
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-image: url("../../img/Ellipse.svg");
+}
+
+.rectanglerol {
+  height: 10px;
+  width: 155px;
+  background-color: #694FFD;
+  border-radius: 10px;
+}
+
+.imgrol {
+  width: 100%;
+}
+
+.mainHeadergrowth {
+  background-color: #04041B;
+  height: 58vh;
+  width: 100%;
+  background-position: bottom;
+  background-size: 132%;
+}
+
+.bannergrowthcont {
+  padding-top: 10vh;
+}
+
+.bannergrowth__title {
+  font-family: "Prompt";
+  font-weight: bold;
+  color: white;
+  font-size: 64px;
+  padding: 5vh 10vh 5vh 0vh;
+}
+
+.tagtypeevent {
+  background-color: #694FFD;
+  color: white;
+  border-radius: 0px 40px 40px 0px;
+  width: 96px;
+  top: 20%;
+  left: 0;
+  position: absolute;
+}
+
+.typeevent {
+  background-color: #694FFD;
+  color: white;
+  border-radius: 0px 40px 40px 0px;
+  width: 96px;
+  top: 20%;
+  left: 0;
+  position: absolute;
+}
+
+.typeofevent {
+  margin: 0;
+  font-style: "Open Sans";
+}
+
+.eventimg {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.event {
+  background-color: #694FFD;
+}
+
+.event2 {
+  width: 83%;
+}
+
+.event__nameinside {
+  color: white;
+  font-family: "Open Sans";
+  font-size: 37px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.aboute {
+  width: 50%;
+}
+
+.aboutep {
+  width: 80%;
+}
+
+.projectclientevent {
+  width: 89%;
+  text-align: center;
+}
+
+.aboutben {
+  width: 80%;
+}
+
+.benefitimg {
+  width: 25vh;
+}
+
+.benefitevent {
+  width: 89%;
+  text-align: center;
+}
+
+.profilepersoncont {
+  background-color: #694FFD;
+}
+
+.aboutperson {
+  width: 50%;
+}
+
+.name__pereven {
+  font-family: "Prompt";
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.design__pereven {
+  margin: 0;
+}
+
+.dark {
+  display: none;
+}
+
+.dark--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(4, 4, 27, 0.5);
+  cursor: pointer;
+}
+
+.modal-title {
+  font-style: "Prompt";
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.modal-content {
+  background-color: #04041B;
+  border-color: #694FFD;
+  border-width: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 17%;
+  left: 10%;
+  width: 81%;
+  height: 60%;
+  position: fixed;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.ageneven {
+  background-color: #04041B;
+  color: white;
 }
 
 .imagetoreplace {

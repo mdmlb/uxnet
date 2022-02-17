@@ -1,0 +1,90 @@
+
+.inforoles{
+    border: 5px solid #7764E3;
+    box-sizing: border-box;
+    border-radius: 20px 0px 0px 20px;
+    width: 43%;
+}
+
+.inforoles2{
+    border: 5px solid #7764E3;
+    box-sizing: border-box;
+    border-radius: 0px 20px 20px 0px;
+    width: 43%;
+}
+
+.inforolescont{
+    width: 86%;
+}
+
+.titlerole{
+    font-family: $title;
+}
+
+.inforolescont__img{
+    width: 47vh;
+    //height: 51vh;
+}
+
+.inforoles__img{
+    width: 100%;
+}
+
+//Rol content
+.breadcrumbs{
+    padding-left: 150px;
+    color: white;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+
+.rol__cont{
+    background-color: $color3;
+    border-radius: 0px 20px 0px 0px;
+    width: 168vh;
+    padding: 5vh 0 5vh 22vh;
+}
+
+.rol__title{
+    font-family: $title;
+    font-size: 57px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.rolcontpad{
+    padding-left: 22vh;
+}
+
+.titlerol{
+    font-family: $title;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+ul{
+    list-style-image: url('../../img/Ellipse.svg');
+}
+
+.rectanglerol {
+    height: 10px;
+    width: 155px;
+    background-color: $color3;
+    border-radius: 10px;
+}
+
+.imgrol{
+    width: 100%;
+}
