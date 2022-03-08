@@ -1,0 +1,47 @@
+.mainprofile{
+    height: 101vh;
+    background-color: $color9;
+}
+
+.bannerprofile__title{
+    font-family: "Prompt";
+    font-weight: bold;
+    color: white;
+    font-size: 64px;
+    margin: 25px;
+    //height: 140px;
+    text-align: right;
+}
+
+.profileconttext{
+    width: 53%;
+    height: 158px;
+    display: flex;
+    align-items: end;
+    padding-left: 5vh;
+}
+
+.profilecont__img{
+    background-image: url("../../img/1page of descriptions/imagen.svg");
+    background-size: cover;
+    height: 44vh;
+    width: 100%;
+}
+
+.textprofile__title{
+    margin: 0;
+    font-weight: 300;
+}
+
+.textprofile__rol{
+    font-size: 20px;
+    margin: 35px 0px;
+    font-weight: 600;
+}
+
+.textprofile__description{
+    font-family: "Open Sans";
+    text-align: left;
+    font-size: 13px;
+    margin: 0px;
+} 

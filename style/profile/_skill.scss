@@ -1,0 +1,51 @@
+.circulo {
+    width: 80px;
+    height: 80px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: $color4;
+}
+
+.bestkill__position{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.bestskill{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.bestkill__porc{
+    margin: 0 10px 0 0;
+}
+
+.progress{
+    width: 100%;
+}
+
+.progress{
+    width: 100%;
+    background-color: $color8;
+}
+
+.progress-bar{
+    background-color: $color7;
+}
+
+.skilltoimp__position{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.skilltoimp{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.skilltoimp__porc{
+    margin: 0 10px 0 0;
+}

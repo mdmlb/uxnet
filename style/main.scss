@@ -7,6 +7,10 @@ $color3 : #694FFD;
 $color4 : #FF971D;
 $color5 : #C4C4C4;
 $color6 : white;
+$color7 : #7764E3;
+$color8 : #3D347F;
+$color9 : #02022D;
+$color10 : #241F53;
 
 //Fonts
 $title: "Prompt";
@@ -19,6 +23,8 @@ $font: "Open Sans";
 @import './filters';
 
 @import './menu';
+
+@import './goback';
 
 @import './logsignin/login';
 @import './logsignin/signin';
@@ -36,6 +42,15 @@ $font: "Open Sans";
 
 @import './modal/dark';
 @import './modal/mevent';
+
+@import './profile/bottom';
+@import './profile/growthprofile';
+@import './profile/header';
+@import './profile/menu';
+@import './profile/profile';
+@import './profile/rol';
+@import './profile/skill';
+@import './profile/timeline';
 
 
 .imagetoreplace{

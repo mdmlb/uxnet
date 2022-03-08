@@ -1,7 +1,7 @@
 //Top
 .bannercont2{
     background-color: $color4;
-    height: 43vh;
+    height: 57vh;
 }
 
 .excompcont{
@@ -10,11 +10,26 @@
 
 .excomp{
     width: 84%;
+    height: 69vh;
+}
+
+//general
+.companycont{
+    width: 91%;
+}
+
+.company_title{
+    font-family: "Open Sans";
+    font-size: 18px;
+    text-align: center;
+    padding-top: 2vh;
+    margin: 0;
+    padding-bottom: 1vh;
 }
 
 //Content
 .spaceC{
-    padding: 10vh;
+    padding: 8vh;
 }
 
 .aboutc{
@@ -26,7 +41,158 @@
     font-family: $title;
 }
 
+.company__title{
+    margin-top: 0.5rem;
+    font-size: 19px;
+}
+
 .projectclient{
     width: 89%;
     text-align: center;
+    color: $color2;
+}
+
+.projectclient:hover{
+    color: $color4;
+    text-decoration: none;
+}
+
+//globant
+
+.globantcontimg1{
+    height: 312px;
+    width: 327px;
+    border-radius: 20px;
+    background-image: url(../../img/companies/globant/1.svg);
+    background-size: 355px;
+    background-position: top;
+}
+
+.globantcontimg1:hover{
+    border: 2px solid $color4;
+}
+
+.globantcontimg2{
+    height: 312px;
+    width: 327px;
+    border-radius: 20px;
+    background-image: url(../../img/companies/globant/2.svg);
+    background-size: 355px;
+    background-position: top;
+}
+
+.globantcontimg2:hover{
+    border: 2px solid $color4;
+}
+
+.globantcontimg3{
+    height: 312px;
+    width: 327px;
+    border-radius: 20px;
+    background-image: url(../../img/companies/globant/3.svg);
+    background-size: 355px;
+    background-position: top;
+}
+
+.globantcontimg3:hover{
+    border: 2px solid $color4;
+}
+
+//Zemoga
+
+.zemogacontimg1{
+    height: 312px;
+    width: 327px;
+    border-radius: 20px;
+    background-image: url(../../img/companies/zemoga/1.svg);
+    background-size: 355px;
+    background-position: top;
+}
+
+.zemogacontimg1:hover{
+    border: 2px solid $color4;
+}
+
+.zemogacontimg2{
+    height: 312px;
+    width: 327px;
+    border-radius: 20px;
+    background-image: url(../../img/companies/zemoga/2.svg);
+    background-size: 355px;
+    background-position: top;
+}
+
+.zemogacontimg2:hover{
+    border: 2px solid $color4;
+}
+
+
+
+//Huge
+
+.hugecontimg1{
+    height: 312px;
+    width: 327px;
+    border-radius: 20px;
+    background-image: url(../../img/companies/huge/1.svg);
+    background-size: 355px;
+    background-position: top;
+}
+
+.hugecontimg1:hover{
+    border: 2px solid $color4;
+}
+
+.hugecontimg2{
+    height: 312px;
+    width: 327px;
+    border-radius: 20px;
+    background-image: url(../../img/companies/huge/2.svg);
+    background-size: 355px;
+    background-position: top;
+}
+
+.hugecontimg2:hover{
+    border: 2px solid $color4;
+}
+
+.hugecontimg3{
+    height: 312px;
+    width: 327px;
+    border-radius: 20px;
+    background-image: url(../../img/companies/huge/3.svg);
+    background-size: 355px;
+    background-position: top;
+}
+
+.hugecontimg3:hover{
+    border: 2px solid $color4;
+}
+
+//We are angular
+
+.angcontimg1{
+    height: 312px;
+    width: 327px;
+    border-radius: 20px;
+    background-image: url(../../img/companies/weareangular/1.svg);
+    background-size: 355px;
+    background-position: top;
+}
+
+.angcontimg1:hover{
+    border: 2px solid $color4;
+}
+
+.angcontimg2{
+    height: 312px;
+    width: 327px;
+    border-radius: 20px;
+    background-image: url(../../img/companies/weareangular/2.svg);
+    background-size: 355px;
+    background-position: top;
+}
+
+.angcontimg2:hover{
+    border: 2px solid $color4;
 }

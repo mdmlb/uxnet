@@ -18,6 +18,10 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Prompt:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    <!-- Optional JavaScript-->
+    <script type="module" src="./script/firestore.js"></script>
+    <script type="module" src="./script/firebase.js"></script>
+
     <!-- Logo -->
     <link rel="shortcut icon" href="./img/shortlogo.svg" type="image/x-icon">
 </head>
@@ -27,22 +31,32 @@
     <header class="mainHeader">
 
         <!--Nav-->
-        <nav class="header d-flex justify-content-center align-items-center flex-row p-4">
+        <nav class="header d-flex align-items-center flex-row p-4">
 
-            <!--Nav: menu-->
+            <!--Nav: menu
             <a href="#" class="header__menulink">
                 <img class="header__menu" src="./img/burguermenu.svg" atl="menu">
-            </a>
+            </a>-->
 
             <!--Nav: Logo-->
-            <a href="./index.html" class="header__logolink d-flex justify-content-center align-items-center">
-                <img class="header__logo" src="./img/whitelogo.svg" atl="UXnet's logo">
+            <a href="./index.html" class="header__logolink">
+                <img class="header__logo" src="./img/draklogo.svg" atl="UXnet's logo">
             </a>
 
+            <div class="header__links">
+                <a href="./information.html" class="header__link">Información</a>
+                <a href="./testwhodoesntknow.html" class="header__link">Test</a>
+                <a href="./growth.html" class="header__link">Eventos</a>
+            </div>
+
             <!--Nav: Profile-->
-            <a href="#" class="header__profileLink">
-                <img class="header__profile" src="./img/profile.svg" atl="Profile">
-            </a>
+            <div class="header__profileLink">
+                <a href="#" class="signout" style="color: white;"> Cerrar sesión </a>
+                <a href="./profile.html" class="header__profileLink">
+                    <img class="header__profile" src="./img/user.svg" atl="Profile">
+                </a>
+            </div>
+
         </nav>
 
         <!--Banner: Links-->
@@ -110,12 +124,12 @@
                         </a>
                         <h2 class="event__title">Nombre del taller</h2>
                         <h5 class="event__name">ANA SOLER</h5>
-                        <a href="#" type="submit" class="btn btn-primary">Ver más</a>
+                        <a href="./html/growth/event.html" type="submit" class="btn btn-primary">Ver más</a>
                     </div>
                 </div>
 
 
-                <!--First event-->
+                <!--Second event-->
                 <div class="event__cont d-flex justify-content-center align-items-center p-3 m-5">
                     <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
                         <a href="#" class="event__person ">
@@ -123,12 +137,12 @@
                         </a>
                         <h2 class="event__title">Nombre del taller</h2>
                         <h5 class="event__name">ANA SOLER</h5>
-                        <a href="#" type="submit" class="btn btn-primary">Ver más</a>
+                        <a href="./html/growth/event.html" type="submit" class="btn btn-primary">Ver más</a>
                     </div>
                 </div>
 
 
-                <!--First event-->
+                <!--Third event-->
                 <div class="event__cont d-flex justify-content-center align-items-center p-3">
                     <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
                         <a href="#" class="event__person ">
@@ -136,7 +150,7 @@
                         </a>
                         <h2 class="event__title">Nombre del taller</h2>
                         <h5 class="event__name">ANA SOLER</h5>
-                        <a href="#" type="submit" class="btn btn-primary">Ver más</a>
+                        <a href="./html/growth/event.html" type="submit" class="btn btn-primary">Ver más</a>
                     </div>
                 </div>
 
@@ -147,7 +161,8 @@
         <section class="informationcont d-flex justify-content-center align-items-center">
             <div class="main__information d-flex flex-row justify-content-center align-items-center">
                 <h1 class="p-5" style="font-style: italic;">¿Quieres saber más del diseño UX?</h1>
-                <a href="#" type="submit" class="btn btn-primary m-4" style="width: 20%; height: 80%;">Ver más</a>
+                <a href="./information.html" type="submit" class="btn btn-primary m-4"
+                    style="width: 20%; height: 80%;">Ver más</a>
             </div>
         </section>
 
@@ -194,7 +209,7 @@
 
 
     <!-- Optional JavaScript -->
-    <script src="./script/menu.js"></script>
+
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -206,7 +221,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    <!--<script type="module" src="./scripts/main.js"></script>-->
 
 </body>
 

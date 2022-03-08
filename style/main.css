@@ -152,6 +152,27 @@
   padding-top: 45vh;
 }
 
+.goback {
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 14px;
+  top: 110px;
+  margin: 0%;
+  color: #F7F8FA;
+}
+
+.goback:hover {
+  color: #04041B;
+  text-decoration: none;
+}
+
+.gobackimg {
+  margin-right: 10px;
+}
+
 .login {
   width: 100%;
   height: 100vh;
@@ -208,12 +229,62 @@
   background-size: 132%;
 }
 
+.header {
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .header__menu {
   width: 100%;
 }
 
+.header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 55vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+}
+
+.header__link {
+  color: #F7F8FA;
+  font-size: 19px;
+}
+
+.header__link:hover {
+  color: #FF971D;
+  text-decoration: none;
+}
+
 .header__logo {
-  width: 14%;
+  width: 16vh;
+}
+
+.header__profileLink {
+  height: 100%;
+}
+
+.header__profile {
+  height: 100%;
 }
 
 .banner__blank {
@@ -227,9 +298,9 @@
 .banner__title {
   font-family: "Prompt";
   font-weight: bold;
-  font-style: italic;
   color: white;
   font-size: 64px;
+  padding: 5vh 35vh 5vh 0vh;
 }
 
 .text-center {
@@ -299,7 +370,7 @@
 }
 
 .bannercont {
-  padding-top: 15vh;
+  padding-top: 10vh;
 }
 
 .mainHeaderinfo {
@@ -311,8 +382,7 @@
 }
 
 .mainHeaderinfo2 {
-  background-color: #FF971D;
-  height: 55vh;
+  background-color: #04041B;
   width: 100%;
   background-position: bottom;
   background-size: 132%;
@@ -356,7 +426,7 @@
 
 .bannercont2 {
   background-color: #FF971D;
-  height: 43vh;
+  height: 57vh;
 }
 
 .excompcont {
@@ -365,10 +435,24 @@
 
 .excomp {
   width: 84%;
+  height: 69vh;
+}
+
+.companycont {
+  width: 91%;
+}
+
+.company_title {
+  font-family: "Open Sans";
+  font-size: 18px;
+  text-align: center;
+  padding-top: 2vh;
+  margin: 0;
+  padding-bottom: 1vh;
 }
 
 .spaceC {
-  padding: 10vh;
+  padding: 8vh;
 }
 
 .aboutc {
@@ -380,9 +464,150 @@
   font-family: "Prompt";
 }
 
+.company__title {
+  margin-top: 0.5rem;
+  font-size: 19px;
+}
+
 .projectclient {
   width: 89%;
   text-align: center;
+  color: #F7F8FA;
+}
+
+.projectclient:hover {
+  color: #FF971D;
+  text-decoration: none;
+}
+
+.globantcontimg1 {
+  height: 312px;
+  width: 327px;
+  border-radius: 20px;
+  background-image: url(../../img/companies/globant/1.svg);
+  background-size: 355px;
+  background-position: top;
+}
+
+.globantcontimg1:hover {
+  border: 2px solid #FF971D;
+}
+
+.globantcontimg2 {
+  height: 312px;
+  width: 327px;
+  border-radius: 20px;
+  background-image: url(../../img/companies/globant/2.svg);
+  background-size: 355px;
+  background-position: top;
+}
+
+.globantcontimg2:hover {
+  border: 2px solid #FF971D;
+}
+
+.globantcontimg3 {
+  height: 312px;
+  width: 327px;
+  border-radius: 20px;
+  background-image: url(../../img/companies/globant/3.svg);
+  background-size: 355px;
+  background-position: top;
+}
+
+.globantcontimg3:hover {
+  border: 2px solid #FF971D;
+}
+
+.zemogacontimg1 {
+  height: 312px;
+  width: 327px;
+  border-radius: 20px;
+  background-image: url(../../img/companies/zemoga/1.svg);
+  background-size: 355px;
+  background-position: top;
+}
+
+.zemogacontimg1:hover {
+  border: 2px solid #FF971D;
+}
+
+.zemogacontimg2 {
+  height: 312px;
+  width: 327px;
+  border-radius: 20px;
+  background-image: url(../../img/companies/zemoga/2.svg);
+  background-size: 355px;
+  background-position: top;
+}
+
+.zemogacontimg2:hover {
+  border: 2px solid #FF971D;
+}
+
+.hugecontimg1 {
+  height: 312px;
+  width: 327px;
+  border-radius: 20px;
+  background-image: url(../../img/companies/huge/1.svg);
+  background-size: 355px;
+  background-position: top;
+}
+
+.hugecontimg1:hover {
+  border: 2px solid #FF971D;
+}
+
+.hugecontimg2 {
+  height: 312px;
+  width: 327px;
+  border-radius: 20px;
+  background-image: url(../../img/companies/huge/2.svg);
+  background-size: 355px;
+  background-position: top;
+}
+
+.hugecontimg2:hover {
+  border: 2px solid #FF971D;
+}
+
+.hugecontimg3 {
+  height: 312px;
+  width: 327px;
+  border-radius: 20px;
+  background-image: url(../../img/companies/huge/3.svg);
+  background-size: 355px;
+  background-position: top;
+}
+
+.hugecontimg3:hover {
+  border: 2px solid #FF971D;
+}
+
+.angcontimg1 {
+  height: 312px;
+  width: 327px;
+  border-radius: 20px;
+  background-image: url(../../img/companies/weareangular/1.svg);
+  background-size: 355px;
+  background-position: top;
+}
+
+.angcontimg1:hover {
+  border: 2px solid #FF971D;
+}
+
+.angcontimg2 {
+  height: 312px;
+  width: 327px;
+  border-radius: 20px;
+  background-image: url(../../img/companies/weareangular/2.svg);
+  background-size: 355px;
+  background-position: top;
+}
+
+.angcontimg2:hover {
+  border: 2px solid #FF971D;
 }
 
 .inforoles {
@@ -463,9 +688,13 @@ ul {
   list-style-image: url("../../img/Ellipse.svg");
 }
 
+.rolcontabil {
+  width: 200px;
+}
+
 .rectanglerol {
   height: 10px;
-  width: 155px;
+  width: 100%;
   background-color: #694FFD;
   border-radius: 10px;
 }
@@ -635,6 +864,145 @@ ul {
 .ageneven {
   background-color: #04041B;
   color: white;
+}
+
+.optionsbottomcont {
+  background-color: #694FFD;
+  width: 59%;
+  height: 37vh;
+  border-radius: 0px 20px 0px 0px;
+}
+
+.optionsbottom__text {
+  margin: 0px;
+  width: 82%;
+  text-align: end;
+  padding-left: 25vh;
+}
+
+.optionimg {
+  background-image: url("../../img/bottomimgprofile.svg");
+  background-size: cover;
+  height: 37vh;
+  width: 25%;
+}
+
+.header {
+  height: 15vh;
+  background-color: #04041B;
+}
+
+.menuprofile {
+  background-color: #241F53;
+  height: 100%;
+  width: 344px;
+}
+
+.mainprofile {
+  height: 101vh;
+  background-color: #02022D;
+}
+
+.bannerprofile__title {
+  font-family: "Prompt";
+  font-weight: bold;
+  color: white;
+  font-size: 64px;
+  margin: 25px;
+  text-align: right;
+}
+
+.profileconttext {
+  width: 53%;
+  height: 158px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  padding-left: 5vh;
+}
+
+.profilecont__img {
+  background-image: url("../../img/1page of descriptions/imagen.svg");
+  background-size: cover;
+  height: 44vh;
+  width: 100%;
+}
+
+.textprofile__title {
+  margin: 0;
+  font-weight: 300;
+}
+
+.textprofile__rol {
+  font-size: 20px;
+  margin: 35px 0px;
+  font-weight: 600;
+}
+
+.textprofile__description {
+  font-family: "Open Sans";
+  text-align: left;
+  font-size: 13px;
+  margin: 0px;
+}
+
+.rolprofile {
+  background-color: #02022D;
+  width: 100%;
+  height: 100%;
+}
+
+.circulo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #FF971D;
+}
+
+.bestkill__position {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.bestskill {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.bestkill__porc {
+  margin: 0 10px 0 0;
+}
+
+.progress {
+  width: 100%;
+}
+
+.progress {
+  width: 100%;
+  background-color: #3D347F;
+}
+
+.progress-bar {
+  background-color: #7764E3;
+}
+
+.skilltoimp__position {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.skilltoimp {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.skilltoimp__porc {
+  margin: 0 10px 0 0;
 }
 
 .imagetoreplace {

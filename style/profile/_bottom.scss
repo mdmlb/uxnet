@@ -1,0 +1,20 @@
+.optionsbottomcont{
+    background-color: $color3;
+    width: 59%;
+    height: 37vh;
+    border-radius: 0px 20px 0px 0px;
+}
+
+.optionsbottom__text{
+    margin: 0px;
+    width: 82%;
+    text-align: end;
+    padding-left: 25vh;
+}
+
+.optionimg{
+    background-image: url("../../img/bottomimgprofile.svg");
+    background-size: cover;
+    height: 37vh;
+    width: 25%;
+}

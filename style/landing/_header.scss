@@ -8,13 +8,48 @@
     background-size: 132%;
 }
 
-    .header__menu{
-        width: 100%;
-    }
+.header{
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-    .header__logo{
-        width: 14%;
-    }
+.header__menu{
+    width: 100%;
+}
+
+.header__links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 55vh;
+    align-items: center;
+    font-weight: 700;
+}
+
+.header__link{
+    color: $color2;
+    font-size: 19px;
+}
+
+.header__link:hover{
+    color: $color4;
+    text-decoration: none;
+}
+
+.header__logo{
+    width: 16vh;
+}
+
+.header__profileLink{
+    height: 100%;
+}
+
+.header__profile{
+    height: 100%;
+}
+
 
 //Banner
 .banner__blank{
@@ -25,11 +60,17 @@
 }
 
     .banner__title{
-        font-family: $title;
-        font-weight: bold;
-        font-style: italic;
-        color: $color6;
-        font-size: 64px;
+        //font-family: $title;
+        //font-weight: bold;
+        //font-style: italic;
+        //color: $color6;
+        //font-size: 64px;
+        //margin-top: 10px;
+            font-family: "Prompt";
+            font-weight: bold;
+            color: white;
+            font-size: 64px;
+            padding: 5vh 35vh 5vh 0vh;
     }
 
     .text-center{

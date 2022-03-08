@@ -27,20 +27,26 @@
     <header class="mainHeaderinfo">
 
         <!--Nav-->
-        <nav class="header d-flex justify-content-center align-items-center flex-row p-4">
+        <nav class="header d-flex align-items-center flex-row p-4">
 
-            <!--Nav: menu-->
+            <!--Nav: menu
             <a href="#" class="header__menulink">
                 <img class="header__menu" src="./img/burguermenu.svg" atl="menu">
-            </a>
+            </a>-->
 
             <!--Nav: Logo-->
-            <a href="./index.html" class="header__logolink d-flex justify-content-center align-items-center">
-                <img class="header__logo" src="./img/draklogo.svg" atl="UXnet's logo">
+            <a href="./index.html" class="header__logolink">
+                <img class="header__logo" src="../../img/draklogo.svg" atl="UXnet's logo">
             </a>
 
+            <div class="header__links">
+                <a href="./information.html" class="header__link">Información</a>
+                <a href="./testwhodoesntknow.html" class="header__link">Test</a>
+                <a href="./growth.html" class="header__link">Eventos</a>
+            </div>
+
             <!--Nav: Profile-->
-            <a href="#" class="header__profileLink">
+            <a href="./profile.html" class="header__profileLink">
                 <img class="header__profile" src="./img/profile.svg" atl="Profile">
             </a>
         </nav>
@@ -48,12 +54,14 @@
         <!--Banner: Links-->
         <section class="bannercont">
 
-            <div class="banner d-flex justify-content-bottom align-items-center flex-row" style="width:80%;">
+            <div class="banner d-flex justify-content-center align-items-center flex-column" style="width:80%;">
                 <div class="banner__cont d-flex justify-content-end align-items-right">
-                    <h1 class="banner__title p-3">Información</h1>
+                    <h1 class="banner__title">Información</h1>
                 </div>
+            </div>
 
-                <p class="text__description p-3" style="color: white; width: 53%;">Selecciona una de las categorías de
+            <div class="d-flex justify-content-center align-items-center" style="width: 100%;">
+                <p class="text__description p-3" style="color: white;">Selecciona una de las categorías de
                     la parte inferior para leer acerca del
                     tema de tu interés.
                 </p>

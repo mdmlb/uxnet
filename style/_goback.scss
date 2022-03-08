@@ -1,0 +1,18 @@
+.goback{
+    height: 26px;
+    display: flex;
+    position: absolute;
+    left: 14px;
+    top: 110px;
+    margin: 0%;
+    color: $color2;
+}
+
+.goback:hover{
+    color: $color1;
+    text-decoration: none;
+}
+
+.gobackimg{
+    margin-right: 10px;
+}
