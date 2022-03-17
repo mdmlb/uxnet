@@ -703,6 +703,12 @@ ul {
   width: 100%;
 }
 
+.rolcontskill {
+  width: 155px;
+  height: 60px;
+  text-align: center;
+}
+
 .mainHeadergrowth {
   background-color: #04041B;
   height: 58vh;
@@ -894,12 +900,45 @@ ul {
 
 .menuprofile {
   background-color: #241F53;
-  height: 100%;
+  height: 110vh;
   width: 344px;
 }
 
+.menuprofile__title {
+  font-family: "Prompt";
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.contlink {
+  width: 313px;
+  height: 67px;
+  border-radius: 41px;
+}
+
+.contlink:hover {
+  background-color: #7764E3;
+}
+
+/*
+.contlink::placeholder{
+    background-color: $color11;
+}
+*/
+.menuprofilecont__link {
+  color: #F7F8FA;
+  font-family: "Prompt";
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.menuprofilecont__link:hover {
+  color: #F7F8FA;
+  text-decoration: none;
+}
+
 .mainprofile {
-  height: 101vh;
+  height: 100%;
   background-color: #02022D;
 }
 
@@ -1005,6 +1044,43 @@ ul {
   margin: 0 10px 0 0;
 }
 
+.skillsprofile {
+  height: 100%;
+  font-family: "Prompt";
+}
+
+.skillsprofile__title {
+  font-family: "Prompt";
+}
+
+.skillsprofile__best {
+  font-family: "Prompt";
+  font-size: 20px;
+}
+
+.skillsprofile__cont {
+  width: 138vh;
+}
+
+.skillbest__position {
+  font-size: 39px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.circle {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #FF971D;
+}
+
+.skillbest {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 400;
+}
+
 .imagetoreplace {
   background-image: url("../../img/wireframe.jpg");
   background-size: cover;
@@ -1016,5 +1092,10 @@ ul {
 .main {
   background-color: #04041B;
   color: white;
+}
+
+.profile__usernameB {
+  color: white;
+  font-family: "Prompt";
 }
 /*# sourceMappingURL=main.css.map */

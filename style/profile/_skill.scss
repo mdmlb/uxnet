@@ -49,3 +49,45 @@
 .skilltoimp__porc{
     margin: 0 10px 0 0;
 }
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+.skillsprofile{
+    height: 100%;
+    font-family: $title;
+}
+
+.skillsprofile__title{
+    font-family: $title;
+}
+
+.skillsprofile__best{
+    font-family: $title;
+    font-size: 20px;
+}
+
+.skillsprofile__cont{
+    width: 138vh;
+}
+
+.skillbest__position {
+    font-size: 39px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.circle {
+    width: 65px;
+    height: 65px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: $color4;
+}
+
+.skillbest {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 400;
+}

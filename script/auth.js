@@ -1,4 +1,4 @@
-import { firebase } from "./firebase.js";
+/*import { firebase } from "./firebase.js";
 
 import {
     getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword,
@@ -65,6 +65,68 @@ export const logOut = function () {
     });
 }*/
 
-export const getCurrentSignedInUser = function () {
+/*export const getCurrentSignedInUser = function () {
     return auth.currentUser
-}  
+}  */
+
+import {
+    getFirestore,
+    doc,
+    collection,
+    addDoc,
+    getDocs,
+    getDoc,
+    setDoc
+  } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js";
+  
+  import { getAuth, signOut, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-auth.js";
+  
+  const auth = getAuth();
+  const db = getFirestore();
+  const userName = document.querySelector('.profile__usernameB');
+  var userInfo;
+  
+  onAuthStateChanged(auth, async (user) => {
+    if (user) {
+      console.log(user);
+      // User is signed in, see docs for a list of available properties
+      // https://firebase.google.com/docs/reference/js/firebase.User
+      const uid = user.uid;
+      // ...
+      const docRef = doc(db, "users", uid);
+      const docSnap = await getDoc(docRef);
+  
+      if (docSnap.exists()) {
+        console.log("Document data:", docSnap.data());
+        const data = docSnap.data();
+          userInfo = data;
+          userInfo.uid = user.uid;
+  
+          if (userName) {
+            userName.innerText = '¡Hola, ' + data.name + '!';
+          }
+      } else {
+        // doc.data() will be undefined in this case
+        console.log("No such document!");
+      }
+      
+    } else {
+      // User is signed out
+      // ...
+    }
+  });
+  
+  const authSignout = document.querySelector('.SignOutButton');
+  
+  if (authSignout) {
+    authSignout.addEventListener('click', function (event) {
+      event.preventDefault();
+      signOut(auth).then(() => {
+        // Sign-out successful.
+        window.location.href = './signin.html';
+      }).catch((error) => {
+        // An error happened.
+      });
+    });
+  }
+  

@@ -1,0 +1,30 @@
+if (password === passwordC) {
+        createUserWithEmailAndPassword(auth, email, password)
+            .then( async (userCredential) => {
+                // Signed in
+                const uid = userCredential.user.uid;
+                console.log(userCredential.user.uid);
+               
+                await setDoc(doc(db, "users", uid), {
+                    username: username,
+                    email: email,
+                });    
+                    
+                /*usersRef.doc(uid).set({
+                    username: username,
+                    email: email,
+                })
+                    .then(function () {
+                        //window.location.href = '../home.html';
+                    });*/
+
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // ..
+            });
+    } else {
+        alert("Passwords don't match");
+    }
+});

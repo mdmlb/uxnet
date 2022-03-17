@@ -11,6 +11,7 @@ $color7 : #7764E3;
 $color8 : #3D347F;
 $color9 : #02022D;
 $color10 : #241F53;
+$color11 : #5661AE;
 
 //Fonts
 $title: "Prompt";
@@ -64,4 +65,9 @@ $font: "Open Sans";
 .main{
     background-color: $color1;
     color: $color6;
+}
+
+.profile__usernameB{
+    color: white;
+    font-family: $title;
 }

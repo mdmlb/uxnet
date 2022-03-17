@@ -1,9 +1,11 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
 import {
   getFirestore,
+  doc,
   collection,
   addDoc,
-  getDocs
+  getDocs,
+  setDoc
 } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js";
 import {
   getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut,
@@ -55,23 +57,23 @@ register.addEventListener('submit', function (event) {
   if (password === passwordC) {
 
     createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
+      .then(async (userCredential) => {
 
-        const uid = userCredential.user;
+        const uid = userCredential.user.uid;
 
         //console.log(uid)
 
-          const docRef = addDoc(collection(db, "users"), {
-            name: name,
-            lastname: lastname,
-            email: email,
-          }).then(function () {
-            window.location.href = '../index.html';
-          });
-          console.log("Document written with ID: ", docRef.id);
-          console.log(docRef)
-          
-      }) .catch((error) => {
+        await setDoc(doc(db, "users", uid), {
+          name: name,
+          lastname: lastname,
+          email: email,
+        }).then(function () {
+          window.location.href = '../index.html';
+        });
+        console.log("Document written with ID: ", docRef.id);
+        console.log(docRef)
+
+      }).catch((error) => {
         var errorCode = error.code;
         var errorMessage = error.message;
         console.log(error)
@@ -80,7 +82,7 @@ register.addEventListener('submit', function (event) {
 
         // ..
       });
-    
+
 
   } else {
     alert("Passwords don't match");

@@ -1,5 +1,37 @@
-.menuprofile{
+.menuprofile {
     background-color: $color10;
-    height: 100%;
+    height: 110vh;
     width: 344px;
+}
+
+.menuprofile__title {
+    font-family: $title;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+.contlink {
+    width: 313px;
+    height: 67px;
+    border-radius: 41px;
+}
+
+.contlink:hover{
+    background-color: $color7;
+}
+/*
+.contlink::placeholder{
+    background-color: $color11;
+}
+*/
+.menuprofilecont__link{
+    color: $color2;
+    font-family: $title;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.menuprofilecont__link:hover{
+    color: $color2;
+    text-decoration: none;
 }
