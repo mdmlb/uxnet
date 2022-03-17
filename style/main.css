@@ -222,7 +222,7 @@
 }
 
 .mainHeader {
-  background-image: url("../../img/0HOME/headerbackground.png");
+  background-image: url("./../img/0HOME/headerbackground.png");
   height: 105vh;
   width: 100%;
   background-position: bottom;
@@ -356,7 +356,7 @@
 }
 
 .informationcont {
-  background-image: url("../../img/0HOME/texture.png");
+  background-image: url("./../img/0HOME/texture.png");
   height: 37vh;
   background-size: cover;
 }
