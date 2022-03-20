@@ -1,0 +1,35 @@
+.testbefore{
+    height: 64vh;
+}
+
+.test__title{
+    font-family: $title;
+    font-weight: bold;
+    color: white;
+    font-size: 64px;
+}
+
+.testbeforecont{
+    background-color: $color7;
+    width: 141vh;
+    border-radius: 0px 20px 0px 0px;
+}
+
+.testcont{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.testbeforecont__text{
+    font-family: $font;
+    text-align: end;
+    font-size: 15px;
+}
+
+.testimg{
+    background-image: url("../../img/bottomimgprofile.svg");
+    background-size: cover;
+    width: 29%;
+}

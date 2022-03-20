@@ -12,6 +12,7 @@ $color8 : #3D347F;
 $color9 : #02022D;
 $color10 : #241F53;
 $color11 : #5661AE;
+$color14 : #FF8800;
 
 //Fonts
 $title: "Prompt";
@@ -52,6 +53,11 @@ $font: "Open Sans";
 @import './profile/rol';
 @import './profile/skill';
 @import './profile/timeline';
+
+@import './test/test';
+@import './test/question';
+
+@import './map/element';
 
 
 .imagetoreplace{

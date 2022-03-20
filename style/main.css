@@ -7,12 +7,27 @@
   font-size: 15px;
 }
 
+.btn:hover {
+  background-color: #FF8800;
+}
+
 .btncancel {
   background-color: #694FFD;
   width: 100%;
   border: none;
   font-family: "Open Sans";
   font-size: 15px;
+}
+
+.btncancel:hover {
+  background-color: #3D347F;
+}
+
+.btn-testquestion {
+  width: 291px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .footer {
@@ -872,6 +887,39 @@ ul {
   color: white;
 }
 
+.modal-title {
+  font-style: "Prompt";
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.modal-content {
+  background-color: #04041B;
+  border-color: #694FFD;
+  border-width: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 17%;
+  left: 10%;
+  width: 81%;
+  height: 60%;
+  position: fixed;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.ageneven {
+  background-color: #04041B;
+  color: white;
+}
+
 .optionsbottomcont {
   background-color: #694FFD;
   width: 59%;
@@ -1079,6 +1127,189 @@ ul {
   margin: 0;
   font-size: 17px;
   font-weight: 400;
+}
+
+.testbefore {
+  height: 64vh;
+}
+
+.test__title {
+  font-family: "Prompt";
+  font-weight: bold;
+  color: white;
+  font-size: 64px;
+}
+
+.testbeforecont {
+  background-color: #7764E3;
+  width: 141vh;
+  border-radius: 0px 20px 0px 0px;
+}
+
+.testcont {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.testbeforecont__text {
+  font-family: "Open Sans";
+  text-align: end;
+  font-size: 15px;
+}
+
+.testimg {
+  background-image: url("../../img/bottomimgprofile.svg");
+  background-size: cover;
+  width: 29%;
+}
+
+.mainheadertest {
+  background-color: #04041B;
+  width: 100%;
+  background-position: bottom;
+  background-size: 132%;
+}
+
+.testcontask {
+  width: 90%;
+}
+
+.testlocationtitle {
+  font-family: "Prompt";
+}
+
+.testlocation {
+  width: 100%;
+  height: 4vh;
+  background-color: #694FFD;
+  border-radius: 20px;
+}
+
+.questiontitle {
+  border: 5px solid #F7F8FA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0px 0px 50px 50px;
+  padding: 8vh;
+}
+
+.contallquestion {
+  width: 100%;
+}
+
+.questiontitlecont {
+  width: 90%;
+  font-family: "Open Sans";
+}
+
+.questioncont {
+  border: 5px solid #F7F8FA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  font-family: "Open Sans";
+  height: 10vh;
+}
+
+.questioncont:focus-within {
+  background-color: #694FFD;
+  border: 0;
+}
+
+.questioncontcont {
+  width: 95%;
+}
+
+.questioncontcont {
+  margin-left: 25px;
+}
+
+.questioninput {
+  background-color: #C4C4C4;
+  border-radius: 20px 0px 0px 20px;
+}
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  -moz-appearance: none;
+       appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance 
+    margin: 0;*/
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  -webkit-transform: translateY(-0.075em);
+          transform: translateY(-0.075em);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 120ms -webkit-transform ease-in-out;
+  transition: 120ms -webkit-transform ease-in-out;
+  transition: 120ms transform ease-in-out;
+  transition: 120ms transform ease-in-out, 120ms -webkit-transform ease-in-out;
+  -webkit-box-shadow: inset 1em 1em var(--form-control-color);
+          box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type="radio"]:checked::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.mapcontbtn {
+  width: 80vh;
+}
+
+.mapeo {
+  width: 80%;
+}
+
+.mapeo__cont {
+  background-color: #694FFD;
+  border-radius: 0px 20px 0px 0px;
+  width: 168vh;
+}
+
+.mapeo__title {
+  font-family: "Prompt";
+  font-weight: bold;
+  color: white;
+  font-size: 64px;
+}
+
+.beforefinish__title {
+  font-family: "Prompt";
+  font-weight: bold;
+  color: #F7F8FA;
+  font-size: 64px;
+  padding: 5vh 9vh 5vh 0vh;
 }
 
 .imagetoreplace {

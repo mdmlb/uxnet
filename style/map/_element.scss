@@ -1,0 +1,29 @@
+.mapcontbtn{
+    width: 80vh;
+}
+
+.mapeo{
+    width: 80%;
+}
+
+.mapeo__cont{
+    background-color: #694FFD;
+    border-radius: 0px 20px 0px 0px;
+    width: 168vh;
+}
+
+.mapeo__title{
+    font-family: "Prompt";
+    font-weight: bold;
+    color: white;
+    font-size: 64px;
+}
+
+//BEFORE FINISH
+.beforefinish__title{
+    font-family: $title;
+    font-weight: bold;
+    color: $color2;
+    font-size: 64px;
+    padding: 5vh 9vh 5vh 0vh;
+}

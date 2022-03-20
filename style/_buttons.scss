@@ -6,6 +6,10 @@
     font-size: 15px;
 }
 
+.btn:hover{
+    background-color: $color14;
+}
+
 .btncancel{
     background-color: $color3;
     width: 100%;
@@ -14,6 +18,18 @@
     font-size: 15px;
 }
 
+.btncancel:hover{
+    background-color: $color8;
+}
+
 //.btn:hover{
     //background-color: ;
 //}
+
+.btn-testquestion{
+    width: 291px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
