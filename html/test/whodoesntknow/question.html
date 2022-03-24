@@ -46,9 +46,13 @@
             </div>
 
             <!--Nav: Profile-->
-            <a href="../../../profile.html" class="header__profileLink">
-                <img class="header__profile" src="../../../img/profile.svg" atl="Profile">
-            </a>
+            <div class="header__profileLink d-flex align-items-center flex-row">
+                <a href="../../../profile.html" class="header__profileLink">
+                    <img class="header__profile" src="../../../img/user.svg" atl="Profile">
+                </a>
+                <div style="width: 2vh;"></div>
+                <button class="btn signout SignOutButton">Cerrar sesión</button>
+            </div>
         </nav>
     </header>
 
@@ -60,15 +64,15 @@
 
             <div class="testcontask">
                 <div class="d-flex justify-content-left align-items-left flex-column">
-                    <h2 class="testlocationtitle">Pregunta 40/50</h2>
+                    <h2 class="testlocationtitle contador"></h2>
                     <div class="testlocation"></div>
                 </div>
                 <div style="height: 2vh;"></div>
 
                 <form class="d-flex justify-content-center align-items-center flex-column" style="width: 100%;">
-                    <div class="questiontitle d-flex justify-content-center align-items-center">
+                    <div class="questiontitle d-flex justify-content-center align-items-center flex-column">
                         <div class="questiontitlecont">
-                            <p>Trabajas en una empresa de videojuegos, en la que últimamente se ha estado pensando en
+                            <p class="pregunta">Trabajas en una empresa de videojuegos, en la que últimamente se ha estado pensando en
                                 añadir
                                 una
                                 nueva funcionalidad a uno de sus videojuegos más vendidos, para conocer los
@@ -77,6 +81,8 @@
                                 utilizar el
                                 método de investigación:</p>
                         </div>
+
+                        <img src="../../../img/draklogo.svg" class="imagquestion" alt="">
 
                     </div>
 
@@ -91,7 +97,7 @@
 
                                     <input class="form-check-input questioninput" type="radio" name="exampleRadios"
                                         id="exampleRadios1" value="option1">
-                                    <label class="form-check-label question" for="exampleRadios1" style="margin-left: 10px;">
+                                    <label class="form-check-label question respuesta1" for="exampleRadios1" style="margin-left: 10px;">
                                         Default radio
                                     </label>
                                 </div>
@@ -108,7 +114,7 @@
 
                                     <input class="form-check-input questioninput" type="radio" name="exampleRadios"
                                         id="exampleRadios2" value="option2">
-                                    <label class="form-check-label question" for="exampleRadios2" style="margin-left: 10px;">
+                                    <label class="form-check-label question respuesta2" for="exampleRadios2" style="margin-left: 10px;">
                                         Default radio
                                     </label>
                                 </div>
@@ -125,7 +131,7 @@
 
                                     <input class="form-check-input questioninput" type="radio" name="exampleRadios"
                                         id="exampleRadios3" value="option3">
-                                    <label class="form-check-label question" for="exampleRadios3" style="margin-left: 10px;">
+                                    <label class="form-check-label question respuesta3" for="exampleRadios3" style="margin-left: 10px;">
                                         Default radio
                                     </label>
                                 </div>
@@ -142,7 +148,41 @@
 
                                     <input class="form-check-input questioninput" type="radio" name="exampleRadios"
                                         id="exampleRadios4" value="option4">
-                                    <label class="form-check-label question" for="exampleRadios4" style="margin-left: 10px;">
+                                    <label class="form-check-label question respuesta4" for="exampleRadios4" style="margin-left: 10px;">
+                                        Default radio
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div style="height: 5vh;"></div>
+
+                        <!--question 5-->
+                        <div class=" questioncont d-flex justify-content-center align-items-center flex-row">
+                            <div class=" questioncontcont ">
+                                <div class="form-check questioncontcontcont">
+
+                                    <input class="form-check-input questioninput" type="radio" name="exampleRadios"
+                                        id="exampleRadios4" value="option4">
+                                    <label class="form-check-label question respuesta5" for="exampleRadios4" style="margin-left: 10px;">
+                                        Default radio
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div style="height: 5vh;"></div>
+
+                        <!--question 6-->
+                        <div class=" questioncont d-flex justify-content-center align-items-center flex-row">
+                            <div class=" questioncontcont ">
+                                <div class="form-check questioncontcontcont">
+
+                                    <input class="form-check-input questioninput" type="radio" name="exampleRadios"
+                                        id="exampleRadios4" value="option6">
+                                    <label class="form-check-label question respuesta6" for="exampleRadios4" style="margin-left: 10px;">
                                         Default radio
                                     </label>
                                 </div>
@@ -153,7 +193,7 @@
                         <div style="height: 5vh;"></div>
                     </div>
 
-                    <button class="btn btn-primary btn-testquestion">Siguiente pregunta</button>
+                    <a class="btn btn-primary btn-testquestion">Siguiente pregunta</a>
                 </form>
             </div>
 
@@ -188,10 +228,10 @@
                     <h4 class="footercont__title">Siguenos</h4>
                     <div class="footercont__cont d-flex justify-content-left align-items-left flex-row">
                         <a href="#" class="footercont__img">
-                            <img class="footercont__img" src="./img/footer/facebook.svg" atl="">
+                            <img class="footercont__img" src="../../../img/footer/facebook.svg" atl="">
                         </a>
                         <a href="#" class="footercont__img">
-                            <img class="footercont__img" src="./img/footer/instagram.svg" atl="">
+                            <img class="footercont__img" src="../../../img/footer/instagram.svg" atl="">
                         </a>
                     </div>
                 </section>
@@ -213,6 +253,11 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+    
+    <!-- JavaScript -->
+    <script src="../../../script/test.js"></script>
+    <script type="module" src="../../../script/firebase.js"></script>
+    <script type="module" src="../../../script/auth.js"></script>
 
 </body>
 

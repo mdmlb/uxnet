@@ -24,7 +24,7 @@
 
 <body>
 
-    <header class="mainHeaderinfo">
+    <header class="mainHeaderprofile">
 
         <!--Nav-->
         <nav class="header d-flex align-items-center flex-row p-4">
@@ -46,13 +46,41 @@
             </div>
 
             <!--Nav: Profile-->
-            <a href="./profile.html" class="header__profileLink">
-                <img class="header__profile" src="./img/profile.svg" atl="Profile">
-            </a>
+            <div class="header__profileLink d-flex align-items-center flex-row">
+                <a href="./profile.html" class="header__profileLink">
+                    <img class="header__profile" src="./img/user.svg" atl="Profile">
+                </a>
+                <div style="width: 2vh;"></div>
+                <button class="btn signout SignOutButton">Cerrar sesión</button>
+            </div>
         </nav>
 
+    </header>
+
+    <main class="main">
+
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-7">
+                    <div class="card p-3 py-4 d-flex flex-column justify-content-center align-items-center cardprofile">
+                        <div class="text-center"> <img src="./img/wallpaper.png" class="rounded-circle profilecircle">
+                        </div>
+                        <div class="text-center mt-3">
+                            <h5 class="profile__usernameB"></h5>
+                            <h5 class="profile__email"></h5>
+                            <h5 class="profile__birth"></h5>
+                            <button class="btn btn-primary px-4">Editar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!--Banner: Links-->
-        <section class="bannercont">
+        <section class="bannercontprofile">
+
+            <!--<h4 class="p-3 profile__usernameB"></h4>-->
 
             <div class="banner d-flex justify-content-bottom align-items-center flex-row" style="width:80%;">
                 <div class="banner__cont" style="height: 158px;">
@@ -73,10 +101,6 @@
             </div>
 
         </section>
-
-    </header>
-
-    <main class="main">
 
         <div style="height: 10vh;"></div>
         <!--info-->
@@ -273,11 +297,179 @@
             </div>
             <div style="height: 20vh;"></div>
 
-            <!--Timelipes-->
 
-            <div style="height: 20vh;"></div>
+            <!--Timelipes
+            <div class="timelinebody">
+                
+                <ul id="timeline">
+                    <li class="worktime">
+                        <input class="radiotime" id='work5' name='works' type="radio" checked>
+                        <div class="relativetime">
+                            <label for='work5'>UX Junior</label>
+                            <span class='datetime'>12 May 2013</span>
+                            <span class='circletime'></span>
+                        </div>
+                        <div class='contenttime'>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo
+                                velit
+                                natus cupiditate
+                                qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis
+                                voluptate excepturi
+                                rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum
+                                eligendi
+                                cumque mollitia
+                                temporibus! Natus dicta qui est optio rerum.
+                            </p>
+                        </div>
+                    </li>
+                    <li class='worktime'>
+                        <input class='radiotime' id='work4' name='works' type='radio'>
+                        <div class="relativetime">
+                            <label for='work4'>Lorem ipsum dolor sit amet</label>
+                            <span class='datetime'>11 May 2013</span>
+                            <span class='circletime'></span>
+                        </div>
+                        <div class='contenttime'>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo
+                                velit
+                                natus cupiditate
+                                qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis
+                                voluptate excepturi
+                                rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum
+                                eligendi
+                                cumque mollitia
+                                temporibus! Natus dicta qui est optio rerum.
+                            </p>
+                        </div>
+                    </li>
 
-            <!--Options to improve-->
+                    <li class='worktime'>
+                        <input class='radiotime' id='work3' name='works' type='radio'>
+                        <div class="relativetime">
+                            <label for='work3'>Lorem ipsum dolor sit amet</label>
+                            <span class='datetime'>10 May 2013</span>
+                            <span class='circletime'></span>
+                        </div>
+                        <div class='contenttime'>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo
+                                velit
+                                natus cupiditate
+                                qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis
+                                voluptate excepturi
+                                rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum
+                                eligendi
+                                cumque mollitia
+                                temporibus! Natus dicta qui est optio rerum.
+                            </p>
+                        </div>
+                    </li>
+                    <li class='worktime'>
+                        <input class='radiotime' id='work2' name='works' type='radio'>
+                        <div class="relativetime">
+                            <label for='work2'>Lorem ipsum dolor sit amet</label>
+                            <span class='datetime'>09 May 2013</span>
+                            <span class='circletime'></span>
+                        </div>
+                        <div class='contenttime'>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo
+                                velit
+                                natus cupiditate
+                                qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis
+                                voluptate excepturi
+                                rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum
+                                eligendi
+                                cumque mollitia
+                                temporibus! Natus dicta qui est optio rerum.
+                            </p>
+                        </div>
+                    </li>
+                    <li class='worktime'>
+                        <input class='radiotime' name='works' type='radio'>
+                        <div class="relativetime">
+                            <label>Lorem ipsum dolor sit amet</label>
+                            <span class='datetime'>08 May 2013</span>
+                            <span class='circletime'></span>
+                        </div>
+                        <div class='contenttime'>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo
+                                velit
+                                natus cupiditate
+                                qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis
+                                voluptate excepturi
+                                rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum
+                                eligendi
+                                cumque mollitia
+                                temporibus! Natus dicta qui est optio rerum.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>-->
+
+            <div class="d-flex flex-row align-items-center">
+                <h2 class="">Trayectoria laboral</h2>
+                <button type="button" class="btn btn-primary circleadd d-flex align-items-center m-2">+</button>
+            </div>
+
+
+        </section>
+
+        <div style="height: 10vh;"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+                        <div class="timeline-step">
+                            <div class="timeline-content" data-toggle="popover" data-trigger="hover">
+                                <div class="inner-circle"></div>
+                                <p class="h6 mt-3 mb-1 year">2003</p>
+                                <p class="h6 text-muted mb-0 mb-lg-0 description">Favland Founded</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="timeline-content" data-toggle="popover" data-trigger="hover">
+                                <div class="inner-circle"></div>
+                                <p class="h6 mt-3 mb-1">2004</p>
+                                <p class="h6 text-muted mb-0 mb-lg-0">Launched Trello</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="timeline-content" data-toggle="popover" data-trigger="hover">
+                                <div class="inner-circle"></div>
+                                <p class="h6 mt-3 mb-1">2005</p>
+                                <p class="h6 text-muted mb-0 mb-lg-0">Launched Messanger</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="timeline-content" data-toggle="popover" data-trigger="hover">
+                                <div class="inner-circle"></div>
+                                <p class="h6 mt-3 mb-1">2010</p>
+                                <p class="h6 text-muted mb-0 mb-lg-0">Open New Branch</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step mb-0">
+                            <div class="timeline-content" data-toggle="popover" data-trigger="hover">
+                                <div class="inner-circle"></div>
+                                <p class="h6 mt-3 mb-1">2020</p>
+                                <p class="h6 text-muted mb-0 mb-lg-0">In Fortune 500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div style="height: 20vh;"></div>
+
+        <!--Options to improve-->
+        <section class="main__info">
             <h2>OPCIONES DE MEJORA</h2>
         </section>
 
@@ -292,6 +484,7 @@
             <div style="width: 3vh;"></div>
             <div class="optionimg"></div>
         </div>
+
 
 
         <div style="height: 30vh;"></div>
@@ -332,6 +525,50 @@
             </div>
         </footer>
 
+
+        <!-- background -->
+        <div class="dark"></div>
+
+        <!-- modal agent portafolio -->
+        <div class="modal">
+            <div class=" p-5">
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                    <h5 class="modal-title" id="exampleModalLabel">Portafolio</h5>
+                    <p>Recuerda que este debe estar público para completar tu perfil como diseñador UX.</p>
+                </div>
+                <div>
+                    <form class="form ">
+                        <div class="d-flex justify-content-center align-items-center flex-row">
+                            <div class=" contformyearexp">
+                                <label for="exampleFormControlInput1" class="form-label">Año</label>
+                                <input type="number" class="form-control ageneven" id="exampleFormControlInput1"
+                                    placeholder="Año">
+                            </div>
+                            <div class="m-3 contformyearexp">
+                                <label for="exampleFormControlInput2" class="form-label">Título</label>
+                                <input type="lastname" class="form-control ageneven" id="exampleFormControlInput2"
+                                    placeholder="Título">
+                            </div>
+                            <div class=" contformyearexp">
+                                <label for="exampleFormControlInput3" class="form-label">Descripción</label>
+                                <input type="email" class="form-control ageneven" id="exampleFormControlInput3"
+                                    placeholder="Una descripción corta de tu cargo">
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center align-items-center flex-row">
+                            <button type="button" class="btn btn-primary btncancel m-3"
+                                style="width: 15%;">Cancelar</button>
+                            <button type="button" class="btn btn-primary btncompletang m-3"
+                                style="width: 15%;">Finalizar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
     </main>
 
 
@@ -347,6 +584,10 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+
+    <!-- JavaScript -->
+    <script src="./script/modals/addtimeline.js"></script>
     <script type="module" src="./script/firebase.js"></script>
     <script type="module" src="./script/auth.js"></script>
 

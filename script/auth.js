@@ -84,6 +84,8 @@ import {
   const auth = getAuth();
   const db = getFirestore();
   const userName = document.querySelector('.profile__usernameB');
+  const birth = document.querySelector('.profile__birth');
+  const email = document.querySelector('.profile__email');
   var userInfo;
   
   onAuthStateChanged(auth, async (user) => {
@@ -104,6 +106,7 @@ import {
   
           if (userName) {
             userName.innerText = '¡Hola, ' + data.name + '!';
+            email.innerHTML = data.email;
           }
       } else {
         // doc.data() will be undefined in this case
@@ -123,7 +126,7 @@ import {
       event.preventDefault();
       signOut(auth).then(() => {
         // Sign-out successful.
-        window.location.href = './signin.html';
+        window.location.href = './login.html';
       }).catch((error) => {
         // An error happened.
       });

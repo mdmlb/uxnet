@@ -46,9 +46,13 @@
             </div>
 
             <!--Nav: Profile-->
-            <a href="../../profile.html" class="header__profileLink">
-                <img class="header__profile" src="../../img/profile.svg" atl="Profile">
-            </a>
+            <div class="header__profileLink d-flex align-items-center flex-row">
+                <a href="../../profile.html" class="header__profileLink">
+                    <img class="header__profile" src="../../img/user.svg" atl="Profile">
+                </a>
+                <div style="width: 2vh;"></div>
+                <button class="btn signout SignOutButton">Cerrar sesión</button>
+            </div>
         </nav>
 
         <!--Banner: Links-->
@@ -102,11 +106,21 @@
 
             <div style="height: 10vh;"></div>
 
-            <button class="btn btn-primary" style="width: 20%;">
-                <a class="btn-primary btn" href="../../profile.html">
-                    Terminar test
-                </a>
-            </button>
+            <!--Buttons-->
+            <div class="d-flex flex-row mapcontbtn">
+                <button class="btn btn-primary btncancel">
+                    <a class="btn-primary btncancel" href="../../../testwhoknow.html">
+                        cancelar
+                    </a>
+                </button>
+                <div style="width: 8vh;"></div>
+
+                <button class="btn btn-primary">
+                    <a class="btn-primary btn" href="./finish.html">
+                        Terminar test
+                    </a>
+                </button>
+            </div>
 
         </section>
 
@@ -169,7 +183,7 @@
                     </form>
                 </div>
                 <div class="d-flex justify-content-center align-items-center flex-row">
-                    <button type="button" class="btn btn-primary btncancel m-3" style="width: 15%;">Cancelar</button>
+                    <button type="button" class="btn btn-primary btncancel btncancel3 m-3" style="width: 15%;">Cancelar</button>
                     <button type="button" class="btn btn-primary btncompletang m-3" style="width: 15%;">Finalizar</button>
                 </div>
             </div>
@@ -186,25 +200,25 @@
                 <div>
                     <form class="d-flex justify-content-center align-items-center flex-row">
                         <div>
-                            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                            <input type="name" class="form-control ageneven" id="exampleFormControlInput1"
-                                placeholder="Nombre">
+                            <label for="exampleFormControlInput1" class="form-label">Año</label>
+                            <input type="number" class="form-control ageneven" id="exampleFormControlInput1"
+                                placeholder="Año">
                         </div>
                         <div class="m-3">
-                            <label for="exampleFormControlInput1" class="form-label">Apellido</label>
-                            <input type="lastname" class="form-control ageneven" id="exampleFormControlInput1"
-                                placeholder="Apellido">
+                            <label for="exampleFormControlInput2" class="form-label">Título</label>
+                            <input type="lastname" class="form-control ageneven" id="exampleFormControlInput2"
+                                placeholder="Título">
                         </div>
                         <div>
-                            <label for="exampleFormControlInput1" class="form-label">Correo</label>
-                            <input type="email" class="form-control ageneven" id="exampleFormControlInput1"
-                                placeholder="correo@example.com">
+                            <label for="exampleFormControlInput3" class="form-label">Descripción</label>
+                            <input type="email" class="form-control ageneven" id="exampleFormControlInput3"
+                                placeholder="Una descripción corta de tu cargo">
                         </div>
                     </form>
                 </div>
                 <div class="d-flex justify-content-center align-items-center flex-row">
                     <button type="button" class="btn btn-primary btncancel btncancel2 m-3" style="width: 15%;">Cancelar</button>
-                    <button type="button" class="btn btn-primary btncompletang m-3" style="width: 15%;">Finalizar</button>
+                    <button type="button" class="btn btn-primary btncompletang2 m-3" style="width: 15%;">Finalizar</button>
                 </div>
             </div>
 
@@ -229,7 +243,9 @@
 
     <!-- JavaScript -->
 
-    <script src="../../script/modal.js"></script>
+    <script src="../../script/modals/addinfo.js"></script>
+    <script type="module" src="./script/firebase.js"></script>
+    <script type="module" src="./script/auth.js"></script>
 
 </body>
 

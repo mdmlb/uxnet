@@ -1,0 +1,49 @@
+//portafolio y timeline
+.modal2{
+    display: none;
+}
+
+.modal-title{
+    font-style: $title;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.contformyearexp{
+    width: 42vh;
+}
+
+.modal-content{
+    background-color: $color1;
+    border-color: $color3;  
+    border-width: 3px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    top: 17%;
+    left: 10%;
+    width: 81%;
+    height: 60%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+}
+
+.modal2-content{
+    background-color: $color1;
+    border-color: $color3;  
+    border-width: 3px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    top: 17%;
+    left: 10%;
+    width: 81%;
+    height: 60%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+}
+
+.ageneven{
+    background-color: $color1;
+    color: $color6;
+}

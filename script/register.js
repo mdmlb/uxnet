@@ -1,16 +1,17 @@
 import {
-    getFirestore,
-    doc,
-    collection,
-    addDoc,
-    getDocs,
-    setDoc
-  } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js";
-  import {
-    getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut,
-  } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-auth.js";
+  getFirestore,
+  doc,
+  collection,
+  addDoc,
+  getDocs,
+  setDoc
+} from "https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js";
 
-  const db = getFirestore();
+import {
+  getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut,
+} from "https://www.gstatic.com/firebasejs/9.6.7/firebase-auth.js";
+
+const db = getFirestore();
 const auth = getAuth();
 //usersRef = collection(db, "users");
 
@@ -26,24 +27,29 @@ register.addEventListener('submit', function (event) {
   const name = register.name.value
   const lastname = register.lastname.value
   const email = register.email.value
+  const birthdate = register.birthdate.value
+  const usertype = register.usertype.value
   const password = register.password.value
   const passwordC = register.passwordC.value
 
-  //console.log("no sirve")
+  console.log("no sirve")
 
   if (password === passwordC) {
 
     createUserWithEmailAndPassword(auth, email, password)
       .then(async (userCredential) => {
 
+        console.log("entra")
         const uid = userCredential.user.uid;
 
-        //console.log(uid)
+        console.log(uid)
 
         await setDoc(doc(db, "users", uid), {
           name: name,
           lastname: lastname,
           email: email,
+          birthdate: birthdate,
+          usertype: usertype
         }).then(function () {
           window.location.href = '../index.html';
         });
@@ -62,7 +68,7 @@ register.addEventListener('submit', function (event) {
 
 
   } else {
-    alert("Passwords don't match");
+    alert("Las contraseñas no son iguales");
   }
 
 });

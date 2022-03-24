@@ -13,6 +13,7 @@ $color9 : #02022D;
 $color10 : #241F53;
 $color11 : #5661AE;
 $color14 : #FF8800;
+$color15 : #010112;
 
 //Fonts
 $title: "Prompt";
@@ -44,11 +45,13 @@ $font: "Open Sans";
 
 @import './modal/dark';
 @import './modal/mevent';
+@import './modal/profile';
 
 @import './profile/bottom';
 @import './profile/growthprofile';
 @import './profile/header';
 @import './profile/menu';
+@import './profile/personal';
 @import './profile/profile';
 @import './profile/rol';
 @import './profile/skill';
@@ -76,4 +79,9 @@ $font: "Open Sans";
 .profile__usernameB{
     color: white;
     font-family: $title;
+    text-align: center;
+}
+
+.profile__email{
+    font-size: 13px;
 }
