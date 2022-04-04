@@ -1,3 +1,26 @@
+import {
+    getFirestore,
+    doc,
+    collection,
+    addDoc,
+    getDocs,
+    getDoc,
+    setDoc
+} from "https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js";
+
+import {
+    getAuth,
+    signOut,
+    signInWithEmailAndPassword,
+    onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/9.6.7/firebase-auth.js";
+
+
+
+const auth = getAuth()
+const db = getFirestore();
+var userInfo;
+
 //GAME
 let contador = 0;
 
@@ -18,6 +41,7 @@ let aciertos = 0;
 
 
 //ROLS
+let uxRoles = [];
 
 //UX RESEARCHER
 let uxresearcher = 0;
@@ -84,10 +108,11 @@ let ul8 = 0;
 let ul9 = 0;
 let ul10 = 0;
 
+
+
 //SKILLS
 
-//comun
-let habilidadesencomun = 0;
+let uxSkills = [];
 
 //Investigacion cuantitativa
 let invescuant = 0;
@@ -108,7 +133,7 @@ let conopsic = 0;
 let csp1 = 0;
 
 //comunicacion escrita
-let written = 0;
+let comuesc = 0;
 let ce1 = 0;
 let ce2 = 0;
 let ce3 = 0;
@@ -120,7 +145,7 @@ let ce8 = 0;
 let ce9 = 0;
 
 //comunicacion oral
-let oral = 0;
+let comuora = 0;
 let co1 = 0;
 let co2 = 0;
 let co3 = 0;
@@ -141,12 +166,12 @@ let cv9 = 0;
 let cv10 = 0;
 
 //analisis de datos
-let analysis = 0;
+let analidata = 0;
 let ad1 = 0;
 let ad2 = 0;
 
 //escucha activa
-let listening = 0;
+let escuchaa = 0;
 let ea1 = 0;
 
 //estructuracion de la informacion
@@ -218,7 +243,7 @@ let adapcam = 0;
 let adc1 = 0;
 
 //empatia
-let empathy = 0;
+let empatia = 0;
 let e1 = 0;
 
 //manejo del tiempo
@@ -226,7 +251,7 @@ let mantim = 0;
 let mm1 = 0;
 
 //trabajo en equipo
-let team = 0;
+let trabajoequipo = 0;
 let t1 = 0;
 let t2 = 0;
 
@@ -238,12 +263,8 @@ let tbp1 = 0;
 let visfutu = 0;
 let vf1 = 0;
 
-//conocimiento en codigo
-let conocod = 0;
-
 //RESPUESTA
 let respuestacorrecta;
-let respuestacorrecta2;
 
 
 const preguntas = [
@@ -1382,7 +1403,7 @@ function cambiarTexto() {
         nivelActual = preguntas[contador];
         puntajeactual = puntaje[nivel];
 
-        buenas = contador + 1;
+        let buenas = contador + 1;
 
         p.innerHTML = texto0Actual.pregunta;
         r1.innerHTML = texto1Actual.respt1;
@@ -1397,8 +1418,168 @@ function cambiarTexto() {
         imag.setAttribute('src', nivelActual.src);
     }
 }
-
 cambiarTexto();
+
+
+//results
+
+function graphic() {
+    //////////////////////////////  Gráfico 2
+
+    const ctx2 = document.getElementById('myChart2').getContext('2d');
+
+    let uxValueRoles = [uxresearcher, contentstrategist, interactiondesigner, uidesigner, uxlead];
+    console.log(uxValueRoles);
+
+    //guardar los nombres de los roles de la base de datos en un arreglo
+    let uxNameRoles = ["UX Researcher", "Content Strategist", "Interaction Designer", "UI Designer", "UX Lead"];
+    console.log(uxNameRoles);
+
+    //Datos que van dentro del gráfico de barras (con los arreglos creados antes)
+    var rolesUX2 = {
+
+        labels: uxNameRoles,
+        datasets: [{
+            //label: 'My First Dataset',
+            data: uxValueRoles,
+            backgroundColor: [
+                "#694FFD",
+                "#FF971D",
+                "#94B9FF",
+                "#EF6A77",
+                "#2A1C7C"
+            ],
+            borderColor: '#04041B',
+        }]
+    };
+
+    Chart.defaults.color = "white";
+
+    //BARRA GRAFICA
+    //Crear el gráfico de barras a partir de los datos anteriores (además aquí se ponen los estilos)
+    const myChart2 = new Chart(ctx2, {
+        type: 'bar',
+        data: rolesUX2,
+        options: {
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
+            responsive: true,
+            indexAxis: 'y',
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: {
+                        color: "rgba(100, 100, 100, 0.9)"
+                    },
+                },
+                x: {
+                    suggestedMin: 0,
+                    suggestedMax: 100,
+                    grid: {
+                        color: "rgba(100, 100, 100, 0.9)"
+                    },
+                }
+            }
+        }
+
+    })
+}
+
+function resultskills() {
+    const bskill1 = document.querySelector('.bs_1');
+    const bskill2 = document.querySelector('.bs_2');
+    const bskill3 = document.querySelector('.bs_3');
+    const bskill4 = document.querySelector('.bs_4');
+    const bskill5 = document.querySelector('.bs_5');
+    const bskill6 = document.querySelector('.bs_6');
+    const bskill7 = document.querySelector('.bs_7');
+    const bskill8 = document.querySelector('.bs_8');
+    const bskill9 = document.querySelector('.bs_9');
+    const bskill10 = document.querySelector('.bs_10');
+    const bskill11 = document.querySelector('.bs_11');
+    const bskill12 = document.querySelector('.bs_12');
+    const bskill13 = document.querySelector('.bs_13');
+    const bskill14 = document.querySelector('.bs_14');
+    const bskill15 = document.querySelector('.bs_15');
+    const bskill16 = document.querySelector('.bs_16');
+    const bskill17 = document.querySelector('.bs_17');
+    const bskill18 = document.querySelector('.bs_18');
+    const bskill19 = document.querySelector('.bs_19');
+    const bskill20 = document.querySelector('.bs_20');
+    const bskill21 = document.querySelector('.bs_21');
+    const bskill22 = document.querySelector('.bs_22');
+
+    const porcentajeskill1 = document.querySelector('.bss_1');
+    const porcentajeskill2 = document.querySelector('.bss_2');
+    const porcentajeskill3 = document.querySelector('.bss_3');
+    const porcentajeskill4 = document.querySelector('.bss_4');
+    const porcentajeskill5 = document.querySelector('.bss_5');
+    const porcentajeskill6 = document.querySelector('.bss_6');
+    const porcentajeskill7 = document.querySelector('.bss_7');
+    const porcentajeskill8 = document.querySelector('.bss_8');
+    const porcentajeskill9 = document.querySelector('.bss_9');
+    const porcentajeskill10 = document.querySelector('.bss_10');
+    const porcentajeskill11 = document.querySelector('.bss_11');
+    const porcentajeskill12 = document.querySelector('.bss_12');
+    const porcentajeskill13 = document.querySelector('.bss_13');
+    const porcentajeskill14 = document.querySelector('.bss_14');
+    const porcentajeskill15 = document.querySelector('.bss_15');
+    const porcentajeskill16 = document.querySelector('.bss_16');
+    const porcentajeskill17 = document.querySelector('.bss_17');
+    const porcentajeskill18 = document.querySelector('.bss_18');
+    const porcentajeskill19 = document.querySelector('.bss_19');
+    const porcentajeskill20 = document.querySelector('.bss_20');
+    const porcentajeskill21 = document.querySelector('.bss_21');
+    const porcentajeskill22 = document.querySelector('.bss_22');
+
+    bskill1.innerHTML = comuora + "%";
+    porcentajeskill1.style.width = comuora;
+    bskill2.innerHTML = comuesc + "%";
+    porcentajeskill2.style.width = comuesc;
+    bskill3.innerHTML = empatia + "%";
+    porcentajeskill3.style.width = empatia;
+    bskill4.innerHTML = trabajoequipo + "%";
+    porcentajeskill4.style.width = trabajoequipo;
+    bskill5.innerHTML = analidata + "%";
+    porcentajeskill5.style.width = analidata;
+    bskill6.innerHTML = escuchaa + "%";
+    porcentajeskill6.style.width = escuchaa;
+    bskill7.innerHTML = neg + "%";
+    porcentajeskill7.style.width = neg;
+    bskill8.innerHTML = actcri + "%";
+    porcentajeskill8.style.width = actcri;
+    bskill9.innerHTML = conopsic + "%";
+    porcentajeskill9.style.width = conopsic;
+    bskill10.innerHTML = visfutu + "%";
+    porcentajeskill10.style.width = visfutu;
+    bskill11.innerHTML = capagest + "%";
+    porcentajeskill11.style.width = capagest;
+    bskill12.innerHTML = comuvis + "%";
+    porcentajeskill12.style.width = comuvis;
+    bskill13.innerHTML = mantim + "%";
+    porcentajeskill13.style.width = mantim;
+    bskill14.innerHTML = adapcam + "%";
+    porcentajeskill14.style.width = adapcam;
+    bskill15.innerHTML = prototipado + "%";
+    porcentajeskill15.style.width = prototipado;
+    bskill16.innerHTML = estruinfo + "%";
+    porcentajeskill16.style.width = estruinfo;
+    bskill17.innerHTML = creati + "%";
+    porcentajeskill17.style.width = creati;
+    bskill18.innerHTML = conointera + "%";
+    porcentajeskill18.style.width = conointera;
+    bskill19.innerHTML = trabajopre + "%";
+    porcentajeskill19.style.width = trabajopre;
+    bskill20.innerHTML = lid + "%";
+    porcentajeskill20.style.width = lid;
+    bskill21.innerHTML = invescuant + "%";
+    porcentajeskill21.style.width = invescuant;
+    bskill22.innerHTML = invescual + "%";
+    porcentajeskill22.style.width = invescual;
+}
 
 let clicked = false;
 
@@ -1420,6 +1601,28 @@ questioncont.forEach(function (elem, index) {
                 console.log("respuesta 1")
 
                 //UX RESEARCHER
+                /* Pregunta uno */
+                if (contador == 0) {
+                    console.log("pregunta 1 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //ux researcher
+                            ur1 = 0;
+
+                            //investigacion cuantitativa 30
+                            ict1 = 0;
+                            console.log("valor de ur1 " + ur1)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+
+                    }
+                }
+
                 /* Pregunta dos */
                 if (contador == 1) {
                     console.log("segunda pregunta")
@@ -1447,6 +1650,52 @@ questioncont.forEach(function (elem, index) {
                     }
                 }
 
+                /* Pregunta tres */
+                if (contador == 2) {
+                    console.log("3 pregunta //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur3 = 0;
+
+                            //analisis de datos 50
+                            ad1 = 0;
+
+                            //investigacion cuantitativa 30
+                            ict2 = 0;
+
+                            console.log("valor de ur3 " + ur3)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+                    }
+                }
+
+                /* Pregunta cuatro */
+                if (contador == 3) {
+                    console.log("4 pregunta //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur4 = 0;
+
+                            //investigacion cualitativa 30
+                            icl1 = 0;
+
+                            console.log("valor de ur4 " + ur4)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+
+                    }
+                }
+
                 /* Pregunta cinco */
                 if (contador == 4) {
                     console.log("segunda pregunta respuesta 3")
@@ -1465,6 +1714,50 @@ questioncont.forEach(function (elem, index) {
 
                             console.log("valor de co1 " + ea1)
                             console.log("valor ur5 " + ur5)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+                    }
+                }
+
+                /* Pregunta seis */
+                if (contador == 5) {
+                    console.log("pregunta 6 respuesta 1//////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur6 = 0;
+
+                            //investigacion cualitativa
+                            icl2 = 0;
+
+                            console.log("valor de ur6 " + ur6)
+                            console.log("valor de icl2 " + icl2)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+                    }
+                }
+
+                /* Pregunta siete */
+                if (contador == 6) {
+                    console.log("pregunta 7 respuesta 1 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur7 = 0;
+
+                            //analisis de datos 50
+                            ad2 = 0;
+
+                            console.log("valor de ur7 " + ur7)
+                            console.log("valor ad2 " + ad2)
                             console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
@@ -1497,7 +1790,6 @@ questioncont.forEach(function (elem, index) {
 
                     }
                 }
-
 
                 /* Pregunta nueve */
                 if (contador == 8) {
@@ -1548,6 +1840,54 @@ questioncont.forEach(function (elem, index) {
                 }
 
                 //CONTENT STRATEGIST
+                /* Pregunta once */
+                if (contador == 10) {
+                    console.log("11 pregunta respuesta 1 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs1 = 0;
+
+                            //Comunicacion escrita 10
+                            ce2 = 0;
+
+                            console.log("valor de cs1 " + cs1)
+                            console.log("valor de ce2 " + ce2)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta doce */
+                if (contador == 11) {
+                    console.log("12 pregunta respuesta 1 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs2 = 0;
+
+                            //Comunicacion escrita 10
+                            ce3 = 0;
+
+                            console.log("valor de cs2 " + cs2)
+                            console.log("valor de ce3 " + ce3)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
                 /* Pregunta trece */
                 if (contador == 12) {
                     console.log("13 pregunta respuesta 1////////////////////////////////////////")
@@ -1620,6 +1960,121 @@ questioncont.forEach(function (elem, index) {
                     }
                 }
 
+                /* Pregunta dieciseis */
+                if (contador == 15) {
+                    console.log("16 pregunta respuesta 1 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs6 = 0;
+
+                            //Comunicacion escrita 10
+                            ce7 = 0;
+
+                            console.log("valor de ur1 " + cs6)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta diecisiete */
+                if (contador == 16) {
+                    console.log("17 pregunta respuesta 1 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs7 = 0;
+
+                            //Comunicacion escrita 10
+                            ce8 = 0;
+
+                            console.log("valor de ur1 " + cs7)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta dieciocho */
+                if (contador == 17) {
+                    console.log("18 pregunta respuesta 1 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs8 = 0;
+
+                            //Comunicacion escrita 10
+                            ce9 = 0;
+
+                            console.log("valor de ur1 " + cs8)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta diecinueve */
+                if (contador == 18) {
+                    console.log("19 pregunta respuesta 1 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs9 = 0;
+
+                            //estructuracion de la informacion 10
+                            ei1 = 0;
+
+                            console.log("valor de cs9 " + cs9)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte */
+                if (contador == 19) {
+                    console.log("20 pregunta respuesta 1 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs10 = 0;
+
+                            //estructuración de la información 10
+                            ei2 = 0;
+
+                            console.log("valor de cs10 " + cs10)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
                 //INTERACTION DESIGNER
                 /* Pregunta veinte-uno */
                 if (contador == 20) {
@@ -1638,6 +2093,234 @@ questioncont.forEach(function (elem, index) {
 
                             console.log("valor de id1 " + id1)
                             console.log("valor de proto1 " + proto1)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-dos */
+                if (contador == 21) {
+                    console.log("22 pregunta respuesta 1 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id2 = 0;
+
+                            //Prototipado 20
+                            proto2 = 0;
+
+                            //conocimiento de interaccion 10
+                            ci1 = 0;
+
+                            console.log("valor de id2 " + id2)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-tres */
+                if (contador == 22) {
+                    console.log("23 pregunta respuesta 1 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id3 = 0;
+
+                            //conocimiento de interaccion 20
+                            ci2 = 0;
+
+                            console.log("valor de id3 " + id3)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-cuatro */
+                if (contador == 23) {
+                    console.log("24 pregunta respuesta 1 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id4 = 0;
+
+                            //conocimiento de interaccion 20
+                            ci3 = 0;
+
+                            console.log("valor de id4 " + id4)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-cinco */
+                if (contador == 24) {
+                    console.log("25 pregunta respuesta 1 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id5 = 0;
+
+                            //Prototipado 20
+                            proto3 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei2 = 0;
+
+                            console.log("valor de id5 " + id5)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-seis */
+                if (contador == 25) {
+                    console.log("26 pregunta respuesta 1 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id6 = 0;
+
+                            //Prototipado 10
+                            proto4 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei3 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci4 = 0;
+
+                            console.log("valor de id6 " + id6)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-siete */
+                if (contador == 26) {
+                    console.log("27 pregunta respuesta 1 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id7 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci5 = 0;
+
+                            console.log("valor de id7 " + id7)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-ocho */
+                if (contador == 27) {
+                    console.log("28 pregunta respuesta 1 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id8 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei4 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci6 = 0;
+
+                            console.log("valor de id8 " + id8)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-nueve */
+                if (contador == 28) {
+                    console.log("29 pregunta respuesta 1 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id9 = 0;
+
+                            //Prototipado 10
+                            proto5 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci7 = 0;
+
+                            console.log("valor de id9 " + id9)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta */
+                if (contador == 29) {
+                    console.log("30 pregunta respuesta 1 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id10 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei5 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci8 = 0;
+
+                            console.log("valor de id10 " + id10)
                             console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
@@ -1697,6 +2380,194 @@ questioncont.forEach(function (elem, index) {
 
                     }
                 }
+
+                /* Pregunta treinta-tres */
+                if (contador == 32) {
+                    console.log("33 pregunta respuesta 1 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud3 = 0;
+
+                            //comunicacion visual 10
+                            cv3 = 0;
+
+                            //prototipado 10
+                            proto7 = 0;
+
+                            console.log("valor de ud3 " + ud3)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-cuatro */
+                if (contador == 33) {
+                    console.log("34 pregunta  respuesta 1 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud4 = 0;
+
+                            //comunicacion visual 10
+                            cv4 = 0;
+
+                            console.log("valor de ud4 " + ud4)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-cinco */
+                if (contador == 34) {
+                    console.log("35 pregunta  respuesta 1 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud5 = 0;
+
+                            //comunicacion visual 10
+                            cv5 = 0;
+
+                            console.log("valor de ud5 " + ud5)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-seis */
+                if (contador == 35) {
+                    console.log("36 pregunta  respuesta 1 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud6 = 0;
+
+                            //comunicacion visual 10
+                            cv6 = 0;
+
+                            console.log("valor de ud6 " + ud6)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-siete */
+                if (contador == 36) {
+                    console.log("37 pregunta  respuesta 1 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud7 = 0;
+
+                            //comunicacion visual 10
+                            cv7 = 0;
+
+                            console.log("valor de ud7 " + ud7)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-ocho */
+                if (contador == 37) {
+                    console.log("38 pregunta  respuesta 1 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud8 = 0;
+
+                            //comunicacion visual 10
+                            cv8 = 0;
+
+                            console.log("valor de ud8 " + ud8)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-nueve */
+                if (contador == 38) {
+                    console.log("39 pregunta  respuesta 1 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud9 = 0;
+
+                            //comunicacion visual 10
+                            cv9 = 0;
+
+                            console.log("valor de ud9 " + ud9)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta cuarenta */
+                if (contador == 39) {
+                    console.log("40 pregunta  respuesta 1 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud10 = 0;
+
+                            //comunicacion visual 10
+                            cv10 = 0;
+
+                            console.log("valor de ud10 " + ud10)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
 
                 //UXLEAD
                 /* Pregunta cuarenta-uno */
@@ -2141,7 +3012,7 @@ questioncont.forEach(function (elem, index) {
 
                     }
                 }
-                
+
 
             }
 
@@ -2149,12 +3020,33 @@ questioncont.forEach(function (elem, index) {
             if (elem.querySelector('.respuesta2')) {
 
                 //UX RESEARCHER
+                /* Pregunta uno */
+                if (contador == 0) {
+                    console.log("pregunta 1 respuesta 2 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //ux researcher
+                            ur1 = 0;
+
+                            //investigacion cuantitativa 30
+                            ict1 = 0;
+                            console.log("valor de ur1 " + ur1)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+
+                    }
+                }
+
                 /* Pregunta dos */
                 if (contador == 1) {
                     console.log("segunda pregunta")
 
                     if (!clicked) {
-                        console.log("dio click respuesta 2")
                         clicked = true
 
                         if (clicked = true) {
@@ -2180,6 +3072,52 @@ questioncont.forEach(function (elem, index) {
                     }
                 }
 
+                /* Pregunta tres */
+                if (contador == 2) {
+                    console.log("3 pregunta respuesta 2 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur3 = 0;
+
+                            //analisis de datos 50
+                            ad1 = 0;
+
+                            //investigacion cuantitativa 30
+                            ict2 = 0;
+
+                            console.log("valor de ur3 " + ur3)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+                    }
+                }
+
+                /* Pregunta cuatro */
+                if (contador == 3) {
+                    console.log("4 pregunta respuesta 2 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur4 = 0;
+
+                            //investigacion cualitativa 30
+                            icl1 = 0;
+
+                            console.log("valor de ur4 " + ur4)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+
+                    }
+                }
+
                 /* Pregunta cinco */
                 if (contador == 4) {
                     console.log("segunda pregunta respuesta 3")
@@ -2198,6 +3136,50 @@ questioncont.forEach(function (elem, index) {
 
                             console.log("valor de co1 " + ea1)
                             console.log("valor ur5 " + ur5)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+                    }
+                }
+
+                /* Pregunta seis */
+                if (contador == 5) {
+                    console.log("pregunta 6 respuesta 2//////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur6 = 0;
+
+                            //investigacion cualitativa
+                            icl2 = 0;
+
+                            console.log("valor de ur6 " + ur6)
+                            console.log("valor de icl2 " + icl2)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+                    }
+                }
+
+                /* Pregunta siete */
+                if (contador == 6) {
+                    console.log("pregunta 7 respuesta 2 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur7 = 0;
+
+                            //analisis de datos 50
+                            ad2 = 0;
+
+                            console.log("valor de ur7 " + ur7)
+                            console.log("valor ad2 " + ad2)
                             console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
@@ -2281,6 +3263,54 @@ questioncont.forEach(function (elem, index) {
 
 
                 //CONTENT STRATEGIST
+                /* Pregunta once */
+                if (contador == 10) {
+                    console.log("11 pregunta respuesta 2 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs1 = 0;
+
+                            //Comunicacion escrita 10
+                            ce2 = 0;
+
+                            console.log("valor de cs1 " + cs1)
+                            console.log("valor de ce2 " + ce2)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta doce */
+                if (contador == 11) {
+                    console.log("12 pregunta respuesta 2 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs2 = 0;
+
+                            //Comunicacion escrita 10
+                            ce3 = 0;
+
+                            console.log("valor de cs2 " + cs2)
+                            console.log("valor de ce3 " + ce3)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
                 /* Pregunta trece */
                 if (contador == 12) {
                     console.log("13 pregunta respuesta 2////////////////////////////////////////")
@@ -2353,6 +3383,121 @@ questioncont.forEach(function (elem, index) {
                     }
                 }
 
+                /* Pregunta dieciseis */
+                if (contador == 15) {
+                    console.log("16 pregunta respuesta 2 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs6 = 0;
+
+                            //Comunicacion escrita 10
+                            ce7 = 0;
+
+                            console.log("valor de ur1 " + cs6)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta diecisiete */
+                if (contador == 16) {
+                    console.log("17 pregunta respuesta 2 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs7 = 0;
+
+                            //Comunicacion escrita 10
+                            ce8 = 0;
+
+                            console.log("valor de ur1 " + cs7)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta dieciocho */
+                if (contador == 17) {
+                    console.log("18 pregunta respuesta 2 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs8 = 0;
+
+                            //Comunicacion escrita 10
+                            ce9 = 0;
+
+                            console.log("valor de ur1 " + cs8)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta diecinueve */
+                if (contador == 18) {
+                    console.log("19 pregunta respuesta 2 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs9 = 0;
+
+                            //estructuracion de la informacion 10
+                            ei1 = 0;
+
+                            console.log("valor de cs9 " + cs9)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte */
+                if (contador == 19) {
+                    console.log("20 pregunta respuesta 2 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs10 = 0;
+
+                            //estructuración de la información 10
+                            ei2 = 0;
+
+                            console.log("valor de cs10 " + cs10)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
                 //INTERACTION DESIGNER
                 /* Pregunta veinte-uno */
                 if (contador == 20) {
@@ -2371,6 +3516,234 @@ questioncont.forEach(function (elem, index) {
 
                             console.log("valor de id1 " + id1)
                             console.log("valor de proto1 " + proto1)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-dos */
+                if (contador == 21) {
+                    console.log("22 pregunta respuesta 2 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id2 = 0;
+
+                            //Prototipado 20
+                            proto2 = 0;
+
+                            //conocimiento de interaccion 10
+                            ci1 = 0;
+
+                            console.log("valor de id2 " + id2)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-tres */
+                if (contador == 22) {
+                    console.log("23 pregunta respuesta 2 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id3 = 0;
+
+                            //conocimiento de interaccion 20
+                            ci2 = 0;
+
+                            console.log("valor de id3 " + id3)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-cuatro */
+                if (contador == 23) {
+                    console.log("24 pregunta respuesta 2 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id4 = 0;
+
+                            //conocimiento de interaccion 20
+                            ci3 = 0;
+
+                            console.log("valor de id4 " + id4)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-cinco */
+                if (contador == 24) {
+                    console.log("25 pregunta respuesta 2 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id5 = 0;
+
+                            //Prototipado 20
+                            proto3 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei2 = 0;
+
+                            console.log("valor de id5 " + id5)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-seis */
+                if (contador == 25) {
+                    console.log("26 pregunta respuesta 2 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id6 = 0;
+
+                            //Prototipado 10
+                            proto4 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei3 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci4 = 0;
+
+                            console.log("valor de id6 " + id6)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-siete */
+                if (contador == 26) {
+                    console.log("27 pregunta respuesta 2 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id7 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci5 = 0;
+
+                            console.log("valor de id7 " + id7)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-ocho */
+                if (contador == 27) {
+                    console.log("28 pregunta respuesta 2 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id8 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei4 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci6 = 0;
+
+                            console.log("valor de id8 " + id8)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-nueve */
+                if (contador == 28) {
+                    console.log("29 pregunta respuesta 2 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id9 = 0;
+
+                            //Prototipado 10
+                            proto5 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci7 = 0;
+
+                            console.log("valor de id9 " + id9)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta */
+                if (contador == 29) {
+                    console.log("30 pregunta respuesta 2 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id10 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei5 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci8 = 0;
+
+                            console.log("valor de id10 " + id10)
                             console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
@@ -2430,6 +3803,194 @@ questioncont.forEach(function (elem, index) {
 
                     }
                 }
+
+                /* Pregunta treinta-tres */
+                if (contador == 32) {
+                    console.log("33 pregunta respuesta 2 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud3 = 0;
+
+                            //comunicacion visual 10
+                            cv3 = 0;
+
+                            //prototipado 10
+                            proto7 = 0;
+
+                            console.log("valor de ud3 " + ud3)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-cuatro */
+                if (contador == 33) {
+                    console.log("34 pregunta  respuesta 2 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud4 = 0;
+
+                            //comunicacion visual 10
+                            cv4 = 0;
+
+                            console.log("valor de ud4 " + ud4)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-cinco */
+                if (contador == 34) {
+                    console.log("35 pregunta  respuesta 2 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud5 = 0;
+
+                            //comunicacion visual 10
+                            cv5 = 0;
+
+                            console.log("valor de ud5 " + ud5)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-seis */
+                if (contador == 35) {
+                    console.log("36 pregunta  respuesta 2 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud6 = 0;
+
+                            //comunicacion visual 10
+                            cv6 = 0;
+
+                            console.log("valor de ud6 " + ud6)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-siete */
+                if (contador == 36) {
+                    console.log("37 pregunta  respuesta 2 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud7 = 0;
+
+                            //comunicacion visual 10
+                            cv7 = 0;
+
+                            console.log("valor de ud7 " + ud7)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-ocho */
+                if (contador == 37) {
+                    console.log("38 pregunta  respuesta 2 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud8 = 0;
+
+                            //comunicacion visual 10
+                            cv8 = 0;
+
+                            console.log("valor de ud8 " + ud8)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-nueve */
+                if (contador == 38) {
+                    console.log("39 pregunta  respuesta 2 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud9 = 0;
+
+                            //comunicacion visual 10
+                            cv9 = 0;
+
+                            console.log("valor de ud9 " + ud9)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta cuarenta */
+                if (contador == 39) {
+                    console.log("40 pregunta  respuesta 2 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud10 = 0;
+
+                            //comunicacion visual 10
+                            cv10 = 0;
+
+                            console.log("valor de ud10 " + ud10)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
 
                 //UXLEAD
                 /* Pregunta cuarenta-uno */
@@ -2883,9 +4444,31 @@ questioncont.forEach(function (elem, index) {
 
                 console.log("respuesta 3")
                 //UX RESEARCHER
+                /* Pregunta uno */
+                if (contador == 0) {
+                    console.log("pregunta 1 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //ux researcher
+                            ur1 = 0;
+
+                            //investigacion cuantitativa 30
+                            ict1 = 0;
+                            console.log("valor de ur1 " + ur1)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+
+                    }
+                }
+
                 /* Pregunta dos */
                 if (contador == 1) {
-                    console.log("segunda pregunta  respuesta 3")
+                    console.log("2 pregunta  respuesta 3")
 
                     if (!clicked) {
                         clicked = true
@@ -2913,14 +4496,58 @@ questioncont.forEach(function (elem, index) {
                     }
                 }
 
-                /* Pregunta cinco */
-                if (contador == 4) {
-                    console.log("segunda pregunta respuesta 3")
+                /* Pregunta tres */
+                if (contador == 2) {
+                    console.log("3 pregunta //////////////////////////////////////////////////")
 
                     if (!clicked) {
-                        console.log("dio click")
                         clicked = true
-                        console.log("puede")
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur3 = 0;
+
+                            //analisis de datos 50
+                            ad1 = 0;
+
+                            //investigacion cuantitativa 30
+                            ict2 = 0;
+
+                            console.log("valor de ur3 " + ur3)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+                    }
+                }
+
+                /* Pregunta cuatro */
+                if (contador == 3) {
+                    console.log("4 pregunta //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur4 = 0;
+
+                            //investigacion cualitativa 30
+                            icl1 = 0;
+
+                            console.log("valor de ur4 " + ur4)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta cinco */
+                if (contador == 4) {
+                    console.log("5 pregunta respuesta 3")
+
+                    if (!clicked) {
+                        clicked = true
 
                         if (clicked = true) {
                             //ux researcher
@@ -2931,6 +4558,50 @@ questioncont.forEach(function (elem, index) {
 
                             console.log("valor de co1 " + ea1)
                             console.log("valor ur5 " + ur5)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+                    }
+                }
+
+                /* Pregunta seis */
+                if (contador == 5) {
+                    console.log("pregunta 6 respuesta 4//////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur6 = 0;
+
+                            //investigacion cualitativa
+                            icl2 = 0;
+
+                            console.log("valor de ur6 " + ur6)
+                            console.log("valor de icl2 " + icl2)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+                    }
+                }
+
+                /* Pregunta siete */
+                if (contador == 6) {
+                    console.log("pregunta 7 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur7 = 0;
+
+                            //analisis de datos 50
+                            ad2 = 0;
+
+                            console.log("valor de ur7 " + ur7)
+                            console.log("valor ad2 " + ad2)
                             console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
@@ -3014,6 +4685,54 @@ questioncont.forEach(function (elem, index) {
 
 
                 //CONTENT STRATEGIST
+                /* Pregunta once */
+                if (contador == 10) {
+                    console.log("11 pregunta respuesta 3 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs1 = 0;
+
+                            //Comunicacion escrita 10
+                            ce2 = 0;
+
+                            console.log("valor de cs1 " + cs1)
+                            console.log("valor de ce2 " + ce2)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta doce */
+                if (contador == 11) {
+                    console.log("12 pregunta respuesta 3 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs2 = 0;
+
+                            //Comunicacion escrita 10
+                            ce3 = 0;
+
+                            console.log("valor de cs2 " + cs2)
+                            console.log("valor de ce3 " + ce3)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
                 /* Pregunta trece */
                 if (contador == 12) {
                     console.log("13 pregunta respuesta 3////////////////////////////////////////")
@@ -3086,6 +4805,121 @@ questioncont.forEach(function (elem, index) {
                     }
                 }
 
+                /* Pregunta dieciseis */
+                if (contador == 15) {
+                    console.log("16 pregunta respuesta 3 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs6 = 0;
+
+                            //Comunicacion escrita 10
+                            ce7 = 0;
+
+                            console.log("valor de ur1 " + cs6)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta diecisiete */
+                if (contador == 16) {
+                    console.log("17 pregunta respuesta 3 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs7 = 0;
+
+                            //Comunicacion escrita 10
+                            ce8 = 0;
+
+                            console.log("valor de ur1 " + cs7)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta dieciocho */
+                if (contador == 17) {
+                    console.log("18 pregunta respuesta 3 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs8 = 0;
+
+                            //Comunicacion escrita 10
+                            ce9 = 0;
+
+                            console.log("valor de ur1 " + cs8)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta diecinueve */
+                if (contador == 18) {
+                    console.log("19 pregunta respuesta 3 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs9 = 0;
+
+                            //estructuracion de la informacion 10
+                            ei1 = 0;
+
+                            console.log("valor de cs9 " + cs9)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte */
+                if (contador == 19) {
+                    console.log("20 pregunta respuesta 3 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs10 = 0;
+
+                            //estructuración de la información 10
+                            ei2 = 0;
+
+                            console.log("valor de cs10 " + cs10)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
                 //INTERACTION DESIGNER
                 /* Pregunta veinte-uno */
                 if (contador == 20) {
@@ -3104,6 +4938,234 @@ questioncont.forEach(function (elem, index) {
 
                             console.log("valor de id1 " + id1)
                             console.log("valor de proto1 " + proto1)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-dos */
+                if (contador == 21) {
+                    console.log("22 pregunta respuesta 3 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id2 = 0;
+
+                            //Prototipado 20
+                            proto2 = 0;
+
+                            //conocimiento de interaccion 10
+                            ci1 = 0;
+
+                            console.log("valor de id2 " + id2)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-tres */
+                if (contador == 22) {
+                    console.log("23 pregunta respuesta 3 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id3 = 0;
+
+                            //conocimiento de interaccion 20
+                            ci2 = 0;
+
+                            console.log("valor de id3 " + id3)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-cuatro */
+                if (contador == 23) {
+                    console.log("24 pregunta respuesta 3 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id4 = 0;
+
+                            //conocimiento de interaccion 20
+                            ci3 = 0;
+
+                            console.log("valor de id4 " + id4)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-cinco */
+                if (contador == 24) {
+                    console.log("25 pregunta respuesta 3 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id5 = 0;
+
+                            //Prototipado 20
+                            proto3 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei2 = 0;
+
+                            console.log("valor de id5 " + id5)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-seis */
+                if (contador == 25) {
+                    console.log("26 pregunta respuesta 3 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id6 = 0;
+
+                            //Prototipado 10
+                            proto4 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei3 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci4 = 0;
+
+                            console.log("valor de id6 " + id6)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-siete */
+                if (contador == 26) {
+                    console.log("27 pregunta respuesta 3 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id7 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci5 = 0;
+
+                            console.log("valor de id7 " + id7)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-ocho */
+                if (contador == 27) {
+                    console.log("28 pregunta respuesta 3 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id8 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei4 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci6 = 0;
+
+                            console.log("valor de id8 " + id8)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-nueve */
+                if (contador == 28) {
+                    console.log("29 pregunta respuesta 3 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id9 = 0;
+
+                            //Prototipado 10
+                            proto5 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci7 = 0;
+
+                            console.log("valor de id9 " + id9)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta */
+                if (contador == 29) {
+                    console.log("30 pregunta respuesta 3 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id10 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei5 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci8 = 0;
+
+                            console.log("valor de id10 " + id10)
                             console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
@@ -3163,6 +5225,194 @@ questioncont.forEach(function (elem, index) {
 
                     }
                 }
+
+                /* Pregunta treinta-tres */
+                if (contador == 32) {
+                    console.log("33 pregunta respuesta 3 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud3 = 0;
+
+                            //comunicacion visual 10
+                            cv3 = 0;
+
+                            //prototipado 10
+                            proto7 = 0;
+
+                            console.log("valor de ud3 " + ud3)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-cuatro */
+                if (contador == 33) {
+                    console.log("34 pregunta  respuesta 3 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud4 = 0;
+
+                            //comunicacion visual 10
+                            cv4 = 0;
+
+                            console.log("valor de ud4 " + ud4)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-cinco */
+                if (contador == 34) {
+                    console.log("35 pregunta  respuesta 3 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud5 = 0;
+
+                            //comunicacion visual 10
+                            cv5 = 0;
+
+                            console.log("valor de ud5 " + ud5)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-seis */
+                if (contador == 35) {
+                    console.log("36 pregunta  respuesta 3 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud6 = 0;
+
+                            //comunicacion visual 10
+                            cv6 = 0;
+
+                            console.log("valor de ud6 " + ud6)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-siete */
+                if (contador == 36) {
+                    console.log("37 pregunta  respuesta 3 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud7 = 0;
+
+                            //comunicacion visual 10
+                            cv7 = 0;
+
+                            console.log("valor de ud7 " + ud7)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-ocho */
+                if (contador == 37) {
+                    console.log("38 pregunta  respuesta 3 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud8 = 0;
+
+                            //comunicacion visual 10
+                            cv8 = 0;
+
+                            console.log("valor de ud8 " + ud8)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-nueve */
+                if (contador == 38) {
+                    console.log("39 pregunta  respuesta 3 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud9 = 0;
+
+                            //comunicacion visual 10
+                            cv9 = 0;
+
+                            console.log("valor de ud9 " + ud9)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta cuarenta */
+                if (contador == 39) {
+                    console.log("40 pregunta  respuesta 3 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud10 = 0;
+
+                            //comunicacion visual 10
+                            cv10 = 0;
+
+                            console.log("valor de ud10 " + ud10)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
 
 
                 //UXLEAD
@@ -3623,17 +5873,15 @@ questioncont.forEach(function (elem, index) {
                     console.log("pregunta 1 //////////////////////////////////////////////////")
 
                     if (!clicked) {
-                        console.log("dio click")
                         clicked = true
-                        console.log("puede")
 
-                        if (clicked = true && ur1 == 0) {
+                        if (clicked = true) {
 
                             //ux researcher
-                            ur1 += 10;
+                            ur1 = 10;
 
                             //investigacion cuantitativa 30
-                            ict1 += 30;
+                            ict1 = 30;
                             console.log("valor de ur1 " + ur1)
                             console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
@@ -3677,9 +5925,7 @@ questioncont.forEach(function (elem, index) {
                     console.log("segunda pregunta //////////////////////////////////////////////////")
 
                     if (!clicked) {
-                        console.log("dio click")
                         clicked = true
-                        console.log("puede")
 
                         if (clicked = true && ur3 == 0) {
                             //ux researcher
@@ -3691,6 +5937,7 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cuantitativa 30
                             ict2 += 30;
 
+                            console.log("valor de ur3 " + ur3)
                             console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
@@ -3702,9 +5949,7 @@ questioncont.forEach(function (elem, index) {
                     console.log("Primera pregunta //////////////////////////////////////////////////")
 
                     if (!clicked) {
-                        console.log("dio click")
                         clicked = true
-                        console.log("puede")
 
                         if (clicked = true && ur4 == 0) {
                             //ux researcher
@@ -3713,7 +5958,7 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa 30
                             icl1 += 30;
 
-                            console.log("valor de ur1 " + ur1)
+                            console.log("valor de ur4 " + ur4)
                             console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
@@ -3758,7 +6003,7 @@ questioncont.forEach(function (elem, index) {
                             icl2 += 30;
 
                             console.log("valor de ur6 " + ur6)
-                            console.log("valor de icl2 " +icl2)
+                            console.log("valor de icl2 " + icl2)
                             console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
@@ -3867,7 +6112,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta once */
                 if (contador == 10) {
-                    console.log("once pregunta")
+                    console.log("11 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -3891,7 +6136,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta doce */
                 if (contador == 11) {
-                    console.log("doce pregunta")
+                    console.log("12 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -3912,7 +6157,6 @@ questioncont.forEach(function (elem, index) {
 
                     }
                 }
-
 
                 /* Pregunta trece */
                 if (contador == 12) {
@@ -3988,7 +6232,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta dieciseis */
                 if (contador == 15) {
-                    console.log("doce pregunta")
+                    console.log("16 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -4009,10 +6253,9 @@ questioncont.forEach(function (elem, index) {
                     }
                 }
 
-
                 /* Pregunta diecisiete */
                 if (contador == 16) {
-                    console.log("trece pregunta")
+                    console.log("17 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -4035,7 +6278,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta dieciocho */
                 if (contador == 17) {
-                    console.log("18 pregunta")
+                    console.log("18 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -4058,7 +6301,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta diecinueve */
                 if (contador == 18) {
-                    console.log("19 pregunta")
+                    console.log("19 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -4081,7 +6324,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta veinte */
                 if (contador == 19) {
-                    console.log("20 pregunta")
+                    console.log("20 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -5052,9 +7295,31 @@ questioncont.forEach(function (elem, index) {
             if (elem.querySelector('.respuesta5')) {
 
                 //UX RESEARCHER
+                /* Pregunta uno */
+                if (contador == 0) {
+                    console.log("pregunta 1 respuesta 5 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //ux researcher
+                            ur1 = 0;
+
+                            //investigacion cuantitativa 30
+                            ict1 = 0;
+                            console.log("valor de ur1 " + ur1)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+
+                    }
+                }
+
                 /* Pregunta dos */
                 if (contador == 1) {
-                    console.log("segunda pregunta respuesta 5")
+                    console.log("2 pregunta respuesta 5")
 
                     if (!clicked) {
                         clicked = true
@@ -5082,6 +7347,52 @@ questioncont.forEach(function (elem, index) {
                     }
                 }
 
+                /* Pregunta tres */
+                if (contador == 2) {
+                    console.log("3 pregunta respuesta 5 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur3 = 0;
+
+                            //analisis de datos 50
+                            ad1 = 0;
+
+                            //investigacion cuantitativa 30
+                            ict2 = 0;
+
+                            console.log("valor de ur3 " + ur3)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+                    }
+                }
+
+                /* Pregunta cuatro */
+                if (contador == 3) {
+                    console.log("4 pregunta respuesta 5 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur4 = 0;
+
+                            //investigacion cualitativa 30
+                            icl1 = 0;
+
+                            console.log("valor de ur4 " + ur4)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+
+                    }
+                }
+
                 /* Pregunta cinco */
                 if (contador == 4) {
                     console.log("segunda pregunta respuesta 3")
@@ -5100,6 +7411,50 @@ questioncont.forEach(function (elem, index) {
 
                             console.log("valor de co1 " + ea1)
                             console.log("valor ur5 " + ur5)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+                    }
+                }
+
+                /* Pregunta seis */
+                if (contador == 5) {
+                    console.log("pregunta 6 respuesta 5 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur6 = 0;
+
+                            //investigacion cualitativa
+                            icl2 = 0;
+
+                            console.log("valor de ur6 " + ur6)
+                            console.log("valor de icl2 " + icl2)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+                    }
+                }
+
+                /* Pregunta siete */
+                if (contador == 6) {
+                    console.log("pregunta 7 respuesta 5  //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur7 = 0;
+
+                            //analisis de datos 50
+                            ad2 = 0;
+
+                            console.log("valor de ur7 " + ur7)
+                            console.log("valor ad2 " + ad2)
                             console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
@@ -5183,6 +7538,54 @@ questioncont.forEach(function (elem, index) {
 
 
                 //CONTENT STRATEGIST
+                /* Pregunta once */
+                if (contador == 10) {
+                    console.log("11 pregunta respuesta 5 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs1 = 0;
+
+                            //Comunicacion escrita 10
+                            ce2 = 0;
+
+                            console.log("valor de cs1 " + cs1)
+                            console.log("valor de ce2 " + ce2)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta doce */
+                if (contador == 11) {
+                    console.log("12 pregunta respuesta 5 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs2 = 0;
+
+                            //Comunicacion escrita 10
+                            ce3 = 0;
+
+                            console.log("valor de cs2 " + cs2)
+                            console.log("valor de ce3 " + ce3)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
                 /* Pregunta trece */
                 if (contador == 12) {
                     console.log("13 pregunta respuesta 5////////////////////////////////////////")
@@ -5255,6 +7658,121 @@ questioncont.forEach(function (elem, index) {
                     }
                 }
 
+                /* Pregunta dieciseis */
+                if (contador == 15) {
+                    console.log("16 pregunta respuesta 5 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs6 = 0;
+
+                            //Comunicacion escrita 10
+                            ce7 = 0;
+
+                            console.log("valor de ur1 " + cs6)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta diecisiete */
+                if (contador == 16) {
+                    console.log("17 pregunta respuesta 5 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs7 = 0;
+
+                            //Comunicacion escrita 10
+                            ce8 = 0;
+
+                            console.log("valor de ur1 " + cs7)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta dieciocho */
+                if (contador == 17) {
+                    console.log("18 pregunta respuesta 5 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs8 = 0;
+
+                            //Comunicacion escrita 10
+                            ce9 = 0;
+
+                            console.log("valor de ur1 " + cs8)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta diecinueve */
+                if (contador == 18) {
+                    console.log("19 pregunta respuesta 5 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs9 = 0;
+
+                            //estructuracion de la informacion 10
+                            ei1 = 0;
+
+                            console.log("valor de cs9 " + cs9)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte */
+                if (contador == 19) {
+                    console.log("20 pregunta respuesta 5 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs10 = 0;
+
+                            //estructuración de la información 10
+                            ei2 = 0;
+
+                            console.log("valor de cs10 " + cs10)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
                 //INTERACTION DESIGNER
                 /* Pregunta veinte-uno */
                 if (contador == 20) {
@@ -5273,6 +7791,234 @@ questioncont.forEach(function (elem, index) {
 
                             console.log("valor de id1 " + id1)
                             console.log("valor de proto1 " + proto1)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-dos */
+                if (contador == 21) {
+                    console.log("22 pregunta respuesta 5 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id2 = 0;
+
+                            //Prototipado 20
+                            proto2 = 0;
+
+                            //conocimiento de interaccion 10
+                            ci1 = 0;
+
+                            console.log("valor de id2 " + id2)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-tres */
+                if (contador == 22) {
+                    console.log("23 pregunta respuesta 5 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id3 = 0;
+
+                            //conocimiento de interaccion 20
+                            ci2 = 0;
+
+                            console.log("valor de id3 " + id3)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-cuatro */
+                if (contador == 23) {
+                    console.log("24 pregunta respuesta 5 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id4 = 0;
+
+                            //conocimiento de interaccion 20
+                            ci3 = 0;
+
+                            console.log("valor de id4 " + id4)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-cinco */
+                if (contador == 24) {
+                    console.log("25 pregunta respuesta 5 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id5 = 0;
+
+                            //Prototipado 20
+                            proto3 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei2 = 0;
+
+                            console.log("valor de id5 " + id5)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-seis */
+                if (contador == 25) {
+                    console.log("26 pregunta respuesta 5 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id6 = 0;
+
+                            //Prototipado 10
+                            proto4 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei3 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci4 = 0;
+
+                            console.log("valor de id6 " + id6)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-siete */
+                if (contador == 26) {
+                    console.log("27 pregunta respuesta 5 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id7 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci5 = 0;
+
+                            console.log("valor de id7 " + id7)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-ocho */
+                if (contador == 27) {
+                    console.log("28 pregunta respuesta 5 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id8 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei4 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci6 = 0;
+
+                            console.log("valor de id8 " + id8)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-nueve */
+                if (contador == 28) {
+                    console.log("29 pregunta respuesta 5 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id9 = 0;
+
+                            //Prototipado 10
+                            proto5 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci7 = 0;
+
+                            console.log("valor de id9 " + id9)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta */
+                if (contador == 29) {
+                    console.log("30 pregunta respuesta 5 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id10 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei5 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci8 = 0;
+
+                            console.log("valor de id10 " + id10)
                             console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
@@ -5332,6 +8078,194 @@ questioncont.forEach(function (elem, index) {
 
                     }
                 }
+
+                /* Pregunta treinta-tres */
+                if (contador == 32) {
+                    console.log("33 pregunta respuesta 5 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud3 = 0;
+
+                            //comunicacion visual 10
+                            cv3 = 0;
+
+                            //prototipado 10
+                            proto7 = 0;
+
+                            console.log("valor de ud3 " + ud3)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-cuatro */
+                if (contador == 33) {
+                    console.log("34 pregunta  respuesta 5 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud4 = 0;
+
+                            //comunicacion visual 10
+                            cv4 = 0;
+
+                            console.log("valor de ud4 " + ud4)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-cinco */
+                if (contador == 34) {
+                    console.log("35 pregunta  respuesta 5 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud5 = 0;
+
+                            //comunicacion visual 10
+                            cv5 = 0;
+
+                            console.log("valor de ud5 " + ud5)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-seis */
+                if (contador == 35) {
+                    console.log("36 pregunta  respuesta 5 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud6 = 0;
+
+                            //comunicacion visual 10
+                            cv6 = 0;
+
+                            console.log("valor de ud6 " + ud6)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-siete */
+                if (contador == 36) {
+                    console.log("37 pregunta  respuesta 5 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud7 = 0;
+
+                            //comunicacion visual 10
+                            cv7 = 0;
+
+                            console.log("valor de ud7 " + ud7)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-ocho */
+                if (contador == 37) {
+                    console.log("38 pregunta  respuesta 5 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud8 = 0;
+
+                            //comunicacion visual 10
+                            cv8 = 0;
+
+                            console.log("valor de ud8 " + ud8)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-nueve */
+                if (contador == 38) {
+                    console.log("39 pregunta  respuesta 5 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud9 = 0;
+
+                            //comunicacion visual 10
+                            cv9 = 0;
+
+                            console.log("valor de ud9 " + ud9)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta cuarenta */
+                if (contador == 39) {
+                    console.log("40 pregunta  respuesta 5 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud10 = 0;
+
+                            //comunicacion visual 10
+                            cv10 = 0;
+
+                            console.log("valor de ud10 " + ud10)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
 
                 //UXLEAD
                 /* Pregunta cuarenta-uno */
@@ -5783,6 +8717,28 @@ questioncont.forEach(function (elem, index) {
             if (elem.querySelector('.respuesta6')) {
 
                 //UX RESEARCHER
+                /* Pregunta uno */
+                if (contador == 0) {
+                    console.log("pregunta 1 respuesta 6 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //ux researcher
+                            ur1 = 0;
+
+                            //investigacion cuantitativa 30
+                            ict1 = 0;
+                            console.log("valor de ur1 " + ur1)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+
+                    }
+                }
+
                 /* Pregunta dos */
                 if (contador == 1) {
                     console.log("segunda pregunta respuesta 6")
@@ -5813,6 +8769,52 @@ questioncont.forEach(function (elem, index) {
                     }
                 }
 
+                /* Pregunta tres */
+                if (contador == 2) {
+                    console.log("3 pregunta respuesta 6 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur3 = 0;
+
+                            //analisis de datos 50
+                            ad1 = 0;
+
+                            //investigacion cuantitativa 30
+                            ict2 = 0;
+
+                            console.log("valor de ur3 " + ur3)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+                    }
+                }
+
+                /* Pregunta cuatro */
+                if (contador == 3) {
+                    console.log("4 pregunta respuesta 6 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur4 = 0;
+
+                            //investigacion cualitativa 30
+                            icl1 = 0;
+
+                            console.log("valor de ur4 " + ur4)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+
+                    }
+                }
+
                 /* Pregunta cinco */
                 if (contador == 4) {
                     console.log("segunda pregunta respuesta 3")
@@ -5831,6 +8833,50 @@ questioncont.forEach(function (elem, index) {
 
                             console.log("valor de co1 " + ea1)
                             console.log("valor ur5 " + ur5)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+                    }
+                }
+
+                /* Pregunta seis */
+                if (contador == 5) {
+                    console.log("pregunta 6 respuesta 6 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur6 = 0;
+
+                            //investigacion cualitativa
+                            icl2 = 0;
+
+                            console.log("valor de ur6 " + ur6)
+                            console.log("valor de icl2 " + icl2)
+                            console.log("valor de ux researcher " + uxresearcher)
+                            clicked = false
+                        }
+                    }
+                }
+
+                /* Pregunta siete */
+                if (contador == 6) {
+                    console.log("pregunta 7 respuesta 6  //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+                            //ux researcher
+                            ur7 = 0;
+
+                            //analisis de datos 50
+                            ad2 = 0;
+
+                            console.log("valor de ur7 " + ur7)
+                            console.log("valor ad2 " + ad2)
                             console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
@@ -5914,6 +8960,54 @@ questioncont.forEach(function (elem, index) {
 
 
                 //CONTENT STRATEGIST
+                /* Pregunta once */
+                if (contador == 10) {
+                    console.log("11 pregunta respuesta 6 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs1 = 0;
+
+                            //Comunicacion escrita 10
+                            ce2 = 0;
+
+                            console.log("valor de cs1 " + cs1)
+                            console.log("valor de ce2 " + ce2)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta doce */
+                if (contador == 11) {
+                    console.log("12 pregunta respuesta 6 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs2 = 0;
+
+                            //Comunicacion escrita 10
+                            ce3 = 0;
+
+                            console.log("valor de cs2 " + cs2)
+                            console.log("valor de ce3 " + ce3)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
                 /* Pregunta trece */
                 if (contador == 12) {
                     console.log("13 pregunta respuesta 6////////////////////////////////////////")
@@ -5953,7 +9047,7 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 20
                             ce5 = 20;
 
-                            console.log("valor de ur4 " + c4)
+                            console.log("valor de cs4 " + cs4)
                             console.log("valor de ce5 " + ce5)
                             console.log("valor de content strategist " + contentstrategist)
                             clicked = false
@@ -5986,6 +9080,121 @@ questioncont.forEach(function (elem, index) {
                     }
                 }
 
+                /* Pregunta dieciseis */
+                if (contador == 15) {
+                    console.log("16 pregunta respuesta 6 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs6 = 0;
+
+                            //Comunicacion escrita 10
+                            ce7 = 0;
+
+                            console.log("valor de ur1 " + cs6)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta diecisiete */
+                if (contador == 16) {
+                    console.log("17 pregunta respuesta 6 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs7 = 0;
+
+                            //Comunicacion escrita 10
+                            ce8 = 0;
+
+                            console.log("valor de ur1 " + cs7)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta dieciocho */
+                if (contador == 17) {
+                    console.log("18 pregunta respuesta 6 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs8 = 0;
+
+                            //Comunicacion escrita 10
+                            ce9 = 0;
+
+                            console.log("valor de ur1 " + cs8)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta diecinueve */
+                if (contador == 18) {
+                    console.log("19 pregunta respuesta 6 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs9 = 0;
+
+                            //estructuracion de la informacion 10
+                            ei1 = 0;
+
+                            console.log("valor de cs9 " + cs9)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte */
+                if (contador == 19) {
+                    console.log("20 pregunta respuesta 6 //////////////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            cs10 = 0;
+
+                            //estructuración de la información 10
+                            ei2 = 0;
+
+                            console.log("valor de cs10 " + cs10)
+                            console.log("valor de content strategist " + contentstrategist)
+                            clicked = false
+                        }
+
+                    }
+                }
+
                 //INTERACTION DESIGNER
                 /* Pregunta veinte-uno */
                 if (contador == 20) {
@@ -6004,6 +9213,234 @@ questioncont.forEach(function (elem, index) {
 
                             console.log("valor de id1 " + id1)
                             console.log("valor de proto1 " + proto1)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-dos */
+                if (contador == 21) {
+                    console.log("22 pregunta respuesta 6 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id2 = 0;
+
+                            //Prototipado 20
+                            proto2 = 0;
+
+                            //conocimiento de interaccion 10
+                            ci1 = 0;
+
+                            console.log("valor de id2 " + id2)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-tres */
+                if (contador == 22) {
+                    console.log("23 pregunta respuesta 6 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id3 = 0;
+
+                            //conocimiento de interaccion 20
+                            ci2 = 0;
+
+                            console.log("valor de id3 " + id3)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-cuatro */
+                if (contador == 23) {
+                    console.log("24 pregunta respuesta 6 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id4 = 0;
+
+                            //conocimiento de interaccion 20
+                            ci3 = 0;
+
+                            console.log("valor de id4 " + id4)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-cinco */
+                if (contador == 24) {
+                    console.log("25 pregunta respuesta 6 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id5 = 0;
+
+                            //Prototipado 20
+                            proto3 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei2 = 0;
+
+                            console.log("valor de id5 " + id5)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-seis */
+                if (contador == 25) {
+                    console.log("26 pregunta respuesta 6 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id6 = 0;
+
+                            //Prototipado 10
+                            proto4 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei3 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci4 = 0;
+
+                            console.log("valor de id6 " + id6)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-siete */
+                if (contador == 26) {
+                    console.log("27 pregunta respuesta 6 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id7 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci5 = 0;
+
+                            console.log("valor de id7 " + id7)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-ocho */
+                if (contador == 27) {
+                    console.log("28 pregunta respuesta 6 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id8 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei4 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci6 = 0;
+
+                            console.log("valor de id8 " + id8)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta veinte-nueve */
+                if (contador == 28) {
+                    console.log("29 pregunta respuesta 6 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id9 = 0;
+
+                            //Prototipado 10
+                            proto5 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci7 = 0;
+
+                            console.log("valor de id9 " + id9)
+                            console.log("valor de interation designer " + interactiondesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta */
+                if (contador == 29) {
+                    console.log("30 pregunta respuesta 6 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            id10 = 0;
+
+                            //estructuracion de la informacion 20
+                            ei5 = 0;
+
+                            //conocimiento en interaccion 10
+                            ci8 = 0;
+
+                            console.log("valor de id10 " + id10)
                             console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
@@ -6063,6 +9500,194 @@ questioncont.forEach(function (elem, index) {
 
                     }
                 }
+
+                /* Pregunta treinta-tres */
+                if (contador == 32) {
+                    console.log("33 pregunta respuesta 6 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud3 = 0;
+
+                            //comunicacion visual 10
+                            cv3 = 0;
+
+                            //prototipado 10
+                            proto7 = 0;
+
+                            console.log("valor de ud3 " + ud3)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-cuatro */
+                if (contador == 33) {
+                    console.log("34 pregunta  respuesta 6 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud4 = 0;
+
+                            //comunicacion visual 10
+                            cv4 = 0;
+
+                            console.log("valor de ud4 " + ud4)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-cinco */
+                if (contador == 34) {
+                    console.log("35 pregunta  respuesta 6 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud5 = 0;
+
+                            //comunicacion visual 10
+                            cv5 = 0;
+
+                            console.log("valor de ud5 " + ud5)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-seis */
+                if (contador == 35) {
+                    console.log("36 pregunta  respuesta 6 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud6 = 0;
+
+                            //comunicacion visual 10
+                            cv6 = 0;
+
+                            console.log("valor de ud6 " + ud6)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-siete */
+                if (contador == 36) {
+                    console.log("37 pregunta  respuesta 6 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud7 = 0;
+
+                            //comunicacion visual 10
+                            cv7 = 0;
+
+                            console.log("valor de ud7 " + ud7)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-ocho */
+                if (contador == 37) {
+                    console.log("38 pregunta  respuesta 6 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud8 = 0;
+
+                            //comunicacion visual 10
+                            cv8 = 0;
+
+                            console.log("valor de ud8 " + ud8)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta treinta-nueve */
+                if (contador == 38) {
+                    console.log("39 pregunta  respuesta 6 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud9 = 0;
+
+                            //comunicacion visual 10
+                            cv9 = 0;
+
+                            console.log("valor de ud9 " + ud9)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
+                /* Pregunta cuarenta */
+                if (contador == 39) {
+                    console.log("40 pregunta  respuesta 6 ////////////////////////////////////////")
+
+                    if (!clicked) {
+                        clicked = true
+
+                        if (clicked = true) {
+
+                            //Content strategist
+                            ud10 = 0;
+
+                            //comunicacion visual 10
+                            cv10 = 0;
+
+                            console.log("valor de ud10 " + ud10)
+                            console.log("valor de ui designer " + uidesigner)
+                            clicked = false
+                        }
+
+                    }
+                }
+
 
                 //UXLEAD
                 /* Pregunta cuarenta-uno */
@@ -6516,109 +10141,119 @@ questioncont.forEach(function (elem, index) {
 
             //UX RESEARCHER
             uxresearcher = ur1 + ur2 + ur3 + ur4 + ur5 + ur6 + ur7 + ur8 + ur9 + ur10;
+            
 
             //CONTENT STRATEGIST
             contentstrategist = cs1 + cs2 + cs3 + cs4 + cs5 + cs6 + cs7 + cs8 + cs9 + cs10;
+            
 
             //INTERACTION DESIGNER
             interactiondesigner = id1 + id2 + id3 + id4 + id5 + id6 + id7 + id8 + id9 + id10;
+            
 
             //UI DESIGNER
             uidesigner = ud1 + ud2 + ud3 + ud4 + ud5 + ud6 + ud7 + ud8 + ud9 + ud10;
-
+            
+            
             //UX LEAD
             uxlead = ul1 + ul2 + ul3 + ul4 + ul5 + ul6 + ul7 + ul8 + ul9 + ul10;
-
+            
 
             //SKILLS
 
             //INVESTIGACION CUANTITATIVA
-            let invescuant = ict1 + ict2 + ict3 + ict4;
-            console.log("investigacion cuantitativa "+invescuant)
+            invescuant = ict1 + ict2 + ict3 + ict4;
+            console.log("investigacion cuantitativa " + invescuant)
 
             //INVESTIGACION CUALITATIVA
             invescual = icl1 + icl2 + icl3 + icl4;
-            console.log("investigacion cualitativa "+invescual)
+            console.log("investigacion cualitativa " + invescual)
 
             //CONOCIMIENTO EN PSICOLOGIA
             conopsic = csp1;
-            console.log("conocimiento en psicologia  "+conopsic)
+            console.log("conocimiento en psicologia  " + conopsic)
 
             //COMUNICACION ESCRITA
-            written = ce1 + ce2 + ce3 + ce4 + ce5 + ce6 + ce7 + ce8 + ce9;
-            console.log("comunicacion escrita "+written)
+            comuesc = ce1 + ce2 + ce3 + ce4 + ce5 + ce6 + ce7 + ce8 + ce9;
+            console.log("comunicacion escrita " + comuesc)
 
             //COMUNICACION ORAL
-            oral = co1 + co2 + co3 + co4 + co5;
-            console.log("investigacion oral "+oral)
+            comuora = co1 + co2 + co3 + co4 + co5;
+            console.log("investigacion oral " + comuora)
 
             //COMUNICACION VISUAL
             comuvis = cv1 + cv2 + cv3 + cv4 + cv5 + cv6 + cv7 + cv8 + cv9 + cv10;
-            console.log("investigacion visual "+comuvis)
+            console.log("investigacion visual " + comuvis)
 
             //ANALISIS DE DATOS
-            analysis = ad1 + ad2;
-            console.log("analisis de datos "+analysis)
+            analidata = ad1 + ad2;
+            console.log("analisis de datos " + analidata)
 
             //ESCUCHA ACTIVA
-            listening = ea1;
-            console.log("escucha activa "+listening)
+            escuchaa = ea1;
+            console.log("escucha activa " + escuchaa)
 
             //ESTRUCTURACION DE LA INFORMACION
             estruinfo = ei1 + ei2 + ei3 + ei4 + ei5 + ei6 + ei7;
-            console.log("estructuracion de la informacion "+estruinfo)
+            console.log("estructuracion de la informacion " + estruinfo)
 
             //PROTOTIPADO
             prototipado = proto1 + proto2 + proto3 + proto4 + proto5 + proto6 + proto7;
-            console.log("prototipado "+prototipado)
+            console.log("prototipado " + prototipado)
 
             //CONOCIMIENTO EN INTERACCION
             conointera = ci1 + ci2 + ci3 + ci4 + ci5 + ci6 + ci7 + ci8;
-            console.log("conocimiento en interaccion "+conointera)
+            console.log("conocimiento en interaccion " + conointera)
 
             //CAPACIDAD DE GESTION
             capagest = cg1 + cg2 + cg3 + cg4 + cg5;
-            console.log("capacidad de gestion "+capagest)
+            console.log("capacidad de gestion " + capagest)
 
             //NEGOCIACION
             neg = n1 + n2 + n3 + n4;
-            console.log("negociacion "+neg)
+            console.log("negociacion " + neg)
 
             //LIDERAZGO
             lid = l1 + l2 + l3 + l4 + l5;
-            console.log("liderazgo  "+lid)
+            console.log("liderazgo  " + lid)
 
             //CREATIVIDAD
             creati = c1;
-            console.log("creatividad "+creati)
+            console.log("creatividad " + creati)
 
             //ACTITUD CRITICA
             actcri = ac1;
-            console.log("actitud critia "+actcri)
+            console.log("actitud critia " + actcri)
 
             //ADAPTACION AL CAMBIO
             adapcam = adc1;
-            console.log("adaptacion al cambio "+adapcam)
+            console.log("adaptacion al cambio " + adapcam)
 
             //EMPATIA
-            empathy = e1;
-            console.log("empatia "+empathy)
+            empatia = e1;
+            console.log("empatia " + empatia)
 
             //MANEJO DEL TIEMPO
             mantim = mm1;
-            console.log("manejo del tiempo "+mantim)
+            console.log("manejo del tiempo " + mantim)
 
             //TRABAJO EN EQUIPO
-            team = t1+t2;
-            console.log("trabajo en equipo "+team)
+            trabajoequipo = t1 + t2;
+            console.log("trabajo en equipo " + trabajoequipo)
 
             //TRABAJO BAJO PRESION
             trabajopre = tbp1;
-            console.log("resistencia al trabajo bajo presion "+trabajopre)
+            console.log("resistencia al trabajo bajo presion " + trabajopre)
 
             //VISION AL FUTURO
             visfutu = vf1;
-            console.log("vision al futuro "+visfutu)
+            console.log("vision al futuro " + visfutu)
+
+            console.log("UX Reseacher " + uxresearcher)
+            console.log("Content strategist " + contentstrategist)
+            console.log("Interaction designer " + interactiondesigner)
+            console.log("UI designer " + uidesigner)
+            console.log("UX lead " + uxlead)
         }
 
 
@@ -6629,7 +10264,7 @@ questioncont.forEach(function (elem, index) {
 btns.addEventListener('click', function (event) {
     contador++;
     console.log('buenas')
-    if (contador % 59 == 0) {
+    if (contador % 56 == 0) {
         preguntas++;
         respuestas++;
         console.log('nivel' + preguntas);
@@ -6638,8 +10273,201 @@ btns.addEventListener('click', function (event) {
     cambiarTexto();
     //resultados();
 
-    //si funciona, pero se debe cambiar mejor en la misma pantalla la opcion de agregar portafolio
+    //MOSTRAR PANTALLA DE RESULTADOS
     if (contador == 60) {
-        btns.setAttribute('href', '../../../index.html');
+
+        //guardar en objetos los datos de los roles
+        const oral = {
+            nameSkill: "Comunicación oral",
+            value: comuora,
+        }
+
+        const written = {
+            nameSkill: "Comunicación escrita",
+            value: comuesc,
+        }
+
+        const empathy = {
+            nameSkill: "Empatía",
+            value: empatia,
+        }
+
+        const team = {
+            nameSkill: "Trabajo en equipo",
+            value: trabajoequipo,
+        }
+
+        const analysis = {
+            nameSkill: "Análisis de datos",
+            value: analidata,
+        }
+
+        const listening = {
+            nameSkill: "Escucha activa",
+            value: escuchaa,
+        }
+
+        const cuantitativa = {
+            nameSkill: "Investigación cuantitativa",
+            value: invescuant,
+        }
+
+        const cualitativa = {
+            nameSkill: "Investigación cuanlitativa",
+            value: invescual,
+        }
+
+        const psicologia = {
+            nameSkill: "Conocimientos en psicología",
+            value: conopsic,
+        }
+
+        const visual = {
+            nameSkill: "Comunicación visual",
+            value: comuvis,
+        }
+
+        const information = {
+            nameSkill: "Estruturación de la información",
+            value: estruinfo,
+        }
+
+        const wireframing = {
+            nameSkill: "Prototipado",
+            value: prototipado,
+        }
+
+        const conoInteraction = {
+            nameSkill: "Conocimiento en interacción",
+            value: conointera,
+        }
+
+        const gestion = {
+            nameSkill: "Capacidad de gestion",
+            value: capagest,
+        }
+
+        const negotiation = {
+            nameSkill: "Negociación",
+            value: neg,
+        }
+
+        const leadership = {
+            nameSkill: "Liderazgo",
+            value: lid,
+        }
+
+        const creativity = {
+            nameSkill: "Creatividad",
+            value: creati,
+        }
+
+        const critical = {
+            nameSkill: "Actitud crítica",
+            value: escuchaa,
+        }
+
+        const change = {
+            nameSkill: "Adaptación al cambio",
+            value: adapcam,
+        }
+
+        const time = {
+            nameSkill: "Manejo del tiempo",
+            value: mantim,
+        }
+
+        const pressure = {
+            nameSkill: "Resistencia al trabajo bajo presión",
+            value: trabajopre,
+        }
+
+        const future = {
+            nameSkill: "Visión al futuro",
+            value: visfutu,
+        }
+
+        uxSkills.push(oral, written, empathy, team, analysis, listening, cuantitativa, cualitativa, psicologia, visual, information, wireframing, conoInteraction, gestion, negotiation, leadership, creativity, critical, change, time, pressure, future);
+
+        const researcher = {
+            nameRole: "UX Researcher",
+            value: uxresearcher,
+          }
+        
+          const content = {
+            nameRole: "Content Strategist",
+            value: contentstrategist,
+          }
+        
+          const interaction = {
+            nameRole: "Interaction Designer",
+            value: interactiondesigner,
+          }
+        
+          const ui = {
+            nameRole: "UI Designer",
+            value: uidesigner,
+          }
+        
+          const lead = {
+            nameRole: "UX Lead",
+            value: uxlead,
+          }
+
+          uxRoles.push(researcher, content, interaction, ui, lead);
+
+        onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                console.log(user);
+                // User is signed in, see docs for a list of available properties
+                // https://firebase.google.com/docs/reference/js/firebase.User
+                const uid = user.uid;
+                // ...
+                const docRef = doc(db, "users", uid);
+                const docSnap = await getDoc(docRef);
+
+                if (docSnap.exists()) {
+                    console.log("Document data:", docSnap.data());
+                    const data = docSnap.data();
+                    userInfo = data;
+                    userInfo.uid = user.uid;
+                    console.log(userInfo);
+
+                    if (userInfo) {
+                        await setDoc(doc(db, "uxSkills", uid), {
+                            skills: uxSkills,
+                        })
+
+                        await setDoc(doc(db, "uxRoles", uid), {
+                            roles: uxRoles,
+                        })
+
+
+                            .then(function () {
+                                //window.location.href = './html/home.html';
+                            });
+                    }
+
+                } else {
+                    // doc.data() will be undefined in this case
+                    console.log("No such document!");
+                }
+
+            }
+        });
+
+        const resultados = document.querySelector('.resul');
+
+        resultados.classList.add('resul--mostrar');
+
+        graphic();
+        resultskills();
+
+
     }
+
+    //si funciona, pero se debe cambiar mejor en la misma pantalla la opcion de agregar portafolio
+    /*if (contador == 60) {
+        btns.setAttribute('href', '../../../index.html');
+    }*/
 })
