@@ -10141,23 +10141,23 @@ questioncont.forEach(function (elem, index) {
 
             //UX RESEARCHER
             uxresearcher = ur1 + ur2 + ur3 + ur4 + ur5 + ur6 + ur7 + ur8 + ur9 + ur10;
-            
+
 
             //CONTENT STRATEGIST
             contentstrategist = cs1 + cs2 + cs3 + cs4 + cs5 + cs6 + cs7 + cs8 + cs9 + cs10;
-            
+
 
             //INTERACTION DESIGNER
             interactiondesigner = id1 + id2 + id3 + id4 + id5 + id6 + id7 + id8 + id9 + id10;
-            
+
 
             //UI DESIGNER
             uidesigner = ud1 + ud2 + ud3 + ud4 + ud5 + ud6 + ud7 + ud8 + ud9 + ud10;
-            
-            
+
+
             //UX LEAD
             uxlead = ul1 + ul2 + ul3 + ul4 + ul5 + ul6 + ul7 + ul8 + ul9 + ul10;
-            
+
 
             //SKILLS
 
@@ -10392,29 +10392,29 @@ btns.addEventListener('click', function (event) {
         const researcher = {
             nameRole: "UX Researcher",
             value: uxresearcher,
-          }
-        
-          const content = {
+        }
+
+        const content = {
             nameRole: "Content Strategist",
             value: contentstrategist,
-          }
-        
-          const interaction = {
+        }
+
+        const interaction = {
             nameRole: "Interaction Designer",
             value: interactiondesigner,
-          }
-        
-          const ui = {
+        }
+
+        const ui = {
             nameRole: "UI Designer",
             value: uidesigner,
-          }
-        
-          const lead = {
+        }
+
+        const lead = {
             nameRole: "UX Lead",
             value: uxlead,
-          }
+        }
 
-          uxRoles.push(researcher, content, interaction, ui, lead);
+        uxRoles.push(researcher, content, interaction, ui, lead);
 
         onAuthStateChanged(auth, async (user) => {
             if (user) {
