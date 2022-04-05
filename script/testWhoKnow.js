@@ -105,7 +105,7 @@ skillObj.addEventListener('click', function () {
                     })
 
                         .then(function () {
-                            window.location.href = '../html/test/whodoesknow/skill.html';
+                            window.location.href = '../uxnet/html/test/whodoesknow/skill.html';
                         });
                 }
 
