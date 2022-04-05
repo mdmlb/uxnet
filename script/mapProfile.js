@@ -21,6 +21,7 @@ var userInfo;
 //const skillList = document.querySelector('.skillElements');
 const bestSkillList = document.querySelector('.bestSkillElements');
 const worstSkillList = document.querySelector('.worstSkillElements');
+const titleBestRole = document.querySelector('.textprofile__rol');
 
 
 function renderSkills(list,elemHtml,num) {
@@ -31,6 +32,7 @@ function renderSkills(list,elemHtml,num) {
 
         const newSkill = document.createElement('div');
         newSkill.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'flex-row');
+        newSkill.style.padding = "2vh";
 
         const percentage = `${elem.value}%`;
 
@@ -124,6 +126,28 @@ onAuthStateChanged(auth, async (user) => {
             // Trae información de la colección de uxRoles de la base de datos
             const docRef3 = doc(db, "uxRoles", uid);
             const docSnap3 = await getDoc(docRef3);
+
+            let uxRolesList = [];
+            let orderedListRoles = [];
+
+            function getBestRole() {
+                uxRolesList = [];
+                console.log(docSnap3.data().roles);
+                
+                docSnap3.data().roles.forEach((item) => {
+                    uxRolesList.push(item);
+                });
+                //loader.classList.remove('loader--show');
+
+                //Mete en el arreglo todos los roles ordenados de mayor a menor
+                orderedListRoles = uxRolesList.sort(function (a, b) {
+                    return b.value - a.value;
+                  });
+
+                titleBestRole.textContent = "" + orderedListRoles[0].nameRole + " - " + orderedListRoles[0].value + "%";
+            }
+
+            getBestRole();
 
             //guardar los valores de los roles de la base de datos en un arreglo
             let uxValueRoles = [docSnap3.data().roles[0].value, docSnap3.data().roles[1].value, docSnap3.data().roles[2].value, docSnap3.data().roles[3].value, docSnap3.data().roles[4].value];

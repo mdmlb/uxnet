@@ -1296,6 +1296,10 @@ ul {
   cursor: pointer;
 }
 
+.graphic__container {
+  width: 80%;
+}
+
 .timelinebody {
   max-width: 1200px;
   margin: 0 auto;
