@@ -127,13 +127,15 @@
             <div style="height: 10vh;"></div>
 
             <!--AQUI VA LA GRAFICA DE LOS ROLES-->
-            <div></div>
+            <div>
+                <canvas id="myChart2"></canvas>
+            </div>
 
             <!--AQUI VAN LAS MEJORES HABILIDADES-->
             <!--Best skills-->
             <h2>HABILIDADES CON MEJOR DESEMPEÑO</h2>
             <div style="height: 6vh;"></div>
-            <div class="d-flex justify-content-center align-items-center flex-row flex-wrap">
+            <div class="bestSkillElements d-flex justify-content-center align-items-center flex-row flex-wrap">
                 
             </div>
 
@@ -142,7 +144,7 @@
             <div style="height: 10vh;"></div>
             <h2>HABILIDADES CON BAJO DESEMPEÑO</h2>
             <div style="height: 6vh;"></div>
-            <div class="d-flex justify-content-center align-items-center flex-row flex-wrap">
+            <div class="worstSkillElements d-flex justify-content-center align-items-center flex-row flex-wrap">
                 
             </div>
             <div style="height: 20vh;"></div>
@@ -413,7 +415,9 @@
 
     <!-- JavaScript -->
     
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
     <script type="module" src="./script/firebase.js"></script>
+    <script type="module" src="./script/mapProfile.js"></script>
     <script type="module" src="./script/auth.js"></script>
     <script type="module" src="./script/modals/addtimeline.js"></script>
     
