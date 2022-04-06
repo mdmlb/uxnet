@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <title>UXnet | Perfil</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./style/main.css">
+
+    <!-- Typo -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Prompt:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Logo -->
+    <link rel="shortcut icon" href="./img/shortlogo.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="mainHeaderprofile">
+
+        <!--Nav-->
+        <nav class="header d-flex align-items-center flex-row p-4">
+
+            <!--Nav: menu
+            <a href="#" class="header__menulink">
+                <img class="header__menu" src="./img/burguermenu.svg" atl="menu">
+            </a>-->
+
+            <!--Nav: Logo-->
+            <a href="./index.html" class="header__logolink">
+                <img class="header__logo" src="../../img/draklogo.svg" atl="UXnet's logo">
+            </a>
+
+            <div class="header__links">
+                <a href="./information.html" class="header__link">Información</a>
+                <a href="./testwhodoesntknow.html" class="header__link">Test</a>
+                <a href="./growth.html" class="header__link">Eventos</a>
+            </div>
+
+            <!--Nav: Profile-->
+            <div class="header__profileLink d-flex align-items-center flex-row">
+                <a href="./profile.html" class="header__profileLink">
+                    <img class="header__profile" src="./img/user.svg" atl="Profile">
+                </a>
+                <div style="width: 2vh;"></div>
+                <button class="btn signout SignOutButton">Cerrar sesión</button>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="main">
+
+        <div style="height: 10vh;"></div>
+
+        <div class="breadcrumbs d-flex flex-row">
+            <a href="./profile.html" class="d-flex justify-content-center align-items-center flex-row">
+                <div class="d-flex justify-content-center align-items-center">
+                    <i class="arrow left"></i>
+                </div>
+
+                <div style="width: 2vh"></div>
+                <h6 style="color: white;     margin-bottom: 0">Regresar a mi perfil</h6>
+            </a>
+        </div>
+        <!--info-->
+        <section class="main__info">
+
+            <div style="height: 10vh;"></div>
+
+            <!--HABILIDADES-->
+            <h2>DETALLE DE HABILIDADES</h2>
+            <p class="textprofile__description" style="color: white;">A continuación puedes observar tus habilidades, ordenadas del más alto desempeño al más bajo
+            </p>
+            <div style="height: 6vh;"></div>
+            <div class="allSkillElements d-flex justify-content-center align-items-center flex-row flex-wrap">
+                
+            </div>
+
+           
+
+            <div style="height: 10vh;"></div>
+            
+            
+
+
+        </section>
+
+        <div style="height: 10vh;"></div>
+
+        <!---->
+        
+        <!--Footer-->
+        <footer class="footer">
+
+            <hr class="footer__line">
+
+            <div class="d-flex justify-content-center align-items-top flex-row">
+                <section class="footercont m-5">
+                    <h4 class="footercont__title">Información legal</h4>
+                    <div class="footercont__cont d-flex justify-content-left align-items-left flex-column">
+                        <a href="#" class="footercont__text">Pivacidad y seguridad</a>
+                        <a href="#" class="footercont__text">Terminos de uso</a>
+                    </div>
+                </section>
+
+                <section class="footercont m-5">
+                    <h4 class="footercont__title">Ayuda</h4>
+                    <div class="footercont__cont d-flex justify-content-left align-items-left flex-column">
+                        <a href="#" class="footercont__text">Contáctanos</a>
+                        <a href="#" class="footercont__text">FAQs</a>
+                    </div>
+                </section>
+
+                <section class="footercont m-5">
+                    <h4 class="footercont__title">Siguenos</h4>
+                    <div class="footercont__cont d-flex justify-content-left align-items-left flex-row">
+                        <a href="#" class="footercont__img">
+                            <img class="footercont__img" src="./img/footer/facebook.svg" atl="">
+                        </a>
+                        <a href="#" class="footercont__img">
+                            <img class="footercont__img" src="./img/footer/instagram.svg" atl="">
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </footer>
+
+
+        <!-- background -->
+        <div class="dark"></div>
+
+        <!-- modal add timelipe -->
+        <div class="modal">
+            <div class=" p-5">
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                    <h5 class="modal-title" id="exampleModalLabel">Trayectoria laboral</h5>
+                    <p>Recuerda que este debe estar público para completar tu perfil como diseñador UX.</p>
+                </div>
+                <div>
+                    <form class="form formtimeline">
+                        <div class="d-flex justify-content-center align-items-center flex-row">
+                            <div class=" contformyearexp">
+                                <label for="exampleFormControlInput1" class="form-label">Año</label>
+                                <input type="number" class="form-control ageneven" id="exampleFormControlInput1 year"
+                                    placeholder="Año">
+                            </div>
+                            <div class="m-3 contformyearexp">
+                                <label for="exampleFormControlInput2" class="form-label">Título</label>
+                                <input type="lastname" class="form-control ageneven" id="exampleFormControlInput2 title"
+                                    placeholder="Título">
+                            </div>
+                            <div class=" contformyearexp">
+                                <label for="exampleFormControlInput3" class="form-label">Descripción</label>
+                                <input type="email" class="form-control ageneven" id="exampleFormControlInput3 description"
+                                    placeholder="Una descripción corta de tu cargo">
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a type="button" class="btn btn-primary btncancel m-3"
+                                style="width: 15%;">Cancelar</a>
+                            <button type="button" class="btn btn-primary btncompletang btn2 m-3"
+                                style="width: 15%;">Finalizar</button>
+                        </div>
+                            
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <!-- JavaScript -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script type="module" src="./script/firebase.js"></script>
+    <script type="module" src="./script/profileSkills.js"></script>
+    <script type="module" src="./script/auth.js"></script>
+    <script type="module" src="./script/modals/addtimeline.js"></script>
+    
+
+</body>
+
+</html>
