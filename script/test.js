@@ -420,7 +420,7 @@ const preguntas = [
     },
     //30
     {
-        pregunta: 'Cuál de los siguientes es un tipo de sistema de organización ambiguo (También podría ser poner varias imágenes y que pongan cómo se llama cada tipo de sistema de organización)',
+        pregunta: 'Cuál de los siguientes es un tipo de sistema de organización ambiguo',
         src: '../../../img/test/vacio.svg',
     },
 
@@ -675,9 +675,9 @@ const respuestas = [
     //11
     {
         respt1: 'Solo por hoy, tienes un 50% de descuento en las prendas de la colección “Erizo” ',
-        respt2: '15% menos adorable que un erizo real, pero 60% más duradero y ahora con un 50% de descuento',
+        respt2: '¡Siempre te tenemos en cuenta! Por eso, te damos un 50% de descuento en las prendas de nuestra colección “Erizo”',
         respt3: 'Alguna ves quisiste un erizo de mascota? Si? Pues eso es un delito, asi que mejor te damos un 50% de descuento en nuestra coleccion “Erizo”',
-        respt4: '¡Siempre te tenemos en cuenta! Por eso, te damos un 50% de descuento en las prendas de nuestra colección “Erizo”',
+        respt4: '15% menos adorable que un erizo real, pero 60% más duradero y ahora con un 50% de descuento',
         respt5: 'No lo sé',
         respt6: 'Ninguna de las anteriores'
     },
@@ -784,19 +784,19 @@ const respuestas = [
     },
     //23
     {
-        respt1: 'Revisar algunas aplicaciones similares existentes y analizar sus procesos de registro y patrones de diseño, para después utilizar patrones similares a los procesos más utilizados y establecidos',
+        respt1: 'Hablar con compañeros de profesión para ver qué diseñarían y usar sus ideas en la aplicación',
         respt2: 'Reunirse con los usuarios para evaluar sus ideas sobre diferentes procesos de registro, luego sintetizar estos datos y aplicar los hallazgos al diseño de la aplicación',
         respt3: 'Evaluar varios diseños de sitios web para obtener los elementos de diseño que pueden usarse en el diseño de la aplicación, para así copiarlos y aplicarlos a todas las pantallas',
-        respt4: 'Hablar con compañeros de profesión para ver qué diseñarían y usar sus ideas en la aplicación',
-        respt5: 'aNo lo sé',
+        respt4: 'Revisar algunas aplicaciones similares existentes y analizar sus procesos de registro y patrones de diseño, para después utilizar patrones similares a los procesos más utilizados y establecidos',
+        respt5: 'No lo sé',
         respt6: 'Ninguna de las anteriores'
     },
     //24
     {
         respt1: 'Un conjunto de ayudas de navegación secundarias que indican a los usuarios dónde se encuentran en un sitio web',
-        respt2: 'Un grupo de propiedades de un objeto que ayudan al usuario a percibir lo que se puede hacer con el objeto',
+        respt2: 'Una colección de materiales que ayudan a definir el estilo específico de un producto',
         respt3: 'Un sistema de líneas horizontales y verticales que proporcionan una base estructural para el diseño y el diseño de la página',
-        respt4: 'Una colección de materiales que ayudan a definir el estilo específico de un producto',
+        respt4: 'Un grupo de propiedades de un objeto que ayudan al usuario a percibir lo que se puede hacer con el objeto',
         respt5: 'No lo sé',
         respt6: 'Ninguna de las anteriores'
     },
@@ -820,37 +820,37 @@ const respuestas = [
     },
     //27
     {
-        respt1: 'Visibilidad del estado del sistema',
+        respt1: 'Reconocer antes que recordar',
         respt2: 'Prevención de errores',
         respt3: 'Diseño estético y minimalista',
-        respt4: 'Reconocer antes que recordar',
+        respt4: 'Visibilidad del estado del sistema',
         respt5: 'No lo sé',
         respt6: 'Ninguna de las anteriores'
     },
     //28
     {
         respt1: 'Carrusel',
-        respt2: 'Cards',
+        respt2: 'Categorización',
         respt3: 'Modal',
-        respt4: 'Categorización',
+        respt4: 'Cards',
         respt5: 'No lo sé',
         respt6: 'Ninguna de las anteriores'
     },
     //29
     {
-        respt1: 'Para mostrar las interacciones de los elementos UI',
+        respt1: 'Para mostrar la estructura de la página',
         respt2: 'Para impresionar a las partes interesadas',
         respt3: 'Para mostrar el diseño final',
-        respt4: 'Para mostrar la estructura de la página',
+        respt4: 'Para mostrar las interacciones de los elementos UI',
         respt5: 'No lo sé',
         respt6: 'Ninguna de las anteriores'
     },
     //30
     {
-        respt1: 'Organización por tema',
+        respt1: 'Organización geográfica',
         respt2: 'Organización cronológica',
         respt3: 'Organización social',
-        respt4: 'Organización geográfica',
+        respt4: 'Organización por tema',
         respt5: 'No lo sé',
         respt6: 'Ninguna de las anteriores'
     },
@@ -876,12 +876,12 @@ const respuestas = [
     },
     //33
     {
-        respt1: '1',
-        respt2: '2',
-        respt3: '3',
-        respt4: '4',
-        respt5: '5',
-        respt6: '6'
+        respt1: 'No escogería ninguno',
+        respt2: 'Los dos están bien',
+        respt3: 'El de la izquierda',
+        respt4: 'El de la derecha',
+        respt5: 'No lo sé',
+        respt6: 'Ninguna de las anteriores'
     },
     //34
     {
@@ -889,62 +889,62 @@ const respuestas = [
         respt2: '2',
         respt3: '3',
         respt4: '4',
-        respt5: '5',
-        respt6: '6'
+        respt5: 'No lo sé',
+        respt6: 'Ninguna de las anteriores'
     },
     //35
     {
-        respt1: '1',
-        respt2: '2',
-        respt3: '3',
-        respt4: '4',
-        respt5: '5',
-        respt6: '6'
+        respt1: '4',
+        respt2: '3',
+        respt3: '2',
+        respt4: '1',
+        respt5: 'No lo sé',
+        respt6: 'Ninguna de las anteriores'
     },
     //36
     {
-        respt1: '1',
-        respt2: '2',
-        respt3: '3',
-        respt4: '4',
-        respt5: '5',
-        respt6: '6'
+        respt1: '4',
+        respt2: '3',
+        respt3: '2',
+        respt4: '1',
+        respt5: 'No lo sé',
+        respt6: 'Ninguna de las anteriores'
     },
     //37
     {
-        respt1: '1',
-        respt2: '2',
-        respt3: '3',
-        respt4: '4',
-        respt5: '5',
-        respt6: '6'
+        respt1: 'Colores análogos',
+        respt2: 'Tríada',
+        respt3: 'Colores monocromáticos',
+        respt4: 'Colores complementarios',
+        respt5: 'No lo sé',
+        respt6: 'Ninguna de las anteriores'
     },
     //38
     {
-        respt1: '1',
-        respt2: '2',
-        respt3: '3',
-        respt4: '4',
-        respt5: '5',
-        respt6: '6'
+        respt1: '1- Tracking, 2- Kerning',
+        respt2: '1- Kerning, 2-Leading',
+        respt3: '1- Leading, 2- Kerning',
+        respt4: '1- Kerning, 2-Tracking',
+        respt5: '1-Tracking, 2-Leading',
+        respt6: 'No lo sé'
     },
     //39
     {
-        respt1: '1',
-        respt2: '2',
-        respt3: '3',
-        respt4: '4',
-        respt5: '5',
-        respt6: '6'
+        respt1: '1-Decorativa, 2-Serif, 3-Sans-serif, 4-Script',
+        respt2: '1-Sans-serif, 2-Decorativa, 3-Serif, 4-Script',
+        respt3: '1-Serif, 2-Decorativa, 3-Sans-serif, 4-Script',
+        respt4: '1-Serif, 2-Script, 3-Sans-serif, 4-Decorativa',
+        respt5: 'No lo sé',
+        respt6: 'Ninguna de las anteriores'
     },
     //40
     {
-        respt1: '1',
-        respt2: '2',
-        respt3: '3',
-        respt4: '4',
-        respt5: '5',
-        respt6: '6'
+        respt1: 'Los tres colores incitarían al usuario a dar click',
+        respt2: 'Ninguno de los tres incitarían al usuario a dar click',
+        respt3: '1',
+        respt4: '2',
+        respt5: '3',
+        respt6: 'No lo sé'
     },
 
 
@@ -1615,8 +1615,7 @@ questioncont.forEach(function (elem, index) {
 
                             //investigacion cuantitativa 30
                             ict1 = 0;
-                            console.log("valor de ur1 " + ur1)
-                            console.log("valor de ux researcher " + uxresearcher)
+
                             clicked = false
                         }
 
@@ -1644,7 +1643,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion oral 10
                             co1 = 0;
 
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -1667,8 +1665,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cuantitativa 30
                             ict2 = 0;
 
-                            console.log("valor de ur3 " + ur3)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -1688,8 +1684,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa 30
                             icl1 = 0;
 
-                            console.log("valor de ur4 " + ur4)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
 
@@ -1734,9 +1728,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa
                             icl2 = 0;
 
-                            console.log("valor de ur6 " + ur6)
-                            console.log("valor de icl2 " + icl2)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -1756,9 +1747,6 @@ questioncont.forEach(function (elem, index) {
                             //analisis de datos 50
                             ad2 = 0;
 
-                            console.log("valor de ur7 " + ur7)
-                            console.log("valor ad2 " + ad2)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -1781,10 +1769,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa 20
                             icl3 = 0;
 
-                            console.log("valor de ur8 " + ur8)
-                            console.log("valor de ict3 " + ict3)
-                            console.log("valor de icl3 " + icl3)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
 
@@ -1808,10 +1792,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa 20
                             icl4 = 0;
 
-                            console.log("valor de ur9 " + ur9)
-                            console.log("valor de ict4 " + ict4)
-                            console.log("valor de icl4 " + icl4)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -1831,9 +1811,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion oral 20
                             co2 = 0;
 
-                            console.log("valor de ur10 " + ur10)
-                            console.log("valor de co2 " + co2)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -1855,9 +1832,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce2 = 0;
 
-                            console.log("valor de cs1 " + cs1)
-                            console.log("valor de ce2 " + ce2)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -1879,9 +1853,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce3 = 0;
 
-                            console.log("valor de cs2 " + cs2)
-                            console.log("valor de ce3 " + ce3)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -1903,9 +1874,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce4 = 0;
 
-                            console.log("valor de cs3 " + cs3)
-                            console.log("valor de ce4 " + ce4)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -1927,9 +1895,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 20
                             ce5 = 0;
 
-                            console.log("valor de ur4 " + c4)
-                            console.log("valor de ce5 " + ce5)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -1951,9 +1916,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce6 = 0;
 
-                            console.log("valor de ur1 " + cs5)
-                            console.log("valor de ce6 " + ce6)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -1975,8 +1937,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce7 = 0;
 
-                            console.log("valor de ur1 " + cs6)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -1998,8 +1958,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce8 = 0;
 
-                            console.log("valor de ur1 " + cs7)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -2021,8 +1979,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce9 = 0;
 
-                            console.log("valor de ur1 " + cs8)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -2044,8 +2000,6 @@ questioncont.forEach(function (elem, index) {
                             //estructuracion de la informacion 10
                             ei1 = 0;
 
-                            console.log("valor de cs9 " + cs9)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -2067,8 +2021,6 @@ questioncont.forEach(function (elem, index) {
                             //estructuración de la información 10
                             ei2 = 0;
 
-                            console.log("valor de cs10 " + cs10)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -2091,9 +2043,6 @@ questioncont.forEach(function (elem, index) {
                             //Prototipado 20
                             proto1 = 0;
 
-                            console.log("valor de id1 " + id1)
-                            console.log("valor de proto1 " + proto1)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -2118,8 +2067,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento de interaccion 10
                             ci1 = 0;
 
-                            console.log("valor de id2 " + id2)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -2141,8 +2088,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento de interaccion 20
                             ci2 = 0;
 
-                            console.log("valor de id3 " + id3)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -2164,8 +2109,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento de interaccion 20
                             ci3 = 0;
 
-                            console.log("valor de id4 " + id4)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -2190,8 +2133,6 @@ questioncont.forEach(function (elem, index) {
                             //estructuracion de la informacion 20
                             ei2 = 0;
 
-                            console.log("valor de id5 " + id5)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -2219,8 +2160,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento en interaccion 10
                             ci4 = 0;
 
-                            console.log("valor de id6 " + id6)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -2242,8 +2181,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento en interaccion 10
                             ci5 = 0;
 
-                            console.log("valor de id7 " + id7)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -2268,8 +2205,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento en interaccion 10
                             ci6 = 0;
 
-                            console.log("valor de id8 " + id8)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -2294,8 +2229,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento en interaccion 10
                             ci7 = 0;
 
-                            console.log("valor de id9 " + id9)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -2319,9 +2252,7 @@ questioncont.forEach(function (elem, index) {
 
                             //conocimiento en interaccion 10
                             ci8 = 0;
-
-                            console.log("valor de id10 " + id10)
-                            console.log("valor de interation designer " + interactiondesigner)
+                            
                             clicked = false
                         }
 
@@ -2344,9 +2275,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv1 = 0;
 
-                            console.log("valor de ud1 " + ud1)
-                            console.log("valor de cv1 " + cv1)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -2371,10 +2299,6 @@ questioncont.forEach(function (elem, index) {
                             //prototipado 10
                             proto6 = 0;
 
-                            console.log("valor de ud2 " + ud2)
-                            console.log("valor de proto6 " + proto6)
-                            console.log("valor de cv2 " + cv2)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -2399,8 +2323,6 @@ questioncont.forEach(function (elem, index) {
                             //prototipado 10
                             proto7 = 0;
 
-                            console.log("valor de ud3 " + ud3)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -2422,8 +2344,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv4 = 0;
 
-                            console.log("valor de ud4 " + ud4)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -2445,8 +2365,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv5 = 0;
 
-                            console.log("valor de ud5 " + ud5)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -2468,8 +2386,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv6 = 0;
 
-                            console.log("valor de ud6 " + ud6)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -2491,8 +2407,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv7 = 0;
 
-                            console.log("valor de ud7 " + ud7)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -2514,8 +2428,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv8 = 0;
 
-                            console.log("valor de ud8 " + ud8)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -2537,8 +2449,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv9 = 0;
 
-                            console.log("valor de ud9 " + ud9)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -2560,8 +2470,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv10 = 0;
 
-                            console.log("valor de ud10 " + ud10)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -2585,9 +2493,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion oral 30
                             co3 = 0;
 
-                            console.log("valor de ul1 " + ul1)
-                            console.log("valor de co3 " + co3)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -2609,9 +2514,6 @@ questioncont.forEach(function (elem, index) {
                             //capacidad de gestion
                             cg1 = 0;
 
-                            console.log("valor de ul2 " + ul2)
-                            console.log("valor de cg1 " + cg1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -2633,9 +2535,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion oral 30
                             co4 = 0;
 
-                            console.log("valor de ul3 " + ul3)
-                            console.log("valor de co4 " + co4)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -2660,10 +2559,6 @@ questioncont.forEach(function (elem, index) {
                             //capacidad de gestion 10
                             cg2 = 0;
 
-                            console.log("valor de ul4 " + ul4)
-                            console.log("valor de cg2 " + cg2)
-                            console.log("valor de co5 " + co5)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -2688,10 +2583,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo 20
                             l1 = 0;
 
-                            console.log("valor de ul5 " + ul5)
-                            console.log("valor de cg3 " + cg3)
-                            console.log("valor de l1 " + l1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -2716,10 +2607,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo
                             l2 = 0;
 
-                            console.log("valor de ul6 " + ul6)
-                            console.log("valor de cg4 " + cg4)
-                            console.log("valor de l2 " + l2)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -2741,9 +2628,6 @@ questioncont.forEach(function (elem, index) {
                             //negociacion 10
                             n1 = 0;
 
-                            console.log("valor de ul7 " + ul7)
-                            console.log("valor de n1 " + n1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -2771,11 +2655,6 @@ questioncont.forEach(function (elem, index) {
                             //negociacion 10
                             n2 = 0;
 
-                            console.log("valor de ul8 " + ul8)
-                            console.log("valor de cg5 " + cg5)
-                            console.log("valor de l3 " + l3)
-                            console.log("valor de n2 " + n2)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -2797,9 +2676,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo
                             l4 = 0;
 
-                            console.log("valor de ul9 " + ul9)
-                            console.log("valor de l4 " + l4)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -2821,9 +2697,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo
                             l5 = 0;
 
-                            console.log("valor de ul10 " + ul10)
-                            console.log("valor de l5 " + l5)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -2845,8 +2718,6 @@ questioncont.forEach(function (elem, index) {
                             //Creatividad
                             c1 = 0;
 
-                            console.log("valor de c1 " + c1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -2865,8 +2736,6 @@ questioncont.forEach(function (elem, index) {
                             //actitud critica
                             ac1 = 0;
 
-                            console.log("valor de ac1 " + ac1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -2885,8 +2754,6 @@ questioncont.forEach(function (elem, index) {
                             //adaptacion al cambio
                             adc1 = 0;
 
-                            console.log("valor de adc1 " + adc1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -2905,8 +2772,6 @@ questioncont.forEach(function (elem, index) {
                             //Empatia
                             e1 = 0;
 
-                            console.log("valor de e1 " + e1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -2925,8 +2790,6 @@ questioncont.forEach(function (elem, index) {
                             //Manejo del tiempo 100
                             mm1 = 0;
 
-                            console.log("valor de mm1 " + mm1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -2945,8 +2808,6 @@ questioncont.forEach(function (elem, index) {
                             //Trabajo en equipo
                             t1 = 0;
 
-                            console.log("valor de t1 " + t1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -2965,8 +2826,6 @@ questioncont.forEach(function (elem, index) {
                             //Trabajo en equipo
                             t2 = 0;
 
-                            console.log("valor de t2 " + t2)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -2985,8 +2844,6 @@ questioncont.forEach(function (elem, index) {
                             //Resistencia al trabajo bajo presion
                             tbp1 = 0;
 
-                            console.log("valor de tbp1 " + tbp1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -3005,8 +2862,6 @@ questioncont.forEach(function (elem, index) {
                             //Vision al futuro
                             vf1 = 0;
 
-                            console.log("valor de vf1 " + vf1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -3034,8 +2889,6 @@ questioncont.forEach(function (elem, index) {
 
                             //investigacion cuantitativa 30
                             ict1 = 0;
-                            console.log("valor de ur1 " + ur1)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
 
@@ -3062,11 +2915,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion oral 10
                             co1 = 2;
 
-                            console.log("valor de ur2 " + ur2)
-                            console.log("valor de csp1 " + csp1)
-                            console.log("valor de ce1 " + ce1)
-                            console.log("valor de co1 " + co1)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -3089,8 +2937,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cuantitativa 30
                             ict2 = 0;
 
-                            console.log("valor de ur3 " + ur3)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -3110,8 +2956,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa 30
                             icl1 = 0;
 
-                            console.log("valor de ur4 " + ur4)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
 
@@ -3134,9 +2978,6 @@ questioncont.forEach(function (elem, index) {
                             //escucha activa 40
                             ea1 = 20;
 
-                            console.log("valor de co1 " + ea1)
-                            console.log("valor ur5 " + ur5)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -3156,9 +2997,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa
                             icl2 = 0;
 
-                            console.log("valor de ur6 " + ur6)
-                            console.log("valor de icl2 " + icl2)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -3178,9 +3016,6 @@ questioncont.forEach(function (elem, index) {
                             //analisis de datos 50
                             ad2 = 0;
 
-                            console.log("valor de ur7 " + ur7)
-                            console.log("valor ad2 " + ad2)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -3203,10 +3038,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa 20
                             icl3 = 4;
 
-                            console.log("valor de ur8 " + ur8)
-                            console.log("valor de ict3 " + ict3)
-                            console.log("valor de icl3 " + icl3)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
 
@@ -3230,10 +3061,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa 20
                             icl4 = 4;
 
-                            console.log("valor de ur9 " + ur9)
-                            console.log("valor de ict4 " + ict4)
-                            console.log("valor de icl4 " + icl4)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -3253,9 +3080,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion oral 20
                             co2 = 4;
 
-                            console.log("valor de ur10 " + ur10)
-                            console.log("valor de co2 " + co2)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -3278,9 +3102,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce2 = 0;
 
-                            console.log("valor de cs1 " + cs1)
-                            console.log("valor de ce2 " + ce2)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -3302,9 +3123,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce3 = 0;
 
-                            console.log("valor de cs2 " + cs2)
-                            console.log("valor de ce3 " + ce3)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -3326,9 +3144,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce4 = 2;
 
-                            console.log("valor de cs3 " + cs3)
-                            console.log("valor de ce4 " + ce4)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -3350,9 +3165,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 20
                             ce5 = 4;
 
-                            console.log("valor de ur4 " + c4)
-                            console.log("valor de ce5 " + ce5)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -3374,9 +3186,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce6 = 2;
 
-                            console.log("valor de ur1 " + cs5)
-                            console.log("valor de ce6 " + ce6)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -3398,8 +3207,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce7 = 0;
 
-                            console.log("valor de ur1 " + cs6)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -3421,8 +3228,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce8 = 0;
 
-                            console.log("valor de ur1 " + cs7)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -3444,8 +3249,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce9 = 0;
 
-                            console.log("valor de ur1 " + cs8)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -3467,8 +3270,6 @@ questioncont.forEach(function (elem, index) {
                             //estructuracion de la informacion 10
                             ei1 = 0;
 
-                            console.log("valor de cs9 " + cs9)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -3490,8 +3291,6 @@ questioncont.forEach(function (elem, index) {
                             //estructuración de la información 10
                             ei2 = 0;
 
-                            console.log("valor de cs10 " + cs10)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -3514,9 +3313,6 @@ questioncont.forEach(function (elem, index) {
                             //Prototipado 20
                             proto1 = 4;
 
-                            console.log("valor de id1 " + id1)
-                            console.log("valor de proto1 " + proto1)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -3541,8 +3337,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento de interaccion 10
                             ci1 = 0;
 
-                            console.log("valor de id2 " + id2)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -3564,8 +3358,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento de interaccion 20
                             ci2 = 0;
 
-                            console.log("valor de id3 " + id3)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -3613,8 +3405,6 @@ questioncont.forEach(function (elem, index) {
                             //estructuracion de la informacion 20
                             ei2 = 0;
 
-                            console.log("valor de id5 " + id5)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -3642,8 +3432,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento en interaccion 10
                             ci4 = 0;
 
-                            console.log("valor de id6 " + id6)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -3665,8 +3453,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento en interaccion 10
                             ci5 = 0;
 
-                            console.log("valor de id7 " + id7)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -3691,8 +3477,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento en interaccion 10
                             ci6 = 0;
 
-                            console.log("valor de id8 " + id8)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -3717,8 +3501,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento en interaccion 10
                             ci7 = 0;
 
-                            console.log("valor de id9 " + id9)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -3743,8 +3525,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento en interaccion 10
                             ci8 = 0;
 
-                            console.log("valor de id10 " + id10)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -3767,9 +3547,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv1 = 2;
 
-                            console.log("valor de ud1 " + ud1)
-                            console.log("valor de cv1 " + cv1)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -3794,10 +3571,6 @@ questioncont.forEach(function (elem, index) {
                             //prototipado 10
                             proto6 = 2;
 
-                            console.log("valor de ud2 " + ud2)
-                            console.log("valor de proto6 " + proto6)
-                            console.log("valor de cv2 " + cv2)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -3822,8 +3595,6 @@ questioncont.forEach(function (elem, index) {
                             //prototipado 10
                             proto7 = 0;
 
-                            console.log("valor de ud3 " + ud3)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -3845,8 +3616,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv4 = 0;
 
-                            console.log("valor de ud4 " + ud4)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -3868,8 +3637,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv5 = 0;
 
-                            console.log("valor de ud5 " + ud5)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -3891,8 +3658,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv6 = 0;
 
-                            console.log("valor de ud6 " + ud6)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -3914,8 +3679,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv7 = 0;
 
-                            console.log("valor de ud7 " + ud7)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -3937,8 +3700,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv8 = 0;
 
-                            console.log("valor de ud8 " + ud8)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -3960,8 +3721,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv9 = 0;
 
-                            console.log("valor de ud9 " + ud9)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -3983,8 +3742,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv10 = 0;
 
-                            console.log("valor de ud10 " + ud10)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -4008,9 +3765,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion oral 30
                             co3 = 6;
 
-                            console.log("valor de ul1 " + ul1)
-                            console.log("valor de co3 " + co3)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -4032,9 +3786,6 @@ questioncont.forEach(function (elem, index) {
                             //capacidad de gestion
                             cg1 = 2;
 
-                            console.log("valor de ul2 " + ul2)
-                            console.log("valor de cg1 " + cg1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -4056,9 +3807,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion oral 30
                             co4 = 6;
 
-                            console.log("valor de ul3 " + ul3)
-                            console.log("valor de co4 " + co4)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -4083,10 +3831,6 @@ questioncont.forEach(function (elem, index) {
                             //capacidad de gestion 10
                             cg2 = 2;
 
-                            console.log("valor de ul4 " + ul4)
-                            console.log("valor de cg2 " + cg2)
-                            console.log("valor de co5 " + co5)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -4111,10 +3855,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo 20
                             l1 = 4;
 
-                            console.log("valor de ul5 " + ul5)
-                            console.log("valor de cg3 " + cg3)
-                            console.log("valor de l1 " + l1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -4139,10 +3879,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo
                             l2 = 4;
 
-                            console.log("valor de ul6 " + ul6)
-                            console.log("valor de cg4 " + cg4)
-                            console.log("valor de l2 " + l2)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -4164,9 +3900,6 @@ questioncont.forEach(function (elem, index) {
                             //negociacion 10
                             n1 = 2;
 
-                            console.log("valor de ul7 " + ul7)
-                            console.log("valor de n1 " + n1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -4194,11 +3927,6 @@ questioncont.forEach(function (elem, index) {
                             //negociacion 10
                             n2 = 2;
 
-                            console.log("valor de ul8 " + ul8)
-                            console.log("valor de cg5 " + cg5)
-                            console.log("valor de l3 " + l3)
-                            console.log("valor de n2 " + n2)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -4220,9 +3948,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo
                             l4 = 4;
 
-                            console.log("valor de ul9 " + ul9)
-                            console.log("valor de l4 " + l4)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -4236,7 +3961,7 @@ questioncont.forEach(function (elem, index) {
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && ul10 == 0) {
+                        if (clicked = true) {
 
                             //Content strategist
                             ul10 = 2;
@@ -4244,9 +3969,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo
                             l5 = 4;
 
-                            console.log("valor de ul10 " + ul10)
-                            console.log("valor de l5 " + l5)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -4268,8 +3990,6 @@ questioncont.forEach(function (elem, index) {
                             //Creatividad
                             c1 = 20;
 
-                            console.log("valor de c1 " + c1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -4288,8 +4008,6 @@ questioncont.forEach(function (elem, index) {
                             //actitud critica
                             ac1 = 20;
 
-                            console.log("valor de ac1 " + ac1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -4308,8 +4026,6 @@ questioncont.forEach(function (elem, index) {
                             //adaptacion al cambio
                             adc1 = 20;
 
-                            console.log("valor de adc1 " + adc1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -4328,8 +4044,6 @@ questioncont.forEach(function (elem, index) {
                             //Empatia
                             e1 = 20;
 
-                            console.log("valor de e1 " + e1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -4348,8 +4062,6 @@ questioncont.forEach(function (elem, index) {
                             //Manejo del tiempo 100
                             mm1 = 20;
 
-                            console.log("valor de mm1 " + mm1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -4368,8 +4080,6 @@ questioncont.forEach(function (elem, index) {
                             //Trabajo en equipo
                             t1 = 10;
 
-                            console.log("valor de t1 " + t1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -4388,8 +4098,6 @@ questioncont.forEach(function (elem, index) {
                             //Trabajo en equipo
                             t2 = 10;
 
-                            console.log("valor de t2 " + t2)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -4408,8 +4116,6 @@ questioncont.forEach(function (elem, index) {
                             //Resistencia al trabajo bajo presion
                             tbp1 = 20;
 
-                            console.log("valor de tbp1 " + tbp1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -4428,8 +4134,6 @@ questioncont.forEach(function (elem, index) {
                             //Vision al futuro
                             vf1 = 20;
 
-                            console.log("valor de vf1 " + vf1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -4446,7 +4150,7 @@ questioncont.forEach(function (elem, index) {
                 //UX RESEARCHER
                 /* Pregunta uno */
                 if (contador == 0) {
-                    console.log("pregunta 1 //////////////////////////////////////////////////")
+                    console.log("pregunta 1 respuesta 3 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -4458,8 +4162,7 @@ questioncont.forEach(function (elem, index) {
 
                             //investigacion cuantitativa 30
                             ict1 = 0;
-                            console.log("valor de ur1 " + ur1)
-                            console.log("valor de ux researcher " + uxresearcher)
+                            
                             clicked = false
                         }
 
@@ -4468,7 +4171,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta dos */
                 if (contador == 1) {
-                    console.log("2 pregunta  respuesta 3")
+                    console.log("2 pregunta respuesta 3 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -4486,11 +4189,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion oral 10
                             co1 = 4;
 
-                            console.log("valor de ur2 " + ur2)
-                            console.log("valor de csp1 " + csp1)
-                            console.log("valor de ce1 " + ce1)
-                            console.log("valor de co1 " + co1)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -4498,7 +4196,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta tres */
                 if (contador == 2) {
-                    console.log("3 pregunta //////////////////////////////////////////////////")
+                    console.log("3 pregunta respuesta 3 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -4513,8 +4211,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cuantitativa 30
                             ict2 = 0;
 
-                            console.log("valor de ur3 " + ur3)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -4522,7 +4218,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta cuatro */
                 if (contador == 3) {
-                    console.log("4 pregunta //////////////////////////////////////////////////")
+                    console.log("4 pregunta respuesta 3 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -4534,8 +4230,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa 30
                             icl1 = 0;
 
-                            console.log("valor de ur4 " + ur4)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
 
@@ -4544,7 +4238,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta cinco */
                 if (contador == 4) {
-                    console.log("5 pregunta respuesta 3")
+                    console.log("5 pregunta respuesta 3 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -4556,9 +4250,6 @@ questioncont.forEach(function (elem, index) {
                             //escucha activa 40
                             ea1 = 40;
 
-                            console.log("valor de co1 " + ea1)
-                            console.log("valor ur5 " + ur5)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -4566,7 +4257,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta seis */
                 if (contador == 5) {
-                    console.log("pregunta 6 respuesta 4//////////////////////////////////////////////////")
+                    console.log("pregunta 6 respuesta 3 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -4578,9 +4269,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa
                             icl2 = 0;
 
-                            console.log("valor de ur6 " + ur6)
-                            console.log("valor de icl2 " + icl2)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -4588,7 +4276,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta siete */
                 if (contador == 6) {
-                    console.log("pregunta 7 //////////////////////////////////////////////////")
+                    console.log("pregunta 7 respuesta 3 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -4600,9 +4288,6 @@ questioncont.forEach(function (elem, index) {
                             //analisis de datos 50
                             ad2 = 0;
 
-                            console.log("valor de ur7 " + ur7)
-                            console.log("valor ad2 " + ad2)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -4625,10 +4310,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa 20
                             icl3 = 8;
 
-                            console.log("valor de ur8 " + ur8)
-                            console.log("valor de ict3 " + ict3)
-                            console.log("valor de icl3 " + icl3)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
 
@@ -4652,10 +4333,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa 20
                             icl4 = 8;
 
-                            console.log("valor de ur9 " + ur9)
-                            console.log("valor de ict4 " + ict4)
-                            console.log("valor de icl4 " + icl4)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -4675,9 +4352,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion oral 20
                             co2 = 8;
 
-                            console.log("valor de ur10 " + ur10)
-                            console.log("valor de co2 " + co2)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -4700,9 +4374,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce2 = 0;
 
-                            console.log("valor de cs1 " + cs1)
-                            console.log("valor de ce2 " + ce2)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -4724,9 +4395,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce3 = 0;
 
-                            console.log("valor de cs2 " + cs2)
-                            console.log("valor de ce3 " + ce3)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -4748,9 +4416,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce4 = 4;
 
-                            console.log("valor de cs3 " + cs3)
-                            console.log("valor de ce4 " + ce4)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -4772,9 +4437,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 20
                             ce5 = 8;
 
-                            console.log("valor de ur4 " + c4)
-                            console.log("valor de ce5 " + ce5)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -4796,9 +4458,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce6 = 4;
 
-                            console.log("valor de ur1 " + cs5)
-                            console.log("valor de ce6 " + ce6)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -4820,8 +4479,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce7 = 0;
 
-                            console.log("valor de ur1 " + cs6)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -4843,8 +4500,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce8 = 0;
 
-                            console.log("valor de ur1 " + cs7)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -4866,8 +4521,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce9 = 0;
 
-                            console.log("valor de ur1 " + cs8)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -4889,8 +4542,6 @@ questioncont.forEach(function (elem, index) {
                             //estructuracion de la informacion 10
                             ei1 = 0;
 
-                            console.log("valor de cs9 " + cs9)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -4912,8 +4563,6 @@ questioncont.forEach(function (elem, index) {
                             //estructuración de la información 10
                             ei2 = 0;
 
-                            console.log("valor de cs10 " + cs10)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -4936,9 +4585,6 @@ questioncont.forEach(function (elem, index) {
                             //Prototipado 20
                             proto1 = 8;
 
-                            console.log("valor de id1 " + id1)
-                            console.log("valor de proto1 " + proto1)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -4963,8 +4609,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento de interaccion 10
                             ci1 = 0;
 
-                            console.log("valor de id2 " + id2)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -4986,8 +4630,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento de interaccion 20
                             ci2 = 0;
 
-                            console.log("valor de id3 " + id3)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -5009,8 +4651,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento de interaccion 20
                             ci3 = 0;
 
-                            console.log("valor de id4 " + id4)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -5035,8 +4675,6 @@ questioncont.forEach(function (elem, index) {
                             //estructuracion de la informacion 20
                             ei2 = 0;
 
-                            console.log("valor de id5 " + id5)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -5064,8 +4702,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento en interaccion 10
                             ci4 = 0;
 
-                            console.log("valor de id6 " + id6)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -5087,8 +4723,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento en interaccion 10
                             ci5 = 0;
 
-                            console.log("valor de id7 " + id7)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -5113,8 +4747,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento en interaccion 10
                             ci6 = 0;
 
-                            console.log("valor de id8 " + id8)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -5139,8 +4771,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento en interaccion 10
                             ci7 = 0;
 
-                            console.log("valor de id9 " + id9)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -5165,8 +4795,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento en interaccion 10
                             ci8 = 0;
 
-                            console.log("valor de id10 " + id10)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -5189,9 +4817,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv1 = 4;
 
-                            console.log("valor de ud1 " + ud1)
-                            console.log("valor de cv1 " + cv1)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -5216,10 +4841,6 @@ questioncont.forEach(function (elem, index) {
                             //prototipado 10
                             proto6 = 4;
 
-                            console.log("valor de ud2 " + ud2)
-                            console.log("valor de proto6 " + proto6)
-                            console.log("valor de cv2 " + cv2)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -5244,8 +4865,6 @@ questioncont.forEach(function (elem, index) {
                             //prototipado 10
                             proto7 = 0;
 
-                            console.log("valor de ud3 " + ud3)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -5267,8 +4886,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv4 = 0;
 
-                            console.log("valor de ud4 " + ud4)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -5290,8 +4907,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv5 = 0;
 
-                            console.log("valor de ud5 " + ud5)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -5313,8 +4928,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv6 = 0;
 
-                            console.log("valor de ud6 " + ud6)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -5336,8 +4949,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv7 = 0;
 
-                            console.log("valor de ud7 " + ud7)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -5359,8 +4970,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv8 = 0;
 
-                            console.log("valor de ud8 " + ud8)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -5382,8 +4991,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv9 = 0;
 
-                            console.log("valor de ud9 " + ud9)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -5405,8 +5012,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv10 = 0;
 
-                            console.log("valor de ud10 " + ud10)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -5431,9 +5036,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion oral 30
                             co3 = 12;
 
-                            console.log("valor de ul1 " + ul1)
-                            console.log("valor de co3 " + co3)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -5455,9 +5057,6 @@ questioncont.forEach(function (elem, index) {
                             //capacidad de gestion
                             cg1 = 4;
 
-                            console.log("valor de ul2 " + ul2)
-                            console.log("valor de cg1 " + cg1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -5479,9 +5078,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion oral 30
                             co4 = 12;
 
-                            console.log("valor de ul3 " + ul3)
-                            console.log("valor de co4 " + co4)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -5506,10 +5102,6 @@ questioncont.forEach(function (elem, index) {
                             //capacidad de gestion 10
                             cg2 = 4;
 
-                            console.log("valor de ul4 " + ul4)
-                            console.log("valor de cg2 " + cg2)
-                            console.log("valor de co5 " + co5)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -5534,10 +5126,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo 20
                             l1 = 8;
 
-                            console.log("valor de ul5 " + ul5)
-                            console.log("valor de cg3 " + cg3)
-                            console.log("valor de l1 " + l1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -5562,10 +5150,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo
                             l2 = 8;
 
-                            console.log("valor de ul6 " + ul6)
-                            console.log("valor de cg4 " + cg4)
-                            console.log("valor de l2 " + l2)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -5587,9 +5171,6 @@ questioncont.forEach(function (elem, index) {
                             //negociacion 10
                             n1 = 4;
 
-                            console.log("valor de ul7 " + ul7)
-                            console.log("valor de n1 " + n1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -5617,11 +5198,6 @@ questioncont.forEach(function (elem, index) {
                             //negociacion 10
                             n2 = 4;
 
-                            console.log("valor de ul8 " + ul8)
-                            console.log("valor de cg5 " + cg5)
-                            console.log("valor de l3 " + l3)
-                            console.log("valor de n2 " + n2)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -5643,9 +5219,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo
                             l4 = 8;
 
-                            console.log("valor de ul9 " + ul9)
-                            console.log("valor de l4 " + l4)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -5667,9 +5240,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo
                             l5 = 8;
 
-                            console.log("valor de ul10 " + ul10)
-                            console.log("valor de l5 " + l5)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -5691,8 +5261,6 @@ questioncont.forEach(function (elem, index) {
                             //Creatividad
                             c1 = 40;
 
-                            console.log("valor de c1 " + c1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -5711,8 +5279,6 @@ questioncont.forEach(function (elem, index) {
                             //actitud critica
                             ac1 = 40;
 
-                            console.log("valor de ac1 " + ac1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -5731,8 +5297,6 @@ questioncont.forEach(function (elem, index) {
                             //adaptacion al cambio
                             adc1 = 40;
 
-                            console.log("valor de adc1 " + adc1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -5751,8 +5315,6 @@ questioncont.forEach(function (elem, index) {
                             //Empatia
                             e1 = 40;
 
-                            console.log("valor de e1 " + e1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -5771,8 +5333,6 @@ questioncont.forEach(function (elem, index) {
                             //Manejo del tiempo 100
                             mm1 = 40;
 
-                            console.log("valor de mm1 " + mm1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -5791,8 +5351,6 @@ questioncont.forEach(function (elem, index) {
                             //Trabajo en equipo
                             t1 = 20;
 
-                            console.log("valor de t1 " + t1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -5811,8 +5369,6 @@ questioncont.forEach(function (elem, index) {
                             //Trabajo en equipo
                             t2 = 20;
 
-                            console.log("valor de t2 " + t2)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -5831,8 +5387,6 @@ questioncont.forEach(function (elem, index) {
                             //Resistencia al trabajo bajo presion
                             tbp1 = 40;
 
-                            console.log("valor de tbp1 " + tbp1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -5851,8 +5405,6 @@ questioncont.forEach(function (elem, index) {
                             //Vision al futuro
                             vf1 = 40;
 
-                            console.log("valor de vf1 " + vf1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -5870,7 +5422,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta uno */
                 if (contador == 0) {
-                    console.log("pregunta 1 //////////////////////////////////////////////////")
+                    console.log("pregunta 1 respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -5882,8 +5434,7 @@ questioncont.forEach(function (elem, index) {
 
                             //investigacion cuantitativa 30
                             ict1 = 30;
-                            console.log("valor de ur1 " + ur1)
-                            console.log("valor de ux researcher " + uxresearcher)
+                            
                             clicked = false
                         }
 
@@ -5910,11 +5461,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion oral 10
                             co1 = 6;
 
-                            console.log("valor de ur2 " + ur2)
-                            console.log("valor de csp1 " + csp1)
-                            console.log("valor de ce1 " + ce1)
-                            console.log("valor de co1 " + co1)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -5922,23 +5468,21 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta tres */
                 if (contador == 2) {
-                    console.log("segunda pregunta //////////////////////////////////////////////////")
+                    console.log("3 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && ur3 == 0) {
-                            //ux researcher
-                            ur3 += 10;
+                        if (clicked = true) {
+                            //ux researcher&& ur3 == 0
+                            ur3 = 10;
 
                             //analisis de datos 50
-                            ad1 += 50;
+                            ad1 = 50;
 
                             //investigacion cuantitativa 30
-                            ict2 += 30;
+                            ict2 = 30;
 
-                            console.log("valor de ur3 " + ur3)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -5946,20 +5490,18 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta cuatro */
                 if (contador == 3) {
-                    console.log("Primera pregunta //////////////////////////////////////////////////")
+                    console.log("4 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && ur4 == 0) {
-                            //ux researcher
-                            ur4 += 10;
+                        if (clicked = true) {
+                            //ux researcher && ur4 == 0
+                            ur4 = 10;
 
                             //investigacion cualitativa 30
-                            icl1 += 30;
+                            icl1 = 30;
 
-                            console.log("valor de ur4 " + ur4)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
 
@@ -5968,7 +5510,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta cinco */
                 if (contador == 4) {
-                    console.log("4 pregunta //////////////////////////////////////////////////")
+                    console.log("5 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -5980,9 +5522,6 @@ questioncont.forEach(function (elem, index) {
                             //escucha activa 100
                             ea1 = 60;
 
-                            console.log("valor de ea1 " + ea1)
-                            console.log("valor ur5 " + ur5)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -5990,21 +5529,18 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta seis */
                 if (contador == 5) {
-                    console.log("pregunta 6 respuesta 4//////////////////////////////////////////////////")
+                    console.log("pregunta 6 respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && ur6 == 0) {
-                            //ux researcher
-                            ur6 += 10;
+                        if (clicked = true) {
+                            //ux researcher && ur6 == 0
+                            ur6 = 10;
 
                             //investigacion cualitativa
-                            icl2 += 30;
+                            icl2 = 30;
 
-                            console.log("valor de ur6 " + ur6)
-                            console.log("valor de icl2 " + icl2)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -6012,21 +5548,18 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta siete */
                 if (contador == 6) {
-                    console.log("pregunta 7 //////////////////////////////////////////////////")
+                    console.log("pregunta 7 respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && ur7 == 0) {
-                            //ux researcher
-                            ur7 += 10;
+                        if (clicked = true) {
+                            //ux researcher && ur7 == 0
+                            ur7 = 10;
 
                             //analisis de datos 50
-                            ad2 += 50;
+                            ad2 = 50;
 
-                            console.log("valor de ur7 " + ur7)
-                            console.log("valor ad2 " + ad2)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -6049,10 +5582,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa 20
                             icl3 = 12;
 
-                            console.log("valor de ur8 " + ur8)
-                            console.log("valor de ict3 " + ict3)
-                            console.log("valor de icl3 " + icl3)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
 
@@ -6076,10 +5605,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa 20
                             icl4 = 12;
 
-                            console.log("valor de ur9 " + ur9)
-                            console.log("valor de ict4 " + ict4)
-                            console.log("valor de icl4 " + icl4)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -6087,7 +5612,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta diez */
                 if (contador == 9) {
-                    console.log("Pregunta 9 respuesta 4 //////////////////////////////////////////////////")
+                    console.log("Pregunta 10 respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -6099,9 +5624,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion oral 20
                             co2 = 12;
 
-                            console.log("valor de ur10 " + ur10)
-                            console.log("valor de co2 " + co2)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -6117,17 +5639,14 @@ questioncont.forEach(function (elem, index) {
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && cs1 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            cs1 += 10;
+                            //Content strategist && cs1 == 0
+                            cs1 = 10;
 
                             //Comunicacion escrita 10
-                            ce2 += 10;
+                            ce2 = 10;
 
-                            console.log("valor de cs1 " + cs1)
-                            console.log("valor de ce2 " + ce2)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -6141,17 +5660,14 @@ questioncont.forEach(function (elem, index) {
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && cs2 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            cs2 += 10;
+                            //Content strategist && cs2 == 0
+                            cs2 = 10;
 
                             //Comunicacion escrita 10
-                            ce3 += 10;
+                            ce3 = 10;
 
-                            console.log("valor de cs2 " + cs2)
-                            console.log("valor de ce3 " + ce3)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -6173,9 +5689,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce4 = 6;
 
-                            console.log("valor de cs3 " + cs3)
-                            console.log("valor de ce4 " + ce4)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -6197,9 +5710,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 20
                             ce5 = 12;
 
-                            console.log("valor de ur4 " + c4)
-                            console.log("valor de ce5 " + ce5)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -6221,9 +5731,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce6 = 6;
 
-                            console.log("valor de ur1 " + cs5)
-                            console.log("valor de ce6 " + ce6)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -6237,16 +5744,14 @@ questioncont.forEach(function (elem, index) {
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && cs6 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            cs6 += 10;
+                            //Content strategist && cs6 == 0
+                            cs6 = 10;
 
                             //Comunicacion escrita 10
-                            ce7 += 10;
+                            ce7 = 10;
 
-                            console.log("valor de ur1 " + cs6)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -6260,16 +5765,14 @@ questioncont.forEach(function (elem, index) {
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && cs7 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            cs7 += 10;
+                            //Content strategist && cs7 == 0
+                            cs7 = 10;
 
                             //Comunicacion escrita 10
-                            ce8 += 10;
+                            ce8 = 10;
 
-                            console.log("valor de ur1 " + cs7)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -6283,16 +5786,14 @@ questioncont.forEach(function (elem, index) {
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && cs8 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            cs8 += 10;
+                            //Content strategist && cs8 == 0
+                            cs8 = 10;
 
                             //Comunicacion escrita 10
-                            ce9 += 10;
+                            ce9 = 10;
 
-                            console.log("valor de ur1 " + cs8)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -6306,16 +5807,14 @@ questioncont.forEach(function (elem, index) {
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && cs9 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            cs9 += 10;
+                            //Content strategist && cs9 == 0
+                            cs9 = 10;
 
                             //estructuracion de la informacion 10
-                            ei1 += 10;
+                            ei1 = 10;
 
-                            console.log("valor de cs9 " + cs9)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -6329,16 +5828,14 @@ questioncont.forEach(function (elem, index) {
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && cs10 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            cs10 += 10;
+                            //Content strategist && cs10 == 0
+                            cs10 = 10;
 
                             //estructuración de la información 10
-                            ei2 += 10;
+                            ei2 = 10;
 
-                            console.log("valor de cs10 " + cs10)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -6350,7 +5847,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta veinte-uno */
                 if (contador == 20) {
-                    console.log("21 pregunta")
+                    console.log("21 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -6363,9 +5860,6 @@ questioncont.forEach(function (elem, index) {
                             //Prototipado 20
                             proto1 = 12;
 
-                            console.log("valor de id1 " + id1)
-                            console.log("valor de proto1 " + proto1)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -6374,24 +5868,22 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta veinte-dos */
                 if (contador == 21) {
-                    console.log("22 pregunta")
+                    console.log("22 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && id2 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            id2 += 10;
+                            //Content strategist && id2 == 0
+                            id2 = 10;
 
                             //Prototipado 20
-                            proto2 += 20;
+                            proto2 = 20;
 
                             //conocimiento de interaccion 10
-                            ci1 += 10;
+                            ci1 = 10;
 
-                            console.log("valor de id2 " + id2)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -6400,21 +5892,19 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta veinte-tres */
                 if (contador == 22) {
-                    console.log("23 pregunta")
+                    console.log("23 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && id3 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            id3 += 10;
+                            //Content strategist && id3 == 0
+                            id3 = 10;
 
                             //conocimiento de interaccion 20
-                            ci2 += 20;
+                            ci2 = 20;
 
-                            console.log("valor de id3 " + id3)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -6423,21 +5913,19 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta veinte-cuatro */
                 if (contador == 23) {
-                    console.log("24 pregunta")
+                    console.log("24 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && id4 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            id4 += 10;
+                            //Content strategist && id4 == 0
+                            id4 = 10;
 
                             //conocimiento de interaccion 20
-                            ci3 += 20;
+                            ci3 = 20;
 
-                            console.log("valor de id4 " + id4)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -6446,24 +5934,22 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta veinte-cinco */
                 if (contador == 24) {
-                    console.log("25 pregunta")
+                    console.log("25 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && id5 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            id5 += 10;
+                            //Content strategist && id5 == 0
+                            id5 = 10;
 
                             //Prototipado 20
-                            proto3 += 20;
+                            proto3 = 20;
 
                             //estructuracion de la informacion 20
-                            ei2 += 20;
+                            ei2 = 20;
 
-                            console.log("valor de id5 " + id5)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -6472,27 +5958,25 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta veinte-seis */
                 if (contador == 25) {
-                    console.log("26 pregunta")
+                    console.log("26 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && id6 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            id6 += 10;
+                            //Content strategist && id6 == 0
+                            id6 = 10;
 
                             //Prototipado 10
-                            proto4 += 10;
+                            proto4 = 10;
 
                             //estructuracion de la informacion 20
-                            ei3 += 20;
+                            ei3 = 20;
 
                             //conocimiento en interaccion 10
-                            ci4 += 10;
+                            ci4 = 10;
 
-                            console.log("valor de id6 " + id6)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -6501,21 +5985,19 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta veinte-siete */
                 if (contador == 26) {
-                    console.log("27 pregunta")
+                    console.log("27 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && id7 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            id7 += 10;
+                            //Content strategist && id7 == 0
+                            id7 = 10;
 
                             //conocimiento en interaccion 10
-                            ci5 += 10;
+                            ci5 = 10;
 
-                            console.log("valor de id7 " + id7)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -6524,24 +6006,22 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta veinte-ocho */
                 if (contador == 27) {
-                    console.log("28 pregunta")
+                    console.log("28 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && id8 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            id8 += 10;
+                            //Content strategist && id8 == 0
+                            id8 = 10;
 
                             //estructuracion de la informacion 20
-                            ei4 += 20;
+                            ei4 = 20;
 
                             //conocimiento en interaccion 10
-                            ci6 += 10;
+                            ci6 = 10;
 
-                            console.log("valor de id8 " + id8)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -6550,24 +6030,22 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta veinte-nueve */
                 if (contador == 28) {
-                    console.log("29 pregunta")
+                    console.log("29 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && id9 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            id9 += 10;
+                            //Content strategist && id9 == 0
+                            id9 = 10;
 
                             //Prototipado 10
-                            proto5 += 10;
+                            proto5 = 10;
 
                             //conocimiento en interaccion 10
-                            ci7 += 10;
+                            ci7 = 10;
 
-                            console.log("valor de id9 " + id9)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -6576,24 +6054,22 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta treinta */
                 if (contador == 29) {
-                    console.log("30 pregunta")
+                    console.log("30 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && id10 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            id10 += 10;
+                            //Content strategist && id10 == 0
+                            id10 = 10;
 
                             //estructuracion de la informacion 20
-                            ei5 += 20;
+                            ei5 = 20;
 
                             //conocimiento en interaccion 10
-                            ci8 += 10;
+                            ci8 = 10;
 
-                            console.log("valor de id10 " + id10)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -6619,9 +6095,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv1 = 6;
 
-                            console.log("valor de ud1 " + ud1)
-                            console.log("valor de cv1 " + cv1)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -6646,10 +6119,6 @@ questioncont.forEach(function (elem, index) {
                             //prototipado 10
                             proto6 = 6;
 
-                            console.log("valor de ud2 " + ud2)
-                            console.log("valor de proto6 " + proto6)
-                            console.log("valor de cv1 " + cv1)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -6658,24 +6127,22 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta treinta-tres */
                 if (contador == 32) {
-                    console.log("33 pregunta")
+                    console.log("33 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && ud3 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            ud3 += 10;
+                            //Content strategist && ud3 == 0
+                            ud3 = 10;
 
                             //comunicacion visual 10
-                            cv3 += 10;
+                            cv3 = 10;
 
                             //prototipado 10
-                            proto7 += 10;
+                            proto7 = 10;
 
-                            console.log("valor de ud3 " + ud3)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -6684,21 +6151,19 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta treinta-cuatro */
                 if (contador == 33) {
-                    console.log("34 pregunta")
+                    console.log("34 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && ud4 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            ud4 += 10;
+                            //Content strategist && ud4 == 0
+                            ud4 = 10;
 
                             //comunicacion visual 10
-                            cv4 += 10;
+                            cv4 = 10;
 
-                            console.log("valor de ud4 " + ud4)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -6707,21 +6172,19 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta treinta-cinco */
                 if (contador == 34) {
-                    console.log("35 pregunta")
+                    console.log("35 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && ud5 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            ud5 += 10;
+                            //Content strategist && ud5 == 0
+                            ud5 = 10;
 
                             //comunicacion visual 10
-                            cv5 += 10;
+                            cv5 = 10;
 
-                            console.log("valor de ud5 " + ud5)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -6730,21 +6193,19 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta treinta-seis */
                 if (contador == 35) {
-                    console.log("36 pregunta")
+                    console.log("36 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && ud6 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            ud6 += 10;
+                            //Content strategist && ud6 == 0
+                            ud6 = 10;
 
                             //comunicacion visual 10
-                            cv6 += 10;
+                            cv6 = 10;
 
-                            console.log("valor de ud6 " + ud6)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -6753,21 +6214,19 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta treinta-siete */
                 if (contador == 36) {
-                    console.log("37 pregunta")
+                    console.log("37 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && ud7 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            ud7 += 10;
+                            //Content strategist && ud7 == 0
+                            ud7 = 10;
 
                             //comunicacion visual 10
-                            cv7 += 10;
+                            cv7 = 10;
 
-                            console.log("valor de ud7 " + ud7)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -6776,21 +6235,19 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta treinta-ocho */
                 if (contador == 37) {
-                    console.log("38 pregunta")
+                    console.log("38 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && ud8 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            ud8 += 10;
+                            //Content strategist && ud8 == 0
+                            ud8 = 10;
 
                             //comunicacion visual 10
-                            cv8 += 10;
+                            cv8 = 10;
 
-                            console.log("valor de ud8 " + ud8)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -6799,21 +6256,19 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta treinta-nueve */
                 if (contador == 38) {
-                    console.log("39 pregunta")
+                    console.log("39 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && ud9 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            ud9 += 10;
+                            //Content strategist && ud9 == 0
+                            ud9 = 10;
 
                             //comunicacion visual 10
-                            cv9 += 10;
+                            cv9 = 10;
 
-                            console.log("valor de ud9 " + ud9)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -6822,21 +6277,19 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta cuarenta */
                 if (contador == 39) {
-                    console.log("40 pregunta")
+                    console.log("40 pregunta respuesta 4 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
 
-                        if (clicked = true && ud10 == 0) {
+                        if (clicked = true) {
 
-                            //Content strategist
-                            ud10 += 10;
+                            //Content strategist && ud10 == 0
+                            ud10 = 10;
 
                             //comunicacion visual 10
-                            cv10 += 10;
+                            cv10 = 10;
 
-                            console.log("valor de ud10 " + ud10)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -6861,9 +6314,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion oral 30
                             co3 = 18;
 
-                            console.log("valor de ul1 " + ul1)
-                            console.log("valor de co3 " + co3)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -6885,9 +6335,6 @@ questioncont.forEach(function (elem, index) {
                             //capacidad de gestion
                             cg1 = 6;
 
-                            console.log("valor de ul2 " + ul2)
-                            console.log("valor de cg1 " + cg1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -6909,9 +6356,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion oral 30
                             co4 = 18;
 
-                            console.log("valor de ul3 " + ul3)
-                            console.log("valor de co4 " + co4)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -6936,10 +6380,6 @@ questioncont.forEach(function (elem, index) {
                             //capacidad de gestion 10
                             cg2 = 6;
 
-                            console.log("valor de ul4 " + ul4)
-                            console.log("valor de cg2 " + cg2)
-                            console.log("valor de co5 " + co5)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -6964,10 +6404,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo 20
                             l1 = 12;
 
-                            console.log("valor de ul5 " + ul5)
-                            console.log("valor de cg3 " + cg3)
-                            console.log("valor de l1 " + l1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -6992,10 +6428,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo
                             l2 = 12;
 
-                            console.log("valor de ul6 " + ul6)
-                            console.log("valor de cg4 " + cg4)
-                            console.log("valor de l2 " + l2)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -7017,9 +6449,6 @@ questioncont.forEach(function (elem, index) {
                             //negociacion 10
                             n1 = 6;
 
-                            console.log("valor de ul7 " + ul7)
-                            console.log("valor de n1 " + n1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -7047,11 +6476,6 @@ questioncont.forEach(function (elem, index) {
                             //negociacion 10
                             n2 = 6;
 
-                            console.log("valor de ul8 " + ul8)
-                            console.log("valor de cg5 " + cg5)
-                            console.log("valor de l3 " + l3)
-                            console.log("valor de n2 " + n2)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -7073,9 +6497,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo
                             l4 = 12;
 
-                            console.log("valor de ul9 " + ul9)
-                            console.log("valor de l4 " + l4)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -7097,9 +6518,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo
                             l5 = 12;
 
-                            console.log("valor de ul10 " + ul10)
-                            console.log("valor de l5 " + l5)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -7120,8 +6538,6 @@ questioncont.forEach(function (elem, index) {
                             //Creatividad
                             c1 = 60;
 
-                            console.log("valor de c1 " + c1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -7140,8 +6556,6 @@ questioncont.forEach(function (elem, index) {
                             //actitud critica
                             ac1 = 60;
 
-                            console.log("valor de ac1 " + ac1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -7160,8 +6574,6 @@ questioncont.forEach(function (elem, index) {
                             //adaptacion al cambio
                             adc1 = 60;
 
-                            console.log("valor de adc1 " + adc1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -7180,8 +6592,6 @@ questioncont.forEach(function (elem, index) {
                             //Empatia
                             e1 = 60;
 
-                            console.log("valor de e1 " + e1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -7200,8 +6610,6 @@ questioncont.forEach(function (elem, index) {
                             //Manejo del tiempo 100
                             mm1 = 60;
 
-                            console.log("valor de mm1 " + mm1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -7220,8 +6628,6 @@ questioncont.forEach(function (elem, index) {
                             //Trabajo en equipo
                             t1 = 30;
 
-                            console.log("valor de t1 " + t1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -7240,8 +6646,6 @@ questioncont.forEach(function (elem, index) {
                             //Trabajo en equipo
                             t2 = 30;
 
-                            console.log("valor de t2 " + t2)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -7260,8 +6664,6 @@ questioncont.forEach(function (elem, index) {
                             //Resistencia al trabajo bajo presion
                             tbp1 = 30;
 
-                            console.log("valor de tbp1 " + tbp1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -7280,8 +6682,6 @@ questioncont.forEach(function (elem, index) {
                             //Vision al futuro
                             vf1 = 60;
 
-                            console.log("valor de vf1 " + vf1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -7309,8 +6709,7 @@ questioncont.forEach(function (elem, index) {
 
                             //investigacion cuantitativa 30
                             ict1 = 0;
-                            console.log("valor de ur1 " + ur1)
-                            console.log("valor de ux researcher " + uxresearcher)
+                            
                             clicked = false
                         }
 
@@ -7319,7 +6718,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta dos */
                 if (contador == 1) {
-                    console.log("2 pregunta respuesta 5")
+                    console.log("2 pregunta respuesta 5 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -7337,11 +6736,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion oral 10
                             co1 = 8;
 
-                            console.log("valor de ur2 " + ur2)
-                            console.log("valor de csp1 " + csp1)
-                            console.log("valor de ce1 " + ce1)
-                            console.log("valor de co1 " + co1)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -7364,8 +6758,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cuantitativa 30
                             ict2 = 0;
 
-                            console.log("valor de ur3 " + ur3)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -7385,8 +6777,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa 30
                             icl1 = 0;
 
-                            console.log("valor de ur4 " + ur4)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
 
@@ -7395,7 +6785,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta cinco */
                 if (contador == 4) {
-                    console.log("segunda pregunta respuesta 3")
+                    console.log("5 pregunta respuesta 5 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         console.log("dio click")
@@ -7409,9 +6799,6 @@ questioncont.forEach(function (elem, index) {
                             //escucha activa 40
                             ea1 = 80;
 
-                            console.log("valor de co1 " + ea1)
-                            console.log("valor ur5 " + ur5)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -7431,9 +6818,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa
                             icl2 = 0;
 
-                            console.log("valor de ur6 " + ur6)
-                            console.log("valor de icl2 " + icl2)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -7453,9 +6837,6 @@ questioncont.forEach(function (elem, index) {
                             //analisis de datos 50
                             ad2 = 0;
 
-                            console.log("valor de ur7 " + ur7)
-                            console.log("valor ad2 " + ad2)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -7478,10 +6859,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa 20
                             icl3 = 16;
 
-                            console.log("valor de ur8 " + ur8)
-                            console.log("valor de ict3 " + ict3)
-                            console.log("valor de icl3 " + icl3)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
 
@@ -7505,10 +6882,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa 20
                             icl4 = 16;
 
-                            console.log("valor de ur9 " + ur9)
-                            console.log("valor de ict4 " + ict4)
-                            console.log("valor de icl4 " + icl4)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -7528,9 +6901,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion oral 20
                             co2 = 16;
 
-                            console.log("valor de ur10 " + ur10)
-                            console.log("valor de co2 " + co2)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -7553,9 +6923,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce2 = 0;
 
-                            console.log("valor de cs1 " + cs1)
-                            console.log("valor de ce2 " + ce2)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -7577,9 +6944,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce3 = 0;
 
-                            console.log("valor de cs2 " + cs2)
-                            console.log("valor de ce3 " + ce3)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -7601,9 +6965,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce4 = 8;
 
-                            console.log("valor de cs3 " + cs3)
-                            console.log("valor de ce4 " + ce4)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -7625,9 +6986,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 20
                             ce5 = 16;
 
-                            console.log("valor de ur4 " + c4)
-                            console.log("valor de ce5 " + ce5)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -7649,9 +7007,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce6 = 8;
 
-                            console.log("valor de ur1 " + cs5)
-                            console.log("valor de ce6 " + ce6)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -7673,8 +7028,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce7 = 0;
 
-                            console.log("valor de ur1 " + cs6)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -7696,8 +7049,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce8 = 0;
 
-                            console.log("valor de ur1 " + cs7)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -7719,8 +7070,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce9 = 0;
 
-                            console.log("valor de ur1 " + cs8)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -7742,8 +7091,6 @@ questioncont.forEach(function (elem, index) {
                             //estructuracion de la informacion 10
                             ei1 = 0;
 
-                            console.log("valor de cs9 " + cs9)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -7765,8 +7112,6 @@ questioncont.forEach(function (elem, index) {
                             //estructuración de la información 10
                             ei2 = 0;
 
-                            console.log("valor de cs10 " + cs10)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -7789,9 +7134,6 @@ questioncont.forEach(function (elem, index) {
                             //Prototipado 20
                             proto1 = 16;
 
-                            console.log("valor de id1 " + id1)
-                            console.log("valor de proto1 " + proto1)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -7816,8 +7158,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento de interaccion 10
                             ci1 = 0;
 
-                            console.log("valor de id2 " + id2)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -7839,8 +7179,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento de interaccion 20
                             ci2 = 0;
 
-                            console.log("valor de id3 " + id3)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -7862,8 +7200,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento de interaccion 20
                             ci3 = 0;
 
-                            console.log("valor de id4 " + id4)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -7887,9 +7223,7 @@ questioncont.forEach(function (elem, index) {
 
                             //estructuracion de la informacion 20
                             ei2 = 0;
-
-                            console.log("valor de id5 " + id5)
-                            console.log("valor de interation designer " + interactiondesigner)
+                            
                             clicked = false
                         }
 
@@ -7916,9 +7250,7 @@ questioncont.forEach(function (elem, index) {
 
                             //conocimiento en interaccion 10
                             ci4 = 0;
-
-                            console.log("valor de id6 " + id6)
-                            console.log("valor de interation designer " + interactiondesigner)
+                            
                             clicked = false
                         }
 
@@ -7940,8 +7272,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento en interaccion 10
                             ci5 = 0;
 
-                            console.log("valor de id7 " + id7)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -7966,8 +7296,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento en interaccion 10
                             ci6 = 0;
 
-                            console.log("valor de id8 " + id8)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -7992,8 +7320,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento en interaccion 10
                             ci7 = 0;
 
-                            console.log("valor de id9 " + id9)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -8018,8 +7344,6 @@ questioncont.forEach(function (elem, index) {
                             //conocimiento en interaccion 10
                             ci8 = 0;
 
-                            console.log("valor de id10 " + id10)
-                            console.log("valor de interation designer " + interactiondesigner)
                             clicked = false
                         }
 
@@ -8042,9 +7366,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv1 = 8;
 
-                            console.log("valor de ud1 " + ud1)
-                            console.log("valor de cv1 " + cv1)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -8068,11 +7389,7 @@ questioncont.forEach(function (elem, index) {
 
                             //prototipado 10
                             proto6 = 8;
-
-                            console.log("valor de ud2 " + ud2)
-                            console.log("valor de proto6 " + proto6)
-                            console.log("valor de cv2 " + cv2)
-                            console.log("valor de ui designer " + uidesigner)
+                            
                             clicked = false
                         }
 
@@ -8096,9 +7413,7 @@ questioncont.forEach(function (elem, index) {
 
                             //prototipado 10
                             proto7 = 0;
-
-                            console.log("valor de ud3 " + ud3)
-                            console.log("valor de ui designer " + uidesigner)
+                            
                             clicked = false
                         }
 
@@ -8119,9 +7434,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv4 = 0;
-
-                            console.log("valor de ud4 " + ud4)
-                            console.log("valor de ui designer " + uidesigner)
+                            
                             clicked = false
                         }
 
@@ -8142,9 +7455,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv5 = 0;
-
-                            console.log("valor de ud5 " + ud5)
-                            console.log("valor de ui designer " + uidesigner)
+                            
                             clicked = false
                         }
 
@@ -8165,9 +7476,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv6 = 0;
-
-                            console.log("valor de ud6 " + ud6)
-                            console.log("valor de ui designer " + uidesigner)
+                            
                             clicked = false
                         }
 
@@ -8188,9 +7497,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv7 = 0;
-
-                            console.log("valor de ud7 " + ud7)
-                            console.log("valor de ui designer " + uidesigner)
+                            
                             clicked = false
                         }
 
@@ -8211,9 +7518,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv8 = 0;
-
-                            console.log("valor de ud8 " + ud8)
-                            console.log("valor de ui designer " + uidesigner)
+                            
                             clicked = false
                         }
 
@@ -8234,9 +7539,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv9 = 0;
-
-                            console.log("valor de ud9 " + ud9)
-                            console.log("valor de ui designer " + uidesigner)
+                            
                             clicked = false
                         }
 
@@ -8257,9 +7560,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv10 = 0;
-
-                            console.log("valor de ud10 " + ud10)
-                            console.log("valor de ui designer " + uidesigner)
+                            
                             clicked = false
                         }
 
@@ -8283,9 +7584,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion oral 30
                             co3 = 24;
 
-                            console.log("valor de ul1 " + ul1)
-                            console.log("valor de co3 " + co3)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -8307,9 +7605,6 @@ questioncont.forEach(function (elem, index) {
                             //capacidad de gestion
                             cg1 = 8;
 
-                            console.log("valor de ul2 " + ul2)
-                            console.log("valor de cg1 " + cg1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -8331,9 +7626,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion oral 30
                             co4 = 24;
 
-                            console.log("valor de ul3 " + ul3)
-                            console.log("valor de co4 " + co4)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -8358,10 +7650,6 @@ questioncont.forEach(function (elem, index) {
                             //capacidad de gestion 10
                             cg2 = 8;
 
-                            console.log("valor de ul4 " + ul4)
-                            console.log("valor de cg2 " + cg2)
-                            console.log("valor de co5 " + co5)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -8386,10 +7674,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo 20
                             l1 = 16;
 
-                            console.log("valor de ul5 " + ul5)
-                            console.log("valor de cg3 " + cg3)
-                            console.log("valor de l1 " + l1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -8414,10 +7698,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo
                             l2 = 16;
 
-                            console.log("valor de ul6 " + ul6)
-                            console.log("valor de cg4 " + cg4)
-                            console.log("valor de l2 " + l2)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -8439,9 +7719,6 @@ questioncont.forEach(function (elem, index) {
                             //negociacion 10
                             n1 = 8;
 
-                            console.log("valor de ul7 " + ul7)
-                            console.log("valor de n1 " + n1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -8469,11 +7746,6 @@ questioncont.forEach(function (elem, index) {
                             //negociacion 10
                             n2 = 8;
 
-                            console.log("valor de ul8 " + ul8)
-                            console.log("valor de cg5 " + cg5)
-                            console.log("valor de l3 " + l3)
-                            console.log("valor de n2 " + n2)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -8495,9 +7767,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo
                             l4 = 16;
 
-                            console.log("valor de ul9 " + ul9)
-                            console.log("valor de l4 " + l4)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -8519,9 +7788,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo
                             l5 = 16;
 
-                            console.log("valor de ul10 " + ul10)
-                            console.log("valor de l5 " + l5)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -8543,8 +7809,6 @@ questioncont.forEach(function (elem, index) {
                             //Creatividad
                             c1 = 80;
 
-                            console.log("valor de c1 " + c1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -8563,8 +7827,6 @@ questioncont.forEach(function (elem, index) {
                             //actitud critica
                             ac1 = 80;
 
-                            console.log("valor de ac1 " + ac1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -8583,8 +7845,6 @@ questioncont.forEach(function (elem, index) {
                             //adaptacion al cambio
                             adc1 = 80;
 
-                            console.log("valor de adc1 " + adc1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -8603,8 +7863,6 @@ questioncont.forEach(function (elem, index) {
                             //Empatia
                             e1 = 80;
 
-                            console.log("valor de e1 " + e1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -8623,8 +7881,6 @@ questioncont.forEach(function (elem, index) {
                             //Manejo del tiempo 100
                             mm1 = 80;
 
-                            console.log("valor de mm1 " + mm1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -8643,8 +7899,6 @@ questioncont.forEach(function (elem, index) {
                             //Trabajo en equipo
                             t1 = 40;
 
-                            console.log("valor de t1 " + t1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -8663,8 +7917,6 @@ questioncont.forEach(function (elem, index) {
                             //Trabajo en equipo
                             t2 = 40;
 
-                            console.log("valor de t2 " + t2)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -8683,8 +7935,6 @@ questioncont.forEach(function (elem, index) {
                             //Resistencia al trabajo bajo presion
                             tbp1 = 80;
 
-                            console.log("valor de tbp1 " + tbp1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -8703,8 +7953,6 @@ questioncont.forEach(function (elem, index) {
                             //Vision al futuro
                             vf1 = 80;
 
-                            console.log("valor de vf1 " + vf1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -8731,8 +7979,7 @@ questioncont.forEach(function (elem, index) {
 
                             //investigacion cuantitativa 30
                             ict1 = 0;
-                            console.log("valor de ur1 " + ur1)
-                            console.log("valor de ux researcher " + uxresearcher)
+                            
                             clicked = false
                         }
 
@@ -8741,7 +7988,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta dos */
                 if (contador == 1) {
-                    console.log("segunda pregunta respuesta 6")
+                    console.log("segunda pregunta respuesta 6 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -8759,11 +8006,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion oral 10
                             co1 = 10;
 
-                            console.log("valor de ur2 " + ur2)
-                            console.log("valor de csp1 " + csp1)
-                            console.log("valor de ce1 " + ce1)
-                            console.log("valor de co1 " + co1)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -8786,8 +8028,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cuantitativa 30
                             ict2 = 0;
 
-                            console.log("valor de ur3 " + ur3)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -8807,8 +8047,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa 30
                             icl1 = 0;
 
-                            console.log("valor de ur4 " + ur4)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
 
@@ -8817,12 +8055,10 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta cinco */
                 if (contador == 4) {
-                    console.log("segunda pregunta respuesta 3")
+                    console.log("5 pregunta respuesta 6 //////////////////////////////////////////////////")
 
                     if (!clicked) {
-                        console.log("dio click")
                         clicked = true
-                        console.log("puede")
 
                         if (clicked = true) {
                             //ux researcher
@@ -8831,9 +8067,6 @@ questioncont.forEach(function (elem, index) {
                             //escucha activa 40
                             ea1 = 100;
 
-                            console.log("valor de co1 " + ea1)
-                            console.log("valor ur5 " + ur5)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -8853,9 +8086,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa
                             icl2 = 0;
 
-                            console.log("valor de ur6 " + ur6)
-                            console.log("valor de icl2 " + icl2)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -8875,9 +8105,6 @@ questioncont.forEach(function (elem, index) {
                             //analisis de datos 50
                             ad2 = 0;
 
-                            console.log("valor de ur7 " + ur7)
-                            console.log("valor ad2 " + ad2)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -8900,10 +8127,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa 20
                             icl3 = 20;
 
-                            console.log("valor de ur8 " + ur8)
-                            console.log("valor de ict3 " + ict3)
-                            console.log("valor de icl3 " + icl3)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
 
@@ -8927,10 +8150,6 @@ questioncont.forEach(function (elem, index) {
                             //investigacion cualitativa 20
                             icl4 = 20;
 
-                            console.log("valor de ur9 " + ur9)
-                            console.log("valor de ict4 " + ict4)
-                            console.log("valor de icl4 " + icl4)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -8938,7 +8157,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta diez */
                 if (contador == 9) {
-                    console.log("Pregunta 9 respuesta 2 //////////////////////////////////////////////////")
+                    console.log("Pregunta 10 respuesta 6 //////////////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -8950,9 +8169,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion oral 20
                             co2 = 20;
 
-                            console.log("valor de ur10 " + ur10)
-                            console.log("valor de co2 " + co2)
-                            console.log("valor de ux researcher " + uxresearcher)
                             clicked = false
                         }
                     }
@@ -8975,9 +8191,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce2 = 0;
 
-                            console.log("valor de cs1 " + cs1)
-                            console.log("valor de ce2 " + ce2)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -8999,9 +8212,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce3 = 0;
 
-                            console.log("valor de cs2 " + cs2)
-                            console.log("valor de ce3 " + ce3)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -9023,9 +8233,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 10
                             ce4 = 10;
 
-                            console.log("valor de cs3 " + cs3)
-                            console.log("valor de ce4 " + ce4)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -9047,9 +8254,6 @@ questioncont.forEach(function (elem, index) {
                             //Comunicacion escrita 20
                             ce5 = 20;
 
-                            console.log("valor de cs4 " + cs4)
-                            console.log("valor de ce5 " + ce5)
-                            console.log("valor de content strategist " + contentstrategist)
                             clicked = false
                         }
 
@@ -9070,10 +8274,7 @@ questioncont.forEach(function (elem, index) {
 
                             //Comunicacion escrita 10
                             ce6 = 10;
-
-                            console.log("valor de ur1 " + cs5)
-                            console.log("valor de ce6 " + ce6)
-                            console.log("valor de content strategist " + contentstrategist)
+                            
                             clicked = false
                         }
 
@@ -9094,9 +8295,7 @@ questioncont.forEach(function (elem, index) {
 
                             //Comunicacion escrita 10
                             ce7 = 0;
-
-                            console.log("valor de ur1 " + cs6)
-                            console.log("valor de content strategist " + contentstrategist)
+                            
                             clicked = false
                         }
 
@@ -9117,9 +8316,7 @@ questioncont.forEach(function (elem, index) {
 
                             //Comunicacion escrita 10
                             ce8 = 0;
-
-                            console.log("valor de ur1 " + cs7)
-                            console.log("valor de content strategist " + contentstrategist)
+                            
                             clicked = false
                         }
 
@@ -9140,9 +8337,7 @@ questioncont.forEach(function (elem, index) {
 
                             //Comunicacion escrita 10
                             ce9 = 0;
-
-                            console.log("valor de ur1 " + cs8)
-                            console.log("valor de content strategist " + contentstrategist)
+                            
                             clicked = false
                         }
 
@@ -9163,9 +8358,7 @@ questioncont.forEach(function (elem, index) {
 
                             //estructuracion de la informacion 10
                             ei1 = 0;
-
-                            console.log("valor de cs9 " + cs9)
-                            console.log("valor de content strategist " + contentstrategist)
+                            
                             clicked = false
                         }
 
@@ -9186,9 +8379,7 @@ questioncont.forEach(function (elem, index) {
 
                             //estructuración de la información 10
                             ei2 = 0;
-
-                            console.log("valor de cs10 " + cs10)
-                            console.log("valor de content strategist " + contentstrategist)
+                            
                             clicked = false
                         }
 
@@ -9210,10 +8401,7 @@ questioncont.forEach(function (elem, index) {
 
                             //Prototipado 20
                             proto1 = 20;
-
-                            console.log("valor de id1 " + id1)
-                            console.log("valor de proto1 " + proto1)
-                            console.log("valor de interation designer " + interactiondesigner)
+                            
                             clicked = false
                         }
 
@@ -9237,9 +8425,7 @@ questioncont.forEach(function (elem, index) {
 
                             //conocimiento de interaccion 10
                             ci1 = 0;
-
-                            console.log("valor de id2 " + id2)
-                            console.log("valor de interation designer " + interactiondesigner)
+                            
                             clicked = false
                         }
 
@@ -9260,9 +8446,7 @@ questioncont.forEach(function (elem, index) {
 
                             //conocimiento de interaccion 20
                             ci2 = 0;
-
-                            console.log("valor de id3 " + id3)
-                            console.log("valor de interation designer " + interactiondesigner)
+                            
                             clicked = false
                         }
 
@@ -9283,9 +8467,7 @@ questioncont.forEach(function (elem, index) {
 
                             //conocimiento de interaccion 20
                             ci3 = 0;
-
-                            console.log("valor de id4 " + id4)
-                            console.log("valor de interation designer " + interactiondesigner)
+                            
                             clicked = false
                         }
 
@@ -9309,9 +8491,7 @@ questioncont.forEach(function (elem, index) {
 
                             //estructuracion de la informacion 20
                             ei2 = 0;
-
-                            console.log("valor de id5 " + id5)
-                            console.log("valor de interation designer " + interactiondesigner)
+                            
                             clicked = false
                         }
 
@@ -9338,9 +8518,7 @@ questioncont.forEach(function (elem, index) {
 
                             //conocimiento en interaccion 10
                             ci4 = 0;
-
-                            console.log("valor de id6 " + id6)
-                            console.log("valor de interation designer " + interactiondesigner)
+                            
                             clicked = false
                         }
 
@@ -9361,9 +8539,7 @@ questioncont.forEach(function (elem, index) {
 
                             //conocimiento en interaccion 10
                             ci5 = 0;
-
-                            console.log("valor de id7 " + id7)
-                            console.log("valor de interation designer " + interactiondesigner)
+                            
                             clicked = false
                         }
 
@@ -9387,9 +8563,7 @@ questioncont.forEach(function (elem, index) {
 
                             //conocimiento en interaccion 10
                             ci6 = 0;
-
-                            console.log("valor de id8 " + id8)
-                            console.log("valor de interation designer " + interactiondesigner)
+                            
                             clicked = false
                         }
 
@@ -9413,9 +8587,7 @@ questioncont.forEach(function (elem, index) {
 
                             //conocimiento en interaccion 10
                             ci7 = 0;
-
-                            console.log("valor de id9 " + id9)
-                            console.log("valor de interation designer " + interactiondesigner)
+                            
                             clicked = false
                         }
 
@@ -9439,9 +8611,7 @@ questioncont.forEach(function (elem, index) {
 
                             //conocimiento en interaccion 10
                             ci8 = 0;
-
-                            console.log("valor de id10 " + id10)
-                            console.log("valor de interation designer " + interactiondesigner)
+                            
                             clicked = false
                         }
 
@@ -9451,7 +8621,7 @@ questioncont.forEach(function (elem, index) {
                 //UI DESGINER
                 /* Pregunta treinta-uno */
                 if (contador == 30) {
-                    console.log("31 pregunta  respuesta 6 ////////////////////////////////////////")
+                    console.log("31 pregunta respuesta 6 ////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -9464,9 +8634,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv1 = 10;
 
-                            console.log("valor de ud1 " + ud1)
-                            console.log("valor de cv1 " + cv1)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -9490,11 +8657,7 @@ questioncont.forEach(function (elem, index) {
 
                             //prototipado 10
                             proto6 = 10;
-
-                            console.log("valor de ud2 " + ud2)
-                            console.log("valor de proto6 " + proto6)
-                            console.log("valor de cv2 " + cv2)
-                            console.log("valor de ui designer " + uidesigner)
+                            
                             clicked = false
                         }
 
@@ -9518,9 +8681,7 @@ questioncont.forEach(function (elem, index) {
 
                             //prototipado 10
                             proto7 = 0;
-
-                            console.log("valor de ud3 " + ud3)
-                            console.log("valor de ui designer " + uidesigner)
+                            
                             clicked = false
                         }
 
@@ -9529,7 +8690,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta treinta-cuatro */
                 if (contador == 33) {
-                    console.log("34 pregunta  respuesta 6 ////////////////////////////////////////")
+                    console.log("34 pregunta respuesta 6 ////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -9541,9 +8702,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv4 = 0;
-
-                            console.log("valor de ud4 " + ud4)
-                            console.log("valor de ui designer " + uidesigner)
+                            
                             clicked = false
                         }
 
@@ -9552,7 +8711,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta treinta-cinco */
                 if (contador == 34) {
-                    console.log("35 pregunta  respuesta 6 ////////////////////////////////////////")
+                    console.log("35 pregunta respuesta 6 ////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -9564,9 +8723,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv5 = 0;
-
-                            console.log("valor de ud5 " + ud5)
-                            console.log("valor de ui designer " + uidesigner)
+                            
                             clicked = false
                         }
 
@@ -9575,7 +8732,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta treinta-seis */
                 if (contador == 35) {
-                    console.log("36 pregunta  respuesta 6 ////////////////////////////////////////")
+                    console.log("36 pregunta respuesta 6 ////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -9588,8 +8745,6 @@ questioncont.forEach(function (elem, index) {
                             //comunicacion visual 10
                             cv6 = 0;
 
-                            console.log("valor de ud6 " + ud6)
-                            console.log("valor de ui designer " + uidesigner)
                             clicked = false
                         }
 
@@ -9598,7 +8753,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta treinta-siete */
                 if (contador == 36) {
-                    console.log("37 pregunta  respuesta 6 ////////////////////////////////////////")
+                    console.log("37 pregunta respuesta 6 ////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -9610,9 +8765,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv7 = 0;
-
-                            console.log("valor de ud7 " + ud7)
-                            console.log("valor de ui designer " + uidesigner)
+                            
                             clicked = false
                         }
 
@@ -9633,9 +8786,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv8 = 0;
-
-                            console.log("valor de ud8 " + ud8)
-                            console.log("valor de ui designer " + uidesigner)
+                            
                             clicked = false
                         }
 
@@ -9656,9 +8807,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv9 = 0;
-
-                            console.log("valor de ud9 " + ud9)
-                            console.log("valor de ui designer " + uidesigner)
+                            
                             clicked = false
                         }
 
@@ -9667,7 +8816,7 @@ questioncont.forEach(function (elem, index) {
 
                 /* Pregunta cuarenta */
                 if (contador == 39) {
-                    console.log("40 pregunta  respuesta 6 ////////////////////////////////////////")
+                    console.log("40 pregunta respuesta 6 ////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -9679,9 +8828,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv10 = 0;
-
-                            console.log("valor de ud10 " + ud10)
-                            console.log("valor de ui designer " + uidesigner)
+                            
                             clicked = false
                         }
 
@@ -9692,7 +8839,7 @@ questioncont.forEach(function (elem, index) {
                 //UXLEAD
                 /* Pregunta cuarenta-uno */
                 if (contador == 40) {
-                    console.log("41 pregunta  respuesta 6 ////////////////////////////////////////")
+                    console.log("41 pregunta respuesta 6 ////////////////////////////////////////")
 
                     if (!clicked) {
                         clicked = true
@@ -9704,10 +8851,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion oral 30
                             co3 = 30;
-
-                            console.log("valor de ul1 " + ul1)
-                            console.log("valor de co3 " + co3)
-                            console.log("valor de ux lead " + uxlead)
+                            
                             clicked = false
                         }
 
@@ -9728,10 +8872,7 @@ questioncont.forEach(function (elem, index) {
 
                             //capacidad de gestion
                             cg1 = 10;
-
-                            console.log("valor de ul2 " + ul2)
-                            console.log("valor de cg1 " + cg1)
-                            console.log("valor de ux lead " + uxlead)
+                            
                             clicked = false
                         }
 
@@ -9752,10 +8893,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion oral 30
                             co4 = 30;
-
-                            console.log("valor de ul3 " + ul3)
-                            console.log("valor de co4 " + co4)
-                            console.log("valor de ux lead " + uxlead)
+                            
                             clicked = false
                         }
 
@@ -9779,11 +8917,7 @@ questioncont.forEach(function (elem, index) {
 
                             //capacidad de gestion 10
                             cg2 = 10;
-
-                            console.log("valor de ul4 " + ul4)
-                            console.log("valor de cg2 " + cg2)
-                            console.log("valor de co5 " + co5)
-                            console.log("valor de ux lead " + uxlead)
+                            
                             clicked = false
                         }
 
@@ -9807,11 +8941,7 @@ questioncont.forEach(function (elem, index) {
 
                             //liderazgo 20
                             l1 = 20;
-
-                            console.log("valor de ul5 " + ul5)
-                            console.log("valor de cg3 " + cg3)
-                            console.log("valor de l1 " + l1)
-                            console.log("valor de ux lead " + uxlead)
+                            
                             clicked = false
                         }
 
@@ -9835,11 +8965,7 @@ questioncont.forEach(function (elem, index) {
 
                             //liderazgo 20
                             l2 = 20;
-
-                            console.log("valor de ul6 " + ul6)
-                            console.log("valor de cg4 " + cg4)
-                            console.log("valor de l2 " + l2)
-                            console.log("valor de ux lead " + uxlead)
+                            
                             clicked = false
                         }
 
@@ -9860,10 +8986,7 @@ questioncont.forEach(function (elem, index) {
 
                             //negociacion 10
                             n1 = 10;
-
-                            console.log("valor de ul7 " + ul7)
-                            console.log("valor de n1 " + n1)
-                            console.log("valor de ux lead " + uxlead)
+                            
                             clicked = false
                         }
 
@@ -9890,12 +9013,7 @@ questioncont.forEach(function (elem, index) {
 
                             //negociacion 10
                             n2 = 10;
-
-                            console.log("valor de ul8 " + ul8)
-                            console.log("valor de cg5 " + cg5)
-                            console.log("valor de l3 " + l3)
-                            console.log("valor de n2 " + n2)
-                            console.log("valor de ux lead " + uxlead)
+                            
                             clicked = false
                         }
 
@@ -9916,10 +9034,7 @@ questioncont.forEach(function (elem, index) {
 
                             //liderazgo
                             l4 = 20;
-
-                            console.log("valor de ul9 " + ul9)
-                            console.log("valor de l4 " + l4)
-                            console.log("valor de ux lead " + uxlead)
+                            
                             clicked = false
                         }
 
@@ -9941,9 +9056,6 @@ questioncont.forEach(function (elem, index) {
                             //liderazgo
                             l5 = 20;
 
-                            console.log("valor de ul10 " + ul10)
-                            console.log("valor de l5 " + l5)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -9965,8 +9077,6 @@ questioncont.forEach(function (elem, index) {
                             //Creatividad
                             c1 = 100;
 
-                            console.log("valor de c1 " + c1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -9985,8 +9095,6 @@ questioncont.forEach(function (elem, index) {
                             //actitud critica
                             ac1 = 100;
 
-                            console.log("valor de ac1 " + ac1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -10005,8 +9113,6 @@ questioncont.forEach(function (elem, index) {
                             //adaptacion al cambio
                             adc1 = 100;
 
-                            console.log("valor de adc1 " + adc1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -10025,8 +9131,6 @@ questioncont.forEach(function (elem, index) {
                             //Empatia
                             e1 = 100;
 
-                            console.log("valor de e1 " + e1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -10045,8 +9149,6 @@ questioncont.forEach(function (elem, index) {
                             //Manejo del tiempo 100
                             mm1 = 100;
 
-                            console.log("valor de mm1 " + mm1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -10065,8 +9167,6 @@ questioncont.forEach(function (elem, index) {
                             //Trabajo en equipo
                             t1 = 50;
 
-                            console.log("valor de t1 " + t1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -10085,8 +9185,6 @@ questioncont.forEach(function (elem, index) {
                             //Trabajo en equipo
                             t2 = 50;
 
-                            console.log("valor de t2 " + t2)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -10105,8 +9203,6 @@ questioncont.forEach(function (elem, index) {
                             //Resistencia al trabajo bajo presion
                             tbp1 = 100;
 
-                            console.log("valor de tbp1 " + tbp1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -10125,8 +9221,6 @@ questioncont.forEach(function (elem, index) {
                             //Vision al futuro
                             vf1 = 100;
 
-                            console.log("valor de vf1 " + vf1)
-                            console.log("valor de ux lead " + uxlead)
                             clicked = false
                         }
 
@@ -10264,7 +9358,7 @@ questioncont.forEach(function (elem, index) {
 btns.addEventListener('click', function (event) {
     contador++;
     console.log('buenas')
-    if (contador % 56 == 0) {
+    if (contador % 59 == 0) {
         preguntas++;
         respuestas++;
         console.log('nivel' + preguntas);
