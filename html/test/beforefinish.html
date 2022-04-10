@@ -85,7 +85,8 @@
                     <div style="height: 32vh;"></div>
                     <div class="d-flex justify-content-right align-items-end flex-column inforolescont">
                         <h1 class="titlerole" style="text-align: right;">Portafolio</h1>
-                        <button type="submit" class="btn btn-primary btnportafolio" style="width: 30%;">Adjuntar</button>
+                        <button type="submit" class="btn btn-primary btnportafolio"
+                            style="width: 30%;">Adjuntar</button>
                     </div>
                     <div style="height: 32vh;"></div>
                 </div>
@@ -171,21 +172,24 @@
             <div class=" p-5">
                 <div class="d-flex justify-content-center align-items-center flex-column">
                     <h5 class="modal-title" id="exampleModalLabel">Portafolio</h5>
-                    <p>Recuerda que este debe estar público para completar tu perfil como diseñador UX.</p>
+                    <p>Recuerda que este debe estar público para completar tu revisión de perfil como diseñador UX.</p>
                 </div>
                 <div>
-                    <form class="d-flex justify-content-center align-items-center flex-row">
-                        <div>
+                    <form class="formportafolio">
+                        <div class="d-flex justify-content-center align-items-center flex-column">
                             <label for="exampleFormControlInput1" class="form-label">Link de tu portafolio</label>
-                            <input type="link" class="form-control ageneven" id="exampleFormControlInput1"
-                                placeholder="link">
+                            <input name="linkportafolio" type="url" class="form-control ageneven" id="linkportafolio"
+                                placeholder="link" pattern="https://.*">
+                        </div>
+
+                        <div class="d-flex justify-content-center align-items-center flex-row">
+                            <a class="btn btn-primary btncancel btncancel3 m-3" style="width: 15%;">Cancelar</a>
+                            <button type="button" class="btn btn-primary btncompletang m-3"
+                                style="width: 15%;">Finalizar</button>
                         </div>
                     </form>
                 </div>
-                <div class="d-flex justify-content-center align-items-center flex-row">
-                    <button type="button" class="btn btn-primary btncancel btncancel3 m-3" style="width: 15%;">Cancelar</button>
-                    <button type="button" class="btn btn-primary btncompletang m-3" style="width: 15%;">Finalizar</button>
-                </div>
+
             </div>
 
         </div>
@@ -195,31 +199,36 @@
             <div class=" p-5">
                 <div class="d-flex justify-content-center align-items-center flex-column">
                     <h5 class="modal-title" id="exampleModalLabel">Trayectoria laboral</h5>
-                    <p>Puedes adjuntar tu perfil de Linkedin o completar los campos de manera manual.</p>
+                    <p>Completa los campos para adjuntar información de tu trayectoria laboral, por ahora solo puedes agregar 1</p>
                 </div>
                 <div>
-                    <form class="d-flex justify-content-center align-items-center flex-row">
-                        <div>
-                            <label for="exampleFormControlInput1" class="form-label">Año</label>
-                            <input type="number" class="form-control ageneven" id="exampleFormControlInput1"
-                                placeholder="Año">
+                    <form class="formtimeline">
+                        <div class="d-flex justify-content-center align-items-center flex-row">
+                            <div>
+                                <label for="exampleFormControlInput1" class="form-label">Año</label>
+                                <input name="year" type="number" class="form-control ageneven" id="year"
+                                    placeholder="Año">
+                            </div>
+                            <div class="m-3">
+                                <label for="exampleFormControlInput2" class="form-label">Título</label>
+                                <input name="title" type="lastname" class="form-control ageneven" id="title"
+                                    placeholder="Título">
+                            </div>
+                            <div>
+                                <label for="exampleFormControlInput3" class="form-label">Descripción</label>
+                                <input name="description" type="email" class="form-control ageneven" id="description"
+                                    placeholder="Una descripción corta de tu cargo">
+                            </div>
                         </div>
-                        <div class="m-3">
-                            <label for="exampleFormControlInput2" class="form-label">Título</label>
-                            <input type="lastname" class="form-control ageneven" id="exampleFormControlInput2"
-                                placeholder="Título">
-                        </div>
-                        <div>
-                            <label for="exampleFormControlInput3" class="form-label">Descripción</label>
-                            <input type="email" class="form-control ageneven" id="exampleFormControlInput3"
-                                placeholder="Una descripción corta de tu cargo">
+                        <div class="d-flex justify-content-center align-items-center flex-row">
+                            <a type="button" class="btn btn-primary btncancel btncancel2 m-3"
+                                style="width: 15%;">Cancelar</a>
+                            <button type="button" class="btn btn-primary btncompletang2 m-3"
+                                style="width: 15%;">Finalizar</button>
                         </div>
                     </form>
                 </div>
-                <div class="d-flex justify-content-center align-items-center flex-row">
-                    <button type="button" class="btn btn-primary btncancel btncancel2 m-3" style="width: 15%;">Cancelar</button>
-                    <button type="button" class="btn btn-primary btncompletang2 m-3" style="width: 15%;">Finalizar</button>
-                </div>
+
             </div>
 
         </div>
@@ -243,9 +252,10 @@
 
     <!-- JavaScript -->
 
-    <script src="../../script/modals/addinfo.js"></script>
-    <script type="module" src="./script/firebase.js"></script>
-    <script type="module" src="./script/auth.js"></script>
+    <script type="module" src="../../../script/firebase.js"></script>
+    <script type="module" src="../../../script/auth.js"></script>
+    <script type="" src="../../../script/modals/addinfo.js"></script>
+    <script type="module" src="../../../script/addlinks.js"></script>
 
 </body>
 

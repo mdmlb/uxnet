@@ -5,6 +5,8 @@ import {
   addDoc,
   getDocs,
   getDoc,
+  updateDoc,
+  arrayUnion,
   setDoc
 } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js";
 
@@ -57,10 +59,13 @@ cancelang.addEventListener('click', function () {
 
 let timeline = [];
 
-addtime.addEventListener('submit', function (event) {
+btnadd.addEventListener('click', function (event) {
 
   event.preventDefault()
-  console.log("adentro")
+  const year = addtime.year.value
+  const title = addtime.title.value
+  const description = addtime.description.value
+  
   /* */
   const job = {
     year: year,
@@ -88,8 +93,8 @@ addtime.addEventListener('submit', function (event) {
         console.log(userInfo);
 
         if (userInfo) {
-          await setDoc(doc(db, "timeline", uid), {
-            experience: job,
+          await updateDoc(doc(db, "timeline", uid), {
+            experience: arrayUnion(job),
           })
 
             .then(function () {

@@ -61,8 +61,3 @@ cancelang2.addEventListener('click', function () {
         modal2.classList.remove("modal2-content")
     }
 });
-
-
-//ADD INFO
-const addportafolio = document.querySelector('.btncompletang');
-const addtimeline = document.querySelector('.btncompletang2');

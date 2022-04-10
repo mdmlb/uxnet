@@ -86,6 +86,7 @@ import {
   const userName = document.querySelector('.profile__usernameB');
   const birth = document.querySelector('.profile__birth');
   const email = document.querySelector('.profile__email');
+  const portafolio = document.querySelector('.profile__portafolio');
   var userInfo;
   
   onAuthStateChanged(auth, async (user) => {
@@ -107,6 +108,7 @@ import {
           if (userName) {
             userName.innerText = '¡Hola, ' + data.name + '!';
             email.innerHTML = data.email;
+            portafolio.innerHTML = data.link;
           }
       } else {
         // doc.data() will be undefined in this case

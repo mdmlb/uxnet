@@ -292,7 +292,7 @@ skillObj.addEventListener('submit', function (event) {
                     })
 
                         .then(function () {
-                            window.location.href = '../../test/finish.html';
+                            window.location.href = '../../test/beforefinish.html';
                         });
                 }
 

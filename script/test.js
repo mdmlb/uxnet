@@ -218,7 +218,6 @@ let neg = 0;
 let n1 = 0;
 let n2 = 0;
 let n3 = 0;
-let n4 = 0;
 
 //liderazgo
 let lid = 0;
@@ -1536,49 +1535,49 @@ function resultskills() {
     const porcentajeskill22 = document.querySelector('.bss_22');
 
     bskill1.innerHTML = comuora + "%";
-    porcentajeskill1.style.width = comuora;
+    porcentajeskill1.style.width = comuora + "%";
     bskill2.innerHTML = comuesc + "%";
-    porcentajeskill2.style.width = comuesc;
+    porcentajeskill2.style.width = comuesc + "%";
     bskill3.innerHTML = empatia + "%";
-    porcentajeskill3.style.width = empatia;
+    porcentajeskill3.style.width = empatia + "%";
     bskill4.innerHTML = trabajoequipo + "%";
-    porcentajeskill4.style.width = trabajoequipo;
+    porcentajeskill4.style.width = trabajoequipo + "%";
     bskill5.innerHTML = analidata + "%";
-    porcentajeskill5.style.width = analidata;
+    porcentajeskill5.style.width = analidata + "%";
     bskill6.innerHTML = escuchaa + "%";
-    porcentajeskill6.style.width = escuchaa;
+    porcentajeskill6.style.width = escuchaa + "%";
     bskill7.innerHTML = neg + "%";
-    porcentajeskill7.style.width = neg;
+    porcentajeskill7.style.width = neg + "%";
     bskill8.innerHTML = actcri + "%";
-    porcentajeskill8.style.width = actcri;
+    porcentajeskill8.style.width = actcri + "%";
     bskill9.innerHTML = conopsic + "%";
-    porcentajeskill9.style.width = conopsic;
+    porcentajeskill9.style.width = conopsic + "%";
     bskill10.innerHTML = visfutu + "%";
-    porcentajeskill10.style.width = visfutu;
+    porcentajeskill10.style.width = visfutu + "%";
     bskill11.innerHTML = capagest + "%";
-    porcentajeskill11.style.width = capagest;
+    porcentajeskill11.style.width = capagest + "%";
     bskill12.innerHTML = comuvis + "%";
-    porcentajeskill12.style.width = comuvis;
+    porcentajeskill12.style.width = comuvis + "%";
     bskill13.innerHTML = mantim + "%";
-    porcentajeskill13.style.width = mantim;
+    porcentajeskill13.style.width = mantim + "%";
     bskill14.innerHTML = adapcam + "%";
-    porcentajeskill14.style.width = adapcam;
+    porcentajeskill14.style.width = adapcam + "%";
     bskill15.innerHTML = prototipado + "%";
-    porcentajeskill15.style.width = prototipado;
+    porcentajeskill15.style.width = prototipado + "%";
     bskill16.innerHTML = estruinfo + "%";
-    porcentajeskill16.style.width = estruinfo;
+    porcentajeskill16.style.width = estruinfo + "%";
     bskill17.innerHTML = creati + "%";
-    porcentajeskill17.style.width = creati;
+    porcentajeskill17.style.width = creati + "%";
     bskill18.innerHTML = conointera + "%";
-    porcentajeskill18.style.width = conointera;
+    porcentajeskill18.style.width = conointera + "%";
     bskill19.innerHTML = trabajopre + "%";
-    porcentajeskill19.style.width = trabajopre;
+    porcentajeskill19.style.width = trabajopre + "%";
     bskill20.innerHTML = lid + "%";
-    porcentajeskill20.style.width = lid;
+    porcentajeskill20.style.width = lid + "%";
     bskill21.innerHTML = invescuant + "%";
-    porcentajeskill21.style.width = invescuant;
+    porcentajeskill21.style.width = invescuant + "%";
     bskill22.innerHTML = invescual + "%";
-    porcentajeskill22.style.width = invescual;
+    porcentajeskill22.style.width = invescual + "%";
 }
 
 let clicked = false;
@@ -2018,7 +2017,7 @@ questioncont.forEach(function (elem, index) {
                             //Content strategist
                             cs10 = 0;
 
-                            //estructuración de la información 10
+                            //estructuracion de la informacion 10
                             ei2 = 0;
 
                             clicked = false
@@ -2131,7 +2130,7 @@ questioncont.forEach(function (elem, index) {
                             proto3 = 0;
 
                             //estructuracion de la informacion 20
-                            ei2 = 0;
+                            ei3 = 0;
 
                             clicked = false
                         }
@@ -2155,7 +2154,7 @@ questioncont.forEach(function (elem, index) {
                             proto4 = 0;
 
                             //estructuracion de la informacion 20
-                            ei3 = 0;
+                            ei4 = 0;
 
                             //conocimiento en interaccion 10
                             ci4 = 0;
@@ -2200,7 +2199,7 @@ questioncont.forEach(function (elem, index) {
                             id8 = 0;
 
                             //estructuracion de la informacion 20
-                            ei4 = 0;
+                            ei5 = 0;
 
                             //conocimiento en interaccion 10
                             ci6 = 0;
@@ -2248,11 +2247,11 @@ questioncont.forEach(function (elem, index) {
                             id10 = 0;
 
                             //estructuracion de la informacion 20
-                            ei5 = 0;
+                            ei6 = 0;
 
                             //conocimiento en interaccion 10
                             ci8 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -2559,6 +2558,9 @@ questioncont.forEach(function (elem, index) {
                             //capacidad de gestion 10
                             cg2 = 0;
 
+                            //negociacion 10
+                            n1 = 0;
+
                             clicked = false
                         }
 
@@ -2626,7 +2628,7 @@ questioncont.forEach(function (elem, index) {
                             ul7 = 0;
 
                             //negociacion 10
-                            n1 = 0;
+                            n2 = 0;
 
                             clicked = false
                         }
@@ -2653,7 +2655,7 @@ questioncont.forEach(function (elem, index) {
                             l3 = 0;
 
                             //negociacion 10
-                            n2 = 0;
+                            n3 = 0;
 
                             clicked = false
                         }
@@ -3403,7 +3405,7 @@ questioncont.forEach(function (elem, index) {
                             proto3 = 0;
 
                             //estructuracion de la informacion 20
-                            ei2 = 0;
+                            ei3 = 0;
 
                             clicked = false
                         }
@@ -3427,7 +3429,7 @@ questioncont.forEach(function (elem, index) {
                             proto4 = 0;
 
                             //estructuracion de la informacion 20
-                            ei3 = 0;
+                            ei4 = 0;
 
                             //conocimiento en interaccion 10
                             ci4 = 0;
@@ -3472,7 +3474,7 @@ questioncont.forEach(function (elem, index) {
                             id8 = 0;
 
                             //estructuracion de la informacion 20
-                            ei4 = 0;
+                            ei5 = 0;
 
                             //conocimiento en interaccion 10
                             ci6 = 0;
@@ -3520,7 +3522,7 @@ questioncont.forEach(function (elem, index) {
                             id10 = 0;
 
                             //estructuracion de la informacion 20
-                            ei5 = 0;
+                            ei6 = 0;
 
                             //conocimiento en interaccion 10
                             ci8 = 0;
@@ -3784,7 +3786,7 @@ questioncont.forEach(function (elem, index) {
                             ul2 = 2;
 
                             //capacidad de gestion
-                            cg1 = 2;
+                            cg1 = 4;
 
                             clicked = false
                         }
@@ -3829,9 +3831,12 @@ questioncont.forEach(function (elem, index) {
                             co5 = 2;
 
                             //capacidad de gestion 10
-                            cg2 = 2;
+                            cg2 = 4;
 
                             clicked = false
+
+                            //negociacion 10
+                            n1 = 6;
                         }
 
                     }
@@ -3850,7 +3855,7 @@ questioncont.forEach(function (elem, index) {
                             ul5 = 2;
 
                             //capacidad de gestion 10
-                            cg3 = 2;
+                            cg3 = 4;
 
                             //liderazgo 20
                             l1 = 4;
@@ -3874,7 +3879,7 @@ questioncont.forEach(function (elem, index) {
                             ul6 = 2;
 
                             //capacidad de gestion 10
-                            cg4 = 2;
+                            cg4 = 4;
 
                             //liderazgo
                             l2 = 4;
@@ -3898,7 +3903,7 @@ questioncont.forEach(function (elem, index) {
                             ul7 = 2;
 
                             //negociacion 10
-                            n1 = 2;
+                            n2 = 8;
 
                             clicked = false
                         }
@@ -3919,13 +3924,13 @@ questioncont.forEach(function (elem, index) {
                             ul8 = 2;
 
                             //capacidad de gestion 10
-                            cg5 = 2;
+                            cg5 = 4;
 
                             //liderazgo
                             l3 = 4;
 
                             //negociacion 10
-                            n2 = 2;
+                            n3 = 6;
 
                             clicked = false
                         }
@@ -4162,7 +4167,7 @@ questioncont.forEach(function (elem, index) {
 
                             //investigacion cuantitativa 30
                             ict1 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -4673,7 +4678,7 @@ questioncont.forEach(function (elem, index) {
                             proto3 = 0;
 
                             //estructuracion de la informacion 20
-                            ei2 = 0;
+                            ei3 = 0;
 
                             clicked = false
                         }
@@ -4697,7 +4702,7 @@ questioncont.forEach(function (elem, index) {
                             proto4 = 0;
 
                             //estructuracion de la informacion 20
-                            ei3 = 0;
+                            ei4 = 0;
 
                             //conocimiento en interaccion 10
                             ci4 = 0;
@@ -4742,7 +4747,7 @@ questioncont.forEach(function (elem, index) {
                             id8 = 0;
 
                             //estructuracion de la informacion 20
-                            ei4 = 0;
+                            ei5 = 0;
 
                             //conocimiento en interaccion 10
                             ci6 = 0;
@@ -4790,7 +4795,7 @@ questioncont.forEach(function (elem, index) {
                             id10 = 0;
 
                             //estructuracion de la informacion 20
-                            ei5 = 0;
+                            ei6 = 0;
 
                             //conocimiento en interaccion 10
                             ci8 = 0;
@@ -5055,7 +5060,7 @@ questioncont.forEach(function (elem, index) {
                             ul2 = 4;
 
                             //capacidad de gestion
-                            cg1 = 4;
+                            cg1 = 8;
 
                             clicked = false
                         }
@@ -5100,7 +5105,10 @@ questioncont.forEach(function (elem, index) {
                             co5 = 4;
 
                             //capacidad de gestion 10
-                            cg2 = 4;
+                            cg2 = 8;
+
+                            //negociacion 10
+                            n1 = 12;
 
                             clicked = false
                         }
@@ -5121,7 +5129,7 @@ questioncont.forEach(function (elem, index) {
                             ul5 = 4;
 
                             //capacidad de gestion 10
-                            cg3 = 4;
+                            cg3 = 8;
 
                             //liderazgo 20
                             l1 = 8;
@@ -5145,7 +5153,7 @@ questioncont.forEach(function (elem, index) {
                             ul6 = 4;
 
                             //capacidad de gestion 10
-                            cg4 = 4;
+                            cg4 = 8;
 
                             //liderazgo
                             l2 = 8;
@@ -5169,7 +5177,7 @@ questioncont.forEach(function (elem, index) {
                             ul7 = 4;
 
                             //negociacion 10
-                            n1 = 4;
+                            n2 = 16;
 
                             clicked = false
                         }
@@ -5190,13 +5198,13 @@ questioncont.forEach(function (elem, index) {
                             ul8 = 4;
 
                             //capacidad de gestion 10
-                            cg5 = 4;
+                            cg5 = 8;
 
                             //liderazgo
                             l3 = 8;
 
                             //negociacion 10
-                            n2 = 4;
+                            n3 = 12;
 
                             clicked = false
                         }
@@ -5414,7 +5422,6 @@ questioncont.forEach(function (elem, index) {
 
             }
 
-
             //RESPUESTA 4
             if (elem.querySelector('.respuesta4')) {
 
@@ -5434,7 +5441,7 @@ questioncont.forEach(function (elem, index) {
 
                             //investigacion cuantitativa 30
                             ict1 = 30;
-                            
+
                             clicked = false
                         }
 
@@ -5948,7 +5955,7 @@ questioncont.forEach(function (elem, index) {
                             proto3 = 20;
 
                             //estructuracion de la informacion 20
-                            ei2 = 20;
+                            ei3 = 20;
 
                             clicked = false
                         }
@@ -5972,7 +5979,7 @@ questioncont.forEach(function (elem, index) {
                             proto4 = 10;
 
                             //estructuracion de la informacion 20
-                            ei3 = 20;
+                            ei4 = 20;
 
                             //conocimiento en interaccion 10
                             ci4 = 10;
@@ -6017,7 +6024,7 @@ questioncont.forEach(function (elem, index) {
                             id8 = 10;
 
                             //estructuracion de la informacion 20
-                            ei4 = 20;
+                            ei5 = 20;
 
                             //conocimiento en interaccion 10
                             ci6 = 10;
@@ -6065,7 +6072,7 @@ questioncont.forEach(function (elem, index) {
                             id10 = 10;
 
                             //estructuracion de la informacion 20
-                            ei5 = 20;
+                            ei6 = 20;
 
                             //conocimiento en interaccion 10
                             ci8 = 10;
@@ -6333,7 +6340,7 @@ questioncont.forEach(function (elem, index) {
                             ul2 = 6;
 
                             //capacidad de gestion
-                            cg1 = 6;
+                            cg1 = 12;
 
                             clicked = false
                         }
@@ -6378,7 +6385,10 @@ questioncont.forEach(function (elem, index) {
                             co5 = 6;
 
                             //capacidad de gestion 10
-                            cg2 = 6;
+                            cg2 = 12;
+
+                            //negociacion 10
+                            n1 = 18;
 
                             clicked = false
                         }
@@ -6399,7 +6409,7 @@ questioncont.forEach(function (elem, index) {
                             ul5 = 6;
 
                             //capacidad de gestion 10
-                            cg3 = 6;
+                            cg3 = 12;
 
                             //liderazgo 20
                             l1 = 12;
@@ -6423,7 +6433,7 @@ questioncont.forEach(function (elem, index) {
                             ul6 = 6;
 
                             //capacidad de gestion 10
-                            cg4 = 6;
+                            cg4 = 12;
 
                             //liderazgo
                             l2 = 12;
@@ -6447,7 +6457,7 @@ questioncont.forEach(function (elem, index) {
                             ul7 = 6;
 
                             //negociacion 10
-                            n1 = 6;
+                            n2 = 24;
 
                             clicked = false
                         }
@@ -6468,13 +6478,13 @@ questioncont.forEach(function (elem, index) {
                             ul8 = 6;
 
                             //capacidad de gestion 10
-                            cg5 = 6;
+                            cg5 = 12;
 
                             //liderazgo
                             l3 = 12;
 
                             //negociacion 10
-                            n2 = 6;
+                            n3 = 18;
 
                             clicked = false
                         }
@@ -6690,7 +6700,6 @@ questioncont.forEach(function (elem, index) {
 
             }
 
-
             //RESPUESTA 5
             if (elem.querySelector('.respuesta5')) {
 
@@ -6709,7 +6718,7 @@ questioncont.forEach(function (elem, index) {
 
                             //investigacion cuantitativa 30
                             ict1 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -7222,8 +7231,8 @@ questioncont.forEach(function (elem, index) {
                             proto3 = 0;
 
                             //estructuracion de la informacion 20
-                            ei2 = 0;
-                            
+                            ei3 = 0;
+
                             clicked = false
                         }
 
@@ -7246,11 +7255,11 @@ questioncont.forEach(function (elem, index) {
                             proto4 = 0;
 
                             //estructuracion de la informacion 20
-                            ei3 = 0;
+                            ei4 = 0;
 
                             //conocimiento en interaccion 10
                             ci4 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -7291,7 +7300,7 @@ questioncont.forEach(function (elem, index) {
                             id8 = 0;
 
                             //estructuracion de la informacion 20
-                            ei4 = 0;
+                            ei5 = 0;
 
                             //conocimiento en interaccion 10
                             ci6 = 0;
@@ -7339,7 +7348,7 @@ questioncont.forEach(function (elem, index) {
                             id10 = 0;
 
                             //estructuracion de la informacion 20
-                            ei5 = 0;
+                            ei6 = 0;
 
                             //conocimiento en interaccion 10
                             ci8 = 0;
@@ -7389,7 +7398,7 @@ questioncont.forEach(function (elem, index) {
 
                             //prototipado 10
                             proto6 = 8;
-                            
+
                             clicked = false
                         }
 
@@ -7413,7 +7422,7 @@ questioncont.forEach(function (elem, index) {
 
                             //prototipado 10
                             proto7 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -7434,7 +7443,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv4 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -7455,7 +7464,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv5 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -7476,7 +7485,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv6 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -7497,7 +7506,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv7 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -7518,7 +7527,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv8 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -7539,7 +7548,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv9 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -7560,7 +7569,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv10 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -7603,7 +7612,7 @@ questioncont.forEach(function (elem, index) {
                             ul2 = 8;
 
                             //capacidad de gestion
-                            cg1 = 8;
+                            cg1 = 16;
 
                             clicked = false
                         }
@@ -7648,7 +7657,10 @@ questioncont.forEach(function (elem, index) {
                             co5 = 8;
 
                             //capacidad de gestion 10
-                            cg2 = 8;
+                            cg2 = 16;
+
+                            //negociacion 10
+                            n1 = 24;
 
                             clicked = false
                         }
@@ -7669,7 +7681,7 @@ questioncont.forEach(function (elem, index) {
                             ul5 = 8;
 
                             //capacidad de gestion 10
-                            cg3 = 8;
+                            cg3 = 16;
 
                             //liderazgo 20
                             l1 = 16;
@@ -7693,7 +7705,7 @@ questioncont.forEach(function (elem, index) {
                             ul6 = 8;
 
                             //capacidad de gestion 10
-                            cg4 = 8;
+                            cg4 = 16;
 
                             //liderazgo
                             l2 = 16;
@@ -7717,7 +7729,7 @@ questioncont.forEach(function (elem, index) {
                             ul7 = 8;
 
                             //negociacion 10
-                            n1 = 8;
+                            n2 = 32;
 
                             clicked = false
                         }
@@ -7738,13 +7750,13 @@ questioncont.forEach(function (elem, index) {
                             ul8 = 8;
 
                             //capacidad de gestion 10
-                            cg5 = 8;
+                            cg5 = 16;
 
                             //liderazgo
                             l3 = 16;
 
                             //negociacion 10
-                            n2 = 8;
+                            n3 = 24;
 
                             clicked = false
                         }
@@ -7979,7 +7991,7 @@ questioncont.forEach(function (elem, index) {
 
                             //investigacion cuantitativa 30
                             ict1 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8274,7 +8286,7 @@ questioncont.forEach(function (elem, index) {
 
                             //Comunicacion escrita 10
                             ce6 = 10;
-                            
+
                             clicked = false
                         }
 
@@ -8295,7 +8307,7 @@ questioncont.forEach(function (elem, index) {
 
                             //Comunicacion escrita 10
                             ce7 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8316,7 +8328,7 @@ questioncont.forEach(function (elem, index) {
 
                             //Comunicacion escrita 10
                             ce8 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8337,7 +8349,7 @@ questioncont.forEach(function (elem, index) {
 
                             //Comunicacion escrita 10
                             ce9 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8358,7 +8370,7 @@ questioncont.forEach(function (elem, index) {
 
                             //estructuracion de la informacion 10
                             ei1 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8379,7 +8391,7 @@ questioncont.forEach(function (elem, index) {
 
                             //estructuración de la información 10
                             ei2 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8401,7 +8413,7 @@ questioncont.forEach(function (elem, index) {
 
                             //Prototipado 20
                             proto1 = 20;
-                            
+
                             clicked = false
                         }
 
@@ -8425,7 +8437,7 @@ questioncont.forEach(function (elem, index) {
 
                             //conocimiento de interaccion 10
                             ci1 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8446,7 +8458,7 @@ questioncont.forEach(function (elem, index) {
 
                             //conocimiento de interaccion 20
                             ci2 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8467,7 +8479,7 @@ questioncont.forEach(function (elem, index) {
 
                             //conocimiento de interaccion 20
                             ci3 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8490,8 +8502,8 @@ questioncont.forEach(function (elem, index) {
                             proto3 = 0;
 
                             //estructuracion de la informacion 20
-                            ei2 = 0;
-                            
+                            ei3 = 0;
+
                             clicked = false
                         }
 
@@ -8514,11 +8526,11 @@ questioncont.forEach(function (elem, index) {
                             proto4 = 0;
 
                             //estructuracion de la informacion 20
-                            ei3 = 0;
+                            ei4 = 0;
 
                             //conocimiento en interaccion 10
                             ci4 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8539,7 +8551,7 @@ questioncont.forEach(function (elem, index) {
 
                             //conocimiento en interaccion 10
                             ci5 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8559,11 +8571,11 @@ questioncont.forEach(function (elem, index) {
                             id8 = 0;
 
                             //estructuracion de la informacion 20
-                            ei4 = 0;
+                            ei5 = 0;
 
                             //conocimiento en interaccion 10
                             ci6 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8587,7 +8599,7 @@ questioncont.forEach(function (elem, index) {
 
                             //conocimiento en interaccion 10
                             ci7 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8607,11 +8619,11 @@ questioncont.forEach(function (elem, index) {
                             id10 = 0;
 
                             //estructuracion de la informacion 20
-                            ei5 = 0;
+                            ei6 = 0;
 
                             //conocimiento en interaccion 10
                             ci8 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8657,7 +8669,7 @@ questioncont.forEach(function (elem, index) {
 
                             //prototipado 10
                             proto6 = 10;
-                            
+
                             clicked = false
                         }
 
@@ -8681,7 +8693,7 @@ questioncont.forEach(function (elem, index) {
 
                             //prototipado 10
                             proto7 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8702,7 +8714,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv4 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8723,7 +8735,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv5 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8765,7 +8777,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv7 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8786,7 +8798,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv8 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8807,7 +8819,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv9 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8828,7 +8840,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion visual 10
                             cv10 = 0;
-                            
+
                             clicked = false
                         }
 
@@ -8851,7 +8863,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion oral 30
                             co3 = 30;
-                            
+
                             clicked = false
                         }
 
@@ -8871,8 +8883,8 @@ questioncont.forEach(function (elem, index) {
                             ul2 = 10;
 
                             //capacidad de gestion
-                            cg1 = 10;
-                            
+                            cg1 = 20;
+
                             clicked = false
                         }
 
@@ -8893,7 +8905,7 @@ questioncont.forEach(function (elem, index) {
 
                             //comunicacion oral 30
                             co4 = 30;
-                            
+
                             clicked = false
                         }
 
@@ -8916,8 +8928,11 @@ questioncont.forEach(function (elem, index) {
                             co5 = 10;
 
                             //capacidad de gestion 10
-                            cg2 = 10;
-                            
+                            cg2 = 20;
+
+                            //negociacion 10
+                            n1 = 30;
+
                             clicked = false
                         }
 
@@ -8937,11 +8952,11 @@ questioncont.forEach(function (elem, index) {
                             ul5 = 10;
 
                             //capacidad de gestion 10
-                            cg3 = 10;
+                            cg3 = 20;
 
                             //liderazgo 20
                             l1 = 20;
-                            
+
                             clicked = false
                         }
 
@@ -8961,11 +8976,11 @@ questioncont.forEach(function (elem, index) {
                             ul6 = 10;
 
                             //capacidad de gestion 10
-                            cg4 = 10;
+                            cg4 = 20;
 
                             //liderazgo 20
                             l2 = 20;
-                            
+
                             clicked = false
                         }
 
@@ -8985,8 +9000,8 @@ questioncont.forEach(function (elem, index) {
                             ul7 = 10;
 
                             //negociacion 10
-                            n1 = 10;
-                            
+                            n2 = 40;
+
                             clicked = false
                         }
 
@@ -9006,14 +9021,14 @@ questioncont.forEach(function (elem, index) {
                             ul8 = 10;
 
                             //capacidad de gestion 10
-                            cg5 = 10;
+                            cg5 = 20;
 
                             //liderazgo
                             l3 = 20;
 
                             //negociacion 10
-                            n2 = 10;
-                            
+                            n3 = 30;
+
                             clicked = false
                         }
 
@@ -9034,7 +9049,7 @@ questioncont.forEach(function (elem, index) {
 
                             //liderazgo
                             l4 = 20;
-                            
+
                             clicked = false
                         }
 
@@ -9288,7 +9303,7 @@ questioncont.forEach(function (elem, index) {
             console.log("escucha activa " + escuchaa)
 
             //ESTRUCTURACION DE LA INFORMACION
-            estruinfo = ei1 + ei2 + ei3 + ei4 + ei5 + ei6 + ei7;
+            estruinfo = ei1 + ei2 + ei3 + ei4 + ei5 + ei6;
             console.log("estructuracion de la informacion " + estruinfo)
 
             //PROTOTIPADO
@@ -9304,7 +9319,7 @@ questioncont.forEach(function (elem, index) {
             console.log("capacidad de gestion " + capagest)
 
             //NEGOCIACION
-            neg = n1 + n2 + n3 + n4;
+            neg = n1 + n2 + n3;
             console.log("negociacion " + neg)
 
             //LIDERAZGO
@@ -9407,7 +9422,7 @@ btns.addEventListener('click', function (event) {
         }
 
         const cualitativa = {
-            nameSkill: "Investigación cuanlitativa",
+            nameSkill: "Investigación cualitativa",
             value: invescual,
         }
 
@@ -9557,11 +9572,10 @@ btns.addEventListener('click', function (event) {
         graphic();
         resultskills();
 
-
     }
-
+ });
     //si funciona, pero se debe cambiar mejor en la misma pantalla la opcion de agregar portafolio
     /*if (contador == 60) {
         btns.setAttribute('href', '../../../index.html');
     }*/
-})
+

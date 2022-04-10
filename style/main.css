@@ -909,6 +909,9 @@ ul {
 
 .modal2 {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .modal-title {
@@ -1776,6 +1779,15 @@ input[type="radio"]:checked::before {
 .imagquestion {
   height: 100%;
   width: 100%;
+}
+
+.finished {
+  border: 5px solid #7764E3;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 5vh;
+  width: 90%;
 }
 
 .mapcontbtn {
