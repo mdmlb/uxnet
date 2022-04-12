@@ -1608,7 +1608,7 @@ ul {
 }
 
 .testimg {
-  background-image: url("../../img/bottomimgprofile.svg");
+  background-image: url(".././img/bottomimgprofile.svg");
   background-size: cover;
   width: 29%;
 }
