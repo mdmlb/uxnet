@@ -13,7 +13,7 @@ login.addEventListener('submit', function (event) {
         .then((userCredential) => {
             // Signed in
             const user = userCredential.user;
-            window.location.href = '../index.html';
+            window.location.href = './index.html';
             // ...
         })
         .catch((error) => {
