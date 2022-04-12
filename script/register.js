@@ -51,7 +51,7 @@ register.addEventListener('submit', function (event) {
           birthdate: birthdate,
           usertype: usertype
         }).then(function () {
-          window.location.href = '../index.html';
+          window.location.href = './index.html';
         });
         console.log("Document written with ID: ", docRef.id);
         console.log(docRef)
