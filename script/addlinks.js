@@ -121,7 +121,7 @@ btntimeline.addEventListener('click', function (event) {
                 console.log(userInfo);
 
                 if (userInfo) {
-                    await updateDoc(doc(db, "timeline", uid), {
+                    await setDoc(doc(db, "timeline", uid), {
                         experience: timeline,
                     })
 
