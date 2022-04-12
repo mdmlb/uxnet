@@ -205,7 +205,7 @@
 
 .menu {
   height: 100vh;
-  background-image: url("../../img/blurbackground.jpg");
+  background-image: url("../uxnet/img/blurbackground.jpg");
   background-size: 127vh;
   background-position: bottom;
 }
