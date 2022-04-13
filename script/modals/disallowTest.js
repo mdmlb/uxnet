@@ -19,6 +19,9 @@ const db = getFirestore();
 const auth = getAuth();
 var userInfo;
 const modalTest = document.querySelector('.disallowTest');
+const loader = document.querySelector('.loader');
+
+loader.classList.add('loader--show');
 
 onAuthStateChanged(auth, async (user) => {
     if (user) {
@@ -42,6 +45,7 @@ onAuthStateChanged(auth, async (user) => {
 
             if(docSnap2.exists() /*&& se cumplieron los 3 meses*/){
                 modalTest.classList.add('disallowTest--show');
+                loader.classList.remove('loader--show');
             }
 
         } else {

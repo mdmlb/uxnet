@@ -22,6 +22,9 @@ const headerWithResults = document.querySelector('.headerWithResults');
 const headerNoResults = document.querySelector('.headerNoResults');
 const userName2 = document.querySelector('.profile__usernameB1');
 const authSignout = document.querySelector('.SignOutButton2');
+const loader = document.querySelector('.loader');
+
+loader.classList.add('loader--show');
 
 onAuthStateChanged(auth, async (user) => {
     if (user) {
@@ -45,6 +48,7 @@ onAuthStateChanged(auth, async (user) => {
 
             if (docSnap2.exists() /*&& se cumplieron los 3 meses*/) {
                 headerWithResults.classList.add('headerWithResults--show');
+                loader.classList.remove('loader--show');
                 if (userName2) {
                     userName2.innerText = '¡Hola, ' + userInfo.name + '!';
                 }
@@ -63,6 +67,7 @@ onAuthStateChanged(auth, async (user) => {
                 }
             } else {
                 headerNoResults.classList.add('headerNoResults--show');
+                loader.classList.remove('loader--show');
             }
 
         } else {

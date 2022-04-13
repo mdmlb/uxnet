@@ -22,7 +22,9 @@ var userInfo;
 const bestSkillList = document.querySelector('.bestSkillElements');
 const worstSkillList = document.querySelector('.worstSkillElements');
 const titleBestRole = document.querySelector('.textprofile__rol');
+const loader = document.querySelector('.loader');
 
+loader.classList.add('loader--show');
 
 function renderSkills(list,elemHtml,num) {
     elemHtml.innerHTML = '';
@@ -97,7 +99,6 @@ onAuthStateChanged(auth, async (user) => {
 
                 //Se ejecuta la función de que se agreguen los elementos al html (para TODAS las habilidades)
                 //renderSkills(objectsList, skillList);
-                //loader.classList.remove('loader--show');
 
                 //Mete en el arreglo todas las habilidades ordenadas de mayor a menor
                 orderedList = objectsList.sort(function (a, b) {
@@ -137,7 +138,7 @@ onAuthStateChanged(auth, async (user) => {
                 docSnap3.data().roles.forEach((item) => {
                     uxRolesList.push(item);
                 });
-                //loader.classList.remove('loader--show');
+                loader.classList.remove('loader--show');
 
                 //Mete en el arreglo todos los roles ordenados de mayor a menor
                 orderedListRoles = uxRolesList.sort(function (a, b) {

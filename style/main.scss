@@ -67,6 +67,8 @@ $font: "Open Sans";
 @import './changeHeader';
 @import './modal/warning';
 
+@import './loader';
+
 
 .imagetoreplace{
     background-image: url("../img/wireframe.jpg");
