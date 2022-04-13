@@ -25,7 +25,7 @@
 
 <body>
 
-    <header class="mainHeader">
+    <header class="mainHeader headerNoResults">
 
         <!--Nav-->
         <nav class="header d-flex align-items-center flex-row p-4">
@@ -92,6 +92,69 @@
                             y en
                             las que debes de mejorar, puedes completar tu perfil de manera manual</p>
                         <a href="./testwhoknow.html" type="submit" class="btn btn-primary" style="width: 50%;">Mapeo</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </header>
+
+    <header class="mainHeader headerWithResults">
+
+        <!--Nav-->
+        <nav class="header d-flex align-items-center flex-row p-4">
+
+            <!--Nav: menu
+            <a href="#" class="header__menulink">
+                <img class="header__menu" src="./img/burguermenu.svg" atl="menu">
+            </a>-->
+
+            <!--Nav: Logo-->
+            <a href="./index.html" class="header__logolink">
+                <img class="header__logo" src="./img/draklogo.svg" atl="UXnet's logo">
+            </a>
+
+            <div class="header__links">
+                <a href="./information.html" class="header__link">Información</a>
+                <a href="./testwhodoesntknow.html" class="header__link">Test</a>
+                <a href="./growth.html" class="header__link">Eventos</a>
+            </div>
+
+            <!--Nav: Profile-->
+            <div class="header__profileLink d-flex align-items-center flex-row">
+                <a href="./profile.html" class="header__profileLink">
+                    <img class="header__profile" src="./img/user.svg" atl="Profile">
+                </a>
+                <div style="width: 2vh;"></div>
+                <button class="btn signout SignOutButton SignOutButton2">Cerrar sesión</button>
+            </div>
+
+        </nav>
+
+        <!--Banner: Links-->
+        <section class="">
+
+            <div class="banner__blank">
+
+            </div>
+
+            <div class="banner p-5">
+
+                <h4 class="p-3 profile__usernameB profile__usernameB1"></h4>
+
+                <h1 class="banner__title p-3">Analiza tu perfil UX</h1>
+
+                <div class="d-flex justify-content-left align-items-left flex-row">
+
+                    <!--Banner: test who know-->
+                    <div class="text-center p-3 d-flex justify-content-left align-items-left flex-column">
+                        <p class="text__description">Parece que ya has hecho previamente nuestro test, o ya has realizado el mapeo de tu perfil UX. Si quieres ver los resultados de tus habilidades y roles UX, puedes ir a tu perfil o dar click en el botón de abajo.
+                        </p>
+                        <a href="./profile.html" type="submit" class="btn btn-primary"
+                            style="width: 100%;">Ver resultados anteriores</a>
                     </div>
 
                 </div>
@@ -226,6 +289,7 @@
 
     <script type="module" src="./script/firebase.js"></script>
     <script type="module" src="./script/auth.js"></script>
+    <script type="module" src="./script/changeHeader.js"></script>
 
 </body>
 

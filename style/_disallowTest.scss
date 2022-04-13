@@ -1,0 +1,49 @@
+.disallowTest {
+    display: none;
+
+    &--show {
+        display: block;
+        position: fixed;
+        top: 0px;
+        height: 100vh;
+        width: 100%;
+        z-index: 5;
+        background-color: rgba($color1, 0.8);
+    }
+
+    &__container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    &__centerAll {
+        width: 50%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: $color3;
+        
+        div {
+            padding-left: 0px;
+            padding-top: 5%;
+        }
+
+        p {
+            padding: 5%;
+        }
+
+        .btn {
+            width: 50%;
+            margin-bottom: 5%;
+            margin-top: 0%;
+        }
+    }
+}

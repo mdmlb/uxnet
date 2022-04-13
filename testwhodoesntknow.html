@@ -67,10 +67,20 @@
         <section class="testbefore d-flex flex-row justify-content-between">
             <div class="d-flex justify-content-center align-items-center testbeforecont">
                 <div class="testcont">
-                    <p class="testbeforecont__text">A continuación encontrarás 59 preguntas de opción múltiple, con las que mediremos tus habilidades e identificaremos los roles del Diseño UX a los que mejor te ajustas. Recuerda que este test tiene como propósito que puedas aprender más sobre ti mismo y tu perfil de diseñador, no intentes adivinar las preguntas que no sepas, ni las busques en internet, <strong>tampoco importa que te equivoques, pues todo esto servirá para que sepas cuáles son tus fortalezas y en qué puedes mejorar.</strong>
-                    <br>
-                    <br>
-                    Al finalizar el test podrás ver los resultados, que consisten en una gráfica con el puntaje que obtuviste en cada rol del Diseño UX, así como también los porcentajes que conseguiste en cada una de las habilidades.
+                    <p class="testbeforecont__text">A continuación encontrarás 59 preguntas de opción múltiple, con las
+                        que mediremos tus habilidades e identificaremos los roles del Diseño UX a los que mejor te
+                        ajustas. Recuerda que este test tiene como propósito que puedas aprender más sobre ti mismo y tu
+                        perfil de diseñador, no intentes adivinar las preguntas que no sepas, ni las busques en
+                        internet, tampoco importa que te equivoques, pues todo esto servirá para que sepas cuáles son
+                        tus fortalezas y en qué puedes mejorar. <strong>Sé lo más honesto contigo mismo.</strong>
+                        <br>
+                        <br>
+                        Al finalizar el test podrás ver los resultados, que consisten en una gráfica con el puntaje que
+                        obtuviste en cada rol del Diseño UX, así como también los porcentajes que conseguiste en cada
+                        una de las habilidades. <strong>Finalmente, te recomendamos mucha concentración en este test, ya
+                            que solo se permite un intento cada 3 meses.</strong>
+                        <br>
+                        <br>
                     </p>
 
                     <a href="./html/test/whodoesntknow/question.html" type="submit" class="btn btn-primary"
@@ -119,6 +129,32 @@
             </div>
         </footer>
 
+        <article class="disallowTest">
+            <div class="disallowTest__container">
+                <div class="disallowTest__centerAll">
+                    <div class="breadcrumbs d-flex flex-row">
+                        <a href="./index.html" class="d-flex justify-content-center align-items-center flex-row">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <i class="arrow left"></i>
+                            </div>
+
+                            <div style="width: 2vh"></div>
+                            <h6 style="color: white;     margin-bottom: 0">Regresar al inicio</h6>
+                        </a>
+                    </div>
+                    <p class="text__description" style="color: white;">Parece que ya has hecho previamente el test, o ya
+                        has realizado el mapeado de tus habilidades y roles UX. En cualquiera de los dos casos, te
+                        recordamos que <strong>no puedes repetir estas acciones hasta dentro de 3 meses.</strong>
+                        <br>
+                        <br>
+                        Si estás buscando los resultados de tus habilidades y roles UX, puedes dirigirte a tu perfil.
+                    </p>
+                    <a href="./profile.html" type="submit" class="btn btn-primary">Ver mis resultados
+                        anteriores</a>
+                </div>
+            </div>
+        </article>
+
     </main>
 
 
@@ -135,6 +171,9 @@
         crossorigin="anonymous"></script>
 
 
+    <script type="module" src="./script/firebase.js"></script>
+    <script type="module" src="./script/auth.js"></script>
+    <script type="module" src="./script/modals/disallowTest.js"></script>
 </body>
 
 </html>

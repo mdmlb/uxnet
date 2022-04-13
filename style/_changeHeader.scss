@@ -1,0 +1,15 @@
+.headerNoResults {
+    display: none;
+
+    &--show {
+        display: block;
+    }
+}
+
+.headerWithResults {
+    display: none;
+
+    &--show {
+        display: block;
+    }
+}

@@ -84,6 +84,7 @@ import {
   const auth = getAuth();
   const db = getFirestore();
   const userName = document.querySelector('.profile__usernameB');
+  const userName2 = document.querySelector('.profile__usernameB1');
   const birth = document.querySelector('.profile__birth');
   const email = document.querySelector('.profile__email');
   const portafolio = document.querySelector('.profile__portafolio');
@@ -110,6 +111,7 @@ import {
             email.innerHTML = data.email;
             portafolio.innerHTML = data.link;
           }
+          
       } else {
         // doc.data() will be undefined in this case
         console.log("No such document!");
