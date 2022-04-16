@@ -46,6 +46,8 @@ onAuthStateChanged(auth, async (user) => {
             if(docSnap2.exists() /*&& se cumplieron los 3 meses*/){
                 modalTest.classList.add('disallowTest--show');
                 loader.classList.remove('loader--show');
+            }else {
+                loader.classList.remove('loader--show');
             }
 
         } else {
