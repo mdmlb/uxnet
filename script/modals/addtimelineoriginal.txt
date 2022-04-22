@@ -65,7 +65,7 @@ btnadd.addEventListener('click', function (event) {
   const year = addtime.year.value
   const title = addtime.title.value
   const description = addtime.description.value
-
+  
   /* */
   const job = {
     year: year,
@@ -93,59 +93,21 @@ btnadd.addEventListener('click', function (event) {
         console.log(userInfo);
 
         if (userInfo) {
+          await updateDoc(doc(db, "timeline", uid), {
+            experience: arrayUnion(job),
+          })
 
-          const document = await getDoc(doc(db, "timeline", uid));
-
-          if (document.exists()) {
-            await updateDoc(doc(db, "timeline", uid), {
-              experience: arrayUnion(job),
-            })
-
-              .then(function () {
-                //window.location.href = './html/home.html';
-                dark.classList.remove("dark--active");
-                modal.classList.remove("modal-content")
-                window.location.href = './profile.html';
-              });
-          } 
-          else{
-            console.log("no se pudo")
-
-            await setDoc(doc(db, "timeline", uid), {
-              experience: timeline,
-            })
-
-              .then(function () {
-                //window.location.href = './html/home.html';
-                dark.classList.remove("dark--active");
-                modal.classList.remove("modal-content")
-                window.location.href = './profile.html';
-              });
-          }
-
-          /*if (document.exists() != null) {
-              await setDoc(doc(db, "timeline", uid), {
-                experience: timeline,
-              })
-  
-                .then(function () {
-                  //window.location.href = './html/home.html';
-                  dark.classList.remove("dark--active");
-                  modal.classList.remove("modal-content")
-                  window.location.href = './profile.html';
-                });
-            
-          }*/
-
-
-
-
+            .then(function () {
+              
+              dark.classList.remove("dark--active");
+              modal.classList.remove("modal-content")
+              window.location.href = './profile.html';
+            });
         }
 
       } else {
         // doc.data() will be undefined in this case
-        //console.log("No such document!");
-
+        console.log("No such document!");
       }
 
     } else {

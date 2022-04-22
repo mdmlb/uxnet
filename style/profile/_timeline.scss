@@ -198,6 +198,12 @@
     flex-wrap: wrap;
 }
 
+.titletimeline{
+  color: $color5;
+  font-family: $title;
+  font-style: italic;
+}
+
 .timeline-steps .timeline-step {
     align-items: center;
     display: flex;
