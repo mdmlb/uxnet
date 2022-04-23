@@ -20,6 +20,7 @@ const auth = getAuth();
 var userInfo;
 const modalProfile = document.querySelector('.warningNoInfo');
 const btnWarning = document.querySelector('.btnWarning');
+const loader = document.querySelector('.loader');
 
 onAuthStateChanged(auth, async (user) => {
     if (user) {
@@ -50,6 +51,7 @@ onAuthStateChanged(auth, async (user) => {
             if(btnWarning){
                 btnWarning.addEventListener('click', function () {
                     modalProfile.classList.remove('warningNoInfo--show');
+                    loader.classList.remove('loader--show');
                   });
             }
 
