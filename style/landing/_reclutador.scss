@@ -1,0 +1,29 @@
+.header__linksreclutador{
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70vh;
+    align-items: center;
+    font-weight: 700;
+}
+
+.mainHeaderreclu{
+    background-image: url(./../img/0HOME/headerbackground.png);
+    height: 95vh;
+    width: 100%;
+    background-position: bottom;
+    background-size: 132%;
+}
+
+.emptylandingreclu{
+    background-image: url(./../img/0HOME/texture.png);
+    height: 37vh;
+    background-size: cover;
+}
+
+.emptylandingreclu__text{
+    margin: 0 40px;;
+    width: 52%;
+    text-align: right;
+}

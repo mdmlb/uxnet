@@ -275,7 +275,7 @@ const preguntas = [
     },
     //2
     {
-        pregunta: '¿Del 1 al 6, qué tan de acuerdo estás con la siguiente frase? Mis habilidades de comunicación y conocimientos de psicología contribuyen en el desarrollo de la etapa de investigación de un proyecto. Siendo 1 nada de acuerdo, y 6 muy de acuerdo.',
+        pregunta: '¿Del 1 al 6, qué tan de acuerdo estás con la siguiente frase? "Mis habilidades de comunicación y conocimientos de psicología contribuyen en el desarrollo de la etapa de investigación de un proyecto. Siendo 1 nada de acuerdo, y 6 muy de acuerdo."',
         src: '../../../img/test/vacio.svg',
     },
     //3
@@ -9452,7 +9452,7 @@ btns.addEventListener('click', function (event) {
         }
 
         const gestion = {
-            nameSkill: "Capacidad de gestion",
+            nameSkill: "Capacidad de gestión",
             value: capagest,
         }
 

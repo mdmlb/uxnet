@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <title>UXnet</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="../../../../style/main.css">
+
+    <!-- Typo -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Prompt:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Logo -->
+    <link rel="shortcut icon" href="../../../../img/shortlogo.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <article class="loader">
+        <div class="loader__container">
+            <img src="../../../../img/loading.gif" alt="loading">
+            <h1>CARGANDO...</p>
+        </div>
+    </article>
+
+    <header class="">
+
+        <!--Nav-->
+        <nav class="header d-flex align-items-center flex-row p-4">
+
+            <!--Nav: menu
+            <a href="#" class="header__menulink">
+                <img class="header__menu" src="./img/burguermenu.svg" atl="menu">
+            </a>-->
+
+            <!--Nav: Logo-->
+            <a href="../../../landingre.html" class="header__logolink">
+                <img class="header__logo" src="../../../../img/draklogo.svg" atl="UXnet's logo">
+            </a>
+
+            <div class="header__linksreclutador">
+                <a href="../../../../information.html" class="header__link">Información</a>
+                <a href="./recuiterSelection.html" class="header__link p-3">Iniciar nuevo proyecto</a>
+                <a href="./proyects.html" class="header__link">Proyectos</a>
+            </div>
+
+            <!--Nav: Profile-->
+            <div class="header__profileLink d-flex align-items-center flex-row">
+                <a href="" class="header__profileLink">
+                    <img class="header__profile" src="../../../../img/user.svg" atl="Profile">
+                </a>
+                <div style="width: 2vh;"></div>
+                <button class="btn signout SignOutButton">Cerrar sesión</button>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main class="main">
+
+        <!--Banner: Links-->
+        <section class="bannercontprofile">
+
+            <!--<h4 class="p-3 profile__usernameB"></h4>-->
+
+            <div class="banner d-flex justify-content-bottom align-items-center flex-row" style="width:80%;">
+                <div class="banner__cont" style="height: 158px;">
+                    <h1 class="bannerprofile__title p-3">Mi proyecto</h1>
+                </div>
+
+                <div class="profileconttext">
+                    <p class="text__description" style="color: white; width: 100%;font-weight: 300; margin: 0;">
+                        Empieza a configurar tu proyecto completando la información que aparece a continuación.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div style="height: 10vh;"></div>
+
+        <section class="d-flex align-items-center flex-column">
+            <form class="form newproyect d-flex justify-content-center flex-column range__form">
+
+                <div class="mb-3" style="width: 100%;">
+                    <label for="exampleInputEmail1" class="form-label newproyecttext">Nombre del proyecto</label>
+                    <input type="text" class="form-control proyectcontname nameProject"
+                        placeholder="Ej: Rediseño de branding de UXnet" name="projectName">
+                </div>
+                <div class="mb-3" style="width: 100%;">
+                    <label for="exampleInputPassword1" class="form-label newproyecttext">Descripción del
+                        proyecto</label>
+                    <input type="text" class="form-control proyectcontdes projectDescription" name="projectDescription"
+                        placeholder="Ej: Proyecto consistente en el rediseño del logo y paleta de colores de la marca UXnet.">
+                </div>
+
+                <div style="height: 10vh;"></div>
+
+                <!--requerimientos-->
+                <div class="d-flex flex-column contevent justify-content-center " >
+                    <h1 class="contevent__title" style="margin: 0;">Requerimientos - roles</h1>
+                    <p>Selecciona el rol o la combinación de roles que necesitas para tu proyecto</p>
+                </div>
+
+                <div style="height: 5vh;"></div>
+
+                <!--roles-->
+                <div class="d-flex justify-content-center align-items-center flex-row flex-wrap">
+
+                    <!--Researcher-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">0.1</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">UX researcher</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range__1">50%</p>
+
+                                <input type="range" class="form-range range__input1" min="0" max="100" step="10"
+                                    style="width: 90%">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Content-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">0.2</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Content strategist</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range__2">50%</p>
+                                <input type="range" class="form-range range__input2" min="0" max="100" step="10"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Interaction-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">0.3</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Interaction designer</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range__3">50%</p>
+
+                                <input type="range" class="form-range range__input3" min="0" max="100" step="10"
+                                    style="width: 90%">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--UI-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">0.4</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">UI designer</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range__4">50%</p>
+                                <input type="range" class="form-range range__input4" min="0" max="100" step="10"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--UX lead-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">0.5</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">UX lead</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range__5">50%</p>
+                                <input type="range" class="form-range range__input5" min="0" max="100" step="10"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div style="height: 10vh;"></div>
+
+
+                <!--habilidades-->
+                <div class="d-flex flex-column contevent justify-content-center " >
+                    <h1 class="contevent__title" style="margin: 0;">Requerimientos - habilidades</h1>
+                    <p>Ajusta cada una de las habilidades de acuerdo al perfil que necesitas para tu proyecto.</p>
+                </div>
+
+                <div style="height: 5vh;"></div>
+
+                <div class="d-flex justify-content-center align-items-center flex-row flex-wrap">
+                    <!--Skill 1-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="skilltoimp__position">1</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="skilltoimp">Comunicación oral</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_1">50%</p>
+                                <input type="range" class="form-range range__input1" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 2-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">2</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Comunicación escrita</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_2">50%</p>
+                                <input type="range" class="form-range range__input2" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 3-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">3</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Empatía</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_3">50%</p>
+                                <input type="range" class="form-range range__input3" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 4-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">4</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Trabajo en equipo</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_4">50%</p>
+                                <input type="range" class="form-range range__input4" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 5-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">5</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Análisis de datos</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_5">50%</p>
+                                <input type="range" class="form-range range__input5" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 6-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">6</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Escucha activa</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_6">50%</p>
+                                <input type="range" class="form-range range__input6" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 7-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">7</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Negociación</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_7">50%</p>
+                                <input type="range" class="form-range range__input7" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 8-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">8</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Actitud crítica</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_8">50%</p>
+                                <input type="range" class="form-range range__input8" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 9-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">9</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Conocimientos en psicología</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_9">50%</p>
+                                <input type="range" class="form-range range__input9" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 10-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">10</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Visión al futuro</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_10">50%</p>
+                                <input type="range" class="form-range range__input10" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 11-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">11</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Capacidad de gestión</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_11">50%</p>
+                                <input type="range" class="form-range range__input11" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--Skill 12-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">12</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Comunicación visual</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_12">50%</p>
+                                <input type="range" class="form-range range__input12" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 13-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">13</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Manejo del tiempo</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_13">50%</p>
+                                <input type="range" class="form-range range__input13" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 14-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">14</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Adaptación al cambio</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_14">50%</p>
+                                <input type="range" class="form-range range__input14" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 15-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">15</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Prototipado/Wireframes</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_15">50%</p>
+                                <input type="range" class="form-range range__input15" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 16-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">16</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Estructuración de la información</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_16">50%</p>
+                                <input type="range" class="form-range range__input16" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 17-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">17</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Creatividad</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_17">50%</p>
+                                <input type="range" class="form-range range__input17" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 18-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="d-flex justify-content-center align-items-center flex-row">
+                            <div class="circulo d-flex justify-content-center align-items-center">
+                                <h3 class="bestkill__position">18</h3>
+                            </div>
+                            <div class="p-3" style="    width: 60vh;">
+                                <p class="bestskill">Conocimientos de interacción</p>
+                                <div class="d-flex justify-content-center align-items-center flex-row">
+                                    <p class="bestkill__porc range_18">50%</p>
+                                    <input type="range" class="form-range range__input18" min="0" max="100" step="5"
+                                        style="width: 90%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 19-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">19</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Resistencia al trabajo bajo presión</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_19">50%</p>
+                                <input type="range" class="form-range range__input19" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 20-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">20</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Liderazgo</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_20">50%</p>
+                                <input type="range" class="form-range range__input20" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 21-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">21</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Investigación cuantitativa</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_21">50%</p>
+                                <input type="range" class="form-range range__input21" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Skill 22-->
+                    <div class="d-flex justify-content-center align-items-center flex-row" style="padding: 2vh;">
+                        <div class="circulo d-flex justify-content-center align-items-center">
+                            <h3 class="bestkill__position">22</h3>
+                        </div>
+                        <div class="p-3" style="    width: 60vh;">
+                            <p class="bestskill">Investigación cualitativa</p>
+                            <div class="d-flex justify-content-center align-items-center flex-row">
+                                <p class="bestkill__porc range_22">50%</p>
+                                <input type="range" class="form-range range__input22" min="0" max="100" step="5"
+                                    style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="height: 10vh;"></div>
+
+
+                <!--Buttons-->
+                <div class="d-flex justify-content-center align-items-center flex-row">
+                    <a class="btn btn-primary btncancel" style="width: 160px;" href="../../../landingre.html">
+                        cancelar
+                    </a>
+
+                    <div style="width: 8vh;"></div>
+
+                    <button class="btn btn-primary" style="width: 160px;">
+                        Continuar
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <div style="height: 10vh;"></div>
+
+        <footer class="footer">
+
+            <hr class="footer__line">
+
+            <div class="d-flex justify-content-center align-items-top flex-row">
+                <section class="footercont m-5">
+                    <h4 class="footercont__title">Información legal</h4>
+                    <div class="footercont__cont d-flex justify-content-left align-items-left flex-column">
+                        <a href="#" class="footercont__text">Pivacidad y seguridad</a>
+                        <a href="#" class="footercont__text">Terminos de uso</a>
+                    </div>
+                </section>
+
+                <section class="footercont m-5">
+                    <h4 class="footercont__title">Ayuda</h4>
+                    <div class="footercont__cont d-flex justify-content-left align-items-left flex-column">
+                        <a href="#" class="footercont__text">Contáctanos</a>
+                        <a href="#" class="footercont__text">FAQs</a>
+                    </div>
+                </section>
+
+                <section class="footercont m-5">
+                    <h4 class="footercont__title">Siguenos</h4>
+                    <div class="footercont__cont d-flex justify-content-left align-items-left flex-row">
+                        <a href="#" class="footercont__img">
+                            <img class="footercont__img" src="../../../../img/footer/facebook.svg" atl="">
+                        </a>
+                        <a href="#" class="footercont__img">
+                            <img class="footercont__img" src="../../../../img/footer/instagram.svg" atl="">
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <!-- Optional JavaScript -->
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!--<script type="module" src="./scripts/main.js"></script>-->
+
+    
+    <script type="module" src="../../../script/firebase.js"></script>
+    <script type="module" src="../../../script/auth.js"></script>
+    <script type="module" src="../../../script/recruiterSelection.js"></script>
+
+</body>
+
+</html>

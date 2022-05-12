@@ -325,6 +325,7 @@
   color: white;
   font-size: 64px;
   padding: 5vh 35vh 5vh 0vh;
+  margin: 0;
 }
 
 .text-center {
@@ -358,7 +359,7 @@
 }
 
 .eventcont {
-  width: 80%;
+  width: 100%;
 }
 
 .event__person {
@@ -371,6 +372,7 @@
   text-align: center;
   padding-top: 2vh;
   padding-bottom: 1vh;
+  text-transform: uppercase;
 }
 
 .event__name {
@@ -391,6 +393,44 @@
 
 .emptycont {
   height: 20vh;
+}
+
+.header__linksreclutador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+}
+
+.mainHeaderreclu {
+  background-image: url(./../img/0HOME/headerbackground.png);
+  height: 95vh;
+  width: 100%;
+  background-position: bottom;
+  background-size: 132%;
+}
+
+.emptylandingreclu {
+  background-image: url(./../img/0HOME/texture.png);
+  height: 37vh;
+  background-size: cover;
+}
+
+.emptylandingreclu__text {
+  margin: 0 40px;
+  width: 52%;
+  text-align: right;
 }
 
 .bannercont {
@@ -2017,6 +2057,65 @@ input[type="radio"]:checked::before {
   width: 15%;
 }
 
+.newproyect {
+  width: 75%;
+}
+
+.proyectcontname {
+  background: #04041B;
+}
+
+.proyectcontdes {
+  height: 123px;
+  background: #04041B;
+}
+
+.newproyecttext {
+  font-family: "Prompt";
+  font-size: 22px;
+}
+
+.contrecomend {
+  padding: 2vh;
+}
+
+.similprofile {
+  background-image: url(../../../img/0HOME/texture.png);
+  height: 15vh;
+  width: 100%;
+  background-position: bottom;
+  background-size: 132%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gobacksimil {
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  color: #F7F8FA;
+}
+
+.profiledesigner {
+  border-style: solid;
+  border-radius: 20px;
+  width: 45vh;
+  height: 61vh;
+}
+
+.contprofilegraphic {
+  width: 45%;
+}
+
 .imagetoreplace {
   background-image: url("../img/wireframe.jpg");
   background-size: cover;
@@ -2033,7 +2132,8 @@ input[type="radio"]:checked::before {
 .profile__usernameB {
   color: white;
   font-family: "Prompt";
-  text-align: center;
+  text-align: left;
+  margin: 0;
 }
 
 .profile__email {

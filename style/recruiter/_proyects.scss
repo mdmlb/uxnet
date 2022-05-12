@@ -1,0 +1,50 @@
+.newproyect{
+    width: 75%;
+}
+
+.proyectcontname{
+    background: $color1;
+}
+
+.proyectcontdes{
+    height: 123px;
+    background: $color1;
+}
+
+.newproyecttext{
+    font-family: $title;
+    font-size: 22px;
+}
+
+.contrecomend{
+    padding: 2vh;
+}
+
+.similprofile{
+    background-image: url(../../../img/0HOME/texture.png);
+    height: 15vh;
+    width: 100%;
+    background-position: bottom;
+    background-size: 132%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gobacksimil{
+    height: 26px;
+    display: flex;
+    margin: 20px;
+    color: #F7F8FA;
+}
+
+.profiledesigner{
+    border-style: solid;
+    border-radius: 20px;
+    width: 45vh;
+    height: 61vh;
+}
+
+.contprofilegraphic{
+    width: 45%;
+}

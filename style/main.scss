@@ -35,6 +35,7 @@ $font: "Open Sans";
 @import './landing/header';
 @import './landing/nextevent';
 @import './landing/information';
+@import './landing/reclutador';
 
 @import './information/top';
 @import './information/company';
@@ -69,6 +70,8 @@ $font: "Open Sans";
 
 @import './loader';
 
+@import './recruiter/proyects';
+
 
 .imagetoreplace{
     background-image: url("../img/wireframe.jpg");
@@ -86,7 +89,8 @@ $font: "Open Sans";
 .profile__usernameB{
     color: white;
     font-family: $title;
-    text-align: center;
+    text-align: left;
+    margin: 0;
 }
 
 .profile__email{
