@@ -22,10 +22,11 @@
 }
 
 .questiontitle {
-    border: 5px solid $color2;
+    //border: 2px solid $color2;
     box-sizing: border-box;
-    border-radius: 0px 0px 50px 50px;
-    padding: 8vh;
+    //border-radius: 0px 0px 50px 50px;
+    padding: 3vh;
+    width: 100%;
 }
 
 .contallquestion {
@@ -33,16 +34,19 @@
 }
 
 .questiontitlecont {
-    width: 90%;
+    width: 100%;
     font-family: $font;
+    text-align: left;
+    
 }
 
 .questioncont {
-    border: 5px solid $color2;
+    border: 2px solid $color2;
     box-sizing: border-box;
     border-radius: 20px;
     font-family: $font;
-    height: 10vh;
+    height: 100%;
+    padding: 3vh;
 }
 
 .questioncont:focus-within {
@@ -102,6 +106,6 @@ input[type="radio"]:checked::before {
 }
 
 .imagquestion{
-    height: 100%;
-    width: 100%;
+    height: 400px;
+    width: 50%;
 }

@@ -1734,11 +1734,10 @@ ul {
 }
 
 .questiontitle {
-  border: 5px solid #F7F8FA;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 0px 0px 50px 50px;
-  padding: 8vh;
+  padding: 3vh;
+  width: 100%;
 }
 
 .contallquestion {
@@ -1746,17 +1745,19 @@ ul {
 }
 
 .questiontitlecont {
-  width: 90%;
+  width: 100%;
   font-family: "Open Sans";
+  text-align: left;
 }
 
 .questioncont {
-  border: 5px solid #F7F8FA;
+  border: 2px solid #F7F8FA;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 20px;
   font-family: "Open Sans";
-  height: 10vh;
+  height: 100%;
+  padding: 3vh;
 }
 
 .questioncont:focus-within {
@@ -1823,8 +1824,8 @@ input[type="radio"]:checked::before {
 }
 
 .imagquestion {
-  height: 100%;
-  width: 100%;
+  height: 400px;
+  width: 50%;
 }
 
 .finished {

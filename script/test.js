@@ -337,12 +337,12 @@ const preguntas = [
     },
     //14
     {
-        pregunta: '¿Del 1 al 6, qué tan de acuerdo estás con la siguiente frase? Soy capaz de definir y transmitir la personalidad de una marca a través de mi escritura. Siendo 1 nada de acuerdo, y 6 muy de acuerdo.',
+        pregunta: '¿Del 1 al 6, qué tan de acuerdo estás con la siguiente frase? "Soy capaz de definir y transmitir la personalidad de una marca a través de mi escritura". Siendo 1 nada de acuerdo, y 6 muy de acuerdo.',
         src: '../../../img/test/vacio.svg',
     },
     //15
     {
-        pregunta: '¿Del 1 al 6, qué tan de acuerdo estás con la siguiente frase? Disfruto usar la empatía, datos, metas de la empresa y lógica para crear textos. Siendo 1 nada de acuerdo, y 6 muy de acuerdo.',
+        pregunta: '¿Del 1 al 6, qué tan de acuerdo estás con la siguiente frase? "Disfruto usar la empatía, datos, metas de la empresa y lógica para crear textos". Siendo 1 nada de acuerdo, y 6 muy de acuerdo.',
         src: '../../../img/test/vacio.svg',
     },
     //16
@@ -877,8 +877,8 @@ const respuestas = [
     {
         respt1: 'No escogería ninguno',
         respt2: 'Los dos están bien',
-        respt3: 'El de la izquierda',
-        respt4: 'El de la derecha',
+        respt3: '1',
+        respt4: '2',
         respt5: 'No lo sé',
         respt6: 'Ninguna de las anteriores'
     },
