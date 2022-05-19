@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Prompt:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap");
 .btn {
   background-color: #FF971D;
@@ -205,7 +206,7 @@
 
 .menu {
   height: 100vh;
-  background-image: url("../img/blurbackground.jpg");
+  background-image: url("../img/blurbackground.svg");
   background-size: 127vh;
   background-position: bottom;
 }
@@ -233,6 +234,17 @@
   color: white;
 }
 
+.contimage {
+  height: 100%;
+  width: 50%;
+}
+
+.imagetoreplacelogin {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
 .signin {
   width: 100%;
   height: 100%;
@@ -240,13 +252,24 @@
 }
 
 .menuS {
-  background-image: url("../img/blurbackground.jpg");
+  background-image: url("../img/blurbackground.svg");
   background-size: 127vh;
   background-position: bottom;
 }
 
+.contimagesignin {
+  height: 100%;
+  width: 50%;
+}
+
+.imagetoreplacesignin {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
 .mainHeader {
-  background-image: url("./../img/0HOME/headerbackground.png");
+  background-image: url("./../img/illustration/headerbackground.svg");
   height: 105vh;
   width: 100%;
   background-position: bottom;
@@ -431,6 +454,20 @@
   margin: 0 40px;
   width: 52%;
   text-align: right;
+}
+
+.info__imginforol {
+  background-image: url("../img/illustration/5 INFORMACIÓN - ROLES.svg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.info__imginfocomp {
+  background-image: url("../img/illustration/4 INFORMACIÓN - EMPRESAS.svg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 
 .bannercont {
@@ -700,6 +737,97 @@
 
 .inforolescont__img {
   width: 47vh;
+  height: 221px;
+}
+
+.imgrol {
+  width: 100%;
+  height: 44.29vh;
+}
+
+.inforoles__imgUR {
+  background-image: url("../img/illustration/7 UX RESEARCHER.svg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0px 20px 20px 0px;
+  height: 100%;
+}
+
+.imgUR {
+  background-image: url("../img/illustration/7 UX RESEARCHER.svg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px 0px 0px 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.inforoles__imgCS {
+  background-image: url("../img/illustration/6 CONTENT STRATEGIST.svg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px 0px 0px 20px;
+  height: 100%;
+}
+
+.imgCS {
+  background-image: url("../img/illustration/6 CONTENT STRATEGIST.svg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px 0px 0px 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.inforoles__imgUD {
+  background-image: url("../img/illustration/8 UI DESIGNER.svg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0px 20px 20px 0px;
+  height: 100%;
+}
+
+.imgUD {
+  background-image: url("../img/illustration/8 UI DESIGNER.svg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px 0px 0px 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.inforoles__imgID {
+  background-image: url("../img/illustration/9 INTERACTION DESIGNER.svg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px 0px 0px 20px;
+  height: 100%;
+}
+
+.imgID {
+  background-image: url("../img/illustration/9 INTERACTION DESIGNER.svg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px 0px 0px 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.inforoles__imgUL {
+  background-image: url("../img/illustration/10 UX LEAD.svg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0px 20px 20px 0px;
+  height: 100%;
+}
+
+.imgUL {
+  background-image: url("../img/illustration/10 UX LEAD.svg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px 0px 0px 20px;
+  width: 100%;
+  height: 100%;
 }
 
 .inforoles__img {
@@ -761,10 +889,6 @@ ul {
   width: 100%;
   background-color: #694FFD;
   border-radius: 10px;
-}
-
-.imgrol {
-  width: 100%;
 }
 
 .rolcontskill {
@@ -1028,10 +1152,11 @@ ul {
 }
 
 .optionimg {
-  background-image: url(".././img/bottomimgprofile.svg");
+  background-image: url(".././img/illustration/11 OPCIONES DE MEJORA PERFIL.svg");
   background-size: cover;
-  height: 37vh;
-  width: 25%;
+  background-size: contain;
+  height: 33.2vh;
+  width: 8%;
 }
 
 .mainHeaderprofile {
@@ -1654,8 +1779,9 @@ ul {
 }
 
 .testimg {
-  background-image: url(".././img/bottomimgprofile.svg");
+  background-image: url(".././img/illustration/testinfo.svg");
   background-size: cover;
+  background-position: inherit;
   width: 29%;
 }
 
@@ -2118,7 +2244,7 @@ input[type="radio"]:checked::before {
 }
 
 .imagetoreplace {
-  background-image: url("../img/wireframe.jpg");
+  background-image: url("../img/illustration/registro.svg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -2134,6 +2260,13 @@ input[type="radio"]:checked::before {
   color: white;
   font-family: "Prompt";
   text-align: left;
+  margin: 0;
+}
+
+.profilename {
+  color: white;
+  font-family: "Prompt";
+  text-align: center;
   margin: 0;
 }
 

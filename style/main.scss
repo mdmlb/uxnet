@@ -37,6 +37,7 @@ $font: "Open Sans";
 @import './landing/information';
 @import './landing/reclutador';
 
+@import './information/information';
 @import './information/top';
 @import './information/company';
 @import './information/roles';
@@ -74,7 +75,7 @@ $font: "Open Sans";
 
 
 .imagetoreplace{
-    background-image: url("../img/wireframe.jpg");
+    background-image: url("../img/illustration/registro.svg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -90,6 +91,13 @@ $font: "Open Sans";
     color: white;
     font-family: $title;
     text-align: left;
+    margin: 0;
+}
+
+.profilename{
+    color: white;
+    font-family: $title;
+    text-align: center;
     margin: 0;
 }
 

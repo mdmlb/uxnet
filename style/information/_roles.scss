@@ -23,11 +23,116 @@
 
 .inforolescont__img{
     width: 47vh;
+    height: 221px;
     //height: 51vh;
+}
+
+.imgrol{
+    width: 100%;
+    height:  44.29vh;;
+}
+
+//UX RESEARCHER
+.inforoles__imgUR{
+    background-image: url("../img/illustration/7 UX RESEARCHER.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 20px 20px 0px;
+    //width: 100%;
+    height: 100%;
+}
+
+.imgUR{
+    background-image: url("../img/illustration/7 UX RESEARCHER.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 0px 0px 20px;
+    width: 100%;
+    height: 100%;
+}
+
+//CONTENT STRATEGIST
+.inforoles__imgCS{
+    background-image: url("../img/illustration/6 CONTENT STRATEGIST.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 0px 0px 20px;
+    //width: 100%;
+    height: 100%;
+}
+
+.imgCS{
+    background-image: url("../img/illustration/6 CONTENT STRATEGIST.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 0px 0px 20px;
+    width: 100%;
+    height: 100%;
+}
+
+
+//UI DESIGN
+.inforoles__imgUD{
+    background-image: url("../img/illustration/8 UI DESIGNER.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 20px 20px 0px;
+    //width: 100%;
+    height: 100%;
+}
+
+.imgUD{
+    background-image: url("../img/illustration/8 UI DESIGNER.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 0px 0px 20px;
+    width: 100%;
+    height: 100%;
+}
+
+
+//INTERACTION DESIGN
+.inforoles__imgID{
+    background-image: url("../img/illustration/9 INTERACTION DESIGNER.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 0px 0px 20px;
+    //width: 100%;
+    height: 100%;
+}
+
+.imgID{
+    background-image: url("../img/illustration/9 INTERACTION DESIGNER.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 0px 0px 20px;
+    width: 100%;
+    height: 100%;
+}
+
+
+//UX LEAD
+.inforoles__imgUL{
+    background-image: url("../img/illustration/10 UX LEAD.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 20px 20px 0px;
+    //width: 100%;
+    height: 100%;
+}
+
+.imgUL{
+    background-image: url("../img/illustration/10 UX LEAD.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 0px 0px 20px;
+    width: 100%;
+    height: 100%;
 }
 
 .inforoles__img{
     width: 100%;
+    
 }
 
 //Rol content
@@ -89,9 +194,7 @@ ul{
     border-radius: 10px;
 }
 
-.imgrol{
-    width: 100%;
-}
+
 
 .rolcontskill{
     width: 155px;
