@@ -201,7 +201,7 @@
 .login {
   width: 100%;
   height: 100vh;
-  background-color: #04041B;
+  background-color: #322580;
 }
 
 .menu {
@@ -240,15 +240,17 @@
 }
 
 .imagetoreplacelogin {
+  background-image: url("../img/illustration/login.svg");
   background-size: cover;
   background-position: center;
   width: 100%;
+  height: 100%;
 }
 
 .signin {
   width: 100%;
   height: 100%;
-  background-color: #04041B;
+  background-color: #322580;
 }
 
 .menuS {
@@ -269,7 +271,7 @@
 }
 
 .mainHeader {
-  background-image: url("./../img/illustration/headerbackground.svg");
+  background-image: url("../img/illustration/headerbackground.svg");
   height: 105vh;
   width: 100%;
   background-position: bottom;
@@ -335,7 +337,7 @@
 }
 
 .banner__blank {
-  height: 23vh;
+  height: 7vh;
 }
 
 .banner {
@@ -349,6 +351,7 @@
   font-size: 64px;
   padding: 5vh 35vh 5vh 0vh;
   margin: 0;
+  width: 80%;
 }
 
 .text-center {
@@ -429,7 +432,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 70vh;
+  width: 85vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -437,7 +440,8 @@
 }
 
 .mainHeaderreclu {
-  background-image: url(./../img/0HOME/headerbackground.png);
+  background-color: #694FFD;
+  background-image: url("../img/illustration/headerbackground.svg");
   height: 95vh;
   width: 100%;
   background-position: bottom;
@@ -454,6 +458,78 @@
   margin: 0 40px;
   width: 52%;
   text-align: right;
+}
+
+.headerNoResults {
+  display: none;
+}
+
+.headerNoResults--show {
+  display: block;
+}
+
+.headerWithResults {
+  display: none;
+}
+
+.headerWithResults--show {
+  display: block;
+}
+
+.headerReclutador {
+  display: none;
+}
+
+.headerReclutador--show {
+  display: block;
+}
+
+.maindesigner {
+  display: none;
+}
+
+.maindesigner--show {
+  display: block;
+}
+
+.mainreclutador {
+  display: none;
+}
+
+.mainreclutador--show {
+  display: block;
+}
+
+.reclulandproyect__not {
+  display: none;
+}
+
+.reclulandproyect__not--show {
+  display: block;
+}
+
+.reclulandproyect__got {
+  display: none;
+}
+
+.reclulandproyect__got--show {
+  display: block;
+}
+
+.reclulandprofilesave__not {
+  display: none;
+}
+
+.reclulandprofilesave__not--show {
+  display: block;
+}
+
+.reclulandprofilesave__got {
+  display: none;
+}
+
+.reclulandprofilesave__got--show {
+  display: block;
 }
 
 .info__imginforol {
@@ -2059,22 +2135,6 @@ input[type="radio"]:checked::before {
   margin-top: 0%;
 }
 
-.headerNoResults {
-  display: none;
-}
-
-.headerNoResults--show {
-  display: block;
-}
-
-.headerWithResults {
-  display: none;
-}
-
-.headerWithResults--show {
-  display: block;
-}
-
 .warningNoInfo {
   display: none;
 }
@@ -2184,6 +2244,14 @@ input[type="radio"]:checked::before {
   width: 15%;
 }
 
+.noDesign {
+  display: block;
+}
+
+.noDesign--hide {
+  display: none;
+}
+
 .newproyect {
   width: 75%;
 }
@@ -2236,7 +2304,7 @@ input[type="radio"]:checked::before {
   border-style: solid;
   border-radius: 20px;
   width: 45vh;
-  height: 61vh;
+  height: 31vh;
 }
 
 .contprofilegraphic {

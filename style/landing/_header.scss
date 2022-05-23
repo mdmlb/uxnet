@@ -1,26 +1,26 @@
 //Navegation
 
-.mainHeader{
+.mainHeader {
     //background-image: url("../../img/0HOME/headerbackground.png");
-    background-image: url("./../img/illustration/headerbackground.svg");
+    background-image: url("../img/illustration/headerbackground.svg");
     height: 105vh;
     width: 100%;
     background-position: bottom;
     background-size: 132%;
 }
 
-.header{
+.header {
     height: 15vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.header__menu{
+.header__menu {
     width: 100%;
 }
 
-.header__links{
+.header__links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,58 +29,60 @@
     font-weight: 700;
 }
 
-.header__link{
+.header__link {
     color: $color2;
     font-size: 19px;
 }
 
-.header__link:hover{
+.header__link:hover {
     color: $color4;
     text-decoration: none;
 }
 
-.header__logo{
+.header__logo {
     width: 16vh;
 }
 
-.header__profileLink{
+.header__profileLink {
     height: 100%;
 }
 
-.header__profile{
+.header__profile {
     height: 100%;
 }
 
 
 //Banner
-.banner__blank{
-    height: 23vh;
+.banner__blank {
+    height: 7vh;
 }
-.banner{
+
+.banner {
     width: 73%;
 }
 
-    .banner__title{
-        //font-family: $title;
-        //font-weight: bold;
-        //font-style: italic;
-        //color: $color6;
-        //font-size: 64px;
-        //margin-top: 10px;
-            font-family: "Prompt";
-            font-weight: bold;
-            color: white;
-            font-size: 64px;
-            padding: 5vh 35vh 5vh 0vh;
-            margin: 0;
-    }
+.banner__title {
+    //font-family: $title;
+    //font-weight: bold;
+    //font-style: italic;
+    //color: $color6;
+    //font-size: 64px;
+    //margin-top: 10px;
+    font-family: "Prompt";
+    font-weight: bold;
+    color: white;
+    font-size: 64px;
+    padding: 5vh 35vh 5vh 0vh;
+    margin: 0;
+    width: 80%;
+}
 
-    .text-center{
-        width: 44%;
-    }
+.text-center {
+    width: 44%;
+}
 
-    .text__description{
-        font-family: $font;
-        text-align: left;
-        font-size: 14px;
-    }
+.text__description {
+    font-family: $font;
+    text-align: left;
+    font-size: 14px;
+}

@@ -1,7 +1,7 @@
 .login{
     width: 100%;
     height: 100vh;
-    background-color: $color1;
+    background-color: $color16;
 }
 
 .menu{
@@ -42,9 +42,10 @@
 }
 
 .imagetoreplacelogin{
-    //background-image: url("../img/illustration/registro.svg");
+    //si en github no funciona quitar un punto de aca
+    background-image: url("../img/illustration/login.svg");
     background-size: cover;
     background-position: center;
     width: 100%;
-    //height: 100%;
+    height: 100%;
 }

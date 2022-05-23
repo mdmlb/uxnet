@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    
+
     <article class="loader">
         <div class="loader__container">
             <img src="./img/loading.gif" alt="loading">
@@ -32,6 +32,7 @@
         </div>
     </article>
 
+    <!--DISEÑADOR QUE NO HA HECHO EL MAPEO O TEST-->
     <header class="mainHeader headerNoResults">
 
         <!--Nav-->
@@ -109,6 +110,7 @@
 
     </header>
 
+    <!--DISEÑADOR QUE YA HA HIZO TODO-->
     <header class="mainHeader headerWithResults">
 
         <!--Nav-->
@@ -158,10 +160,12 @@
 
                     <!--Banner: test who know-->
                     <div class="text-center p-3 d-flex justify-content-left align-items-left flex-column">
-                        <p class="text__description">Parece que ya has hecho previamente nuestro test, o ya has realizado el mapeo de tu perfil UX. Si quieres ver los resultados de tus habilidades y roles UX, puedes ir a tu perfil o dar click en el botón de abajo.
+                        <p class="text__description">Parece que ya has hecho previamente nuestro test, o ya has
+                            realizado el mapeo de tu perfil UX. Si quieres ver los resultados de tus habilidades y roles
+                            UX, puedes ir a tu perfil o dar click en el botón de abajo.
                         </p>
-                        <a href="./profile.html" type="submit" class="btn btn-primary"
-                            style="width: 100%;">Ver resultados anteriores</a>
+                        <a href="./profile.html" type="submit" class="btn btn-primary" style="width: 100%;">Ver
+                            resultados anteriores</a>
                     </div>
 
                 </div>
@@ -172,7 +176,86 @@
 
     </header>
 
-    <main class="main">
+    <!-- header: RECLUTADORES PROYECTOS-->
+    <header class="mainHeader headerReclutador">
+
+        <!--Nav-->
+        <nav class="header d-flex align-items-center flex-row p-4">
+
+            <!--Nav: menu
+            <a href="#" class="header__menulink">
+                <img class="header__menu" src="./img/burguermenu.svg" atl="menu">
+            </a>-->
+
+            <!--Nav: Logo-->
+            <a href="./index.html" class="header__logolink">
+                <img class="header__logo" src="./img/draklogo.svg" atl="UXnet's logo">
+            </a>
+
+            <div class="header__linksreclutador">
+                <a href="./information.html" class="header__link">Información</a>
+                <a href="./html/recruiter/proyects/recuiterSelection.html" class="header__link p-3">Iniciar nuevo proyecto</a>
+                <a href="./html/recruiter/proyects/proyects.html" class="header__link">Proyectos</a>
+            </div>
+
+            <!--Nav: Profile-->
+            <div class="header__profileLink d-flex align-items-center flex-row">
+                <a href="" class="header__profileLink">
+                    <img class="header__profile" src="./img/user.svg" atl="Profile">
+                </a>
+                <div style="width: 2vh;"></div>
+                <button class="btn signout SignOutButton">Cerrar sesión</button>
+            </div>
+
+        </nav>
+
+        <!--Banner: Links-->
+        <section class="mainHeaderreclu">
+
+            <div class="banner p-5">
+
+                <h4 class="p-3 profile__usernameB profile__usernameB1"></h4>
+
+                <h1 class="banner__title p-3">Inicia tus procesos de reclutamiento</h1>
+
+                <div class="d-flex justify-content-left align-items-left flex-row">
+
+                    <!--Banner: test who know-->
+                    <div class="text-center p-3 d-flex justify-content-left align-items-left flex-column">
+                        <p class="text__description">Si tienes un nuevo proyecto para el cual necesitas reclutar
+                            diseñadores, da click en el botón de abajo y así podrás <strong>ingresar los
+                                requerimientos</strong>
+                            para encontrar los perfiles de diseñadores <strong>que mejor se ajusten a tu
+                                proyecto.</strong>
+
+
+                        </p>
+                        <a href="" type="submit" class="btn btn-primary" style="width: 65%;">Añadir nuevo
+                            proyecto</a>
+                    </div>
+
+                    <!--Banner: test who doesn't know-->
+                    <div class="text-center p-3 d-flex justify-content-left align-items-left flex-column">
+                        <p class="text__description">Si ya has creado proyectos con los requerimientos específicos
+                            para
+                            encontrar a los diseñadores que necesitas, al dar click en el botón de abajo, podrás
+                            <strong>
+                                ver todo lo relacionado con tus proyectos creados anteriormente.
+                            </strong>
+                        </p>
+                        <a href="" type="submit" class="btn btn-primary" style="width: 65%;">Ver proyectos</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        
+    </header>
+
+    <!--DISEÑADORES-->
+    <main class="main maindesigner">
 
 
         <!--Next events-->
@@ -180,7 +263,7 @@
 
             <!--Title-->
             <div class="d-flex flex-column contevent">
-                <h1 class="contevent__title" style="margin: 0;">Próximos eventos ...</h1>
+                <h1 class="contevent__title" style="margin: 0;">Próximos eventos</h1>
                 <a href="./growth.html" class="contevent__link">Ver todos los evento</a>
             </div>
 
@@ -278,8 +361,206 @@
 
     </main>
 
+    <!-- RECLUTADORES -->
+    <main class="main mainreclutador">
 
-    <!-- Optional JavaScript -->
+        <!--Procesos: NO TIENE-->
+        <section class="main__events reclulandproyect__not">
+
+            <!--Title-->
+            <div class="d-flex flex-column contevent" style="padding: 14vh 14vh 5vh 14vh;">
+                <h1 class="contevent__title" style="margin: 0;">Mis proyectos</h1>
+                <a href="./html/recruiter/proyects/new.html" class="contevent__link">Ver todos los proyectos</a>
+            </div>
+
+            <!--PROYECTO-->
+            <div class="emptylandingreclu d-flex justify-content-center align-items-center ">
+                <div class="main__information d-flex flex-row justify-content-center align-items-center flex-column">
+                    <p>¡Oh vaya! Parece que todavía no tienes ningún proyecto</p>
+                    <a href="./html/recruiter/proyects/new.html" type="submit" class="btn btn-primary m-4" style="width: 30%; height: 80%;">AÑADIR NUEVO
+                        PROYECTO</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!--Procesos: YA TIENE-->
+        <section class="main__events reclulandproyect__got">
+
+            <!--Title-->
+            <div class="d-flex flex-column contevent" style="padding: 14vh 14vh 5vh 14vh;">
+                <h1 class="contevent__title" style="margin: 0;">Mis proyectos</h1>
+                <a href="./html/recruiter/proyects/proyects.html" class="contevent__link">Ver todos los proyectos</a>
+            </div>
+
+            <!--Events-->
+            <div class=" d-flex justify-content-center align-items-center flex-row">
+
+                <!--First event-->
+                <div class="event__cont d-flex justify-content-center align-items-center p-3">
+                    <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
+                        <h2 class="event__title">PROYECTO 1</h2>
+                        <h5 class="event__name">En proceso - 24/04/2022</h5>
+                        <a href="" type="submit" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+
+
+                <!--Second event-->
+                <div class="event__cont d-flex justify-content-center align-items-center p-3 m-5">
+                    <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
+                        <h2 class="event__title">PROYECTO 2</h2>
+                        <h5 class="event__name">En proceso - 2/05/2022</h5>
+                        <a href="" type="submit" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+
+
+                <!--Third event-->
+                <div class="event__cont d-flex justify-content-center align-items-center p-3">
+                    <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
+                        <h2 class="event__title">PROYECTO 3</h2>
+                        <h5 class="event__name">Cerrado - 21/04/2022</h5>
+                        <a href="" type="submit" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--Perfiles guardados: NO TIENE-->
+        <section class="main__events reclulandprofilesave__not" >
+
+            <!--Title-->
+            <div class="d-flex flex-column contevent" style="padding: 14vh 14vh 5vh 14vh">
+                <h1 class="contevent__title" style="margin: 0;">Perfiles guardados</h1>
+                <a href="./html/recruiter/designers/saved.html" class="contevent__link">Ver todos los perfiles guardados</a>
+            </div>
+
+            <!--Diseñadores-->
+            <div class="emptylandingreclu d-flex justify-content-center align-items-center flex-row">
+                <div class="main__information d-flex flex-row justify-content-center align-items-center">
+                    <p class="emptylandingreclu__text">Parece que todavía no has guardado ningún perfil para futuros
+                        proyectos. <strong>Recuerda que puedes
+                            guardar perfiles de diseñadores mediante las recomendaciones que te da UXnet</strong> cuando
+                        creas un
+                        proyecto con sus respectivos requerimientos.</p>
+
+                    <img style="width: 40vh;" src="./img/landingreclutadores/diseñador.png" atl="">
+                </div>
+            </div>
+
+        </section>
+
+        <!--Perfiles guardados: YA TIENE-->
+        <section class="main__events reclulandprofilesave__got">
+
+            <!--Title-->
+            <div class="d-flex flex-column contevent" style="padding: 14vh 14vh 5vh 14vh;">
+                <h1 class="contevent__title" style="margin: 0;">Perfiles guardados</h1>
+                <a href="./html/recruiter/designers/saved.html" class="contevent__link">Ver todos los perfiles guardados</a>
+            </div>
+
+            <!--Diseñadores-->
+            <div class=" d-flex justify-content-center align-items-center flex-row">
+
+                <!--First event-->
+                <div class="event__cont d-flex justify-content-center align-items-center p-3">
+                    <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
+                        <a href="#" class="event__person ">
+                            <img class="event__person" src="./img/profile.svg" atl="">
+                        </a>
+                        <h2 class="event__title">Ana S.</h2>
+                        <h5 class="event__name">UI DESIGNER</h5>
+                        <a href="" type="submit" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+
+
+                <!--Second event-->
+                <div class="event__cont d-flex justify-content-center align-items-center p-3 m-5">
+                    <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
+                        <a href="#" class="event__person ">
+                            <img class="event__person" src="./img/profile.svg" atl="">
+                        </a>
+                        <h2 class="event__title">Carlos R.</h2>
+                        <h5 class="event__name">INTERACTION DESGINER</h5>
+                        <a href="" type="submit" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+
+
+                <!--Third event-->
+                <div class="event__cont d-flex justify-content-center align-items-center p-3">
+                    <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
+                        <a href="#" class="event__person ">
+                            <img class="event__person" src="./img/profile.svg" atl="">
+                        </a>
+                        <h2 class="event__title">Fernando L.</h2>
+                        <h5 class="event__name">UX RESEARCHER</h5>
+                        <a href="" type="submit" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="emptycont">
+
+        </section>
+        
+        <!--saber mas-->
+        <section class="informationcont d-flex justify-content-center align-items-center">
+            <div class="main__information d-flex flex-row justify-content-center align-items-center">
+                <h1 class="p-5" style="font-style: italic;">¿Quieres saber más del diseño UX?</h1>
+                <a href="./information.html" type="submit" class="btn btn-primary m-4"
+                    style="width: 20%; height: 80%;">Ver más</a>
+            </div>
+        </section>
+
+        <section class="emptycont">
+
+        </section>
+
+        <footer class="footer">
+
+            <hr class="footer__line">
+
+            <div class="d-flex justify-content-center align-items-top flex-row">
+                <section class="footercont m-5">
+                    <h4 class="footercont__title">Información legal</h4>
+                    <div class="footercont__cont d-flex justify-content-left align-items-left flex-column">
+                        <a href="#" class="footercont__text">Pivacidad y seguridad</a>
+                        <a href="#" class="footercont__text">Terminos de uso</a>
+                    </div>
+                </section>
+
+                <section class="footercont m-5">
+                    <h4 class="footercont__title">Ayuda</h4>
+                    <div class="footercont__cont d-flex justify-content-left align-items-left flex-column">
+                        <a href="#" class="footercont__text">Contáctanos</a>
+                        <a href="#" class="footercont__text">FAQs</a>
+                    </div>
+                </section>
+
+                <section class="footercont m-5">
+                    <h4 class="footercont__title">Siguenos</h4>
+                    <div class="footercont__cont d-flex justify-content-left align-items-left flex-row">
+                        <a href="#" class="footercont__img">
+                            <img class="footercont__img" src="./img/footer/facebook.svg" atl="">
+                        </a>
+                        <a href="#" class="footercont__img">
+                            <img class="footercont__img" src="./img/footer/instagram.svg" atl="">
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </footer>
+
+    </main>
+
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -296,7 +577,7 @@
 
     <script type="module" src="./script/firebase.js"></script>
     <script type="module" src="./script/auth.js"></script>
-    <script type="module" src="./script/changeHeader.js"></script>
+    <script type="module" src="./script/change/changelanding.js"></script>
 
 </body>
 

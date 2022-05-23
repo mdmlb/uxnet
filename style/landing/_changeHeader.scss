@@ -13,3 +13,11 @@
         display: block;
     }
 }
+
+.headerReclutador {
+    display: none;
+
+    &--show {
+        display: block;
+    }
+}

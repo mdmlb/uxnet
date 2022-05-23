@@ -3,13 +3,15 @@
     -ms-flex-direction: row;
     flex-direction: row;
     justify-content: space-between;
-    width: 70vh;
+    width: 85vh;
     align-items: center;
     font-weight: 700;
 }
 
+
 .mainHeaderreclu{
-    background-image: url(./../img/0HOME/headerbackground.png);
+    background-color: $color3;
+    background-image: url("../img/illustration/headerbackground.svg");
     height: 95vh;
     width: 100%;
     background-position: bottom;

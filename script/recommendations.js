@@ -57,15 +57,10 @@ onAuthStateChanged(auth, async (user) => {
             console.log("---> DocSnap2: ", docSnap2.data());
 
             let allIdealProfiles = [docSnap2.data()];
-            console.log("buenas buenas "+allIdealProfiles)
-
-            console.log(docSnap2.data().desiredProfiles2264[1].nameRole)
-
             //console.log(docSnap2.data().desiredProfiles5112[1].nameRole)
-
             let objRespuesta = allIdealProfiles[0];
             let misllaves = Object.keys(objRespuesta);
-            console.log("keys", misllaves, allIdealProfiles[0]);
+            console.log("keys", misllaves,allIdealProfiles[0]);
 
             console.log(misllaves);
 
@@ -92,32 +87,35 @@ onAuthStateChanged(auth, async (user) => {
             })*/
             //let person1 = docSnap2.data().desiredProfiles[0].value;
             const parts = location.search.split('-');
-            //const selectedProject = parts[1].replace('?', '');
+            const selectedProject = parts[1].replace('?', '');
 
-            console.log(docSnap2.data().desiredProfiles2264[1].value);
-
-            //Proyecto fijo (desiredProfiles5112)
-            let person1 = {
-                uxResearcher: docSnap2.data().desiredProfiles2264[1].value,
-                contentStrategist: docSnap2.data().desiredProfiles2264[2].value,
-                interactionDesigner: docSnap2.data().desiredProfiles2264[3].value,
-                uiDesigner: docSnap2.data().desiredProfiles2264[4].value,
-                uxLead: docSnap2.data().desiredProfiles2264[5].value,
-                id: uid
-            }
-
-            //Proyecto que da error
+            //console.log(docSnap2.data().desiredProfiles5112[1].value);
+            
             /*let person1 = {
-                uxResearcher: docSnap2.data().window[selectedProject][1].value,
-                contentStrategist: docSnap2.data().window[selectedProject][2].value,
-                interactionDesigner: docSnap2.data().window[selectedProject][3].value,
-                uiDesigner: docSnap2.data().window[selectedProject][4].value,
-                uxLead: docSnap2.data().window[selectedProject][5].value,
+                uxResearcher: docSnap2.data().selectedProject[1].value,
+                contentStrategist: docSnap2.data().selectedProject[2].value,
+                interactionDesigner: docSnap2.data().selectedProject[3].value,
+                uiDesigner: docSnap2.data().selectedProject[4].value,
+                uxLead: docSnap2.data().selectedProject[5].value,
                 id: uid
             }*/
 
+            let projectName = docSnap2.data()[selectedProject][0];
+            let uxRe = docSnap2.data()[selectedProject][1].value;
+            let intDesig = docSnap2.data()[selectedProject][2].value;
+            console.log(" ------------> data: ", projectName, uxRe, intDesig);
 
-            console.log(" ---> person1: ", person1);
+            let person1 = {
+                uxResearcher: docSnap2.data()[selectedProject][1].value,
+                contentStrategist: docSnap2.data()[selectedProject][2].value,
+                interactionDesigner: docSnap2.data()[selectedProject][3].value,
+                uiDesigner: docSnap2.data()[selectedProject][4].value,
+                uxLead: docSnap2.data()[selectedProject][5].value,
+                id: uid
+            }
+            
+
+            //console.log(" ---> person1: ", person1);
 
             // Obtiene datos
             const querySnapshot = await getDocs(collection(db, "uxRoles"));
@@ -156,7 +154,6 @@ onAuthStateChanged(auth, async (user) => {
 
                 let nameUser = [];
 
-
                 /*const q = query(collection(db, "users"), where( documentId(), "==", elem.id));
 
                 const querySnapshot3 = await getDocs(q);
@@ -192,6 +189,7 @@ onAuthStateChanged(auth, async (user) => {
                 //neighborhoodList = sortedList.splice(0, neighborsNumber + 1);
 
             });
+
 
             sortedList = getSortedRecommendations(similarityList);
             //console.log(" ----> (Lista ordenada) : ", sortedList);
@@ -254,27 +252,25 @@ function getSortedRecommendations(list) {
     return copy;
 }
 
+
 function renderResult(list) {
     finalResult.innerHTML = "";
     //let copy = [...list].splice(0, list.length);
     list.forEach(elem => {
-        const url = `compareProfile.html?${elem.id}-${elem.name}`;
+        const parts = location.search.split('-');
+        const selectedProject = parts[1].replace('?', '');
+        const url = `compareProfile.html?${elem.id}-${selectedProject}-${elem.username}-${toPercent(elem.cosineSimilarity)}`;
         const newPerson = document.createElement('div');
-        newPerson.classList.add('d-flex', 'p-2');
+        newPerson.classList.add('d-flex', 'p-4');
         //newPerson.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'flex-row', );
         //newPerson.style.add('padding: 2vh');
 
         newPerson.innerHTML = `
             <div class="profiledesigner d-flex justify-content-center align-items-center p-3">
                 <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
-                    <a href="#" class="event__person ">
-                        <img class="event__person" src="../../../img/profile.svg" atl="">
-                    </a>
                     <h2 class="event__title">${elem.name} ${elem.lastname}</h2>
                     <h5 class="event__name">${toPercent(elem.cosineSimilarity)}% de coincidencia</h5>
-                    <a href="${url}" type="submit" class="btn btn-primary">Ver más</a>
-                    <div style="height: 2vh;"></div>
-                    <a href="" type="submit" class="btn btn-primary btncancel">Ver comparación</a>
+                    <a href="${url}" type="submit" class="btn btn-primary">Ver perfil</a>
                 </div>
             </div>
         `;

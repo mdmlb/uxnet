@@ -14,6 +14,7 @@ $color10 : #241F53;
 $color11 : #5661AE;
 $color14 : #FF8800;
 $color15 : #010112;
+$color16 : #322580;
 
 //Fonts
 $title: "Prompt";
@@ -36,6 +37,8 @@ $font: "Open Sans";
 @import './landing/nextevent';
 @import './landing/information';
 @import './landing/reclutador';
+@import './landing/changeHeader';
+@import './landing/changecont';
 
 @import './information/information';
 @import './information/top';
@@ -66,10 +69,11 @@ $font: "Open Sans";
 
 @import './map/element';
 @import './disallowTest';
-@import './changeHeader';
 @import './modal/warning';
 
 @import './loader';
+
+@import './change';
 
 @import './recruiter/proyects';
 

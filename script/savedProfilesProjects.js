@@ -9,22 +9,22 @@ import {
     getDocs,
     onSnapshot,
     getDoc,
+    updateDoc,
     setDoc
-} from "https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js";
+} from "https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore.js";
 
 import {
     getAuth,
     signOut,
     signInWithEmailAndPassword,
     onAuthStateChanged
-} from "https://www.gstatic.com/firebasejs/9.6.7/firebase-auth.js";
+} from "https://www.gstatic.com/firebasejs/9.6.8/firebase-auth.js";
 
 const db = getFirestore();
 const auth = getAuth();
 var userInfo;
 
 const projects = document.querySelector('.projects__container');
-const noDesign = document.querySelector('.noDesign');
 
 onAuthStateChanged(auth, async (user) => {
     if (user) {
@@ -45,7 +45,7 @@ onAuthStateChanged(auth, async (user) => {
             const docSnap2 = await getDoc(docRef2);
 
             let allIdealProfiles = [docSnap2.data()];
-            //console.log(docSnap2.data().desiredProfiles5112[1].nameRole);
+            console.log(docSnap2.data().desiredProfiles5112[1].nameRole);
             let objRespuesta = allIdealProfiles[0];
             let misllaves = Object.keys(objRespuesta);
             console.log("keys", misllaves,allIdealProfiles[0]);
@@ -59,7 +59,6 @@ onAuthStateChanged(auth, async (user) => {
             });
 
             renderResult(misllaves, objRespuesta);
-            noDesign.classList.add('noDesign--hide');
 
         } else {
             // doc.data() will be undefined in this case
@@ -74,18 +73,13 @@ onAuthStateChanged(auth, async (user) => {
 function renderResult(list, another) {
     projects.innerHTML = "";
     list.forEach(function (elem, index) {
-        const url = `recommendations.html?${another[list[index]][0]}-${elem}`;
+        const url = `savedProfiles.html?${another[list[index]][0]}-${elem}`;
         const newProject = document.createElement('div');
-        newProject.classList.add('p-1');
+        newProject.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'flex-row');
 
         newProject.innerHTML = `
-        <div class="profiledesigner d-flex justify-content-center align-items-center p-3">
-            <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
-                <h2 class="event__title proyectName">${another[list[index]][0]}</h2>
-                <a href="${url}" type="submit" class="btn btn-primary">Ver recomendaciones</a>
-            </div>
-        </div>
-        
+        <p class="projectTitle">${another[list[index]][0]}</p>
+        <a href="${url}" class="header__link">Ver perfiles guardados para este proyecto</a>
         `;
         projects.appendChild(newProject);
     });
