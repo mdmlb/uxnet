@@ -2276,7 +2276,7 @@ input[type="radio"]:checked::before {
 
 .similprofile {
   background-image: url(../../../img/0HOME/texture.png);
-  height: 15vh;
+  height: 26vh;
   width: 100%;
   background-position: bottom;
   background-size: 132%;
@@ -2308,7 +2308,11 @@ input[type="radio"]:checked::before {
 }
 
 .contprofilegraphic {
-  width: 45%;
+  width: 90%;
+}
+
+.uxNameComparation {
+  text-align: center;
 }
 
 .imagetoreplace {

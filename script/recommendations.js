@@ -259,7 +259,7 @@ function renderResult(list) {
     list.forEach(elem => {
         const parts = location.search.split('-');
         const selectedProject = parts[1].replace('?', '');
-        const url = `compareProfile.html?${elem.id}-${selectedProject}-${elem.username}-${toPercent(elem.cosineSimilarity)}`;
+        const url = `compareProfile.html?${elem.id}-${selectedProject}-${elem.name}-${toPercent(elem.cosineSimilarity)}`;
         const newPerson = document.createElement('div');
         newPerson.classList.add('d-flex', 'p-4');
         //newPerson.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'flex-row', );

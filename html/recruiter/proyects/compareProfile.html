@@ -11,7 +11,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Style -->
-    <link rel="stylesheet" type="text/css" href="../../../../style/main.css">
+    <link rel="stylesheet" type="text/css" href="../../../style/main.css">
 
     <!-- Typo -->
     <link
@@ -55,7 +55,7 @@
 
             <!--Nav: Profile-->
             <div class="header__profileLink d-flex align-items-center flex-row">
-                <a href="" class="header__profileLink">
+                <a href="../../../profilere.html" class="header__profileLink">
                     <img class="header__profile" src="../../../../img/user.svg" atl="Profile">
                 </a>
                 <div style="width: 2vh;"></div>
@@ -91,52 +91,38 @@
 
         <div style="height: 6vh;"></div>
 
-        <a href="./recommendations.html" class="gobacksimil ">
-            <img src="../../../img/leftarrow.svg" alt="" class="gobackimg">
-            Regresar a recomendaciones de perfiles
-        </a>
-
-        <div style="height: 6vh;"></div>
-
         <!--PORCENTAJE DE SIMILITUD-->
-        <section class="contevent similprofile">
+        <section class="contevent similprofile d-flex justify-content-bottom align-items-center flex-column">
 
-            <h3 class="contevent__title" style="margin: 0;">Similitud entre perfiles: 70%</h3>
+            <h3 class="contevent__title similporcent" style="margin: 0;">Similitud entre perfiles:</h3>
+
+            <div style="height: 5vh;"></div>
+
+            <div class="d-flex justify-content-bottom align-items-center flex-row">
+                <button class="btn btn-primary saveProfile">Guardar perfil para este proyecto</button>
+                <div style="width: 10vh;"></div>
+                <button class="btn btn-primary saveFutureProfile">Guardar perfil para proyectos futuros</button>
+            </div>
+
 
         </section>
 
         <!--AQUI VA LA GRAFICA DE LOS ROLES-->
         <div style="height: 6vh;"></div>
 
-        <div class="d-flex p-4 flex-row flex-wrap">
+        <div class="d-flex p-4 flex-row justify-content-center flex-wrap">
 
             <!--PERFIL REQUERIDO-->
-            <div class="d-flex flex-column contprofilegraphic p-3">
-                <div class="d-flex flex-column contevent justify-content-center ">
-                    <h5 class="" style="margin: 0;">TU PERFIL DESEADO</h5>
-                </div>
+            <div class="d-flex flex-column contevent contprofilegraphic p-3">
+                <h5 class="uxNameComparation" style="margin: 0;">Tu perfil deseado</h5>
+
+                <div style="height: 6vh;"></div>
 
                 <!--GRAFICAS-->
                 <div class="graphic__container1">
                     <canvas id="myChart2"></canvas>
                 </div>
             </div>
-
-            <!--PERFIL DE DISEÑADOR-->
-            <div class="d-flex flex-column contprofilegraphic p-3">
-                <div class="d-flex flex-column contevent justify-content-center ">
-                    <h5 class="" style="margin: 0;">PERFIL DE ANA SOLER</h5>
-                </div>
-
-                <!--GRAFICAS-->
-                <div class="graphic__container2">
-                    <canvas id="myChart3"></canvas>
-                </div>
-            </div>
-
-
-
-
 
         </div>
 
@@ -145,19 +131,19 @@
 
         <!--HABILIDADES-->
 
-        <div class="d-flex flex-column contevent justify-content-center p-4">
+        <div class="d-flex flex-column contevent justify-content-center p-5">
 
-            <div class="d-flex flex-column contevent justify-content-center ">
-                <h3 class="" style="margin: 0;">HABILIDADES</h3>
+            <div class="d-flex flex-column contevent justify-content-center align-items-center">
+                <h3 class="" style="margin: 0;">Habilidades del diseñador</h3>
             </div>
 
             <div style="height: 10vh;"></div>
 
-            <div class="d-flex justify-content-between flex-row">
+            <div class="d-flex justify-content-center flex-row">
 
                 <!--MEJORES-->
-                <div class="d-flex flex-column contevent justify-content-center" style="width:45%;">
-                    <h5 class="" style="margin: 0;">HABILIDADES CON MEJOR DESEMPEÑO DE ANA SOLER</h5>
+                <div class="d-flex flex-column contevent justify-content-center align-items-center" style="width:55%;">
+                    <h5 class="skills" style="margin: 0;">Habilidades con mejor desempeño</h5>
 
                     <div style="height: 6vh;"></div>
 
@@ -168,8 +154,8 @@
                 </div>
 
                 <!--PEORES-->
-                <div class="d-flex flex-column contevent justify-content-center" style="width: 45%;">
-                    <h5 class="" style="margin: 0;">HABILIDADES CON MEJOR DESEMPEÑO DE TU PERFIL DESEADO</h5>
+                <div class="d-flex flex-column contevent justify-content-center align-items-center" style="width: 55%;">
+                    <h5 class="" style="margin: 0;">Habilidades con bajo desempeño</h5>
 
                     <div style="height: 6vh;"></div>
 

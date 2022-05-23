@@ -11,14 +11,14 @@ import {
     updateDoc,
     getDoc,
     setDoc
-} from "https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore.js";
+} from "https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js";
 
 import {
     getAuth,
     signOut,
     signInWithEmailAndPassword,
     onAuthStateChanged
-} from "https://www.gstatic.com/firebasejs/9.6.8/firebase-auth.js";
+} from "https://www.gstatic.com/firebasejs/9.6.7/firebase-auth.js";
 
 const db = getFirestore();
 const auth = getAuth();
