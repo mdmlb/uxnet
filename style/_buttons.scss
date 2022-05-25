@@ -1,4 +1,4 @@
-.btn{
+.btn {
     background-color: $color4;
     width: 100%;
     border: none;
@@ -6,11 +6,16 @@
     font-size: 15px;
 }
 
-.btn:hover{
+.btn-delete {
+    background-color: rgba(255, 0, 0, .7);
+}
+
+
+.btn:hover {
     background-color: $color14;
 }
 
-.btncancel{
+.btncancel {
     background-color: $color3;
     width: 100%;
     border: none;
@@ -18,11 +23,11 @@
     font-size: 15px;
 }
 
-.btncancel:hover{
+.btncancel:hover {
     background-color: $color8;
 }
 
-.SignOutButton{
+.SignOutButton {
     background-color: $color3;
     width: 100%;
     border: none;
@@ -32,13 +37,33 @@
     height: 78%;
 }
 
+.SignOutButton2 {
+    background-color: $color3;
+    width: 100%;
+    border: none;
+    font-family: $title;
+    font-size: 13px;
+    color: white;
+    height: 78%;
+}
+
+.btn-delete:hover {
+    background-color: rgba(255, 0, 0, .5);
+}
+
+
 //.btn:hover{
-    //background-color: ;
+//background-color: ;
 //}
 
-.btn-testquestion{
+.btn-testquestion {
     width: 291px;
     font-weight: 500;
     font-size: 18px;
 }
 
+.btnAlert {
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 0%;
+}

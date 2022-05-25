@@ -4,6 +4,7 @@ import {
     collection,
     addDoc,
     getDocs,
+    updateDoc,
     getDoc,
     setDoc
 } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js";
@@ -35,6 +36,14 @@ const uxNameComparation = document.querySelector('.uxNameComparation');
 //buttons
 const saveProfile = document.querySelector('.saveProfile');
 const saveFutureProfile = document.querySelector('.saveFutureProfile');
+
+//Modal
+const modalTest = document.querySelector('.warningNoInfo');
+
+//loader
+const loader = document.querySelector('.loader');
+
+loader.classList.add('loader--show');
 
 /*porcent
 function renderPorcent(list,elemHtml) {
@@ -99,7 +108,8 @@ window.addEventListener('load', function () {
             const uid2 = parts[0].replace('?', '');
             const projectCode = parts[1].replace('?', '');
             const name = parts[2].replace('?', '');
-            const similarityPer = parts[3].replace('?', '');
+            const lastname = parts[3].replace('?','');
+            const similarityPer = parts[4].replace('?', '');
 
             console.log(similarityPer);
 
@@ -153,6 +163,8 @@ window.addEventListener('load', function () {
                 });
                 //Para pintar las peores habilidades
                 renderSkills(worstSkills, worstSkillList);
+
+                loader.classList.remove('loader--show');
 
             }
 
@@ -251,7 +263,7 @@ window.addEventListener('load', function () {
 
             const aProfile2 = {
                 userID: uid2,
-                name: name,
+                name: name + " " + lastname,
             }
 
             let savedProfiles = [];
@@ -308,22 +320,26 @@ window.addEventListener('load', function () {
                                 })
 
                                     .then(function () {
-                                        //window.location.href = './recommendations.html';
+                                        alert("PRIMERO");
+                                        modalTest.classList.add('warningNoInfo--show');
                                     });
+
                             } else {
                                 await updateDoc(doc(db, "savedProfiles", uid), {
                                     [projectCode]: savedProfiles,
                                 })
 
                                     .then(function () {
-                                        //window.location.href = './recommendations.html';
-                                    });
+                                        alert("SEGUNDO");
+                                    }); 
                             }
                         }
                     } else {
                         await updateDoc(doc(db, "savedProfiles", uid), {
                             [projectCode]: savedProfiles,
                         })
+
+                        
                     }
 
 
@@ -336,8 +352,8 @@ window.addEventListener('load', function () {
                     })
 
                         .then(function () {
-                            alert("Tu perfil fue guardado para este proyecto");
-                            //window.location.href = './recommendations.html';
+                            alert("TERCERO");
+                            modalTest.classList.add('warningNoInfo--show');
                         });
                 }
             })

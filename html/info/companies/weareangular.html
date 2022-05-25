@@ -24,7 +24,50 @@
 
 <body>
 
-    <header class="mainHeaderinfo2">
+    <article class="loader">
+        <div class="loader__container">
+            <img src="../../../img/loading.gif" alt="loading">
+            <h1>CARGANDO...</p>
+        </div>
+    </article>
+
+    <!-- header: RECLUTADORES-->
+    <header class="mainHeaderinfo2 headerReclutador">
+
+        <!--Nav-->
+        <nav class="header d-flex align-items-center flex-row p-4">
+
+            <!--Nav: menu
+            <a href="#" class="header__menulink">
+                <img class="header__menu" src="./img/burguermenu.svg" atl="menu">
+            </a>-->
+
+            <!--Nav: Logo-->
+            <a href="../../../index.html" class="header__logolink">
+                <img class="header__logo" src="../../../img/draklogo.svg" atl="UXnet's logo">
+            </a>
+
+            <div class="header__linksreclutador">
+                <a href="../../../information.html" class="header__link">Información</a>
+                <a href="../../recruiter/proyects/recuiterSelection.html" class="header__link">Iniciar nuevo
+                    proyecto</a>
+                <a href="../../recruiter/proyects/proyects.html" class="header__link">Proyectos</a>
+            </div>
+
+            <!--Nav: Profile-->
+            <div class="header__profileLink d-flex align-items-center flex-row">
+                <a href="../../../profile.html" class="header__profileLink">
+                    <img class="header__profile" src="../../../img/user.svg" atl="Profile">
+                </a>
+                <div style="width: 2vh;"></div>
+                <button class="btn signout SignOutButton2">Cerrar sesión</button>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- header: DISEÑADORES-->
+    <header class="mainHeaderinfo2 headerNoResults">
 
         <!--Nav-->
         <nav class="header d-flex align-items-center flex-row p-4">
@@ -61,12 +104,6 @@
 
         <!--Banner: Links-->
         <section class="bannercont2" style="background-color: white;">
-
-            <a href="../company.html" class="goback " style="color: #04041B;">
-                <img src="../../../img/leftarrow.svg" alt="" class="gobackimg">
-                regresar a ver compañías
-            </a>
-
 
 
             <div class="excomp d-flex justify-content-center align-items-center">
@@ -188,6 +225,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <script type="module" src="../../../script/firebase.js"></script>
+    <script type="module" src="../../../script/auth2.js"></script>
+    <script type="module" src="../../../script/change/changeheader.js"></script>
 
 
 </body>

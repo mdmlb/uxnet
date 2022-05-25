@@ -25,6 +25,10 @@ var userInfo;
 
 const finalResult = document.querySelector('.formCompare__neighborhood');
 
+const loader = document.querySelector('.loader');
+
+loader.classList.add('loader--show');
+
 let data = [];
 let result = 0;
 let recommendList = [];
@@ -209,7 +213,7 @@ onAuthStateChanged(auth, async (user) => {
             //console.log("Seleccionado ---> ", selected);
             renderResult(fullList);
 
-
+            loader.classList.remove('loader--show');
 
         } else {
             // doc.data() will be undefined in this case
@@ -259,7 +263,7 @@ function renderResult(list) {
     list.forEach(elem => {
         const parts = location.search.split('-');
         const selectedProject = parts[1].replace('?', '');
-        const url = `compareProfile.html?${elem.id}-${selectedProject}-${elem.name}-${toPercent(elem.cosineSimilarity)}`;
+        const url = `compareProfile.html?${elem.id}-${selectedProject}-${elem.name}-${elem.lastname}-${toPercent(elem.cosineSimilarity)}`;
         const newPerson = document.createElement('div');
         newPerson.classList.add('d-flex', 'p-4');
         //newPerson.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'flex-row', );

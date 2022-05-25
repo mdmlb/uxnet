@@ -26,6 +26,10 @@ var userInfo;
 const projects = document.querySelector('.projects__container');
 const noDesign = document.querySelector('.noDesign');
 
+const loader = document.querySelector('.loader');
+
+loader.classList.add('loader--show');
+
 onAuthStateChanged(auth, async (user) => {
     if (user) {
         console.log(user);
@@ -60,6 +64,7 @@ onAuthStateChanged(auth, async (user) => {
 
             renderResult(misllaves, objRespuesta);
             noDesign.classList.add('noDesign--hide');
+            loader.classList.remove('loader--show');
 
         } else {
             // doc.data() will be undefined in this case
@@ -75,14 +80,17 @@ function renderResult(list, another) {
     projects.innerHTML = "";
     list.forEach(function (elem, index) {
         const url = `recommendations.html?${another[list[index]][0]}-${elem}`;
+        const url2 = `savedProfiles.html?${another[list[index]][0]}-${elem}`;
         const newProject = document.createElement('div');
-        newProject.classList.add('p-1');
+        newProject.classList.add('p-3');
 
         newProject.innerHTML = `
         <div class="profiledesigner d-flex justify-content-center align-items-center p-3">
             <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
                 <h2 class="event__title proyectName">${another[list[index]][0]}</h2>
                 <a href="${url}" type="submit" class="btn btn-primary">Ver recomendaciones</a>
+                <div style="height:2vh;"></div>
+                <a href="${url2}" type="submit" class="btn btn-primary">Ver perfiles guardados</a>
             </div>
         </div>
         

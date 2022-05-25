@@ -36,20 +36,14 @@
         <!--Nav-->
         <nav class="header d-flex align-items-center flex-row p-4">
 
-            <!--Nav: menu
-            <a href="#" class="header__menulink">
-                <img class="header__menu" src="./img/burguermenu.svg" atl="menu">
-            </a>-->
-
-            <!--Nav: Logo-->
-            <a href="../../../landingre.html" class="header__logolink">
+            <a href="./index.html" class="header__logolink">
                 <img class="header__logo" src="../../../../img/draklogo.svg" atl="UXnet's logo">
             </a>
 
             <div class="header__linksreclutador">
-                <a href="../../../../information.html" class="header__link">Información</a>
-                <a href="./recuiterSelection.html" class="header__link p-3">Iniciar nuevo proyecto</a>
-                <a href="./proyects.html" class="header__link">Proyectos</a>
+                <a href="./information.html" class="header__link">Información</a>
+                <a href="./html/recruiter/proyects/recuiterSelection.html" class="header__link p-3">Iniciar nuevo proyecto</a>
+                <a href="./html/recruiter/proyects/proyects.html" class="header__link">Proyectos</a>
             </div>
 
             <!--Nav: Profile-->
@@ -67,49 +61,178 @@
 
     <main class="main">
 
-        <!--Banner: Links-->
-        <section class="bannercontprofile">
+        <div class="container">
+            <div class="main-body">
 
-            <!--<h4 class="p-3 profile__usernameB"></h4>-->
-
-            <div class="banner d-flex justify-content-bottom align-items-center flex-row" style="width:80%;">
-                <div class="banner__cont" style="height: 158px;">
-                    <h1 class="bannerprofile__title p-3">Mi perfil</h1>
-                </div>
-
-                <div class="container">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-md-7">
-                            <div class="card p-3 py-4 d-flex flex-column justify-content-center align-items-center cardprofile" style="width: 418px;">
-                                <div class="text-center"> <img src="./img/illustration/11 OPCIONES DE MEJORA PERFIL.svg" class="rounded-circle profilecircle">
+                <div class="row gutters-sm">
+                    <div class="col-md-4 mb-3">
+                        <div class="card ">
+                            <div class="card-body profilefirts">
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <h5 class="d-flex align-items-center" style="margin: 0;"><i
+                                            class="text-infoprofile">Mi perfil</i></h5>
+                                    <div style="height: 4vh;"></div>
+                                    <img src="./img/profile.svg" alt="Admin" class="rounded-circle" width="150">
+                                    <div class="mt-3 text-center" style="width:70%;">
+                                        <h4 class="profile__usernameB profilename textprofilecolor">Nombre</h4>
+                                        <p class=" mb-1 profile__company"></p>
+                                    </div>
                                 </div>
-                                <div class="text-center mt-3">
-                                    <h5 class="profile__usernameB profilename"></h5>
-                                    <h5 class="profile__email"></h5>
-                                    <!-- <h6 class="profile__portafolio">Agrega un link de tu portafolio</h6>-->
-                                    <button class="btn btn-primary px-4">Editar</button>
+                            </div>
+
+                            <div class="card-body p-4">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <h6 class="mb-0">Nombre completo</h6>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        Nombre
+                                    </div>
+                                </div>
+                                <div style="height: 12px;"></div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <h6 class="mb-0 ">Email</h6>
+                                    </div>
+                                    <div class="col-sm-7 profile__email">
+                                        Correo
+                                    </div>
+                                </div>
+                                <div style="height: 12px;"></div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <h6 class="mb-0">Compañía</h6>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        Agrega la compañía a la que perteneces
+                                    </div>
+                                </div>
+                                <div style="height: 12px;"></div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <a class="btn btn-info " target="__blank"
+                                            href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Editar</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-md-8">
+
+                        <!-- Proyectos -->
+                        <div class="row gutters-sm">
+                            <div class="col-sm-6 mb-3">
+                                <div class="card h-100" style="width: 117vh;">
+                                    <div class="card-body p-4">
+                                        <h5 class="d-flex align-items-center" style="margin: 0;"><i
+                                                class="text-infoprofile">Proyectos</i></h5>
+                                        <a href="./html/recruiter/proyects/proyects.html" class="contlinkprofile">
+                                            Ver todos los proyectos</a>
+
+                                        <div style="height: 5vh;"></div>
+                                        <div
+                                            class="proj__container d-flex flex-row justify-content-center align-items-center">
+                                            <small class="proyectName"
+                                                style="width: 100%; font-size: 100%; padding: 0 15px;">Web
+                                                Design</small>
+                                            <a href="." type="submit" class="btn btn-primary" style="width: 33%;">Ver
+                                                más</a>
+                                        </div>
+                                        <div style="height: 3vh;"></div>
+                                        <div
+                                            class="proj__container d-flex flex-row justify-content-center align-items-center">
+                                            <small class="proyectName"
+                                                style="width: 100%; font-size: 100%; padding: 0 15px;">Web
+                                                Design</small>
+                                            <a href="." type="submit" class="btn btn-primary" style="width: 33%;">Ver
+                                                más</a>
+                                        </div>
+                                        <div style="height: 3vh;"></div>
+                                        <div
+                                            class="proj__container d-flex flex-row justify-content-center align-items-center">
+                                            <small class="proyectName"
+                                                style="width: 100%; font-size: 100%; padding: 0 15px;">Web
+                                                Design</small>
+                                            <a href="." type="submit" class="btn btn-primary" style="width: 33%;">Ver
+                                                más</a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- PERFILES -->
+                        <div class="row gutters-sm">
+                            <div class="col-sm-6 mb-3">
+                                <div class="card h-100" style="width: 117vh;">
+                                    <div class="card-body p-4">
+                                        <h5 class="d-flex align-items-center" style="margin: 0;"><i
+                                                class="text-infoprofile">Mis diseñadores favoritos</i></h5>
+                                        <a href="./html/recruiter/designers/saved.html" class="contlinkprofile">
+                                            Ver todos los diseñadores favoritos</a>
+
+                                        <div style="height: 5vh;"></div>
+
+                                        <div class="d-flex justify-content-center align-items-center flex-row">
+
+                                            <div
+                                                class="fav__container d-flex flex-column justify-content-center align-items-center p-4">
+                                                <small class="proyectName"
+                                                    style="font-size: 100%; padding: 0 15px;">Luisa Moncayo</small>
+
+                                                <div style="height: 3vh;"></div>
+
+                                                <a href="." type="submit" class="btn btn-primary">Ver
+                                                    más</a>
+                                            </div>
+
+                                            <div style="width: 3vh;"></div>
+
+                                            <div
+                                                class="fav__container d-flex flex-column justify-content-center align-items-center p-4">
+                                                <small class="proyectName" style="font-size: 100%; padding: 0 15px;">Web
+                                                    Design</small>
+
+                                                <div style="height: 3vh;"></div>
+
+                                                <a href="." type="submit" class="btn btn-primary">Ver
+                                                    más</a>
+                                            </div>
+
+                                            <div style="width: 3vh;"></div>
+
+                                            <div
+                                                class="fav__container d-flex flex-column justify-content-center align-items-center p-4">
+                                                <small class="proyectName" style="font-size: 100%; padding: 0 15px;">Web
+                                                    Design</small>
+
+                                                <div style="height: 3vh;"></div>
+
+                                                <a href="." type="submit" class="btn btn-primary">Ver
+                                                    más</a>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-        
 
             </div>
-
-        </section>
-
-        <div style="height: 10vh;"></div>
-
-        <!--info-->
-        <section class="main__info">
-
-            
+        </div>
 
 
-        </section>
 
-        <div style="height: 30vh;"></div>
 
         <!--Footer-->
         <footer class="footer">
@@ -164,7 +287,7 @@
 
 
     <!-- JavaScript -->
-    
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
     <script type="module" src="./script/firebase.js"></script>
     <script type="module" src="./script/auth.js"></script>

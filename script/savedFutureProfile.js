@@ -27,6 +27,10 @@ var userInfo;
 const savedProfiles = document.querySelector('.savedProfiles__container');
 const theProjectName = document.querySelector('.projectName');
 
+const loader = document.querySelector('.loader');
+
+loader.classList.add('loader--show');
+
 onAuthStateChanged(auth, async (user) => {
     if (user) {
         console.log(user);
@@ -52,6 +56,8 @@ onAuthStateChanged(auth, async (user) => {
 
             renderResult(savedProfilesList[0], uid);
 
+            loader.classList.remove('loader--show');
+
         } else {
             // doc.data() will be undefined in this case
             console.log("No such document!");
@@ -66,14 +72,19 @@ function renderResult(list, theID) {
     savedProfiles.innerHTML = "";
     //let copy = [...list].splice(0, list.length);
     list.forEach(function (elem, index) {
-        const url = `compareFutureSavedProfile.html?${elem.userID}-${elem.username}`;
+        const url = `compareFutureSavedProfile.html?${elem.userID}-${elem.name}`;
         const newPerson = document.createElement('div');
-        newPerson.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'flex-row');
+        newPerson.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'flex-row', 'p-5');
 
         newPerson.innerHTML = `
-        <p class="bestskill">${elem.username}</p>
-        <a href="${url}" class="header__link">Ver perfil</a>
-        <button class="delete__btn">Eliminar perfil guardado</button>
+        <div class="profilefavs d-flex justify-content-center align-items-center p-3">
+            <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
+                <h2 class="event__title proyectName">${elem.name}</h2>
+                <a href="${url}" type="submit" class="btn btn-primary">Ver perfil</a>
+                <div style="height:2vh;"></div>
+                <button class="btn btn-primary btn-delete delete__btn">Eliminar perfil</a>
+            </div>
+        </div>
         `;
         savedProfiles.appendChild(newPerson);
 

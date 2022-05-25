@@ -1,43 +1,71 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Prompt:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap");
-.btn {
-  background-color: #FF971D;
-  width: 100%;
-  border: none;
-  font-family: "Open Sans";
-  font-size: 15px;
+body {
+  margin-top: 20px;
+  color: #F7F8FA;
+  text-align: left;
+  background-color: #04041B;
 }
 
-.btn:hover {
-  background-color: #FF8800;
+.main-body {
+  padding: 15px;
 }
 
-.btncancel {
-  background-color: #694FFD;
-  width: 100%;
-  border: none;
-  font-family: "Open Sans";
-  font-size: 15px;
+.card {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
-.btncancel:hover {
-  background-color: #3D347F;
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #02022D;
+  background-clip: border-box;
+  border: 0 solid rgba(0, 0, 0, 0.125);
+  border-radius: .25rem;
 }
 
-.SignOutButton {
-  background-color: #694FFD;
-  width: 100%;
-  border: none;
-  font-family: "Prompt";
-  font-size: 13px;
-  color: white;
-  height: 78%;
+.card-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1rem;
 }
 
-.btn-testquestion {
-  width: 291px;
-  font-weight: 500;
-  font-size: 18px;
+.gutters-sm {
+  margin-right: -8px;
+  margin-left: -8px;
+}
+
+.gutters-sm > .col, .gutters-sm > [class*=col-] {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.mb-3, .my-3 {
+  margin-bottom: 1rem !important;
+}
+
+.bg-gray-300 {
+  background-color: #04041B;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.shadow-none {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .footer {
@@ -355,7 +383,7 @@
 }
 
 .text-center {
-  width: 44%;
+  width: 40%;
 }
 
 .text__description {
@@ -374,8 +402,6 @@
   font-weight: 500;
   font-size: 15px;
   font-family: "Open Sans";
-  font-weight: bold;
-  text-decoration: underline;
 }
 
 .event__cont {
@@ -398,7 +424,6 @@
   text-align: center;
   padding-top: 2vh;
   padding-bottom: 1vh;
-  text-transform: uppercase;
 }
 
 .event__name {
@@ -1818,7 +1843,7 @@ ul {
 }
 
 .testbefore {
-  height: 64vh;
+  height: 75vh;
 }
 
 .test__title {
@@ -2315,6 +2340,137 @@ input[type="radio"]:checked::before {
   text-align: center;
 }
 
+.contprofile__links {
+  background-color: #694FFD;
+  width: 100%;
+}
+
+.profilefirts {
+  background-color: #3D347F;
+}
+
+.cont__links {
+  background-color: #694FFD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+}
+
+.textprofilecolor {
+  color: #F7F8FA;
+}
+
+.line {
+  border-width: 6px;
+  border-color: #694FFD;
+}
+
+.proj__container {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: .25rem;
+}
+
+.fav__container {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: .25rem;
+  height: 25vh;
+  width: 45vh;
+}
+
+.text-infoprofile {
+  color: #F7F8FA;
+  font-size: 19px;
+}
+
+.contlinkprofile {
+  color: #FF971D;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Open Sans";
+}
+
+.profilefavs {
+  border-style: solid;
+  border-radius: 20px;
+  width: 45vh;
+}
+
+.btn {
+  background-color: #FF971D;
+  width: 100%;
+  border: none;
+  font-family: "Open Sans";
+  font-size: 15px;
+}
+
+.btn-delete {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.btn:hover {
+  background-color: #FF8800;
+}
+
+.btncancel {
+  background-color: #694FFD;
+  width: 100%;
+  border: none;
+  font-family: "Open Sans";
+  font-size: 15px;
+}
+
+.btncancel:hover {
+  background-color: #3D347F;
+}
+
+.SignOutButton {
+  background-color: #694FFD;
+  width: 100%;
+  border: none;
+  font-family: "Prompt";
+  font-size: 13px;
+  color: white;
+  height: 78%;
+}
+
+.SignOutButton2 {
+  background-color: #694FFD;
+  width: 100%;
+  border: none;
+  font-family: "Prompt";
+  font-size: 13px;
+  color: white;
+  height: 78%;
+}
+
+.btn-delete:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.btn-testquestion {
+  width: 291px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.btnAlert {
+  width: 100%;
+  margin-bottom: 5%;
+  margin-top: 0%;
+}
+
 .imagetoreplace {
   background-image: url("../img/illustration/registro.svg");
   background-size: cover;
@@ -2344,5 +2500,6 @@ input[type="radio"]:checked::before {
 
 .profile__email {
   font-size: 13px;
+  font-family: "Open Sans";
 }
 /*# sourceMappingURL=main.css.map */

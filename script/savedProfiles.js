@@ -25,7 +25,13 @@ const auth = getAuth();
 var userInfo;
 
 const savedProfiles = document.querySelector('.savedProfiles__container');
-const theProjectName = document.querySelector('.projectName');
+const theProjectName = document.querySelector('.nameproject');
+
+const loader = document.querySelector('.loader');
+
+loader.classList.add('loader--show');
+
+//banner
 
 onAuthStateChanged(auth, async (user) => {
     if (user) {
@@ -60,9 +66,12 @@ onAuthStateChanged(auth, async (user) => {
 
             theProjectName.innerHTML = docSnap3.data()[projectCode][0];
 
+            loader.classList.remove('loader--show');
+
         } else {
             // doc.data() will be undefined in this case
             console.log("No such document!");
+            loader.classList.remove('loader--show');
         }
 
     } else {
@@ -76,14 +85,19 @@ function renderResult(list, theID) {
     list.forEach(function (elem, index) {
         const parts = location.search.split('-');
         const selectedProject = parts[1].replace('?', '');
-        const url = `compareSavedProfile.html?${elem.userID}-${selectedProject}-${elem.username}-${elem.similarity}`;
+        const url = `compareSavedProfile.html?${elem.userID}-${selectedProject}-${elem.name}-${elem.similarity}`;
         const newPerson = document.createElement('div');
-        newPerson.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'flex-row');
+        newPerson.classList.add('p-2');
 
         newPerson.innerHTML = `
-        <p class="bestskill">${elem.username} - ${elem.similarity}% de similitud</p>
-        <a href="${url}" class="header__link">Ver perfil</a>
-        <button class="delete__btn">Eliminar perfil guardado</button>
+        <div class="profiledesigner d-flex justify-content-center align-items-center p-3">
+            <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
+                <h2 class="event__title proyectName">${elem.name} - ${elem.similarity}% de similitud</h2>
+                <a href="${url}" type="submit" class="btn btn-primary">Ver perfil</a>
+                <div style="height:2vh;"></div>
+                <button class="btn btn-primary btn-delete delete__btn delete__btn">Eliminar perfil guardado</button>
+            </div>
+        </div>
         `;
         savedProfiles.appendChild(newPerson);
 

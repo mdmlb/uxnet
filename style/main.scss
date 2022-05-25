@@ -20,7 +20,7 @@ $color16 : #322580;
 $title: "Prompt";
 $font: "Open Sans";
 
-@import './buttons';
+@import './profile';
 
 @import './footer';
 
@@ -76,6 +76,10 @@ $font: "Open Sans";
 @import './change';
 
 @import './recruiter/proyects';
+@import './recruiter/profile';
+@import './recruiter/saved';
+
+@import './buttons';
 
 
 .imagetoreplace{
@@ -107,4 +111,5 @@ $font: "Open Sans";
 
 .profile__email{
     font-size: 13px;
+    font-family: $font;
 }

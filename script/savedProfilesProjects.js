@@ -45,7 +45,7 @@ onAuthStateChanged(auth, async (user) => {
             const docSnap2 = await getDoc(docRef2);
 
             let allIdealProfiles = [docSnap2.data()];
-            console.log(docSnap2.data().desiredProfiles5112[1].nameRole);
+            //console.log(docSnap2.data().desiredProfiles5112[1].nameRole);
             let objRespuesta = allIdealProfiles[0];
             let misllaves = Object.keys(objRespuesta);
             console.log("keys", misllaves,allIdealProfiles[0]);

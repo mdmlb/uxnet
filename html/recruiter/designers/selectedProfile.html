@@ -43,14 +43,14 @@
             </a>-->
 
             <!--Nav: Logo-->
-            <a href="../../../landingre.html" class="header__logolink">
+            <a href="../../../index.html" class="header__logolink">
                 <img class="header__logo" src="../../../../img/draklogo.svg" atl="UXnet's logo">
             </a>
 
             <div class="header__linksreclutador">
                 <a href="../../../../information.html" class="header__link">Información</a>
-                <a href="./recuiterSelection.html" class="header__link p-3">Iniciar nuevo proyecto</a>
-                <a href="./proyects.html" class="header__link">Proyectos</a>
+                <a href="../recuiterSelection.html" class="header__link p-3">Iniciar nuevo proyecto</a>
+                <a href="../proyects/proyects.html" class="header__link">Proyectos</a>
             </div>
 
             <!--Nav: Profile-->
@@ -68,52 +68,39 @@
 
     <main class="main">
 
-        <!--Banner: Links-->
-        <section class="bannercontprofile">
+        <article class="details">
+            <div class="details__container">
 
-            <!--<h4 class="p-3 profile__usernameB"></h4>-->
-
-            <div class="banner d-flex justify-content-bottom align-items-center flex-row" style="width:80%;">
-                <div class="banner__cont" style="height: 158px;">
-                    <h1 class="bannerprofile__title p-3">Proyectos</h1>
-                </div>
-
-                <div class="profileconttext">
-                    <p class="text__description" style="color: white; width: 100%;font-weight: 300; margin: 0;">
-                        Aquí encontrarás los proyectos que has creado anteriormente.
-                    </p>
-                </div>
-
-            </div>
-
-        </section>
-
-        <div style="height: 10vh;"></div>
-
-        <section class="d-flex align-items-center flex-column">
-
-            <h1 class="noDesign">No hay proyectos</h1>
-
-            <div class="d-flex justify-content-center align-items-center flex-row flex-wrap projects__container" style="width: 80%;">
-
-                <!--Diseñador
-                <div style="padding: 2vh;">
-                    <div class="profiledesigner d-flex justify-content-center align-items-center p-3">
-                        <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
-                            <a href="#" class="event__person ">
-                                <img class="event__person" src="../../../img/profile.svg" atl="">
-                            </a>
-                            <h2 class="event__title proyectName">Proyecto 1</h2>
-                            <h5 class="event__name proyectStatus">En proceso</h5>
-                            <a href="./html/growth/event.html" type="submit" class="btn btn-primary">Ver más</a>
-                            
-                        </div>
+                <section class="details__photos">
+                    <div class="details__cont">
+                        <img src="" alt="" class="details__image">
                     </div>
-                </div>-->
-                
-            </div>
+                    <div class="details__thumbs">
+                        <img src="" class="details__thumb1" alt="">
+                        <img src="" class="details__thumb2" alt="">
+                        <img src="" class="details__thumb3" alt="">
+                    </div>
+                </section>
 
-        </section>
+                <section class="details__description">
+                    <div class="details__info">
+                        <h2 class="details__title">PO3166S</h2>
+                        <h3 class="details__price">$345.00</h3>
+                        <p class="details__text">Timeless elegance interpreted in a modern, sophisticated key. From
+                            standard
+                            to polarized, the selection of crystal sun lenses represent quality and excellence, made
+                            from
+                            the most precious optical materials and used to guarantee the best protection and visual
+                            clarity.</p>
+                    </div>
+                    <div class="details__action">
+                        <button class="button button--secondary saveDesigner">Guardar diseñador</button>
+                    </div>
+                </section>
+
+            </div>
+        </article>
+
 
         <div style="height: 10vh;"></div>
 
@@ -172,7 +159,7 @@
 
     <script type="module" src="../../../script/firebase.js"></script>
     <script type="module" src="../../../script/auth2.js"></script>
-    <script type="module" src="../../../script/projects.js"></script>
+    <script type="module" src="../../../script/selectedProfile.js"></script>
 
 </body>
 

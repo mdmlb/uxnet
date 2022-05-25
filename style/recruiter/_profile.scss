@@ -1,0 +1,53 @@
+.contprofile__links{
+    background-color: $color3;
+    width: 100%;
+}
+
+.profilefirts{
+    background-color: $color8;
+}
+
+
+.cont__links{
+    background-color: $color3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85vh;
+    align-items: center;
+    font-weight: 700;
+}
+
+.textprofilecolor{
+    color: $color2;
+}
+
+.line{
+    border-width: 6px;
+    border-color: #694FFD;
+}
+
+.proj__container{
+    background-color: rgba(0,0,0,.4);
+    border-radius: .25rem;
+}
+
+
+.fav__container{
+    background-color: rgba(0,0,0,.4);
+    border-radius: .25rem;
+    height: 25vh;
+    width: 45vh;
+}
+
+.text-infoprofile{
+    color: $color2;
+    font-size: 19px;
+}
+
+.contlinkprofile{
+    color: #FF971D;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: "Open Sans";
+}
