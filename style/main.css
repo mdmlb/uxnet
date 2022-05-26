@@ -1988,6 +1988,62 @@ ul {
   opacity: 0.5;
 }
 
+.linksRoles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.linksRoles__cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 1.5%;
+}
+
+.linksRoles__dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.linksRoles__dot1 {
+  background-color: #694FFD;
+}
+
+.linksRoles__dot2 {
+  background-color: #FF971D;
+}
+
+.linksRoles__dot3 {
+  background-color: #94B9FF;
+}
+
+.linksRoles__dot4 {
+  background-color: #EF6A77;
+}
+
+.linksRoles__dot5 {
+  background-color: #2A1C7C;
+}
+
 .testbefore {
   height: 75vh;
 }
