@@ -20,7 +20,9 @@ const auth = getAuth();
 var userInfo;
 //const skillList = document.querySelector('.skillElements');
 const allSkillList = document.querySelector('.allSkillElements');
+const loader = document.querySelector('.loader');
 
+loader.classList.add('loader--show');
 
 function renderSkills(list,elemHtml,num) {
     elemHtml.innerHTML = '';
@@ -88,6 +90,8 @@ onAuthStateChanged(auth, async (user) => {
                 docSnap2.data().skills.forEach((item) => {
                     objectsList.push(item);
                 });
+
+                loader.classList.remove('loader--show');
 
                 //loader.classList.remove('loader--show');
 

@@ -23,10 +23,11 @@ const bestSkillList = document.querySelector('.bestSkillElements');
 const worstSkillList = document.querySelector('.worstSkillElements');
 const titleBestRole = document.querySelector('.textprofile__rol');
 const loader = document.querySelector('.loader');
+const profileBestRole = document.querySelector('.profilecont__img');
 
 loader.classList.add('loader--show');
 
-function renderSkills(list,elemHtml,num) {
+function renderSkills(list, elemHtml, num) {
     elemHtml.innerHTML = '';
     list.forEach(function (elem, index) {
 
@@ -103,7 +104,7 @@ onAuthStateChanged(auth, async (user) => {
                 //Mete en el arreglo todas las habilidades ordenadas de mayor a menor
                 orderedList = objectsList.sort(function (a, b) {
                     return b.value - a.value;
-                  });
+                });
 
                 //Si se quiere que se muestren todas las habilidades ordenadas se hace esta linea
                 //renderSkills(orderedList, skillList);
@@ -134,7 +135,7 @@ onAuthStateChanged(auth, async (user) => {
             function getBestRole() {
                 uxRolesList = [];
                 console.log(docSnap3.data().roles);
-                
+
                 docSnap3.data().roles.forEach((item) => {
                     uxRolesList.push(item);
                 });
@@ -143,9 +144,28 @@ onAuthStateChanged(auth, async (user) => {
                 //Mete en el arreglo todos los roles ordenados de mayor a menor
                 orderedListRoles = uxRolesList.sort(function (a, b) {
                     return b.value - a.value;
-                  });
+                });
 
-                titleBestRole.textContent = "" + orderedListRoles[0].nameRole + " - " + orderedListRoles[0].value + "%";
+                const bestRole = orderedListRoles[0].nameRole;
+                switch (bestRole) {
+                    case 'UX Researcher':
+                        profileBestRole.style.backgroundImage = "url('../img/illustration/7 UX RESEARCHER.svg')";
+                        break;
+                    case 'Content Strategist':
+                        profileBestRole.style.backgroundImage = "url('../img/illustration/6 CONTENT STRATEGIST.svg')";
+                        break;
+                    case 'Interaction Designer':
+                        profileBestRole.style.backgroundImage = "url('../img/illustration/9 INTERACTION DESIGNER.svg')";
+                        break;
+                    case 'UI Designer':
+                        profileBestRole.style.backgroundImage = "url('../img/illustration/8 UI DESIGNER.svg')";
+                        break;
+                    case 'UX Lead':
+                        profileBestRole.style.backgroundImage = "url('../img/illustration/8 UX LEAD.svg')";
+                        break;
+                }
+
+                titleBestRole.textContent = "" + bestRole + " - " + orderedListRoles[0].value + "%";
             }
 
             getBestRole();
