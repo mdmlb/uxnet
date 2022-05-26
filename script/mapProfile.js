@@ -149,19 +149,19 @@ onAuthStateChanged(auth, async (user) => {
                 const bestRole = orderedListRoles[0].nameRole;
                 switch (bestRole) {
                     case 'UX Researcher':
-                        profileBestRole.style.backgroundImage = "url('../img/illustration/7 UX RESEARCHER.svg')";
+                        profileBestRole.style.backgroundImage = "url('./img/illustration/7 UX RESEARCHER.svg')";
                         break;
                     case 'Content Strategist':
-                        profileBestRole.style.backgroundImage = "url('../img/illustration/6 CONTENT STRATEGIST.svg')";
+                        profileBestRole.style.backgroundImage = "url('./img/illustration/6 CONTENT STRATEGIST.svg')";
                         break;
                     case 'Interaction Designer':
-                        profileBestRole.style.backgroundImage = "url('../img/illustration/9 INTERACTION DESIGNER.svg')";
+                        profileBestRole.style.backgroundImage = "url('./img/illustration/9 INTERACTION DESIGNER.svg')";
                         break;
                     case 'UI Designer':
-                        profileBestRole.style.backgroundImage = "url('../img/illustration/8 UI DESIGNER.svg')";
+                        profileBestRole.style.backgroundImage = "url('./img/illustration/8 UI DESIGNER.svg')";
                         break;
                     case 'UX Lead':
-                        profileBestRole.style.backgroundImage = "url('../img/illustration/8 UX LEAD.svg')";
+                        profileBestRole.style.backgroundImage = "url('./img/illustration/8 UX LEAD.svg')";
                         break;
                 }
 
