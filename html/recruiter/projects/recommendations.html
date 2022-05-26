@@ -27,7 +27,7 @@
 
     <article class="loader">
         <div class="loader__container">
-            <img src="../../../../img/loading.gif" alt="loading">
+            <img src="../../../img/loading.gif" alt="loading">
             <h1>CARGANDO...</p>
         </div>
     </article>
@@ -41,22 +41,22 @@
             <a href="#" class="header__menulink">
                 <img class="header__menu" src="./img/burguermenu.svg" atl="menu">
             </a>-->
-
+            
             <!--Nav: Logo-->
             <a href="../../../index.html" class="header__logolink">
-                <img class="header__logo" src="../../../../img/draklogo.svg" atl="UXnet's logo">
+                <img class="header__logo" src="../../../img/draklogo.svg" atl="UXnet's logo">
             </a>
 
             <div class="header__linksreclutador">
-                <a href="../../../../information.html" class="header__link">Información</a>
-                <a href="../proyects/recuiterSelection.html" class="header__link p-3">Iniciar nuevo proyecto</a>
-                <a href="../proyects/proyects.html" class="header__link">Proyectos</a>
+                <a href="../../../information.html" class="header__link">Información</a>
+                <a href="./recuiterSelection.html" class="header__link p-3">Iniciar nuevo proyecto</a>
+                <a href="./projects.html" class="header__link">Proyectos</a>
             </div>
 
             <!--Nav: Profile-->
             <div class="header__profileLink d-flex align-items-center flex-row">
                 <a href="../../../profilere.html" class="header__profileLink">
-                    <img class="header__profile" src="../../../../img/user.svg" atl="Profile">
+                    <img class="header__profile" src="../../../img/user.svg" atl="Profile">
                 </a>
                 <div style="width: 2vh;"></div>
                 <button class="btn signout SignOutButton">Cerrar sesión</button>
@@ -75,7 +75,14 @@
 
             <div class="banner d-flex justify-content-bottom align-items-center flex-row" style="width:80%;">
                 <div class="banner__cont" style="height: 158px;">
-                    <h1 class="bannerprofile__title nameproject p-3">Proyectos</h1>
+                    <h1 class="bannerprofile__title p-3">Recomendaciones</h1>
+                </div>
+
+                <div class="profileconttext">
+                    <p class="text__description" style="color: white; width: 100%;font-weight: 300; margin: 0;">
+                        Estos diseñadores son los más adecuados para tu proyecto, de acuerdo a los requerimientos que
+                        ingresaste anteriormente.
+                    </p>
                 </div>
 
             </div>
@@ -84,28 +91,27 @@
 
         <div style="height: 10vh;"></div>
 
-        <section class="d-flex justify-content-center align-items-center flex-row flex-wrap savedProfiles__container">
+        <section class="d-flex align-items-center flex-column">
 
-            <h1 class="noDesign">No hay perfiles guardados para este proyecto</h1>
+            <div class="d-flex justify-content-center align-items-center flex-row flex-wrap formCompare__neighborhood" style="width: 80%;">
 
-            <!--<div class="d-flex justify-content-center align-items-center flex-row flex-wrap"
-                style="width: 80%;">
-
-                Diseñador
+                <h1>No hay diseñadores relacionado con tu proyecto</h1>
+                <!--Diseñador
                 <div style="padding: 2vh;">
                     <div class="profiledesigner d-flex justify-content-center align-items-center p-3">
                         <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
                             <a href="#" class="event__person ">
                                 <img class="event__person" src="../../../img/profile.svg" atl="">
                             </a>
-                            <h2 class="event__title proyectName">Proyecto 1</h2>
-                            <h5 class="event__name proyectStatus">En proceso</h5>
+                            <h2 class="event__title">Ana soler</h2>
+                            <h5 class="event__name">98% de coincidencia</h5>
                             <a href="./html/growth/event.html" type="submit" class="btn btn-primary">Ver más</a>
-                            
+                            <div style="height: 2vh;"></div>
+                            <a href="./html/growth/event.html" type="submit" class="btn btn-primary btncancel">Ver comparación</a>
                         </div>
                     </div>
                 </div>-->
-
+                
             </div>
 
         </section>
@@ -166,8 +172,8 @@
     <!--<script type="module" src="./scripts/main.js"></script>-->
 
     <script type="module" src="../../../script/firebase.js"></script>
-    <script type="module" src="../../../script/auth.js"></script>
-    <script type="module" src="../../../script/savedProfiles.js"></script>
+    <script type="module" src="../../../script/auth2.js"></script>
+    <script type="module" src="../../../script/recommendations.js"></script>
 
 </body>
 

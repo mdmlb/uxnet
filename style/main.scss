@@ -51,6 +51,7 @@ $font: "Open Sans";
 @import './modal/dark';
 @import './modal/mevent';
 @import './modal/profile';
+@import './modal/addprofile';
 
 @import './profile/bottom';
 @import './profile/growthprofile';
@@ -80,7 +81,6 @@ $font: "Open Sans";
 @import './recruiter/saved';
 
 @import './buttons';
-
 
 .imagetoreplace{
     background-image: url("../img/illustration/registro.svg");

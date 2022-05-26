@@ -41,3 +41,31 @@
     font-size: 15px;
     font-weight: 100;
 }
+
+.profilecontworkshop{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.contprofileworkshop{
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.conttallerdelasemana{
+    height: 49vh;
+    width: 69%;
+}
+.tallerdelasemana{
+    background-image: url("../img/illustration/taller.svg");
+    background-position: top;
+    background-size: auto;
+    height: 100%;
+    //width: 70%;
+}
+
+.titletallerdelasemana{
+    margin-bottom: 20px;
+    font-family: $title;
+}

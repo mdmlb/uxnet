@@ -194,9 +194,8 @@
 
             <div class="header__linksreclutador">
                 <a href="./information.html" class="header__link">Información</a>
-                <a href="./html/recruiter/projects/recuiterSelection.html" class="header__link p-3">Iniciar nuevo
-                    proyecto</a>
-                <a href="./html/recruiter/projects/projects.html" class="header__link">Proyectos</a>
+                <a href="./html/recruiter/proyects/recuiterSelection.html" class="header__link p-3">Iniciar nuevo proyecto</a>
+                <a href="./html/recruiter/proyects/proyects.html" class="header__link">Proyectos</a>
             </div>
 
             <!--Nav: Profile-->
@@ -252,7 +251,7 @@
             </div>
 
         </section>
-
+        
     </header>
 
     <!--DISEÑADORES-->
@@ -264,36 +263,52 @@
 
             <!--Title-->
             <div class="d-flex flex-column contevent">
-                <h1 class="contevent__title" style="margin: 0; text-align: center;">Taller de la semana</h1>
+                <h1 class="contevent__title" style="margin: 0;">Próximos eventos</h1>
+                <a href="./growth.html" class="contevent__link">Ver todos los eventos</a>
             </div>
 
             <!--Events-->
             <div class=" d-flex justify-content-center align-items-center flex-row">
-                <div class="d-flex justify-content-center align-items-center p-3 m-5 flex-row">
-                    <div class="conttallerdelasemana">
-                        <div class="tallerdelasemana"></div>
+
+                <!--First event-->
+                <div class="event__cont d-flex justify-content-center align-items-center p-3">
+                    <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
+                        <a href="#" class="event__person ">
+                            <img class="event__person" src="./img/profile.svg" atl="">
+                        </a>
+                        <h2 class="event__title">Taller para hablar en público</h2>
+                        <h5 class="event__name">Habilidad técnica</h5>
+                        <a href="./html/growth/event.html" type="submit" class="btn btn-primary">Ver más</a>
                     </div>
-
-                    <div class="contprofileworkshop d-flex justify-content-center align-items-center p-5 m-2">
-
-                        <div class="profilecontworkshop d-flex justify-content-center align-items-center ">
-                            <h3 class="titletallerdelasemana">Taller para hablar en público</h3>
-
-                            <p class="">
-                                Hablar en público es una habilidad que todos necesitamos para poder comunicar nuestras
-                                ideas, proyectos y pensamientos, a un grupo de personas que queremos llegar. Por esto,
-                                es importante aprender como presentarse y comunicarse oralmente hacia un público.
-                            
-                            </p>
-
-                            <a href="#" type="submit" class="btn btn-primary"
-                                style="width: 30vh; font-weight: 500;">Ver detalles del test</a>
-                        </div>
-
-                    </div>
-
-
                 </div>
+
+
+                <!--Second event-->
+                <div class="event__cont d-flex justify-content-center align-items-center p-3 m-5">
+                    <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
+                        <a href="#" class="event__person ">
+                            <img class="event__person" src="./img/profile.svg" atl="">
+                        </a>
+                        <h2 class="event__title">Tips de creatividad</h2>
+                        <h5 class="event__name">Habilidad blanda</h5>
+                        <a href="./html/growth/event.html" type="submit" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+
+
+                <!--Third event-->
+                <div class="event__cont d-flex justify-content-center align-items-center p-3">
+                    <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
+                        <a href="#" class="event__person ">
+                            <img class="event__person" src="./img/profile.svg" atl="">
+                        </a>
+                        <h2 class="event__title">Ejercicio de prototipado</h2>
+                        <h5 class="event__name">Habilidad técnica</h5>
+                        <a href="./html/growth/event.html" type="submit" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+
+            </div>
 
         </section>
 
@@ -362,8 +377,7 @@
             <div class="emptylandingreclu d-flex justify-content-center align-items-center ">
                 <div class="main__information d-flex flex-row justify-content-center align-items-center flex-column">
                     <p>¡Oh vaya! Parece que todavía no tienes ningún proyecto</p>
-                    <a href="./html/recruiter/proyects/new.html" type="submit" class="btn btn-primary m-4"
-                        style="width: 30%; height: 80%;">AÑADIR NUEVO
+                    <a href="./html/recruiter/proyects/new.html" type="submit" class="btn btn-primary m-4" style="width: 30%; height: 80%;">AÑADIR NUEVO
                         PROYECTO</a>
                 </div>
             </div>
@@ -416,13 +430,12 @@
         </section>
 
         <!--Perfiles guardados: NO TIENE-->
-        <section class="main__events reclulandprofilesave__not">
+        <section class="main__events reclulandprofilesave__not" >
 
             <!--Title-->
             <div class="d-flex flex-column contevent" style="padding: 14vh 14vh 5vh 14vh">
                 <h1 class="contevent__title" style="margin: 0;">Perfiles guardados</h1>
-                <a href="./html/recruiter/designers/saved.html" class="contevent__link">Ver todos los perfiles
-                    guardados</a>
+                <a href="./html/recruiter/designers/saved.html" class="contevent__link">Ver todos los perfiles guardados</a>
             </div>
 
             <!--Diseñadores-->
@@ -446,8 +459,7 @@
             <!--Title-->
             <div class="d-flex flex-column contevent" style="padding: 14vh 14vh 5vh 14vh;">
                 <h1 class="contevent__title" style="margin: 0;">Perfiles guardados</h1>
-                <a href="./html/recruiter/designers/saved.html" class="contevent__link">Ver todos los perfiles
-                    guardados</a>
+                <a href="./html/recruiter/designers/saved.html" class="contevent__link">Ver todos los perfiles guardados</a>
             </div>
 
             <!--Diseñadores-->
@@ -498,7 +510,7 @@
         <section class="emptycont">
 
         </section>
-
+        
         <!--saber mas-->
         <section class="informationcont d-flex justify-content-center align-items-center">
             <div class="main__information d-flex flex-row justify-content-center align-items-center">

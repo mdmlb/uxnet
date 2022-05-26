@@ -37,36 +37,24 @@ const uxNameComparation = document.querySelector('.uxNameComparation');
 const saveProfile = document.querySelector('.saveProfile');
 const saveFutureProfile = document.querySelector('.saveFutureProfile');
 
+//close
+const close1 = document.querySelector('.btnAlert');
+const goto1 = document.querySelector('.btnverperfil');
+const close2 = document.querySelector('.btnAlert2');
+const goto2 = document.querySelector('.btnverperfil2');
+
 //Modal
-const modalTest = document.querySelector('.warningNoInfo');
+const modalTest = document.querySelector('.addprofile');
+const modal2 = document.querySelector('.addprofile2');
 
 //loader
 const loader = document.querySelector('.loader');
 
 loader.classList.add('loader--show');
 
-/*porcent
-function renderPorcent(list,elemHtml) {
-    elemHtml.innerHTML = '';
-    list.forEach(function (elem, index) {
-
-        //Por cada elemento del arreglo de habilidades de la base de datos, crear elemento en Html con los datos correspondientes
-
-        const newPorcent = document.createElement('div');
-        newPorcent.classList.add('contevent__title');
-
-        const percentage = `${elem.value}%`;
-
-        newPorcent.innerHTML = `
-        <h3>Similitud entre perfiles: ${percentage}%</h3>
-        `;
-
-        elemHtml.appendChild(newPorcent);
-    });
-}*/
 
 //skill
-function renderSkills(list,elemHtml) {
+function renderSkills(list, elemHtml) {
     elemHtml.innerHTML = '';
     list.forEach(function (elem, index) {
 
@@ -108,7 +96,7 @@ window.addEventListener('load', function () {
             const uid2 = parts[0].replace('?', '');
             const projectCode = parts[1].replace('?', '');
             const name = parts[2].replace('?', '');
-            const lastname = parts[3].replace('?','');
+            const lastname = parts[3].replace('?', '');
             const similarityPer = parts[4].replace('?', '');
 
             console.log(similarityPer);
@@ -301,10 +289,16 @@ window.addEventListener('load', function () {
             const document3 = await getDoc(doc(db, "savedFutureProfiles", uid));
 
             saveProfile.addEventListener('click', async function () {
-                if(docSnap4.data()){
+
+                console.log("entro")
+
+                if (docSnap4.data()) {
+                    console.log("aja")
                     if (docSnap4.data()[projectCode]) {
+                        console.log("pues")
                         if (docSnap4.data()[projectCode][0]) {
                             savedProfilesList[0].push(aProfile);
+                            console.log("eh")
                         }
                     }
                 }
@@ -312,16 +306,23 @@ window.addEventListener('load', function () {
                 //console.log(savedProfilesList);
 
                 if (document2.exists()) {
+                    console.log("nada")
                     if (docSnap4.data()[projectCode]) {
+                        console.log("no")
                         if (docSnap4.data()[projectCode][0]) {
+                            console.log("mas")
                             if (savedProfilesList[0].length >= 1) {
+                                console.log("jamas")
                                 await updateDoc(doc(db, "savedProfiles", uid), {
                                     [projectCode]: savedProfilesList[0],
-                                })
 
+                                })
+                                
                                     .then(function () {
-                                        alert("PRIMERO");
-                                        modalTest.classList.add('warningNoInfo--show');
+                                        //alert("PRIMERO");
+                                        modalTest.classList.add('addprofile--show');
+                                        console.log("aca1")
+
                                     });
 
                             } else {
@@ -331,15 +332,17 @@ window.addEventListener('load', function () {
 
                                     .then(function () {
                                         alert("SEGUNDO");
-                                    }); 
+                                        console.log("aca2")
+                                    });
                             }
                         }
                     } else {
                         await updateDoc(doc(db, "savedProfiles", uid), {
                             [projectCode]: savedProfiles,
                         })
-
-                        
+                        console.log("aca3")
+                        //alert("algo pasa")
+                        modalTest.classList.add('addprofile--show');
                     }
 
 
@@ -352,18 +355,34 @@ window.addEventListener('load', function () {
                     })
 
                         .then(function () {
-                            alert("TERCERO");
-                            modalTest.classList.add('warningNoInfo--show');
+                            //alert("TERCERO");
+                            console.log("aca4")
+                            modalTest.classList.add('addprofile--show');
                         });
                 }
+                
             })
 
+            //CLOSE
+            goto1.addEventListener('click', function () {
 
+                console.log("ENTRAMOS");
+
+                goto1.href="./savedProfiles.html"
+            })
+
+            close1.addEventListener('click', function () {
+                modalTest.classList.remove('addprofile--show');
+                
+            })
+
+            //PERFILES FAVORITOS
             saveFutureProfile.addEventListener('click', async function () {
                 if (docSnap5.data()) {
                     if (docSnap5.data().savedFutureProfiles) {
                         if (docSnap5.data().savedFutureProfiles[0]) {
                             savedFutureProfilesList[0].push(aProfile2);
+                            modal2.classList.add('addprofile2--show');
                         }
                     }
                 }
@@ -380,6 +399,7 @@ window.addEventListener('load', function () {
 
                                     .then(function () {
                                         //window.location.href = './recommendations.html';
+                                        modal2.classList.add('addprofile2--show');
                                     });
                             } else {
                                 await updateDoc(doc(db, "savedFutureProfiles", uid), {
@@ -388,6 +408,7 @@ window.addEventListener('load', function () {
 
                                     .then(function () {
                                         //window.location.href = './recommendations.html';
+                                        modal2.classList.add('addprofile2--show');
                                     });
                             }
                         }
@@ -406,8 +427,22 @@ window.addEventListener('load', function () {
 
                         .then(function () {
                             //window.location.href = './recommendations.html';
+                            modal2.classList.add('addprofile2--show');
                         });
                 }
+            })
+
+            //CLOSE
+            goto2.addEventListener('click', function () {
+
+                console.log("ENTRAMOS");
+
+                goto2.href="../designers/saved.html"
+            })
+
+            close2.addEventListener('click', function () {
+                modal2.classList.remove('addprofile2--show');
+                
             })
 
         } else {
