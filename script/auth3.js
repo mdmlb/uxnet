@@ -59,7 +59,7 @@ import {
       event.preventDefault();
       signOut(auth).then(() => {
         // Sign-out successful.
-        window.location.href = '../../../login.html';
+        window.location.href = '../../login.html';
       }).catch((error) => {
         // An error happened.
       });
