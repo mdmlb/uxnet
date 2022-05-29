@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <title>UXnet | Perfil</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./style/main.css">
+
+    <!-- Typo -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Prompt:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Logo -->
+    <link rel="shortcut icon" href="./img/shortlogo.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <article class="loader">
+        <div class="loader__container">
+            <img src="./img/loading.gif" alt="loading">
+            <h1>CARGANDO...</p>
+        </div>
+    </article>
+
+    <header class="">
+
+        <!--Nav-->
+        <nav class="header d-flex align-items-center flex-row p-4">
+
+            <a href="./index.html" class="header__logolink">
+                <img class="header__logo" src="./img/draklogo.svg" atl="UXnet's logo">
+            </a>
+
+            <div class="header__linksreclutador">
+                <a href="./information.html" class="header__link">Mundo UX</a>
+                <a href="./html/recruiter/projects/recuiterSelection.html" class="header__link p-3">Iniciar nuevo
+                    proyecto</a>
+                <a href="./html/recruiter/projects/projects.html" class="header__link">Proyectos</a>
+            </div>
+
+            <!--Nav: Profile-->
+            <div class="header__profileLink d-flex align-items-center flex-row">
+                <a href="./profilere.html" class="header__profileLink">
+                    <img class="header__profile" src="./img/user.svg" atl="Profile">
+                </a>
+                <div style="width: 2vh;"></div>
+                <button class="btn signout SignOutButton">Cerrar sesión</button>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!--DISEÑADORES-->
+    <main class="main">
+
+        <div class="container">
+            <div class="main-body">
+
+                <div class="row gutters-sm d-flex flex-column align-items-center justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card d-flex flex-row">
+                            <div class="card-body profilefirts d-flex flex-column align-items-center justify-content-center">
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <h5 class="d-flex align-items-center" style="margin: 0;"><i
+                                            class="text-infoprofile">Editar mi perfil</i></h5>
+                                    <div style="height: 4vh;"></div>
+
+                                    <img src="./img/illustration/11 OPCIONES DE MEJORA PERFIL.svg" alt="Admin"
+                                        class="rounded-circle" width="150" height="150">
+
+
+                                    <div class="mt-3 text-center" style="width:70%;">
+                                        <h4 class="profile__usernameB profilename textprofilecolor">Nombre</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form class="card-body p-4 editprofile">
+
+                                <!-- name -->
+                                <div class="form-group d-flex flex-row">
+
+                                    <div class="input-group col-sm-4">
+                                        <label for="name" class="label">Nombre</label>
+                                    </div>
+                                    <input id="name" name="name" type="text" placeholder="Sofía"
+                                        class="form-control editprogile__name">
+
+                                </div>
+
+                                <!-- lastname -->
+                                <div class="form-group d-flex flex-row">
+                                    <div class="input-group col-sm-4">
+                                        <label for="lastname" class="label">Apellido</label>
+                                    </div>
+                                    <input id="lastname" name="lastname" type="text" placeholder="Hormaza"
+                                        class="form-control editprogile__lastname">
+                                </div>
+
+                                <!-- mail -->
+                                <div class="form-group d-flex flex-row">
+
+                                    <div class="input-group col-sm-4">
+                                        <label for="email" class="label">Correo</label>
+                                    </div>
+                                    <input id="email" name="email" type="email" placeholder="1234@gmail.com"
+                                        class="form-control editprogile__email">
+
+                                </div>
+
+                                <!-- birthdate -->
+                                <div class="form-group  d-flex flex-row">
+
+                                    <div class="input-group col-sm-4">
+                                        <label for="birthdate" class="label">Fecha de nacimiento</label>
+                                    </div>
+                                    <input id="birthdate" name="birthdate" type="text"
+                                        placeholder="13-04-2001"
+                                        class="form-control form-icon-trailing editprogile__date">
+
+                                </div>
+
+                                <!-- portafolio -->
+                                <div class="form-group d-flex flex-row">
+                                    <div class="input-group col-sm-4">
+                                        <label for="confirm_password" class="label">Portafolio</label>
+                                    </div>
+
+                                    <input id="link" name="link" type="link"
+                                        placeholder="Agrega link de tú portafolio" class="form-control editprogile__link">
+                                </div>
+
+                                <div class="row d-flex flex-column align-items-center justify-content-center">
+                                    <div class="col-sm-3"></div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <input type="button" class="btn btn-primary px-4 btneditprofile" value="Save Changes">
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <!--Footer-->
+        <footer class="footer">
+
+            <hr class="footer__line">
+
+            <div class="d-flex justify-content-center align-items-top flex-row">
+                <section class="footercont m-5">
+                    <h4 class="footercont__title">Información legal</h4>
+                    <div class="footercont__cont d-flex justify-content-left align-items-left flex-column">
+                        <a href="#" class="footercont__text">Pivacidad y seguridad</a>
+                        <a href="#" class="footercont__text">Terminos de uso</a>
+                    </div>
+                </section>
+
+                <section class="footercont m-5">
+                    <h4 class="footercont__title">Ayuda</h4>
+                    <div class="footercont__cont d-flex justify-content-left align-items-left flex-column">
+                        <a href="#" class="footercont__text">Contáctanos</a>
+                        <a href="#" class="footercont__text">FAQs</a>
+                    </div>
+                </section>
+
+                <section class="footercont m-5">
+                    <h4 class="footercont__title">Síguenos</h4>
+                    <div class="footercont__cont d-flex justify-content-left align-items-left flex-row">
+                        <a href="#" class="footercont__img">
+                            <img class="footercont__img" src="./img/footer/facebook.svg" atl="">
+                        </a>
+                        <a href="#" class="footercont__img">
+                            <img class="footercont__img" src="./img/footer/instagram.svg" atl="">
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <!-- JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script type="module" src="./script/firebase.js"></script>
+    <script type="module" src="./script/auth.js"></script>
+    <script type="module" src="./script/editprofile.js"></script>
+
+</body>
+
+</html>

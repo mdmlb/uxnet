@@ -8,7 +8,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js";
 
 import {
-  getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut,
+  getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, updateProfile
 } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-auth.js";
 
 const db = getFirestore();
