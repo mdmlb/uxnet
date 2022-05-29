@@ -11,7 +11,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Style -->
-    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="../../style/main.css">
 
     <!-- Typo -->
     <link
@@ -24,7 +24,7 @@
 
 <body>
 
-    <header class="mainHeadergrowth">
+    <header class="mainHeaderevent">
 
         <!--Nav-->
         <nav class="header d-flex align-items-center flex-row p-4">
@@ -35,25 +35,31 @@
             </a>-->
 
             <!--Nav: Logo-->
-            <a href="./index.html" class="header__logolink">
-                <img class="header__logo" src="./img/draklogo.svg" atl="UXnet's logo">
+            <a href="../../index.html" class="header__logolink">
+                <img class="header__logo" src="../../img/draklogo.svg" atl="UXnet's logo">
             </a>
 
             <div class="header__links">
-                <a href="./information.html" class="header__link">Información</a>
-                <a href="./testwhodoesntknow.html" class="header__link">Test</a>
-                <a href="./growth.html" class="header__link">Eventos</a>
+                <a href="../../information.html" class="header__link">Información</a>
+                <a href="../../testwhodoesntknow.html" class="header__link">Test</a>
+                <a href="../../growth.html" class="header__link">Eventos</a>
             </div>
 
             <!--Nav: Profile-->
             <div class="header__profileLink d-flex align-items-center flex-row">
-                <a href="./profile.html" class="header__profileLink">
-                    <img class="header__profile" src="./img/user.svg" atl="Profile">
+                <a href="../../profile.html" class="header__profileLink">
+                    <img class="header__profile" src="../../img/user.svg" atl="Profile">
                 </a>
                 <div style="width: 2vh;"></div>
                 <button class="btn signout SignOutButton">Cerrar sesión</button>
             </div>
         </nav>
+
+    </header>
+
+    <main class="main">
+
+        <!--Banner: Links-->
 
         <!--Banner: Links-->
         <section class="bannergrowthcont">
@@ -62,58 +68,68 @@
                 <div class="banner__cont d-flex justify-content-end align-items-right">
                     <h1 class="bannergrowth__title">Formación profesional</h1>
                 </div>
-
-                <p class="text__description" style="color: white; padding: 4vh 0vh 0vh 35vh;">De acuerdo al test que
-                    realizaste te sugerimos los siguientes cursos, diplomados y charlas
-                </p>
             </div>
 
         </section>
 
-    </header>
-
-    <main class="main">
+        <div style="height: 4vh;"></div>
 
         <div class="d-flex justify-content-center align-items-center flex-column">
 
-            <div class="d-flex justify-content-center align-items-center flex-column" style="width: 87%;">
+            <!--<div style="height: 15vh;"></div>-->
+            <h2>Charla ¿De qué manera logras empatizar con tus usuarios?</h2>
 
-                <!--Companies-->
+            <div style="height: 4vh;"></div>
 
-                <div class=" d-flex justify-content-center align-items-center flex-row">
+            <!--About-->
+            <div class="d-flex flex-column containdetail" style="width: 50%;">
 
-                    <div class="event__cont d-flex justify-content-center align-items-center p-3 m-4">
-                        <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
-                            <h2 class="event__title">Adaptación y Flexibilización al cambio para líderes</h2>
-                            <h5 class="event__name">Universidad Icesi</h5>
-                            <a href="./html/growth/detail-ac.html" type="submit" class="btn btn-primary">Ver más</a>
-                        </div>
-                    </div>
-        
-                    <div class="event__cont d-flex justify-content-center align-items-center p-3 m-4">
-                        <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
-                            <h2 class="event__title">Certificación Customer experience design & management</h2>
-                            <h5 class="event__name">Universidad Icesi - CXDM</h5>
-                            <a href="./html/growth/detail-icl.html" type="submit" class="btn btn-primary">Ver más</a>
-                        </div>
-                    </div>
-        
-                    <div class="event__cont d-flex justify-content-center align-items-center p-3 m-4">
-                        <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
-                            <h2 class="event__title"> Charla ¿De qué manera logras empatizar con tus usuarios?</h2>
-                            <h5 class="event__name">Interaction Design Foundation Colombia</h5>
-                            <a href="./html/growth/detail-emp.html" type="submit" class="btn btn-primary">Ver más</a>
-                        </div>
-                    </div>    
-
+                <!--Description-->
+                <div class="d-flex flex-column">
+                    <h5 style="margin: 0; font-weight: 500">Descripción:</h5>
+                    <p class="textdetail">El curso taller está orientado a mejorar y potenciar la habilidades orales y
+                        discursivas de los estudiantes al momento de enfrentarse a la necesidad de capturar la atención
+                        de posibles clientes o inversores para sus proyectos o ideas innovadoras ya sea de manera
+                        virtual o presencial. Del mismo modo, este curso busca brindar herramientas que permitan a los
+                        futuros profesionales desarrollar presentaciones orales de alto impacto, utilizando
+                        principalmente su voz y el lenguaje corporal como su mejor herramienta. Generando así, discurso
+                        empático y coherente que conecte a su interlocutor.
+                    </p>
                 </div>
 
+                <!--Link-->
+                <div class="d-flex flex-row">
+                    <p style="margin: 0; font-weight: 500;" class="textdetail">Link:</p>
+                    <div style="width: 2vh;"></div>
+                    <a href="https://www.youtube.com/watch?v=nOh52jC4RTM&ab_channel=InteractionDesignFoundationColombia"
+                        class="textdetail linkdetail" style="margin: 0;">Interaction Design Foundation Colombia - Youtube</a>
+                </div>
+
+                <!--Place-->
+                <div class="d-flex flex-row">
+                    <p style="margin: 0; font-weight: 500" class="textdetail">Por: </p>
+                    <div style="width: 2vh;"></div>
+                    <p style="margin: 0;" class="textdetail">Interaction Design Foundation Colombia</p>
+                </div>
+
+                <!--Skill-->
+                <div class="d-flex flex-row">
+                    <p style="margin: 0; font-weight: 500;" class="textdetail">Habilida que mejora: </p>
+                    <div style="width: 2vh;"></div>
+                    <p style="margin: 0;" class="textdetail">Empatía</p>
+                </div>
+
+
             </div>
+
+            <div style="padding: 5vh;"></div>
+
+
 
         </div>
 
 
-        <div style="height: 20vh;"></div>
+        <div class="spaceC"></div>
 
         <!--Footer-->
         <footer class="footer">
@@ -141,10 +157,10 @@
                     <h4 class="footercont__title">Síguenos</h4>
                     <div class="footercont__cont d-flex justify-content-left align-items-left flex-row">
                         <a href="#" class="footercont__img">
-                            <img class="footercont__img" src="./img/footer/facebook.svg" atl="">
+                            <img class="footercont__img" src="../../img/footer/facebook.svg" atl="">
                         </a>
                         <a href="#" class="footercont__img">
-                            <img class="footercont__img" src="./img/footer/instagram.svg" atl="">
+                            <img class="footercont__img" src="../../img/footer/instagram.svg" atl="">
                         </a>
                     </div>
                 </section>
@@ -153,8 +169,6 @@
 
     </main>
 
-
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -166,8 +180,12 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <script type="module" src="./script/firebase.js"></script>
-    <script type="module" src="./script/auth.js"></script>
+
+    <!-- Optional JavaScript -->
+    <script type="module" src="../../script/firebase.js"></script>
+    <script type="module" src="../../script/auth3.js"></script>
+    <script type="module" src="../scripts/courses.js"></script>
+
 
 </body>
 

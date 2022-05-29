@@ -40,6 +40,7 @@
     font-family: $font;
     font-size: 15px;
     font-weight: 100;
+    text-align: center;
 }
 
 .profilecontworkshop{
@@ -54,15 +55,15 @@
 }
 
 .conttallerdelasemana{
-    height: 49vh;
-    width: 69%;
+    width: 62.59vh;
+    height: 46.23vh;
 }
 .tallerdelasemana{
     background-image: url("../img/illustration/taller.svg");
-    background-position: top;
-    background-size: auto;
+    //background-position: top;
+    background-size: cover;
     height: 100%;
-    //width: 70%;
+    width: 100%;
 }
 
 .titletallerdelasemana{

@@ -379,6 +379,7 @@ body {
   padding: 5vh 35vh 5vh 0vh;
   margin: 0;
   width: 80%;
+  text-align: right;
 }
 
 .text-center {
@@ -429,6 +430,7 @@ body {
   font-family: "Open Sans";
   font-size: 15px;
   font-weight: 100;
+  text-align: center;
 }
 
 .profilecontworkshop {
@@ -450,15 +452,15 @@ body {
 }
 
 .conttallerdelasemana {
-  height: 49vh;
-  width: 69%;
+  width: 62.59vh;
+  height: 46.23vh;
 }
 
 .tallerdelasemana {
   background-image: url("../img/illustration/taller.svg");
-  background-position: top;
-  background-size: auto;
+  background-size: cover;
   height: 100%;
+  width: 100%;
 }
 
 .titletallerdelasemana {
@@ -473,7 +475,7 @@ body {
 }
 
 .main__information {
-  width: 77%;
+  width: 90%;
 }
 
 .emptycont {
@@ -1062,6 +1064,11 @@ ul {
   position: absolute;
 }
 
+.contaboutben {
+  background-color: #02022D;
+  width: 100%;
+}
+
 .mainheaderevent {
   background-color: #04041B;
   width: 100%;
@@ -1154,6 +1161,25 @@ ul {
 
 .design__pereven {
   margin: 0;
+}
+
+.textdetail {
+  font-size: 15px;
+}
+
+.containdetail {
+  border: 5px solid #694FFD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  font-family: "Open Sans";
+  height: 100%;
+  padding: 10vh;
+  width: 60%;
+}
+
+.linkdetail {
+  color: #FF971D;
 }
 
 .dark {
@@ -1398,12 +1424,16 @@ ul {
   padding-left: 25vh;
 }
 
+.contoptionimg {
+  width: 18.59vh;
+  height: 37vh;
+}
+
 .optionimg {
   background-image: url(".././img/illustration/11 OPCIONES DE MEJORA PERFIL.svg");
   background-size: cover;
-  background-size: contain;
-  height: 33.2vh;
-  width: 8%;
+  height: 100%;
+  width: 100%;
 }
 
 .mainHeaderprofile {
@@ -1420,6 +1450,12 @@ ul {
 .header {
   height: 15vh;
   background-color: #04041B;
+}
+
+.cont__bannerprofile {
+  background-color: #694FFD;
+  border-radius: 0px 20px 0px 0px;
+  width: 300vh;
 }
 
 .menuprofile {
@@ -2677,6 +2713,18 @@ input[type="radio"]:checked::before {
   width: 100%;
   margin-bottom: 5%;
   margin-top: 0%;
+}
+
+.addbtn {
+  background-color: #FF971D;
+  /* width: 100%; */
+  border: none;
+  font-family: "Open Sans";
+  font-size: 15px;
+}
+
+.addbtn:hover {
+  background-color: #FF8800;
 }
 
 .imagetoreplace {

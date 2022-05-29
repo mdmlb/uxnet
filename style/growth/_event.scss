@@ -97,3 +97,23 @@
 .design__pereven{
     margin: 0;
 }
+
+
+//DETAIL
+.textdetail{
+    font-size: 15px;
+}
+
+.containdetail{
+    border: 5px solid $color3;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: "Open Sans";
+    height: 100%;
+    padding: 10vh;
+    width: 60%;
+}
+
+.linkdetail{
+    color: $color4;
+}

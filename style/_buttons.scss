@@ -73,3 +73,16 @@
     margin-bottom: 5%;
     margin-top: 0%;
 }
+
+
+.addbtn{
+    background-color: #FF971D;
+    /* width: 100%; */
+    border: none;
+    font-family: "Open Sans";
+    font-size: 15px;
+}
+
+.addbtn:hover {
+    background-color: $color14;
+}
