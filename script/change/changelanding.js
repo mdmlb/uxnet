@@ -92,7 +92,7 @@ onAuthStateChanged(auth, async (user) => {
             const docSnap3 = await getDoc(docRef3);
 
             // Trae información de la colección de uxDesiredProfiles de la base de datos
-            const docRef4 = doc(db, "savedProfile", uid);
+            const docRef4 = doc(db, "savedFutureProfiles", uid);
             const docSnap4 = await getDoc(docRef4);
 
             //RECLUTADOR APARECE EL LANDING CORRESPONDIENTE
