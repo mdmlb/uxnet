@@ -20,6 +20,7 @@ const auth = getAuth();
 var userInfo;
 const userName2 = document.querySelector('.profile__usernameB1');
 const authSignout = document.querySelector('.SignOutButton2');
+const authSignout2 = document.querySelector('.SignOutButton3');
 const loader = document.querySelector('.loader');
 
 
@@ -80,6 +81,18 @@ onAuthStateChanged(auth, async (user) => {
                             });
                         });
                     }
+
+                    if (authSignout2) {
+                        authSignout2.addEventListener('click', function (event) {
+                            event.preventDefault();
+                            signOut(auth).then(() => {
+                                // Sign-out successful.
+                                window.location.href = './login.html';
+                            }).catch((error) => {
+                                // An error happened.
+                            });
+                        });
+                    }
                 } else {
                     headerNoResults.classList.add('headerNoResults--show');
                     maindesigner.classList.add('maindesigner--show');
@@ -122,6 +135,18 @@ onAuthStateChanged(auth, async (user) => {
                                 });
                             });
                         }
+
+                        if (authSignout2) {
+                            authSignout2.addEventListener('click', function (event) {
+                                event.preventDefault();
+                                signOut(auth).then(() => {
+                                    // Sign-out successful.
+                                    window.location.href = './login.html';
+                                }).catch((error) => {
+                                    // An error happened.
+                                });
+                            });
+                        }
                     } else {
                         headerReclutador.classList.add('headerReclutador--show');
                         mainReclutador.classList.add('mainreclutador--show');
@@ -136,6 +161,18 @@ onAuthStateChanged(auth, async (user) => {
 
                         if (authSignout) {
                             authSignout.addEventListener('click', function (event) {
+                                event.preventDefault();
+                                signOut(auth).then(() => {
+                                    // Sign-out successful.
+                                    window.location.href = './login.html';
+                                }).catch((error) => {
+                                    // An error happened.
+                                });
+                            });
+                        }
+
+                        if (authSignout2) {
+                            authSignout2.addEventListener('click', function (event) {
                                 event.preventDefault();
                                 signOut(auth).then(() => {
                                     // Sign-out successful.
@@ -173,6 +210,18 @@ onAuthStateChanged(auth, async (user) => {
                                 });
                             });
                         }
+
+                        if (authSignout2) {
+                            authSignout2.addEventListener('click', function (event) {
+                                event.preventDefault();
+                                signOut(auth).then(() => {
+                                    // Sign-out successful.
+                                    window.location.href = './login.html';
+                                }).catch((error) => {
+                                    // An error happened.
+                                });
+                            });
+                        }
                     } else {
                         headerReclutador.classList.add('headerReclutador--show');
                         mainReclutador.classList.add('mainreclutador--show');
@@ -186,6 +235,18 @@ onAuthStateChanged(auth, async (user) => {
 
                         if (authSignout) {
                             authSignout.addEventListener('click', function (event) {
+                                event.preventDefault();
+                                signOut(auth).then(() => {
+                                    // Sign-out successful.
+                                    window.location.href = './login.html';
+                                }).catch((error) => {
+                                    // An error happened.
+                                });
+                            });
+                        }
+
+                        if (authSignout2) {
+                            authSignout2.addEventListener('click', function (event) {
                                 event.preventDefault();
                                 signOut(auth).then(() => {
                                     // Sign-out successful.
