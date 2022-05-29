@@ -74,7 +74,7 @@ function renderResult(list, theID) {
     savedProfiles.innerHTML = "";
     //let copy = [...list].splice(0, list.length);
     list.forEach(function (elem, index) {
-        const url = `./html/recruiter/projects/compareProfile.html?${elem.userID}-${elem.name}`;
+        const url = `./html/recruiter/designers/compareFutureSavedProfile.html?${elem.userID}-${elem.name}`;
         const newPerson = document.createElement('div');
         newPerson.classList.add('fav__container','d-flex', 'justify-content-center', 'align-items-center', 'flex-column', 'm-2', 'p-4');
 

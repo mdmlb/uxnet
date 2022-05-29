@@ -101,7 +101,7 @@ window.addEventListener('load', function () {
 
             console.log(similarityPer);
 
-            uxNameComparation.innerHTML = "Comparación entre el perfil de " + name + " y tu perfil deseado";
+            uxNameComparation.innerHTML = "Comparación entre el perfil de " + name + " " + lastname + " y tu perfil deseado";
             similporcent.innerHTML = "Similitud entre perfiles: " + similarityPer + "%"
 
             const docRef2 = doc(db, "uxSkills", uid2);
