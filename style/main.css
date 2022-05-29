@@ -2567,7 +2567,6 @@ input[type="radio"]:checked::before {
   border-style: solid;
   border-radius: 20px;
   width: 45vh;
-  height: 31vh;
 }
 
 .contprofilegraphic {
