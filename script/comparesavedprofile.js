@@ -47,6 +47,11 @@ const goto2 = document.querySelector('.btnverperfil2');
 const modalTest = document.querySelector('.addprofile');
 const modal2 = document.querySelector('.addprofile2');
 
+//nombre
+const fullname = document.querySelector('.favprofile__name');
+const mailContact = document.querySelector('.favprofile__email');
+const portafolio = document.querySelector('.favprofile__protafolio');
+
 //loader
 const loader = document.querySelector('.loader');
 
@@ -130,6 +135,17 @@ window.addEventListener('load', function () {
             const similarityPer = parts[4].replace('?', '');
 
             console.log(similarityPer);
+
+
+            fullname.innerHTML = "Perfil de " + name + " " + lastname;
+
+            mailContact.innerHTML = `
+            <a href="mailto: ${docSnap.data().email}" class="header__link" style="font-size: 15px;">Correo de contacto</a>
+            `;
+
+            portafolio.innerHTML = `
+            <a href="" class="header__link" style="font-size: 15px;">Aún no ha agregado su portafolio</a>
+            `;
 
             uxNameComparation.innerHTML = "Comparación entre el perfil de " + name + " " + lastname + " y tu perfil deseado";
             similporcent.innerHTML = "Similitud entre perfiles: " + similarityPer + "%"

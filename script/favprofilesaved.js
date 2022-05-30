@@ -109,18 +109,18 @@ window.addEventListener('load', function () {
 
 
             const uid2 = parts[0].replace('?', '');
-            const userName = parts[1].replace('?', '');
-            //const lastName = parts[2].replace('?', '');
+            const name = parts[1].replace('?', '');
+            const lastName = parts[2].replace('?', '');
 
-            let namefull = userName.split('%20');
-            let name = namefull[0].replace('?', '');
-            let lastname = namefull[1].replace('?', '');
+            //let namefull = userName.split('%20');
+            //let name = namefull[0].replace('?', '');
+            //let lastname = namefull[1].replace('?', '');
 
-            console.log("ajasjajs " + namefull)
+            //console.log("ajasjajs " + namefull)
             const docRef = doc(db, "users", uid2);
             const docSnap = await getDoc(docRef);
 
-            fullname.innerHTML = "Perfil de " + name + " " + lastname;
+            fullname.innerHTML = "Perfil de " + name + " " + lastName;
 
             mailContact.innerHTML = `
             <a href="mailto: ${docSnap.data().email}" class="header__link" style="font-size: 15px;">Correo de contacto</a>

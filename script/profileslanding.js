@@ -74,14 +74,14 @@ function renderResult(list, theID) {
     savedProfiles.innerHTML = "";
     //let copy = [...list].splice(0, list.length);
     list.forEach(function (elem, index) {
-        const url = `./html/recruiter/projects/compareProfile.html?${elem.userID}-${elem.name}`;
+        const url = `./html/recruiter/designers/compareFutureSavedProfile.html?${elem.userID}-${elem.name}-${elem.lastname}`;
         const newPerson = document.createElement('div');
         newPerson.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'flex-row', 'p-5');
 
         newPerson.innerHTML = `
         <div class="profilefavs d-flex justify-content-center align-items-center p-3">
             <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
-                <h2 class="event__title proyectName">${elem.name}</h2>
+                <h2 class="event__title proyectName">${elem.name}  ${elem.lastname}</h2>
                 <a href="${url}" type="submit" class="btn btn-primary">Ver perfil</a>
             </div>
         </div>
