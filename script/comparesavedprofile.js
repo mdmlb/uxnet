@@ -136,15 +136,17 @@ window.addEventListener('load', function () {
 
             console.log(similarityPer);
 
+            const docRef7 = doc(db, "users", uid2);
+            const docSnap7 = await getDoc(docRef7);
 
             fullname.innerHTML = "Perfil de " + name + " " + lastname;
 
             mailContact.innerHTML = `
-            <a href="mailto: ${docSnap.data().email}" class="header__link" style="font-size: 15px;">Correo de contacto</a>
+            <a href="mailto: ${docSnap7.data().email}" class="header__link" style="font-size: 15px;">Correo de contacto</a>
             `;
 
             portafolio.innerHTML = `
-            <a href="" class="header__link" style="font-size: 15px;">Aún no ha agregado su portafolio</a>
+            <a href="https://${docSnap7.data().link}" class="header__link" style="font-size: 15px;">Portafolio</a>
             `;
 
             uxNameComparation.innerHTML = "Comparación entre el perfil de " + name + " " + lastname + " y tu perfil deseado";

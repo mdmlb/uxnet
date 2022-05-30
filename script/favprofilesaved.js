@@ -127,7 +127,7 @@ window.addEventListener('load', function () {
             `;
 
             portafolio.innerHTML = `
-            <a href="mailto: ${docSnap.data().link}" class="header__link" style="font-size: 15px;">Portafolio</a>
+            <a href= "https://${docSnap.data().link}" class="header__link" style="font-size: 15px;">Portafolio</a>
             `;
 
             const docRef2 = doc(db, "uxSkills", uid2);
