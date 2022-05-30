@@ -34,3 +34,40 @@
     background-color: $color9;
     width: 100%;
 }
+
+.benefiback{
+    background-color: $color4;
+    border-radius: 109px;
+}
+
+
+.imgactcont{
+    width: 28.59vh;
+    height: 20vh;
+}
+
+
+
+.imgact{
+    background-image: url("../img/act1.svg");
+    //background-position: top;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.imgact2{
+    background-image: url("../img/act2.svg");
+    //background-position: top;
+    background-size: cover;
+    height: 100%;
+    width: 95%;
+}
+
+.imgact3{
+    background-image: url("../img/act3.svg");
+    //background-position: top;
+    background-size: cover;
+    height: 100%;
+    width: 70%;
+}
