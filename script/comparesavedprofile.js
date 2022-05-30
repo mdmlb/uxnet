@@ -129,9 +129,13 @@ window.addEventListener('load', function () {
 
             const parts = location.search.split('-');
             const uid2 = parts[0].replace('?', '');
+
+            const docRef8 = doc(db, "users", uid2);
+            const docSnap8 = await getDoc(docRef8);
+
             const projectCode = parts[1].replace('?', '');
-            const name = parts[2].replace('?', '');
-            const lastname = parts[3].replace('?', '');
+            const name = docSnap8.data().name;
+            const lastname = docSnap8.data().lastname;
             const similarityPer = parts[4].replace('?', '');
 
             console.log(similarityPer);
