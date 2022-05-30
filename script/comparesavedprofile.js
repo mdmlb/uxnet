@@ -145,10 +145,16 @@ window.addEventListener('load', function () {
             <a href="mailto: ${docSnap7.data().email}" class="header__link" style="font-size: 15px;">Correo de contacto</a>
             `;
 
-            portafolio.innerHTML = `
+            if (docSnap7.data().link == undefined) {
+                portafolio.innerHTML = `
+                <a href="#" class="header__link" style="font-size: 15px;">Este usuario no ha subido su portafolio</a>
+                `;
+            } else {
+                portafolio.innerHTML = `
             <a href="https://${docSnap7.data().link}" class="header__link" style="font-size: 15px;">Portafolio</a>
             `;
-
+            }
+            
             uxNameComparation.innerHTML = "Comparación entre el perfil de " + name + " " + lastname + " y tu perfil deseado";
             similporcent.innerHTML = "Similitud entre perfiles: " + similarityPer + "%"
 

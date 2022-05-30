@@ -126,9 +126,15 @@ window.addEventListener('load', function () {
             <a href="mailto: ${docSnap.data().email}" class="header__link" style="font-size: 15px;">Correo de contacto</a>
             `;
 
-            portafolio.innerHTML = `
-            <a href= "https://${docSnap.data().link}" class="header__link" style="font-size: 15px;">Portafolio</a>
+            if (docSnap.data().link == undefined) {
+                portafolio.innerHTML = `
+                <a href="#" class="header__link" style="font-size: 15px;">Este usuario no ha subido su portafolio</a>
+                `;
+            } else {
+                portafolio.innerHTML = `
+            <a href="https://${docSnap.data().link}" class="header__link" style="font-size: 15px;">Portafolio</a>
             `;
+            }
 
             const docRef2 = doc(db, "uxSkills", uid2);
             const docSnap2 = await getDoc(docRef2);
