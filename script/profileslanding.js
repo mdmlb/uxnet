@@ -56,7 +56,7 @@ onAuthStateChanged(auth, async (user) => {
 
             //let items = misllaves.slice(0, 3);
 
-            renderResult(savedProfilesList[0], uid);
+            renderResult(savedProfilesList[0].slice(0,3), uid);
 
             loader.classList.remove('loader--show');
 

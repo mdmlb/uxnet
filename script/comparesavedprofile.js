@@ -195,7 +195,7 @@ window.addEventListener('load', function () {
             const docRef6 = doc(db, "uxDesiredProfiles", uid);
             const docSnap6 = await getDoc(docRef6);
 
-            //console.log(docSnap6.data()[projectCode][1].value);
+            console.log(docSnap6.data()[projectCode][1].value);
 
             //guardar los valores de los roles de la base de datos en un arreglo
             let uxValueRoles = [docSnap3.data().roles[0].value, docSnap3.data().roles[1].value, docSnap3.data().roles[2].value, docSnap3.data().roles[3].value, docSnap3.data().roles[4].value];
@@ -322,20 +322,6 @@ window.addEventListener('load', function () {
             const document2 = await getDoc(doc(db, "savedProfiles", uid));
             const document3 = await getDoc(doc(db, "savedFutureProfiles", uid));
 
-
-            let uxDesiredProfiles = [];
-            let uxDesiredProfilesList = [];
-
-            const docRef7 = doc(db, "uxDesiredProfiles", uid);
-            const docSnap7 = await getDoc(docRef7);
-
-            let allIdealProfiles = [docSnap7.data()];
-            //console.log(docSnap2.data().desiredProfiles5112[1].nameRole);
-            let objRespuesta = allIdealProfiles[0];
-            let misllaves = Object.keys(objRespuesta);
-            console.log("keys", misllaves,allIdealProfiles[0]);
-
-
             saveProfile.addEventListener('click', async function () {
 
                 console.log("entro")
@@ -412,19 +398,13 @@ window.addEventListener('load', function () {
             })
 
             //CLOSE
-            goto1.addEventListener('click', function (elem, index) {
+            goto1.addEventListener('click', function () {
 
                 console.log("ENTRAMOS");
 
-                let position = (projectCode == uid);
+                goto1.href= `./savedProfiles.html?${list[index][0]}-${elem}`;
 
-                console.log(position)
-
-                goto1.href= `./savedProfiles.html?${allIdealProfiles[index]}-${projectCode}`;
-                //goto1.href= `./savedProfiles.html?${objRespuesta[misllaves[index]]}-${projectCode}`;
-                
-
-                //goto1.href="./savedProfiles.html" ${another[list[index]][0]}-${elem}
+                //goto1.href="./savedProfiles.html"
             })
 
             close1.addEventListener('click', function () {

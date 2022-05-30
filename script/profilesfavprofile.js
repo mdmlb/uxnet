@@ -74,12 +74,12 @@ function renderResult(list, theID) {
     savedProfiles.innerHTML = "";
     //let copy = [...list].splice(0, list.length);
     list.forEach(function (elem, index) {
-        const url = `./html/recruiter/designers/compareFutureSavedProfile.html?${elem.userID}-${elem.name}`;
+        const url = `./html/recruiter/designers/compareFutureSavedProfile.html?${elem.userID}-${elem.name}-${elem.lastname}`;
         const newPerson = document.createElement('div');
         newPerson.classList.add('fav__container','d-flex', 'justify-content-center', 'align-items-center', 'flex-column', 'm-2', 'p-4');
 
         newPerson.innerHTML = `
-            <small class="proyectName" style="font-size: 100%; padding: 0 15px;">${elem.name}</small>
+            <small class="proyectName" style="font-size: 100%; padding: 0 15px;">${elem.name} ${elem.lastname}</small>
 
             <div style="height: 3vh;"></div>
 

@@ -41,7 +41,7 @@
             <a href="#" class="header__menulink">
                 <img class="header__menu" src="./img/burguermenu.svg" atl="menu">
             </a>-->
-            
+
             <!--Nav: Logo-->
             <a href="../../../index.html" class="header__logolink">
                 <img class="header__logo" src="../../../img/draklogo.svg" atl="UXnet's logo">
@@ -75,13 +75,13 @@
 
             <div class="banner d-flex justify-content-bottom align-items-center flex-row" style="width:80%;">
                 <div class="banner__cont" style="height: 158px;">
-                    <h1 class="bannerprofile__title p-3">Recomendaciones</h1>
+                    <h1 class="bannerprofile__title p-3">Comparación</h1>
                 </div>
 
                 <div class="profileconttext">
                     <p class="text__description" style="color: white; width: 100%;font-weight: 300; margin: 0;">
-                        Estos diseñadores son los más adecuados para tu proyecto, de acuerdo a los requerimientos que
-                        ingresaste anteriormente.
+                        Aquí puedes ver el detalle del perfil del diseñador que elegiste vs los requerimientos del
+                        perfil que deseas
                     </p>
                 </div>
 
@@ -89,34 +89,111 @@
 
         </section>
 
-        <div style="height: 10vh;"></div>
+        <div style="height: 6vh;"></div>
 
-        <section class="d-flex align-items-center flex-column">
+        <!--PORCENTAJE DE SIMILITUD-->
+        <section class="contevent similprofile d-flex justify-content-bottom align-items-center flex-column">
 
-            <div class="d-flex justify-content-center align-items-center flex-row flex-wrap formCompare__neighborhood" style="width: 80%;">
-
-                <h1>No hay diseñadores relacionado con tu proyecto</h1>
-                <!--Diseñador
-                <div style="padding: 2vh;">
-                    <div class="profiledesigner d-flex justify-content-center align-items-center p-3">
-                        <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
-                            <a href="#" class="event__person ">
-                                <img class="event__person" src="../../../img/profile.svg" atl="">
-                            </a>
-                            <h2 class="event__title">Ana soler</h2>
-                            <h5 class="event__name">98% de coincidencia</h5>
-                            <a href="./html/growth/event.html" type="submit" class="btn btn-primary">Ver más</a>
-                            <div style="height: 2vh;"></div>
-                            <a href="./html/growth/event.html" type="submit" class="btn btn-primary btncancel">Ver comparación</a>
-                        </div>
-                    </div>
-                </div>-->
-                
-            </div>
-
+            <h3 class="contevent__title similporcent" style="margin: 0;">Similitud entre perfiles:</h3>
         </section>
 
+        <!--AQUI VA LA GRAFICA DE LOS ROLES-->
+        <div style="height: 6vh;"></div>
+
+        <div class="d-flex p-4 flex-row justify-content-center flex-wrap">
+
+            <!--PERFIL REQUERIDO-->
+            <div class="d-flex flex-column contevent contprofilegraphic p-3">
+                <h5 class="uxNameComparation" style="margin: 0;">Tu perfil deseado</h5>
+
+                <div style="height: 6vh;"></div>
+
+                <!--GRAFICAS-->
+                <div class="graphic__container1">
+                    <canvas id="myChart2"></canvas>
+                </div>
+            </div>
+
+        </div>
+
+
         <div style="height: 10vh;"></div>
+
+        <!--HABILIDADES-->
+
+        <div class="d-flex flex-column contevent justify-content-center p-5">
+
+            <div class="d-flex flex-column contevent justify-content-center align-items-center">
+                <h3 class="" style="margin: 0;">Habilidades del diseñador</h3>
+            </div>
+
+            <div style="height: 10vh;"></div>
+
+            <div class="d-flex justify-content-center flex-row">
+
+                <!--MEJORES-->
+                <div class="d-flex flex-column contevent justify-content-center align-items-center" style="width:55%;">
+                    <h5 class="skills" style="margin: 0;">Habilidades con mejor desempeño</h5>
+
+                    <div style="height: 6vh;"></div>
+
+                    <div
+                        class="bestSkillElements d-flex justify-content-center align-items-center flex-column flex-wrap">
+
+                    </div>
+                </div>
+
+                <!--PEORES-->
+                <div class="d-flex flex-column contevent justify-content-center align-items-center" style="width: 55%;">
+                    <h5 class="" style="margin: 0;">Habilidades con bajo desempeño</h5>
+
+                    <div style="height: 6vh;"></div>
+
+                    <div
+                        class="worstSkillElements d-flex justify-content-center align-items-center flex-column flex-wrap">
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div style="height: 10vh;"></div>
+
+        <article class="addprofile">
+            <div class="addprofile__container">
+                <div class="addprofile__centerAll">
+                    <h1 style="padding-top: 5%" class="">Perfil agregado</h1>
+                    <p class="text__description" style="color: white; margin: 0;">El perfil fue agregado con éxito para este proyecto
+                    </p>
+                    <div class="d-flex flex-row justify-content-center align-items-center p-3">
+                        <button class="btn btn-primary btnAlert" style="width:244px; margin: 0;">Cerrar</button>
+                        <div style="width: 5px;"></div>
+                        <a href="#" class="btn btn-primary btnverperfil" style="width:244px;">Ver perfiles guardados</a>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+
+        <article class="addprofile addprofile2">
+            <div class="addprofile__container">
+                <div class="addprofile__centerAll">
+                    <h1 style="padding-top: 5%" class="">Perfil agregado</h1>
+                    <p class="text__description" style="color: white; margin: 0;">El perfil fue agregado con éxito s tus perfiles favoritos
+                    </p>
+                    <div class="d-flex flex-row justify-content-center align-items-center p-3">
+                        <button class="btn btn-primary btnAlert2" style="width:244px; margin: 0;">Cerrar</button>
+                        <div style="width: 5px;"></div>
+                        <a href="#" class="btn btn-primary btnverperfil2" style="width:244px;">Ver perfiles futuros</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
 
         <footer class="footer">
 
@@ -155,9 +232,7 @@
 
     </main>
 
-
     <!-- Optional JavaScript -->
-
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -171,9 +246,10 @@
         crossorigin="anonymous"></script>
     <!--<script type="module" src="./scripts/main.js"></script>-->
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
     <script type="module" src="../../../script/firebase.js"></script>
     <script type="module" src="../../../script/auth2.js"></script>
-    <script type="module" src="../../../script/recommendations.js"></script>
+    <script type="module" src="../../../script/comparesavedprofile.js"></script>
 
 </body>
 

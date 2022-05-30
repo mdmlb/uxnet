@@ -26,6 +26,7 @@ var userInfo;
 
 const savedProfiles = document.querySelector('.savedProfiles__container');
 const theProjectName = document.querySelector('.nameproject');
+const noDesign = document.querySelector('.noDesign');
 
 const loader = document.querySelector('.loader');
 
@@ -60,7 +61,7 @@ onAuthStateChanged(auth, async (user) => {
             console.log(savedProfilesList[0]);
 
             renderResult(savedProfilesList[0], uid);
-            
+
             const docRef3 = doc(db, "uxDesiredProfiles", uid);
             const docSnap3 = await getDoc(docRef3);
 
@@ -76,6 +77,8 @@ onAuthStateChanged(auth, async (user) => {
 
     } else {
         // User is signed out
+        loader.classList.remove('loader--show');
+        noDesign.innerHTML = "No hay perfiles guardados para este proyecto";
     }
 });
 
@@ -85,14 +88,16 @@ function renderResult(list, theID) {
     list.forEach(function (elem, index) {
         const parts = location.search.split('-');
         const selectedProject = parts[1].replace('?', '');
-        const url = `compareSavedProfile.html?${elem.userID}-${selectedProject}-${elem.name}-${elem.similarity}`;
+        const url = `comparesavedprofile.html?${elem.userID}-${selectedProject}-${elem.name}-${elem.lastname}-${elem.similarity}`;
         const newPerson = document.createElement('div');
         newPerson.classList.add('p-2');
 
         newPerson.innerHTML = `
         <div class="profiledesigner d-flex justify-content-center align-items-center p-3">
             <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
-                <h2 class="event__title proyectName">${elem.name} - ${elem.similarity}% de similitud</h2>
+                <h2 class="event__title">${elem.name} ${elem.lastname}</h2>
+                <h5 class="event__name">${elem.similarity}% de similitud</h5>
+                
                 <a href="${url}" type="submit" class="btn btn-primary">Ver perfil</a>
                 <div style="height:2vh;"></div>
                 <button class="btn btn-primary btn-delete delete__btn delete__btn">Eliminar perfil guardado</button>
@@ -104,10 +109,10 @@ function renderResult(list, theID) {
         const deleteBtn = newPerson.querySelector('.delete__btn');
 
         deleteBtn.addEventListener('click', async function () {
-            
+
             const removedEl = list.splice(index, 1);
             console.log(removedEl);
-            
+
             const parts = location.search.split('-');
             const projectCode = parts[1].replace('?', '');
             await updateDoc(doc(db, "savedProfiles", theID), {
@@ -125,5 +130,28 @@ function renderResult(list, theID) {
               });*/
         });
 
+    })
+}
+
+
+function rendernoresult(list) {
+    savedProfiles.innerHTML = "";
+    //let copy = [...list].splice(0, list.length);
+    list.forEach(function (elem, index) {
+        const parts = location.search.split('-');
+        const selectedProject = parts[1].replace('?', '');
+        const url = `recommendations.html?${elem.userID}-${selectedProject}`;
+        const newPerson = document.createElement('div');
+        newPerson.classList.add('p-2');
+
+        newPerson.innerHTML = `
+        <div class="profiledesigner d-flex justify-content-center align-items-center p-3">
+        <h1 class="noDesign">No hay perfiles guardados para este proyecto</h1>
+            <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
+                <a href="${url}" type="submit" class="btn btn-primary">Ver recomendaciones</a>
+            </div>
+        </div>
+        `;
+        savedProfiles.appendChild(newPerson);
     })
 }
