@@ -124,14 +124,19 @@ window.addEventListener('load', function () {
 
             const parts = location.search.split('-');
             const uid2 = parts[0].replace('?', '');
+
+            const docRef8 = doc(db, "users", uid2);
+            const docSnap8 = await getDoc(docRef8);
+
+
             const projectCode = parts[1].replace('?', '');
-            const name = parts[2].replace('?', '');
-            const lastname = parts[3].replace('?', '');
+            const name = docSnap8.data().name;
+            const lastname = docSnap8.data().lastname;
             const similarityPer = parts[4].replace('?', '');
 
-            console.log(similarityPer);
+            console.log(docSnap8.data().lastname);
 
-            uxNameComparation.innerHTML = "Comparación entre el perfil de " + name + " " + lastname + " y tu perfil deseado";
+            uxNameComparation.innerHTML = "Comparación entre el perfil de " + docSnap8.data().name + " " + docSnap8.data().lastname + " y tu perfil deseado";
             similporcent.innerHTML = "Similitud entre perfiles: " + similarityPer + "%"
 
             const docRef2 = doc(db, "uxSkills", uid2);
@@ -283,8 +288,10 @@ window.addEventListener('load', function () {
             const aProfile2 = {
                 userID: uid2,
                 name: name,
-                lastname: lastname
+                lastname: lastname,
             }
+
+            console.log(aProfile2);
 
             let savedProfiles = [];
             let savedFutureProfiles = [];
