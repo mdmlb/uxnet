@@ -95,7 +95,7 @@ function renderResult(list, theID) {
         newPerson.innerHTML = `
         <div class="profiledesigner d-flex justify-content-center align-items-center p-3">
             <div class="p-3 d-flex justify-content-center align-items-center flex-column eventcont">
-                <h2 class="event__title">${elem.name} ${elem.lastname}</h2>
+                <h2 class="event__title">${elem.name + " " +elem.lastname}</h2>
                 <h5 class="event__name">${elem.similarity}% de similitud</h5>
                 
                 <a href="${url}" type="submit" class="btn btn-primary">Ver perfil</a>

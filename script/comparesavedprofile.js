@@ -151,7 +151,7 @@ window.addEventListener('load', function () {
                 `;
             } else {
                 portafolio.innerHTML = `
-            <a href="https://${docSnap7.data().link}" class="header__link" style="font-size: 15px;">Portafolio</a>
+            <a href="${docSnap7.data().link}" class="header__link" style="font-size: 15px;">Portafolio</a>
             `;
             }
             
